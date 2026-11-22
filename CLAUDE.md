@@ -129,8 +129,12 @@ Owner decisions on the migration (2026-11-22):
   now: no form markup and no Beehiiv attribution script on the new site, the surrounding text stays.
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
 - Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
-  `/courses/privacy-policy`, legal pages missing from the sitemap) are reported by the parity check as
-  documented differences, never silently.
+  `/courses/privacy-policy`) are reported by the parity check as documented differences, never
+  silently.
+- `noindex` is migrated 1:1 (26 pages: affiliate-disclosure, courses/privacy-policy,
+  courses/public-offer, hidden course pages, payment pages, search, terms-of-service). They carry
+  `noindex: true` and stay out of the sitemap; this is intended, not a defect. Webflow emitted two
+  robots tags on them (`noindex` plus the site-wide `max-image-preview:large`); the snapshot keeps both.
 
 - TypeScript pinned to 6.0.x: typescript-eslint and @astrojs/check do not support TS 7 yet.
 - Workers `html_handling` redirects `/path/` → `/path` with **307**; the legacy site used 301. Fixed in
