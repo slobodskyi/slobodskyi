@@ -228,6 +228,15 @@ strong {
   box-shadow: var(--shadow);
 }
 
+.prose .cards {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.cards > li {
+  margin: 0;
+}
+
 .cards > li + li {
   border-top: 2px solid var(--line);
 }
@@ -303,17 +312,44 @@ strong {
   width: max-content;
 }
 
-@media (max-width: 479px) {
+/* Phones: the cover fills the card and the text sits on a dark overlay (legacy layout). */
+@media (max-width: 767px) {
   .card {
-    grid-template-columns: 1fr 30%;
+    display: block;
+    position: relative;
+    color: #fff;
+    min-height: 200px;
   }
-
+  .card-cover {
+    position: absolute;
+    inset: 0;
+  }
+  .card-body {
+    position: relative;
+    z-index: 1;
+    min-height: 200px;
+    justify-content: flex-start;
+    padding: 24px 24px 56px;
+    background: #00000061;
+  }
+  .card:hover,
+  .card:focus-visible {
+    color: #fff;
+  }
+  .card:hover .card-body {
+    background: #000000a6;
+  }
   .card-title {
-    font-size: 17px;
+    font-size: 19px;
   }
-
   .card-text {
     font-size: 14px;
+  }
+  .card-meta {
+    z-index: 2;
+    left: 24px;
+    bottom: 16px;
+    flex-direction: row;
   }
 }
 

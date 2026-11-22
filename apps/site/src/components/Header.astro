@@ -25,9 +25,6 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
       <a href={p('/tools')} class="nav-link">
         {s.tools}
       </a>
-      <a href={p('/courses')} class="nav-link">
-        {s.courses}
-      </a>
       <details class="dropdown">
         <summary class="nav-link">{s.guides}</summary>
         <div class="dropdown-list">
@@ -62,7 +59,6 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
       </summary>
       <nav class="mobile-panel" aria-label="Mobile">
         <a href={p('/tools')}>{s.tools}</a>
-        <a href={p('/courses')}>{s.courses}</a>
         <p class="mobile-group">{s.guides}</p>
         {hubs.map((h) => (
           <a href={h.url} class="mobile-sub">

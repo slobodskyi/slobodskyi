@@ -53,8 +53,9 @@ Types: `guides essays log til links notes projects pages hubs categories`.
 - Languages: `en` (root), `uk` (URL prefix `/ua`, hreflang `uk`), `ru` (`/ru`). Do not rename `/ua`.
 - Changing a published URL requires adding the old path to `legacyUrls` in frontmatter; `_redirects` is
   generated from it. No redirect chains.
-- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`, and the
-  click-to-load embeds `BuyMeACoffee`, `VideoAsk`). No arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
+- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`,
+  `Cards`/`Card` (same card as hub and category lists), and the click-to-load embeds `BuyMeACoffee`,
+  `VideoAsk`). No arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
 - Heading anchors: Markdown headings get the github-slugger id Astro injects. A legacy Webflow H2 anchor
   that differs from it is preserved with a JSX heading on its own line: `<h2 id="fees-amp-rates">Fees
 &amp; rates</h2>` (`legacyAnchor()` reproduces the Webflow script exactly). Never use `{#id}`: in MDX
@@ -141,18 +142,17 @@ Owner decisions on the migration (2026-11-22):
   translations: `pnpm convert` skips them and puts their live URLs into `legacyUrls` of the English
   guide, so they 301 there (owner decision 2026-11-22, supersedes "migrated 1:1"; today only
   `/ua|/ru/create/no-code/prd-for-vibe-coding`).
+- `pnpm convert` drops elements that the page's own Webflow CSS hid for its language
+  (`.x{display:none}` without a matching `.x:lang(<lang>)` rule), so records hold only what was visible.
 - Prefer data over code: short names of hubs/categories are frontmatter `label` (Webflow CMS
   `name`), sitemap exclusions are `sitemap: false` (from the legacy sitemap), reading time is
   computed. Do not add per-record tables or special cases to the site code.
-- Hidden course pages (`/courses/how-to-create-images-with-ai`, `/courses/payment-alternatives` in all
-  three languages, not in the sitemap) are migrated 1:1 with their current robots: `noindex: true`
-  everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
-  of the sitemap.
-- No broken internal links, with no exceptions: `pnpm check:build` fails on every one. The legacy
-  link to the 404 `/ua/courses/chatgpt` (the "ChatGPT 101" card on the three `/courses` pages) now
-  points to the ChatGPT guide in the page's language: `/create/ai/chatgpt`, `/ua/create/ai/chatgpt`,
-  `/ru/create/ai/chatgpt`. The URL `/ua/courses/chatgpt` itself stays a 404 (owner decision
-  2026-11-22, replaces "kept as is").
+- Courses removed (owner decision 2026-11-22): `/courses`, the consultation, course landings and their
+  payment/offer/privacy pages are gone in all three languages; each URL 301s to the closest page
+  (`data/redirects/removed-courses.csv`). `pnpm convert` skips every page that is a redirect source in
+  `data/redirects/*.csv` and rewrites links to it to the final target (a link that would point to the
+  record itself becomes text). `/ua/courses/chatgpt` stays a 404. No broken internal links, with no
+  exceptions: `pnpm check:build` fails on every one.
 - No contact form (owner decision 2026-11-22): `/contacts` shows the email address
   oleksandr@slobodskyi.com instead of the Webflow form; the Worker has no `/api/contact`.
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
@@ -160,11 +160,10 @@ Owner decisions on the migration (2026-11-22):
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
 - Analytics = Cloudflare Web Analytics only (cookie-free, no consent banner). GTM/GA4, Meta Pixel and
   Ahrefs Analytics are dropped on purpose (owner decision 2026-11-22). Google Search Console stays.
-- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
-  `/courses/privacy-policy`) are reported by the parity check as documented differences, never
+- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`) are
+  reported by the parity check as documented differences, never
   silently.
-- `noindex` is migrated 1:1 (26 pages: affiliate-disclosure, courses/privacy-policy,
-  courses/public-offer, hidden course pages, payment pages, search, terms-of-service). They carry
+- `noindex` is migrated 1:1 (affiliate-disclosure, search, terms-of-service). Those pages carry
   `noindex: true` and stay out of the sitemap; this is intended, not a defect. Webflow emitted two
   robots tags on them (`noindex` plus the site-wide `max-image-preview:large`); the snapshot keeps both.
 
