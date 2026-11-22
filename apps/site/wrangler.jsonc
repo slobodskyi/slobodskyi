@@ -6,11 +6,11 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    // /about/ -> 301 /about, matching the legacy site.
+    // Assets alone would answer /about/ with a 307; the Worker turns it into a 301 like the legacy
+    // site (see worker.ts), so only API routes and paths ending in "/" hit the Worker.
     "html_handling": "drop-trailing-slash",
     "not_found_handling": "404-page",
-    // Only API routes hit the Worker; every page is served as a static file.
-    "run_worker_first": ["/api/*"],
+    "run_worker_first": ["/api/*", "/*/"],
   },
   "observability": { "enabled": true },
   "env": {

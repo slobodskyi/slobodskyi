@@ -168,8 +168,9 @@ Owner decisions on the migration (2026-11-22):
   robots tags on them (`noindex` plus the site-wide `max-image-preview:large`); the snapshot keeps both.
 
 - TypeScript pinned to 6.0.x: typescript-eslint and @astrojs/check do not support TS 7 yet.
-- Workers `html_handling` redirects `/path/` → `/path` with **307**; the legacy site used 301. Fixed in
-  Step 7 (redirect rules).
+- Workers `html_handling` redirects `/path/` → `/path` with **307**; the legacy site used 301. So
+  `run_worker_first` also routes `/*/` to the Worker, which answers with a 301 itself. www → apex and
+  http → https are zone settings, applied at the DNS switch (`MIGRATION_CHECKLIST.md`).
 - Images stay in the repo next to content and are optimised by `astro:assets` (≈29 MB total). R2 is for
   raw files of later stages.
 - Astro 7 Markdown runs on the Rust pipeline (Sätteri): do HTML→MDX transformations in the one-off
