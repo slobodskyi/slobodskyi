@@ -5,7 +5,15 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
-import { extractFacts, findBuiltFile, parsePage, readRedirects, toPath, type PageFacts } from './lib.ts';
+import {
+  extractFacts,
+  robotsDirectives,
+  findBuiltFile,
+  parsePage,
+  readRedirects,
+  toPath,
+  type PageFacts,
+} from './lib.ts';
 
 export interface LegacyPage {
   url: string;
@@ -68,7 +76,9 @@ function compareFacts(legacy: LegacyPage, built: PageFacts): Difference[] {
   if (norm(legacy.description) !== norm(built.description))
     add('description', legacy.description, built.description);
   if (norm(legacy.canonical) !== norm(built.canonical)) add('canonical', legacy.canonical, built.canonical);
-  if (norm(legacy.robots) !== norm(built.robots)) add('robots', legacy.robots, built.robots);
+  // Compared as a set of directives: Webflow emitted two tags, the new site emits one.
+  if (!sameJson(robotsDirectives(legacy.robots), robotsDirectives(built.robots)))
+    add('robots', legacy.robots, built.robots);
   if (!sameJson(legacy.h1.map(norm), built.h1.map(norm))) add('h1', legacy.h1, built.h1);
   if (!sameJson(sortKeys(legacy.hreflang), sortKeys(built.hreflang)))
     add('hreflang', legacy.hreflang, built.hreflang);

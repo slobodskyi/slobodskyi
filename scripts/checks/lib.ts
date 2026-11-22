@@ -76,6 +76,25 @@ export interface PageFacts {
   hreflang: Record<string, string>;
 }
 
+/** All robots meta values joined with ", " (pages may carry a page-level and a site-wide tag). */
+function robotsOf(doc: Node): string | null {
+  const values = findAll(doc, (n) => n.tagName === 'meta' && attr(n, 'name')?.toLowerCase() === 'robots')
+    .map((n) => attr(n, 'content')?.trim())
+    .filter((v): v is string => Boolean(v));
+  return values.length ? values.join(', ') : null;
+}
+
+/** Robots directives as a sorted, de-duplicated set ("noindex, max-image-preview:large" → two items). */
+export const robotsDirectives = (robots: string | null | undefined): string[] =>
+  [
+    ...new Set(
+      (robots ?? '')
+        .split(',')
+        .map((d) => d.trim().toLowerCase())
+        .filter(Boolean),
+    ),
+  ].sort();
+
 export const parsePage = (html: string): Node => parseHtml(html);
 
 export function extractFacts(doc: Node): PageFacts {
@@ -92,7 +111,7 @@ export function extractFacts(doc: Node): PageFacts {
     title: title ? textOf(title) : '',
     description: meta(doc, 'name', 'description') ?? null,
     canonical: canonical ? (attr(canonical, 'href') ?? null) : null,
-    robots: meta(doc, 'name', 'robots') ?? null,
+    robots: robotsOf(doc),
     h1: byTag(doc, 'h1').map(textOf),
     hreflang,
   };

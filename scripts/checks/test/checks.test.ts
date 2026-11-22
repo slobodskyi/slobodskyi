@@ -109,6 +109,30 @@ describe('parity', () => {
     expect(runParity({ dist, pages: [legacy()], allowlist: allow('Other') }).critical).toBe(1);
   });
 
+  it('compares robots as a set of directives across all robots metas', () => {
+    const run = (robots: string) =>
+      runParity({
+        dist: makeDist({ 'index.html': page({ robots }) }),
+        pages: [legacy({ robots: 'noindex, max-image-preview:large' })],
+        allowlist: empty,
+      }).critical;
+    expect(run('max-image-preview:large, NOINDEX')).toBe(0);
+    expect(run('max-image-preview:large')).toBe(1);
+    const twoTags = makeDist({
+      'index.html': page({
+        robots: 'noindex',
+        head: '<meta name="robots" content="max-image-preview:large">',
+      }),
+    });
+    expect(
+      runParity({
+        dist: twoTags,
+        pages: [legacy({ robots: 'noindex, max-image-preview:large' })],
+        allowlist: empty,
+      }).critical,
+    ).toBe(0);
+  });
+
   it('flags stale allowlist entries', () => {
     const dist = makeDist({ 'index.html': page() });
     const r = runParity({
