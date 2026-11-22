@@ -17,6 +17,7 @@
     "legacy:crawl": "node --disable-warning=ExperimentalWarning scripts/legacy/crawl.ts",
     "webflow:export": "node --env-file=.env --disable-warning=ExperimentalWarning scripts/webflow/export.ts",
     "webflow:media": "node --disable-warning=ExperimentalWarning scripts/webflow/media.ts",
+    "convert": "node --disable-warning=ExperimentalWarning scripts/convert/index.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
