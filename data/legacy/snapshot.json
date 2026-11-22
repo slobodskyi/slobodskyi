@@ -1,10 +1,10 @@
 {
   "crawledAt": "2026-11-22",
   "origin": "https://slobodskyi.com",
-  "urls": 198,
+  "urls": 196,
   "byStatus": {
     "200": 195,
-    "404": 3
+    "404": 1
   },
   "pages200ByLangAndType": {
     "en:article": 39,
