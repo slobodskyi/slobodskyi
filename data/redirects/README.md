@@ -21,3 +21,11 @@ Normalisation:
 - Owner decision (2026-11-22): two rules pointed to pages that are 404 on the live site and now point
   to live pages: `/courses/chatgpt1` → `/courses` (was `/courses/chatgpt`) and `/create/vibe-coding` →
   `/create/no-code/prd-for-vibe-coding` (was `/create/content`, an unpublished category).
+
+## removed-courses.csv
+
+Owner decision (2026-11-22): the courses, the consultation page and their service pages (payment,
+offer, privacy) are removed in all three languages. Each URL 301s to the closest live page: the
+OnlyFans course → the OnlyFans guide, the AI images course → the AI category, consultation →
+contacts, everything else → the home page of that language. `pnpm convert` reads every CSV here:
+redirected pages are not converted and links to them are rewritten to the final target.

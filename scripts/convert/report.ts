@@ -8,6 +8,8 @@ interface Input {
   issues: { address: string; kind: string; detail: string }[];
   written: { address: string; url: string; status: string; legacyUrls: string[] }[];
   fixes: Record<string, { why: string }>;
+  /** Sources of data/redirects/*.csv rules: live URLs removed on purpose. */
+  staticRedirects: string[];
   snapshot: Map<
     string,
     {
@@ -37,7 +39,7 @@ const norm = (s: string | undefined) =>
     .replace(/\s+/g, ' ')
     .trim();
 
-export function writeReport({ root, issues, written, snapshot, fixes }: Input): void {
+export function writeReport({ root, issues, written, snapshot, fixes, staticRedirects }: Input): void {
   const out: string[] = [];
   const published = written.filter((w) => w.status === 'published');
   const byUrl = new Map<string, string[]>();
@@ -46,7 +48,7 @@ export function writeReport({ root, issues, written, snapshot, fixes }: Input): 
   // 1. URL coverage.
   const live = [...snapshot.values()].filter((p) => p.status === 200 && PAGE_TYPES.has(p.pageType));
   // Live URLs listed in legacyUrls of a published record are redirected on purpose.
-  const redirected = new Set(published.flatMap((w) => w.legacyUrls));
+  const redirected = new Set([...published.flatMap((w) => w.legacyUrls), ...staticRedirects]);
   const missing = live
     .filter((p) => (byUrl.get(p.url)?.length ?? 0) === 0 && !redirected.has(p.url))
     .map((p) => p.url);
@@ -110,7 +112,7 @@ export function writeReport({ root, issues, written, snapshot, fixes }: Input): 
 
   out.push('## URL coverage', '');
   out.push(
-    `Live 200 pages (article/hub/category/page/home): ${live.length}; mapped to exactly one published record: ${live.length - missing.length - dupes.length - redirected.size}; redirected via legacyUrls: ${redirected.size}.`,
+    `Live 200 pages (article/hub/category/page/home): ${live.length}; mapped to exactly one published record: ${live.length - missing.length - dupes.length - live.filter((p) => redirected.has(p.url)).length}; redirected: ${live.filter((p) => redirected.has(p.url)).length}.`,
     '',
   );
   out.push(

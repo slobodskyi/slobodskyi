@@ -11,106 +11,6 @@
       "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was \"Курсы для криейторов\" (copied from the courses page)."
     },
     {
-      "url": "/courses/privacy-policy",
-      "field": "title",
-      "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was the slug \"privacy-policy\"."
-    },
-    {
-      "url": "/courses/payment-problem",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy <title> was the slug \"/payment-problem\" and there was no description: H1 used as title, description added in Step 4."
-    },
-    {
-      "url": "/courses/payment-problem",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy <title> was the slug \"/payment-problem\" and there was no description: H1 used as title, description added in Step 4."
-    },
-    {
-      "url": "/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/courses/privacy-policy",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/courses/privacy-policy",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/courses/public-offer",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/courses/public-offer",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/ru/courses/payment-problem",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy <title> was the slug \"/payment-problem\" and there was no description: H1 used as title, description added in Step 4."
-    },
-    {
-      "url": "/ru/courses/payment-problem",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy <title> was the slug \"/payment-problem\" and there was no description: H1 used as title, description added in Step 4."
-    },
-    {
-      "url": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/ru/courses/privacy-policy",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/ru/courses/privacy-policy",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/ru/courses/privacy-policy",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/ru/courses/public-offer",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
-      "url": "/ru/courses/public-offer",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): placeholder legacy page (H1 \"public-offer-agreement\", slug title, no description): proper H1/title/description in Step 4."
-    },
-    {
       "url": "/ru/search",
       "field": "description",
       "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy page had no meta description: description taken from the first paragraph in Step 4."
@@ -129,21 +29,6 @@
       "url": "/terms-of-service",
       "field": "description",
       "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy page had no meta description: description taken from the first paragraph in Step 4."
-    },
-    {
-      "url": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "title",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "description",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
-    },
-    {
-      "url": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
-      "field": "h1",
-      "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): blank legacy page (no H1, description, text): proposed H1/description/body added in Step 4 (ai.assisted)."
     },
     {
       "url": "/ua/search",
@@ -166,6 +51,21 @@
       "url": "/create/no-code/prd-for-vibe-coding",
       "field": "hreflang",
       "reason": "The ua/ru untranslated copies now 301 to the English guide, so it has no uk/ru alternates (owner decision 2026-11-22)."
+    },
+    {
+      "url": "/courses*",
+      "field": "status",
+      "reason": "Courses, consultation and their service pages removed (owner decision 2026-11-22): 301 to the closest page, see data/redirects/removed-courses.csv."
+    },
+    {
+      "url": "/ua/courses*",
+      "field": "status",
+      "reason": "Courses, consultation and their service pages removed (owner decision 2026-11-22): 301 to the closest page, see data/redirects/removed-courses.csv."
+    },
+    {
+      "url": "/ru/courses*",
+      "field": "status",
+      "reason": "Courses, consultation and their service pages removed (owner decision 2026-11-22): 301 to the closest page, see data/redirects/removed-courses.csv."
     }
   ]
 }
