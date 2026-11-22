@@ -1,0 +1,32 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "slobodskyi-site",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-11-22",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // /about/ -> 301 /about, matching the legacy site.
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page",
+    // Only API routes hit the Worker; every page is served as a static file.
+    "run_worker_first": ["/api/*"],
+  },
+  "observability": { "enabled": true },
+  "env": {
+    "preview": {
+      "name": "slobodskyi-site-preview",
+      // The preview must never be indexed: the Worker runs first on every request
+      // and adds X-Robots-Tag: noindex.
+      "assets": {
+        "directory": "./dist",
+        "binding": "ASSETS",
+        "html_handling": "drop-trailing-slash",
+        "not_found_handling": "404-page",
+        "run_worker_first": true,
+      },
+      "vars": { "ENVIRONMENT": "preview" },
+    },
+  },
+  "vars": { "ENVIRONMENT": "production" },
+}
