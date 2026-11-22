@@ -153,6 +153,8 @@ Owner decisions on the migration (2026-11-22):
   points to the ChatGPT guide in the page's language: `/create/ai/chatgpt`, `/ua/create/ai/chatgpt`,
   `/ru/create/ai/chatgpt`. The URL `/ua/courses/chatgpt` itself stays a 404 (owner decision
   2026-11-22, replaces "kept as is").
+- No contact form (owner decision 2026-11-22): `/contacts` shows the email address
+  oleksandr@slobodskyi.com instead of the Webflow form; the Worker has no `/api/contact`.
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
   now: no form markup and no Beehiiv attribution script on the new site, the surrounding text stays.
   Not a DNS-switch blocker; the parity check documents it as an intended difference.

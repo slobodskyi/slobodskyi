@@ -41,15 +41,6 @@ const ui = {
     notFoundBack: 'Go to the home page',
     playVideo: 'Play video',
     loadEmbed: 'Load',
-    form: {
-      name: 'Name',
-      email: 'Email Address',
-      message: 'Message',
-      submit: 'Submit',
-      wait: 'Please wait...',
-      success: 'Thank you! Your message has been received.',
-      error: 'Oops! Something went wrong while submitting the form.',
-    },
   },
   uk: {
     tools: 'Інструменти',
@@ -84,15 +75,6 @@ const ui = {
     notFoundBack: 'На головну',
     playVideo: 'Відтворити відео',
     loadEmbed: 'Завантажити',
-    form: {
-      name: "Ім'я",
-      email: 'Email',
-      message: 'Повідомлення',
-      submit: 'Надіслати',
-      wait: 'Зачекайте...',
-      success: 'Дякую! Повідомлення отримано.',
-      error: 'Щось пішло не так. Спробуйте ще раз.',
-    },
   },
   ru: {
     tools: 'Инструменты',
@@ -127,15 +109,6 @@ const ui = {
     notFoundBack: 'На главную',
     playVideo: 'Воспроизвести видео',
     loadEmbed: 'Загрузить',
-    form: {
-      name: 'Имя',
-      email: 'Email',
-      message: 'Сообщение',
-      submit: 'Отправить',
-      wait: 'Подождите...',
-      success: 'Спасибо! Сообщение получено.',
-      error: 'Что-то пошло не так. Попробуйте еще раз.',
-    },
   },
 } satisfies Record<Lang, unknown>;
 

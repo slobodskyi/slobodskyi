@@ -1,9 +1,8 @@
 ---
-// Service pages (about, contacts, courses, legal, ...): H1, body, optional FAQ and contact form.
+// Service pages (about, contacts, courses, legal, ...): H1, body, optional FAQ.
 import { render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Faq from '../components/Faq.astro';
-import ContactForm from '../components/ContactForm.astro';
 import { mdxComponents } from '../components/mdx';
 import { absoluteUrl, type Rec } from '../lib/content';
 import { alternatesFor, headFor } from '../lib/seo';
@@ -34,7 +33,6 @@ const { Content } = await render(rec.entry);
       <Content components={mdxComponents} />
       <Faq items={faq} />
     </div>
-    {path === '/contacts' && <ContactForm lang={rec.lang} />}
   </div>
 </Base>
 
