@@ -46,9 +46,6 @@ const avif = await getImage({ src: hero, widths: HERO_WIDTHS, format: 'avif', qu
 </Base>
 
 <style>
-  .home {
-    padding-top: 20px;
-  }
   .home h1 {
     margin-bottom: 0.15em;
   }
@@ -58,7 +55,7 @@ const avif = await getImage({ src: hero, widths: HERO_WIDTHS, format: 'avif', qu
     line-height: 1.4;
   }
   .home :global(.prose > h2:first-child strong) {
-    background: var(--purple-strong);
+    background: var(--color-tint);
   }
   .home :global(.hero) {
     display: block;

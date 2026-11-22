@@ -60,8 +60,8 @@ const { Content } = await render(rec.entry);
     <h1>{data.title}</h1>
     {data.lead && <p class="lead">{data.lead}</p>}
     <p class="meta">
-      <span class="chip-light">{s.minutes(minutes)}</span>
-      <span class="chip-light">
+      <span class="chip">{s.minutes(minutes)}</span>
+      <span class="chip">
         <time datetime={data.updated}>{formatDate(data.updated, rec.lang)}</time>
       </span>
     </p>
@@ -86,9 +86,6 @@ const { Content } = await render(rec.entry);
 </Base>
 
 <style>
-  .article {
-    padding-top: 20px;
-  }
   .lead {
     font-size: 1.05em;
     margin: 0 0 16px;
@@ -97,13 +94,6 @@ const { Content } = await render(rec.entry);
     display: flex;
     gap: 6px;
     margin: 0;
-  }
-  .chip-light {
-    background: var(--surface);
-    border-radius: 6px;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 1;
   }
   .related-title {
     font-size: 24px;

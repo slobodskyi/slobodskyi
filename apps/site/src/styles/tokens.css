@@ -1,0 +1,94 @@
+/* Design tokens. Two levels: raw palette, then roles. Components use roles only, so a dark theme
+   later is a matter of redefining the roles. Breakpoints (media queries cannot use variables):
+   48rem (tablet/desktop) and 75rem (wide). */
+@layer reset, tokens, base, prose, components, utilities;
+
+@layer tokens {
+  :root {
+    /* Palette */
+    --gray-50: #f5f7fa;
+    --gray-100: #eceff4;
+    --gray-200: #dde2ea;
+    --gray-500: #5b5f66;
+    --gray-900: #111318;
+    --white: #fff;
+    --black: #000;
+    --blue-600: #045ff0;
+    --blue-700: #0349b8;
+    --purple-100: #f1e7fb;
+    --green-200: #d8febc;
+
+    /* Roles */
+    --color-bg: var(--gray-50);
+    --color-surface: var(--white);
+    --color-surface-alt: var(--gray-100);
+    --color-text: var(--gray-900);
+    --color-muted: var(--gray-500);
+    --color-border: var(--black);
+    --color-border-soft: var(--gray-200);
+    --color-accent: var(--blue-600);
+    --color-accent-hover: var(--blue-700);
+    --color-on-accent: var(--white);
+    --color-tint: var(--purple-100);
+    --color-mark: var(--green-200);
+    --color-code-bg: var(--gray-900);
+    --color-code-text: var(--gray-50);
+    --color-overlay: rgb(0 0 0 / 65%);
+
+    /* Typography */
+    --font-text:
+      system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    /* --font-heading comes from astro.config.mjs fonts and already ends with the fallbacks. */
+    --font-head: var(--font-heading);
+    --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-base: 17px;
+    --text-lg: 22px;
+    --text-xl: clamp(24px, 4vw, 30px);
+    --text-2xl: clamp(32px, 6vw, 52px);
+    --leading-tight: 1.15;
+    --leading-snug: 1.3;
+    --leading-body: 1.6;
+
+    /* Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 72px;
+
+    /* Shape */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 28px;
+    --radius-pill: 999px;
+    /* Brand "speech bubble": square bottom-left corner. */
+    --radius-bubble: var(--radius-lg) var(--radius-lg) var(--radius-lg) 0;
+    --shadow-sm: 0 1px 2px rgb(16 24 40 / 6%);
+    --shadow-md: 0 12px 32px rgb(16 24 40 / 8%);
+
+    /* Motion */
+    --duration-fast: 150ms;
+    --duration: 220ms;
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+    /* Layout */
+    --w-text: 760px;
+    --w-wide: 1080px;
+    --w-page: 1200px;
+    --gutter: 20px;
+
+    color-scheme: light;
+  }
+
+  @media (min-width: 48rem) {
+    :root {
+      --text-base: 18px;
+    }
+  }
+}
