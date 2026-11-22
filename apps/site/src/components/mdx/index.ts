@@ -9,6 +9,7 @@ import BuyMeACoffee from './BuyMeACoffee.astro';
 import VideoAsk from './VideoAsk.astro';
 import Card from './Card.astro';
 import Cards from './Cards.astro';
+import Table from './Table.astro';
 
 export const mdxComponents = {
   Shot,
@@ -21,4 +22,6 @@ export const mdxComponents = {
   VideoAsk,
   Card,
   Cards,
+  // Element override: every Markdown table gets the scroll wrapper.
+  table: Table,
 };

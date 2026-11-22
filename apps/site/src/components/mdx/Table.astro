@@ -1,0 +1,10 @@
+---
+// Replaces the <table> of Markdown tables (not written by hand in MDX). The wrapper scrolls
+// sideways, so the table itself can stay a real table and fill the text width.
+---
+
+<div class="table-scroll">
+  <table>
+    <slot />
+  </table>
+</div>
