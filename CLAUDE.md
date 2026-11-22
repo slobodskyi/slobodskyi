@@ -14,8 +14,11 @@ hreflang unless the owner explicitly decides otherwise. Never delete or change a
   copies, `content.json`, vectors, D1 rows, search indexes — is derived and must be rebuildable from git
   with one command. Never hand-edit derived data.
 - **Site**: Astro 7, fully static (`apps/site`), served by Cloudflare Workers static assets. Zero JS by
-  default; islands only where needed. The Worker (`apps/site/src/worker.ts`) runs only for `/api/*`
-  (and for every request in the preview env, to add `X-Robots-Tag: noindex`).
+  default; islands only where needed. The Worker (`apps/site/src/worker.ts`) runs first for every path
+  except `/_astro/*`: trailing-slash 301s, `/api/*`, markdown negotiation (`Accept: text/markdown` →
+  the `<url>.md` copy, home pages → `llms.txt`) and, in the preview env, `X-Robots-Tag: noindex`.
+  Home-page `Link` headers live in `apps/site/public/_headers`; robots.txt carries
+  `Content-Signal: search=yes, ai-input=yes, ai-train=yes` (owner decision 2026-11-22).
 - **Core**: `packages/core` holds Zod schemas, `urlFor()`, `legacyAnchor()` and content operations
   (`validate`, `create`, `buildIndex`, `buildRedirects`). Operations read and write only through the
   `ContentSource` interface, never the filesystem directly (`FsSource` now; `GitHubSource` /
