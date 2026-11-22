@@ -56,6 +56,7 @@ interface SnapshotPage {
   title: string;
   description: string;
   robots: string;
+  inSitemap: boolean;
   h1: string[];
   internalLinks: string[];
   anchors: { text: string; legacy: string; slugger: string }[];
@@ -93,7 +94,7 @@ const ARTICLE_COLLECTIONS = [
 // ---------- report ----------
 
 const issues: { address: string; kind: string; detail: string }[] = [];
-const written: { address: string; url: string; status: string }[] = [];
+const written: { address: string; url: string; status: string; legacyUrls: string[] }[] = [];
 
 // ---------- helpers ----------
 
