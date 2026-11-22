@@ -65,13 +65,7 @@ None.
 
 ## Internal links not found on the live page
 
-- `/ru/monetize/memberships/fansly`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/fanvue`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/patreon`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/ton-place`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/webcam`: `/ua/monetize/memberships/onlyfans`
-- `/ua`: `/contacts`
-- `/ru`: `/contacts`
+None: every internal link of a published record also exists on its live page.
 
 ## Webflow fields not carried over
 
