@@ -1,0 +1,54 @@
+---
+// Third-party analytics, loaded after the page is interactive: on the first user interaction or
+// 4 s after `load`, whichever comes first. Nothing here blocks rendering or the LCP.
+// GTM (GA4 is configured inside the container), Meta Pixel, Ahrefs Web Analytics.
+// Cloudflare Web Analytics is injected by Cloudflare itself once the zone is proxied; set
+// CF_BEACON_TOKEN to embed the beacon manually instead.
+const GTM_ID = 'GTM-T9LN2LW5';
+const PIXEL_ID = '285395566127325';
+const AHREFS_KEY = 'f7jH94CTW5yLaVBRflneAA';
+const CF_BEACON_TOKEN = '';
+const config = JSON.stringify({ gtm: GTM_ID, pixel: PIXEL_ID, ahrefs: AHREFS_KEY, cf: CF_BEACON_TOKEN });
+---
+
+<script is:inline data-analytics={config}>
+  (() => {
+    const cfg = JSON.parse(document.currentScript.dataset.analytics);
+    if (location.hostname !== 'slobodskyi.com') return; // production only
+    let done = false;
+    const add = (src, attrs = {}) => {
+      const s = document.createElement('script');
+      s.async = true;
+      s.src = src;
+      for (const [k, v] of Object.entries(attrs)) s.setAttribute(k, v);
+      document.head.appendChild(s);
+    };
+    const load = () => {
+      if (done) return;
+      done = true;
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      add('https://www.googletagmanager.com/gtm.js?id=' + cfg.gtm);
+      const f = (window.fbq = (...args) => {
+        if (f.callMethod) f.callMethod(...args);
+        else f.queue.push(args);
+      });
+      window._fbq = f;
+      f.push = f;
+      f.loaded = true;
+      f.version = '2.0';
+      f.queue = [];
+      f('init', cfg.pixel);
+      f('track', 'PageView');
+      add('https://connect.facebook.net/en_US/fbevents.js');
+      add('https://analytics.ahrefs.com/analytics.js', { 'data-key': cfg.ahrefs });
+      if (cfg.cf)
+        add('https://static.cloudflareinsights.com/beacon.min.js', {
+          'data-cf-beacon': JSON.stringify({ token: cfg.cf }),
+        });
+    };
+    const events = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+    events.forEach((e) => addEventListener(e, load, { once: true, passive: true }));
+    addEventListener('load', () => setTimeout(load, 4000), { once: true });
+  })();
+</script>

@@ -1,0 +1,71 @@
+---
+// Screenshot / figure. `src` is relative to the record folder ("./file.webp"); the page sets
+// Astro.locals.recordDir before rendering the body.
+import { Picture } from 'astro:assets';
+import { resolveImage, isOptimizable } from '../../lib/images';
+
+interface Props {
+  src: string;
+  alt?: string;
+  /** Full-width figure (Webflow "fullwidth"). */
+  wide?: boolean;
+  caption?: string;
+}
+const { src, alt = '', wide = false, caption } = Astro.props;
+const dir = Astro.locals.recordDir;
+if (!dir) throw new Error(`<Shot src="${src}"> rendered without Astro.locals.recordDir`);
+const image = await resolveImage(dir, src);
+const max = Math.min(image.width, 1600);
+const widths = [400, 800, 1200, 1600].filter((w) => w < max).concat(max);
+---
+
+<figure class:list={['shot', { wide }]}>
+  {isOptimizable(image) ? (
+    <Picture
+      src={image}
+      alt={alt}
+      formats={['avif']}
+      fallbackFormat="webp"
+      quality={72}
+      widths={widths}
+      sizes={`(max-width: 800px) 100vw, ${Math.min(max, wide ? 1080 : 760)}px`}
+      loading="lazy"
+    />
+  ) : (
+    <img
+      src={image.src}
+      width={image.width}
+      height={image.height}
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+    />
+  )}
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+  .shot {
+    margin: 1.5em 0;
+  }
+  .shot :global(img) {
+    display: block;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+  }
+  .shot figcaption {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  @media (min-width: 1140px) {
+    .shot.wide {
+      margin-left: calc((760px - 1080px) / 2);
+      margin-right: calc((760px - 1080px) / 2);
+    }
+    .shot.wide :global(img) {
+      width: 100%;
+    }
+  }
+</style>

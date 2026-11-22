@@ -1,0 +1,57 @@
+---
+import type { Crumb } from '../lib/schema-org';
+
+interface Props {
+  /** First crumb is the home page (rendered as an icon); the current page is not included. */
+  crumbs: Crumb[];
+  homeLabel: string;
+}
+const { crumbs, homeLabel } = Astro.props;
+const [home, ...rest] = crumbs;
+const path = (url: string) => url.replace('https://slobodskyi.com', '') || '/';
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumbs">
+  <ol>
+    {home && (
+      <li>
+        <a href={path(home.url)} aria-label={homeLabel} title={homeLabel}>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4 21V9l8-6 8 6v12h-6v-7h-4v7z" />
+          </svg>
+        </a>
+      </li>
+    )}
+    {rest.map((c) => (
+      <li>
+        <a href={path(c.url)}>{c.name}</a>
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 16px 0;
+    font-size: 15px;
+    align-items: center;
+  }
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .breadcrumbs li + li::before {
+    content: '/';
+  }
+  .breadcrumbs a {
+    color: var(--text);
+    display: flex;
+    font-weight: 700;
+  }
+</style>

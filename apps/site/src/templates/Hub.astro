@@ -1,0 +1,46 @@
+---
+// Hub (/create, /connect, ...): H1, intro body, category cards; ItemList in JSON-LD.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Cards from '../components/Cards.astro';
+import { mdxComponents } from '../components/mdx';
+import { absoluteUrl, labelOf, type Rec } from '../lib/content';
+import { alternatesFor, headFor } from '../lib/seo';
+import { hubCategoryCards } from '../lib/cards';
+import { t } from '../lib/i18n';
+import { breadcrumbList, itemList, type Crumb } from '../lib/schema-org';
+
+interface Props {
+  rec: Rec;
+  crumbs: Crumb[];
+}
+const { rec, crumbs } = Astro.props;
+const s = t(rec.lang);
+const head = await headFor(rec);
+const cards = await hubCategoryCards(rec);
+const url = absoluteUrl(rec.url);
+const schema = [
+  breadcrumbList([...crumbs, { name: labelOf(rec), url }]),
+  itemList(cards.map((c) => ({ name: c.title, url: absoluteUrl(c.url) }))),
+];
+Astro.locals.recordDir = rec.dir;
+const { Content } = await render(rec.entry);
+---
+
+<Base head={head} alternates={await alternatesFor(rec)} schema={schema} disclaimer>
+  <div class="container listing">
+    <h1>{rec.data.title}</h1>
+    <div class="prose">
+      <Content components={mdxComponents} />
+    </div>
+    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+    <Cards items={cards} />
+  </div>
+</Base>
+
+<style>
+  .listing {
+    padding-top: 20px;
+  }
+</style>

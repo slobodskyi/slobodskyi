@@ -1,0 +1,40 @@
+---
+interface Props {
+  items: { q: string; a: string }[];
+}
+// Questions from frontmatter `faq`, rendered under the FAQ heading of the body (legacy layout).
+const { items } = Astro.props;
+---
+
+{items.length > 0 && (
+  <div class="faq">
+    {items.map((f) => (
+      <div class="faq-item">
+        <h3>{f.q}</h3>
+        <p>{f.a}</p>
+      </div>
+    ))}
+  </div>
+)}
+
+<style>
+  .faq {
+    margin: 20px 0 40px;
+  }
+  .faq h3 {
+    background: var(--surface);
+    border-radius: 100px 100px 100px 0;
+    margin: 0 0 15px;
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .faq p {
+    background: var(--soft-line);
+    border-radius: 20px 20px 0 20px;
+    margin: 0 0 30px;
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+</style>

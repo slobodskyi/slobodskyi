@@ -1,10 +1,40 @@
 ---
+// 404 page (Workers `not_found_handling: 404-page`). Language follows the requested path.
 import Base from '../layouts/Base.astro';
+import { absoluteUrl } from '../lib/content';
+import { t } from '../lib/i18n';
+import defaultOg from '../assets/home-hero.jpg';
+import { getImage } from 'astro:assets';
+
+const s = t('en');
+const og = await getImage({ src: defaultOg, width: 1200, format: 'jpg', quality: 80 });
 ---
 
-<Base title="Page not found" description="Page not found" lang="en">
-  <h1>Page not found</h1>
-  <p>
-    <a href="/">Go to the home page</a>
-  </p>
+<Base
+  head={{ lang: 'en', title: s.notFoundTitle, hreflang: {}, ogType: 'website', ogImage: absoluteUrl(og.src) }}
+>
+  <div class="container nf">
+    <h1>{s.notFoundTitle}</h1>
+    <p>{s.notFoundText}</p>
+    <p class="nf-links">
+      <a href="/">{s.notFoundBack}</a>
+      <a href="/ua" lang="uk">
+        {t('uk').notFoundBack}
+      </a>
+      <a href="/ru" lang="ru">
+        {t('ru').notFoundBack}
+      </a>
+    </p>
+  </div>
 </Base>
+
+<style>
+  .nf {
+    padding: 60px var(--gutter);
+  }
+  .nf-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+// Click-to-load VideoAsk facade.
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+---
+
+<div class="videoask" data-videoask={id}>
+  <button type="button" class="button">
+    ▶ VideoAsk
+  </button>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-videoask]').forEach((box) => {
+    box.querySelector('button')?.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.videoask.com/${box.dataset.videoask}`;
+      iframe.allow =
+        'camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;';
+      iframe.title = 'VideoAsk';
+      box.replaceChildren(iframe);
+      box.classList.add('loaded');
+    });
+  });
+</script>
+
+<style>
+  .videoask {
+    margin: 1.5em 0;
+    display: flex;
+    justify-content: center;
+  }
+  .videoask.loaded {
+    display: block;
+    height: 600px;
+  }
+  .videoask :global(iframe) {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 24px;
+  }
+</style>

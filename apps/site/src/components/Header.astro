@@ -1,0 +1,209 @@
+---
+import { LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
+import { LANG_NAME, LANG_SHORT, t } from '../lib/i18n';
+import { hubsOf, labelOf } from '../lib/content';
+
+interface Props {
+  lang: Lang;
+  /** URL of the current page in each language it exists in; other languages link to their home. */
+  alternates: Partial<Record<Lang, string>>;
+}
+const { lang, alternates } = Astro.props;
+const s = t(lang);
+const p = (route: string) => withLangPrefix(lang, route);
+const hubs = (await hubsOf(lang)).map((h) => ({ label: labelOf(h), url: h.url }));
+const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(l, '/') }));
+// Zero-JS menus: <details> dropdowns; the mobile menu is a separate <details>.
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href={p('/')} class="logo" aria-label={s.home}>
+      <img src="/logo.svg" width="50" height="50" alt="Logo: Oleksandr Slobodskyi" />
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <a href={p('/tools')} class="nav-link">
+        {s.tools}
+      </a>
+      <a href={p('/courses')} class="nav-link">
+        {s.courses}
+      </a>
+      <details class="dropdown">
+        <summary class="nav-link">{s.guides}</summary>
+        <div class="dropdown-list">
+          {hubs.map((h) => (
+            <a href={h.url}>{h.label}</a>
+          ))}
+        </div>
+      </details>
+      <details class="dropdown">
+        <summary class="nav-link" aria-label={s.language}>
+          {LANG_SHORT[lang]}
+        </summary>
+        <div class="dropdown-list dropdown-right">
+          {langs.map((l) => (
+            <a
+              href={l.url}
+              hreflang={l.lang}
+              lang={l.lang}
+              aria-current={l.lang === lang ? 'true' : undefined}
+            >
+              {LANG_NAME[l.lang]}
+            </a>
+          ))}
+        </div>
+      </details>
+    </nav>
+    <details class="nav-mobile">
+      <summary aria-label={s.menu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </summary>
+      <nav class="mobile-panel" aria-label="Mobile">
+        <a href={p('/tools')}>{s.tools}</a>
+        <a href={p('/courses')}>{s.courses}</a>
+        <p class="mobile-group">{s.guides}</p>
+        {hubs.map((h) => (
+          <a href={h.url} class="mobile-sub">
+            {h.label}
+          </a>
+        ))}
+        <p class="mobile-group">{s.language}</p>
+        {langs.map((l) => (
+          <a href={l.url} hreflang={l.lang} lang={l.lang} class="mobile-sub">
+            {LANG_NAME[l.lang]}
+          </a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    padding: 10px var(--gutter);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .logo {
+    display: block;
+    line-height: 0;
+  }
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    display: block;
+    padding: 12px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  summary.nav-link::-webkit-details-marker {
+    display: none;
+  }
+  summary.nav-link::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-3px) rotate(45deg);
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 180px;
+    background: var(--soft-line);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .dropdown-right {
+    left: auto;
+    right: 0;
+  }
+  .dropdown-list a,
+  .mobile-panel a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .dropdown-list a:hover,
+  .mobile-panel a:hover {
+    background: var(--purple);
+  }
+  .nav-mobile {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .nav-desktop {
+      display: none;
+    }
+    .nav-mobile {
+      display: block;
+    }
+    .nav-mobile summary {
+      list-style: none;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+    }
+    .nav-mobile summary::-webkit-details-marker {
+      display: none;
+    }
+    .nav-mobile summary span {
+      display: block;
+      height: 2px;
+      background: var(--text);
+    }
+    .mobile-panel {
+      position: absolute;
+      left: var(--gutter);
+      right: var(--gutter);
+      top: 70px;
+      z-index: 30;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      padding: 6px 0;
+    }
+    .mobile-group {
+      margin: 8px 20px 0;
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+    .mobile-panel .mobile-sub {
+      padding-left: 32px;
+    }
+  }
+</style>

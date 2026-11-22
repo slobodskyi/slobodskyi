@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-preview",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": [
+        "-c",
+        "eval \"$(fnm env)\" && fnm use 22.23.5 >/dev/null && cd apps/site && npx wrangler dev --port 8787"
+      ],
+      "port": 8787
+    }
+  ]
+}

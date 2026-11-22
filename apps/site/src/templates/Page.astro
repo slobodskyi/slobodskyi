@@ -1,0 +1,45 @@
+---
+// Service pages (about, contacts, courses, legal, ...): H1, body, optional FAQ and contact form.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Faq from '../components/Faq.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { mdxComponents } from '../components/mdx';
+import { absoluteUrl, type Rec } from '../lib/content';
+import { alternatesFor, headFor } from '../lib/seo';
+import { breadcrumbList, faqPage, profilePage, type Crumb } from '../lib/schema-org';
+
+interface Props {
+  rec: Rec;
+  crumbs: Crumb[];
+}
+const { rec, crumbs } = Astro.props;
+const data = rec.data;
+const faq = 'faq' in data ? data.faq : [];
+const path = 'path' in data ? data.path : rec.url;
+const head = await headFor(rec);
+const url = absoluteUrl(rec.url);
+const schema: Record<string, unknown>[] = [breadcrumbList([...crumbs, { name: data.title, url }])];
+if (path === '/about') schema.push(profilePage({ url, created: data.created, updated: data.updated }));
+if (faq.length) schema.push(faqPage(faq));
+Astro.locals.recordDir = rec.dir;
+const { Content } = await render(rec.entry);
+---
+
+<Base head={head} alternates={await alternatesFor(rec)} schema={schema}>
+  <div class="container page">
+    <h1>{data.title}</h1>
+    {data.lead && <p class="lead">{data.lead}</p>}
+    <div class="prose">
+      <Content components={mdxComponents} />
+      <Faq items={faq} />
+    </div>
+    {path === '/contacts' && <ContactForm lang={rec.lang} />}
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-top: 20px;
+  }
+</style>
