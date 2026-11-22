@@ -101,6 +101,6 @@ from,to,status
 /ua/create/ai/what-is-ai,/ua/create/ai,301
 /create/ai/what-is-ai,/create/ai,301
 /courses/public-offer-agreement,/courses/public-offer,301
-/courses/chatgpt1,/courses/chatgpt,301
+/courses/chatgpt1,/courses,301
 /courses/payment-success,/courses/payment-success-67dd392a3c9d80c3ee009047,301
-/create/vibe-coding,/create/content,301
+/create/vibe-coding,/create/no-code/prd-for-vibe-coding,301

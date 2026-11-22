@@ -18,6 +18,6 @@ Normalisation:
 - Percent-encoded Cyrillic sources (6 rules) are kept as exported; that Cloudflare matches them is
   verified on the preview in Step 7.
 
-Open (owner decision): two rules point to pages that are 404 on the live site —
-`/courses/chatgpt1 → /courses/chatgpt` and `/create/vibe-coding → /create/content`. Kept 1:1 for now;
-`pnpm content redirects` reports them as "target is not a live page".
+- Owner decision (2026-11-22): two rules pointed to pages that are 404 on the live site and now point
+  to live pages: `/courses/chatgpt1` → `/courses` (was `/courses/chatgpt`) and `/create/vibe-coding` →
+  `/create/no-code/prd-for-vibe-coding` (was `/create/content`, an unpublished category).
