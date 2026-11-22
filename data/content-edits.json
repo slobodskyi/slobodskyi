@@ -186,6 +186,24 @@
       "find": "вопросы, которые люди задают на моём курсе и консультациях",
       "replace": "вопросы, которые мне задают люди",
       "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fansly:uk",
+      "find": "<Callout>\n  Зараз я працюю над практичним онлайн-курсом з заробітку та просування на адалт-платформах. Щоб отримати сповіщення про його запуск, [підпишіться на  Telegram-бот](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:en",
+      "find": "<Callout>\n  I am currently working on a practical online course on earning money and promoting on adult platforms. To receive a notification about its launch, [subscribe to Telegram bot](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:en",
+      "find": "<Callout>\n  I am currently working on a practical online course on earning money and promoting on adult platforms. To receive a notification about its launch, [subscribe to Telegram bot](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
     }
   ]
 }
