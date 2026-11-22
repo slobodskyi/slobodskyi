@@ -61,12 +61,19 @@ Types: `guides essays log til links notes projects pages hubs categories`.
   braces are JS expressions and break the build.
 - `extractHeadings()` from core is the single source of anchors for the TOC, `content.json` and section
   addresses. Do not use Astro's `headings` (it skips JSX headings).
-- `visibility: private` content never reaches the build and may live only in `content/notes/`.
+- `visibility: private` content never reaches the build. The repository is temporarily public (owner
+  decision 2026-11-22, to save GitHub Actions minutes during the migration; it goes private again
+  later). Git history stays readable by anyone who cloned it in that window, so private notes are never
+  committed here: the pre-commit hook blocks them in every folder. They live outside this repo (a
+  private store comes with the control panel); the schema still allows them only in `content/notes/`.
+  Drafts (`status: draft`) are committed and visible on GitHub while the repo is public.
 
 ## Safety rules for machines
 
 - Bots, agents and the admin **only propose**: new files in `content/inbox/` or a `draft/<slug>` branch →
-  PR. Publishing = merge into `main`, and **only the owner merges**.
+  PR. Publishing = merge into `main`. Bots and automated agents never merge. Claude Code sessions
+  working for the owner may merge a PR themselves once **all** checks are green (owner decision
+  2026-11-22), using merge commits; anything red or unchecked waits for the owner.
 - Mark machine-made content in frontmatter (`ai: { assisted: true }`).
 - Never commit secrets. Tokens live in `.env` / `.dev.vars` (git-ignored) or Cloudflare secrets.
 - Never switch DNS, cancel anything in Webflow, or touch `slobo.click` (separate service).
