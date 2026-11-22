@@ -1,0 +1,111 @@
+---
+// Guide (article): breadcrumbs, H1, lead, reading time, updated date, TOC, body, FAQ, author,
+// share links, Patreon CTA, related guides.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Toc from '../components/Toc.astro';
+import Faq from '../components/Faq.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import Share from '../components/Share.astro';
+import PatreonCta from '../components/PatreonCta.astro';
+import Cards from '../components/Cards.astro';
+import { mdxComponents } from '../components/mdx';
+import { absoluteUrl, headingsOf, readingTime, relatedOf, type Rec } from '../lib/content';
+import { alternatesFor, headFor } from '../lib/seo';
+import { formatDate, t } from '../lib/i18n';
+import { blogPosting, breadcrumbList, faqPage, type Crumb } from '../lib/schema-org';
+import { guideCard } from '../lib/cards';
+
+interface Props {
+  rec: Rec;
+  crumbs: Crumb[];
+}
+const { rec, crumbs } = Astro.props;
+if (rec.data.type !== 'guide') throw new Error('Article template expects a guide');
+const data = rec.data;
+const s = t(rec.lang);
+const head = await headFor(rec);
+const headings = headingsOf(rec);
+const minutes = readingTime(rec);
+const related = await relatedOf(rec);
+const relatedCards = await Promise.all(related.map(guideCard));
+const body = (rec.entry.body ?? '').trimEnd();
+// The legacy FAQ heading is the last line of the body; add one only when it is missing.
+const lastLine = body.split('\n').pop() ?? '';
+const needsFaqHeading = data.faq.length > 0 && !/^(##\s|<h2\b)/.test(lastLine);
+const url = absoluteUrl(rec.url);
+const schema = [
+  blogPosting({
+    url,
+    lang: rec.lang,
+    headline: data.title,
+    description: data.lead ?? data.description,
+    image: head.ogImage,
+    created: data.created,
+    updated: data.updated,
+    section: crumbs[1]?.name ?? data.hub,
+    minutes,
+  }),
+  breadcrumbList([...crumbs, { name: data.title, url }]),
+  ...(data.faq.length ? [faqPage(data.faq)] : []),
+];
+const hasDisclaimer = /\/affiliate-disclosure\)/.test(body);
+Astro.locals.recordDir = rec.dir;
+const { Content } = await render(rec.entry);
+---
+
+<Base head={head} alternates={await alternatesFor(rec)} schema={schema} disclaimer={!hasDisclaimer} progress>
+  <article class="container article">
+    <h1>{data.title}</h1>
+    {data.lead && <p class="lead">{data.lead}</p>}
+    <p class="meta">
+      <span class="chip-light">{s.minutes(minutes)}</span>
+      <span class="chip-light">
+        <time datetime={data.updated}>{formatDate(data.updated, rec.lang)}</time>
+      </span>
+    </p>
+    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+    <Toc headings={headings} title={s.toc} />
+    <div class="prose">
+      <Content components={mdxComponents} />
+      {needsFaqHeading && <h2 id="faq">{s.faq}</h2>}
+      <Faq items={data.faq} />
+    </div>
+    <AuthorBox lang={rec.lang} />
+    <Share url={url} title={data.title} label={s.share} />
+    <PatreonCta lang={rec.lang} />
+    {relatedCards.length > 0 && (
+      <section>
+        <h2 class="related-title">{s.related}</h2>
+        <Cards items={relatedCards} />
+      </section>
+    )}
+    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+  </article>
+</Base>
+
+<style>
+  .article {
+    padding-top: 20px;
+  }
+  .lead {
+    font-size: 1.05em;
+    margin: 0 0 16px;
+  }
+  .meta {
+    display: flex;
+    gap: 6px;
+    margin: 0;
+  }
+  .chip-light {
+    background: var(--surface);
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+  .related-title {
+    font-size: 24px;
+  }
+</style>

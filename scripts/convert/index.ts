@@ -56,6 +56,7 @@ interface SnapshotPage {
   title: string;
   description: string;
   robots: string;
+  inSitemap: boolean;
   h1: string[];
   internalLinks: string[];
   anchors: { text: string; legacy: string; slugger: string }[];
@@ -93,7 +94,7 @@ const ARTICLE_COLLECTIONS = [
 // ---------- report ----------
 
 const issues: { address: string; kind: string; detail: string }[] = [];
-const written: { address: string; url: string; status: string }[] = [];
+const written: { address: string; url: string; status: string; legacyUrls: string[] }[] = [];
 
 // ---------- helpers ----------
 
@@ -170,7 +171,12 @@ function write(collection: Collection, id: string, lang: Lang, data: Record<stri
   const file = join(CONTENT, collection, id, `${lang}.mdx`);
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, serializeDocument(data, body));
-  written.push({ address, url: urlFor(lang, collection, parsed.data), status: String(data.status) });
+  written.push({
+    address,
+    url: urlFor(lang, collection, parsed.data),
+    status: String(data.status),
+    legacyUrls: parsed.data.legacyUrls,
+  });
 }
 
 /** Drops undefined values so YAML stays clean; key order = insertion order. */
@@ -224,6 +230,26 @@ function convertGuides() {
     for (const lang of LANGS)
       for (const it of data.items[lang] ?? [])
         if (!ids.has(it.id) || lang === 'en') ids.set(it.id, it.fieldData.slug);
+    // Localized copies whose body is the English one verbatim are not translations: they are not
+    // converted, and their URLs 301 to the English guide (owner decision 2026-11-22).
+    const enById = new Map((data.items.en ?? []).map((it) => [it.id, it]));
+    const untranslated = new Map<string, string[]>(); // Webflow item id → legacy paths
+    const skip = new Set<string>(); // "<item id>:<lang>"
+    for (const lang of LANGS) {
+      if (lang === 'en') continue;
+      for (const it of data.items[lang] ?? []) {
+        const en = enById.get(it.id);
+        if (!en || typeof en.fieldData['post-body'] !== 'string') continue;
+        if (it.fieldData['post-body'] !== en.fieldData['post-body']) continue;
+        const cat = catById.get(String(it.fieldData['sub-category']));
+        const hub = hubById.get(String(it.fieldData.category)) ?? cat?.hub;
+        if (!cat || !hub) continue;
+        const path = withLangPrefix(lang, `/${hub}/${cat.slug}/${it.fieldData.slug}`);
+        skip.add(`${it.id}:${lang}`);
+        if (snapshot.get(path)?.status === 200)
+          untranslated.set(it.id, [...(untranslated.get(it.id) ?? []), path]);
+      }
+    }
     for (const lang of LANGS) {
       for (const it of data.items[lang] ?? []) {
         const id = ids.get(it.id) ?? it.fieldData.slug;
@@ -231,6 +257,13 @@ function convertGuides() {
         const address = `guides/${id}:${lang}`;
         const dir = join(CONTENT, 'guides', id);
         const ctx = makeContext(address, dir, lang);
+        if (skip.has(`${it.id}:${lang}`)) {
+          ctx.issue(
+            'untranslated',
+            'body equals the English one; not converted (a live URL redirects to the English guide)',
+          );
+          continue;
+        }
         const cat = catById.get(String(fd['sub-category']));
         const hub = hubById.get(String(fd.category)) ?? cat?.hub;
         if (!cat || !hub) {
@@ -267,6 +300,7 @@ function convertGuides() {
           created: day(it.createdOn),
           updated: day(it.lastUpdated),
           faq: typeof fd.faq === 'string' ? parseFaq(fd.faq, ctx) : undefined,
+          legacyUrls: lang === 'en' ? untranslated.get(it.id) : undefined,
           ai: { assisted: false },
         });
         const live = snapshot.get(withLangPrefix(lang, `/${hub}/${cat.slug}/${fd.slug}`));
@@ -480,6 +514,8 @@ function convertFromSnapshot(
         visibility: 'public',
         status: 'published',
         noindex: noindex || undefined,
+        // Indexable but absent from the live sitemap (e.g. hidden course pages): keep it that way.
+        sitemap: !noindex && !page.inSitemap ? false : undefined,
         created: dates?.created ?? '2026-11-22',
         updated: dates?.updated ?? '2026-11-22',
         ai: fix?.body
@@ -490,6 +526,11 @@ function convertFromSnapshot(
     );
   }
 }
+
+/** Webflow "name" of a CMS item in a locale: the short label used in menus and breadcrumbs. */
+const cmsName = (cms: CmsCollection, itemId: string, lang: Lang): string | undefined =>
+  str((cms.items[lang] ?? []).find((i) => i.id === itemId)?.fieldData.name) ??
+  str(cms.items.en.find((i) => i.id === itemId)?.fieldData.name);
 
 function convertHubsAndCategories() {
   for (const it of hubsCms.items.en) {
@@ -503,7 +544,12 @@ function convertHubsAndCategories() {
       continue;
     }
     const image = (it.fieldData['category-image'] as { url?: string } | null)?.url;
-    convertFromSnapshot('hubs', hub, `/${hub}`, () => ({ type: 'hub', hub, cover: image }));
+    convertFromSnapshot('hubs', hub, `/${hub}`, (lang) => ({
+      type: 'hub',
+      label: cmsName(hubsCms, it.id, lang),
+      hub,
+      cover: image,
+    }));
   }
   for (const it of catsCms.items.en) {
     const cat = catById.get(it.id);
@@ -525,7 +571,13 @@ function convertHubsAndCategories() {
       'categories',
       cat.slug,
       `/${cat.hub}/${cat.slug}`,
-      () => ({ type: 'category', hub: cat.hub, category: cat.slug, cover: image }),
+      (lang) => ({
+        type: 'category',
+        label: cmsName(catsCms, it.id, lang),
+        hub: cat.hub,
+        category: cat.slug,
+        cover: image,
+      }),
       draft,
     );
   }
@@ -563,6 +615,11 @@ const PAYMENT_SUCCESS: Record<Lang, Required<Pick<Fix, 'title' | 'description' |
     description: 'Спасибо за оплату. Детали доступа уже отправлены на вашу почту.',
     body: 'Спасибо за оплату! Детали доступа уже отправлены на вашу почту. Если что-то не так, [напишите мне](/ru/contacts).\n',
   },
+};
+const CONTACTS_BODY: Record<Lang, string> = {
+  en: 'Feel free to contact me with any questions: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
+  uk: 'Пишіть з будь-якими питаннями: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
+  ru: 'Пишите с любыми вопросами: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
 };
 export const FIXES: Record<string, Fix> = {
   '/courses/privacy-policy': {
@@ -632,6 +689,15 @@ export const FIXES: Record<string, Fix> = {
     seoTitle: 'Инструменты для криейторов',
     why: '<title> was copied from /ru/courses ("Курсы для криейторов")',
   },
+  ...Object.fromEntries(
+    (['en', 'uk', 'ru'] as const).map((lang) => [
+      withLangPrefix(lang, '/contacts'),
+      {
+        body: CONTACTS_BODY[lang],
+        why: 'the page was only a Webflow form; the form is dropped and the email address shown instead (owner decision)',
+      },
+    ]),
+  ),
 };
 
 // Service pages: id = Webflow page slug (en), path = legacy route.

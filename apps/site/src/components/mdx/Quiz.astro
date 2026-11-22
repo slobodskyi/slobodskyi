@@ -1,0 +1,41 @@
+---
+// Quiz widget from scripts.slobodskyi.com, loaded only when a quiz scrolls near the viewport.
+interface Props {
+  id: string;
+  theme?: string;
+}
+const { id, theme = 'light' } = Astro.props;
+---
+
+<div class="quiz" data-slobodskyi-quiz={id} data-slobodskyi-quiz-theme={theme}></div>
+
+<script>
+  const quizzes = document.querySelectorAll('[data-slobodskyi-quiz]');
+  if (quizzes.length) {
+    const load = () => {
+      if (document.querySelector('script[data-quiz-loader]')) return;
+      const s = document.createElement('script');
+      s.src = 'https://scripts.slobodskyi.com/quiz.js';
+      s.async = true;
+      s.dataset.quizLoader = '';
+      document.body.appendChild(s);
+    };
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          load();
+        }
+      },
+      { rootMargin: '600px' },
+    );
+    quizzes.forEach((q) => io.observe(q));
+  }
+</script>
+
+<style>
+  .quiz {
+    margin: 2em 0;
+    min-height: 120px;
+  }
+</style>

@@ -1,0 +1,76 @@
+---
+// Home page: H1, subtitle, hero image (LCP), body with the hub card list after "Where to Start".
+import { render } from 'astro:content';
+import { getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import HomeH2 from '../components/HomeH2.astro';
+import Cards from '../components/Cards.astro';
+import { mdxComponents } from '../components/mdx';
+import hero from '../assets/home-hero.jpg';
+import { headingsOf, hubsOf, type Rec } from '../lib/content';
+import { alternatesFor, headFor } from '../lib/seo';
+import { hubCard } from '../lib/cards';
+import { HERO_SIZES, HERO_WIDTHS } from '../lib/hero';
+import { t } from '../lib/i18n';
+
+interface Props {
+  rec: Rec;
+}
+const { rec } = Astro.props;
+const head = await headFor(rec);
+const cards = await Promise.all((await hubsOf(rec.lang)).map(hubCard));
+const h2 = headingsOf(rec).filter((h) => h.depth === 2);
+Astro.locals.home = {
+  heroAfter: h2[0]?.anchor,
+  heroAlt: t(rec.lang).authorName,
+  cardsBefore: h2[2]?.anchor,
+  cards,
+};
+Astro.locals.recordDir = rec.dir;
+const { Content } = await render(rec.entry);
+const avif = await getImage({ src: hero, widths: HERO_WIDTHS, format: 'avif', quality: 72 });
+---
+
+<Base
+  head={head}
+  alternates={await alternatesFor(rec)}
+  preloadImage={{ srcset: avif.srcSet.attribute, sizes: HERO_SIZES, type: 'image/avif' }}
+>
+  <div class="container home">
+    <h1>{rec.data.title}</h1>
+    <div class="prose">
+      <Content components={{ ...mdxComponents, h2: HomeH2 }} />
+      {!h2[2] && <Cards items={cards} id="start" />}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .home {
+    padding-top: 20px;
+  }
+  .home h1 {
+    margin-bottom: 0.15em;
+  }
+  .home :global(.prose > h2:first-child) {
+    margin-top: 0;
+    font-size: clamp(18px, 3vw, 26px);
+    line-height: 1.4;
+  }
+  .home :global(.prose > h2:first-child strong) {
+    background: var(--purple-strong);
+  }
+  .home :global(.hero) {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 40px;
+    margin: 24px 0;
+  }
+  @media (min-width: 600px) {
+    .home :global(.hero) {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>

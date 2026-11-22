@@ -1,0 +1,53 @@
+---
+interface Props {
+  url: string; // absolute
+  title: string;
+  label: string;
+}
+// Plain share links (no third-party script): X, Facebook, LinkedIn, Telegram, Threads.
+const { url, title, label } = Astro.props;
+const u = encodeURIComponent(url);
+const tt = encodeURIComponent(title);
+const links = [
+  { name: 'X', href: `https://x.com/intent/post?url=${u}&text=${tt}` },
+  { name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${u}` },
+  { name: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}` },
+  { name: 'Telegram', href: `https://t.me/share/url?url=${u}&text=${tt}` },
+  { name: 'Threads', href: `https://www.threads.com/intent/post?text=${tt}%20${u}` },
+];
+---
+
+<div class="share">
+  <span class="share-label">{label}:</span>
+  {links.map((l) => (
+    <a href={l.href} target="_blank" rel="noopener nofollow">
+      {l.name}
+    </a>
+  ))}
+</div>
+
+<style>
+  .share {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    align-items: center;
+    font-size: 15px;
+    margin: 24px 0;
+  }
+  .share-label {
+    font-weight: 700;
+  }
+  .share a {
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    padding: 4px 12px;
+    text-decoration: none;
+    background: var(--surface);
+  }
+  .share a:hover {
+    background: var(--text);
+    color: var(--surface);
+  }
+</style>

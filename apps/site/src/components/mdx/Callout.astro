@@ -1,0 +1,48 @@
+---
+// Highlighted quote of the author (legacy blockquote style with the author avatar).
+import { Image } from 'astro:assets';
+import author from '../../assets/author.webp';
+---
+
+<blockquote class="callout">
+  <slot />
+  <Image
+    src={author}
+    alt=""
+    width={40}
+    height={40}
+    densities={[1, 2]}
+    loading="lazy"
+    class="callout-avatar"
+  />
+</blockquote>
+
+<style>
+  .callout {
+    background: var(--surface);
+    border-radius: 40px 40px 40px 0;
+    margin: 50px 0;
+    padding: 50px 50px 36px;
+    font-family: var(--heading);
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.55;
+  }
+  .callout :global(p) {
+    margin: 0 0 0.8em;
+  }
+  .callout :global(strong) {
+    background: none;
+  }
+  .callout-avatar {
+    display: block;
+    border-radius: 50%;
+    margin-top: 12px;
+  }
+  @media (max-width: 479px) {
+    .callout {
+      padding: 28px 24px 24px;
+      font-size: 17px;
+    }
+  }
+</style>

@@ -1,0 +1,51 @@
+---
+// Category (/create/ai, ...): H1, breadcrumbs, guide cards, TOC, body.
+import { render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Cards from '../components/Cards.astro';
+import Toc from '../components/Toc.astro';
+import { mdxComponents } from '../components/mdx';
+import { absoluteUrl, labelOf, guidesOf, headingsOf, type Rec } from '../lib/content';
+import { alternatesFor, headFor } from '../lib/seo';
+import { guideCard } from '../lib/cards';
+import { t } from '../lib/i18n';
+import { breadcrumbList, itemList, type Crumb } from '../lib/schema-org';
+
+interface Props {
+  rec: Rec;
+  crumbs: Crumb[];
+}
+const { rec, crumbs } = Astro.props;
+if (rec.data.type !== 'category') throw new Error('Category template expects a category');
+const s = t(rec.lang);
+const head = await headFor(rec);
+const guides = await guidesOf(rec.lang, rec.data.hub, rec.data.category);
+const cards = await Promise.all(guides.map(guideCard));
+const url = absoluteUrl(rec.url);
+const schema = [
+  breadcrumbList([...crumbs, { name: labelOf(rec), url }]),
+  itemList(cards.map((c) => ({ name: c.title, url: absoluteUrl(c.url) }))),
+];
+const hasDisclaimer = /\/affiliate-disclosure\)/.test(rec.entry.body ?? '');
+Astro.locals.recordDir = rec.dir;
+const { Content } = await render(rec.entry);
+---
+
+<Base head={head} alternates={await alternatesFor(rec)} schema={schema} disclaimer={!hasDisclaimer} progress>
+  <div class="container listing">
+    <h1>{rec.data.title}</h1>
+    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+    {cards.length > 0 && <Cards items={cards} />}
+    <Toc headings={headingsOf(rec)} title={s.toc} />
+    <div class="prose">
+      <Content components={mdxComponents} />
+    </div>
+  </div>
+</Base>
+
+<style>
+  .listing {
+    padding-top: 20px;
+  }
+</style>

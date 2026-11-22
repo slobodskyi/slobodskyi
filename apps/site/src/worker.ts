@@ -1,7 +1,6 @@
 /// <reference types="@cloudflare/workers-types" />
 // Worker entry. Static pages are served from `dist` by Workers static assets; this code only
 // runs for /api/* (see `run_worker_first` in wrangler.jsonc) and for preview noindex headers.
-// The contact endpoint (/api/contact) is added in Step 5.
 
 interface Env {
   ASSETS: Fetcher;

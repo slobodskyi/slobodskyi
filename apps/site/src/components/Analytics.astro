@@ -1,0 +1,16 @@
+---
+// Analytics: Cloudflare Web Analytics only (owner decision 2026-11-22). Cookie-free, so no consent
+// banner is needed. GTM/GA4, Meta Pixel and Ahrefs from the legacy site are dropped on purpose.
+// Cloudflare injects the beacon itself once Web Analytics is enabled for the proxied zone. To embed
+// it manually instead (e.g. before the DNS switch), set CF_BEACON_TOKEN; the token is public.
+const CF_BEACON_TOKEN = '';
+---
+
+{CF_BEACON_TOKEN && (
+  <script
+    is:inline
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={JSON.stringify({ token: CF_BEACON_TOKEN })}
+  />
+)}

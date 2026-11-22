@@ -1,0 +1,42 @@
+---
+import type { Lang } from '@slobodskyi/core';
+import { t } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const s = t(Astro.props.lang);
+---
+
+<section class="patreon">
+  <p>{s.patreonText}</p>
+  <a
+    class="button"
+    href="https://www.patreon.com/slobodskyi?utm_source=slobodskyi-com&utm_medium=after_article&utm_campaign=static"
+    target="_blank"
+    rel="noopener"
+  >
+    {s.patreonButton}
+  </a>
+</section>
+
+<style>
+  .patreon {
+    background: linear-gradient(135deg, #f1e7fb, #fff);
+    border-radius: 40px 40px 40px 0;
+    padding: 40px;
+    margin: 48px 0;
+  }
+  .patreon p {
+    margin: 0 0 24px;
+  }
+  .patreon .button {
+    display: block;
+    text-align: center;
+  }
+  @media (max-width: 479px) {
+    .patreon {
+      padding: 24px;
+    }
+  }
+</style>

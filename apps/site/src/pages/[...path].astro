@@ -1,0 +1,38 @@
+---
+// Every published record, at exactly urlFor() of its frontmatter.
+import { publishedRecords, type Rec } from '../lib/content';
+import { crumbsFor } from '../lib/nav';
+import Article from '../templates/Article.astro';
+import Hub from '../templates/Hub.astro';
+import Category from '../templates/Category.astro';
+import Home from '../templates/Home.astro';
+import Page from '../templates/Page.astro';
+
+export async function getStaticPaths() {
+  const records = await publishedRecords();
+  return records.map((rec) => ({
+    params: { path: rec.url === '/' ? undefined : rec.url.slice(1) },
+    props: { rec },
+  }));
+}
+
+interface Props {
+  rec: Rec;
+}
+const { rec } = Astro.props;
+const crumbs = await crumbsFor(rec);
+const type = rec.data.type;
+const isHome = type === 'page' && rec.data.path === '/';
+---
+
+{isHome ? (
+  <Home rec={rec} />
+) : type === 'guide' ? (
+  <Article rec={rec} crumbs={crumbs} />
+) : type === 'hub' ? (
+  <Hub rec={rec} crumbs={crumbs} />
+) : type === 'category' ? (
+  <Category rec={rec} crumbs={crumbs} />
+) : (
+  <Page rec={rec} crumbs={crumbs} />
+)}
