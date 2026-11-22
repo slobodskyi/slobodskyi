@@ -1,6 +1,5 @@
 ---
 import type { Heading } from '@slobodskyi/core';
-import Icon from './Icon.astro';
 
 interface Props {
   headings: Heading[];
@@ -10,13 +9,11 @@ interface Props {
 const headings = Astro.props.headings.filter((h) => h.depth === 2);
 ---
 
+{/* One list, two looks: a numbered index in the text flow; inside `.toc-rail` on wide screens
+    (Article template) a quiet side rail that marks the section being read. */}
 {headings.length > 1 && (
-  <details class="toc" open>
-    <summary>
-      <Icon name="list" size={20} class="toc-icon" />
-      <span class="toc-title">{Astro.props.title}</span>
-      <Icon name="chevron-down" size={18} class="toc-chevron" />
-    </summary>
+  <nav class="toc" aria-label={Astro.props.title} data-toc>
+    <p class="toc-title">{Astro.props.title}</p>
     <ol>
       {headings.map((h) => (
         <li>
@@ -24,60 +21,129 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
         </li>
       ))}
     </ol>
-  </details>
+  </nav>
 )}
+
+<script>
+  // Marks the link of the section being read (styled only in the side rail). Without JS the
+  // list is still a complete table of contents.
+  for (const toc of document.querySelectorAll<HTMLElement>('[data-toc]')) {
+    const links = [...toc.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')];
+    const targets = links.map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1))));
+    let current = -1;
+    let queued = false;
+    const update = () => {
+      queued = false;
+      // The last heading that has passed under the sticky header.
+      let active = -1;
+      targets.forEach((el, i) => {
+        if (el && el.getBoundingClientRect().top <= 120) active = i;
+      });
+      if (active === current) return;
+      links[current]?.removeAttribute('aria-current');
+      links[active]?.setAttribute('aria-current', 'location');
+      current = active;
+    };
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(update);
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll, { passive: true });
+    update();
+  }
+</script>
 
 <style>
   .toc {
-    border: 1px solid var(--color-border-soft);
-    border-radius: var(--radius-md);
     margin: 0 0 var(--space-6);
     font-size: var(--text-md);
     line-height: 1.4;
-    background: var(--color-surface);
-  }
-  .toc summary {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    padding: var(--space-3) var(--space-4);
-    font-weight: 700;
-    cursor: pointer;
-    list-style: none;
-  }
-  .toc summary::-webkit-details-marker {
-    display: none;
-  }
-  .toc summary:focus-visible {
-    border-radius: var(--radius-md);
   }
   .toc-title {
-    flex: 1;
-  }
-  .toc :global(.toc-icon) {
-    color: var(--color-accent);
-  }
-  .toc :global(.toc-chevron) {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-sm);
     color: var(--color-muted);
-    transition: transform var(--duration-fast) var(--ease);
-  }
-  .toc[open] :global(.toc-chevron) {
-    transform: rotate(180deg);
   }
   .toc ol {
     list-style: none;
     margin: 0;
-    padding: 0 var(--space-2) var(--space-2);
+    padding: 0;
+    counter-reset: toc;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+  .toc li {
+    counter-increment: toc;
+    break-inside: avoid;
+    border-top: 1px solid var(--color-border-soft);
   }
   .toc a {
-    display: block;
-    padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-sm);
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-2) 0;
     color: var(--color-text);
     text-decoration: none;
-    transition: background-color var(--duration-fast) var(--ease);
+    transition: color var(--duration-fast) var(--ease);
+  }
+  .toc a::before {
+    content: counter(toc, decimal-leading-zero);
+    flex: none;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: calc(var(--text-md) * 1.4);
+    color: var(--color-accent);
+    font-variant-numeric: tabular-nums;
   }
   .toc a:hover {
-    background: var(--color-tint);
+    color: var(--color-accent);
+  }
+  /* Two columns, read top to bottom. The list's bottom rule would close only one column,
+     so each item draws its own rule below and the list hides the doubled top one. */
+  @media (min-width: 40rem) {
+    .toc ol {
+      columns: 2;
+      column-gap: var(--space-6);
+      border-top: 1px solid var(--color-border-soft);
+      border-bottom: 0;
+    }
+    .toc li {
+      border-top: 0;
+      border-bottom: 1px solid var(--color-border-soft);
+    }
+  }
+
+  /* Side rail (wide screens, Article template positions it). */
+  @media (min-width: 86rem) {
+    :global(.toc-rail) .toc {
+      font-size: var(--text-sm);
+    }
+    :global(.toc-rail) .toc-title {
+      padding-left: var(--space-4);
+    }
+    :global(.toc-rail) .toc ol {
+      columns: auto;
+      border: 0;
+      border-left: 1px solid var(--color-border-soft);
+    }
+    :global(.toc-rail) .toc li {
+      border: 0;
+    }
+    :global(.toc-rail) .toc a {
+      margin-left: -1px;
+      padding: 6px var(--space-4);
+      border-left: 2px solid transparent;
+      color: var(--color-muted);
+    }
+    :global(.toc-rail) .toc a::before {
+      content: none;
+    }
+    :global(.toc-rail) .toc a:hover {
+      color: var(--color-text);
+    }
+    :global(.toc-rail) .toc a[aria-current] {
+      border-left-color: var(--color-accent);
+      color: var(--color-accent);
+    }
   }
 </style>
