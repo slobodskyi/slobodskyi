@@ -19,7 +19,7 @@ export const attr = (node: Node, name: string): string | undefined =>
   node.attrs?.find((a) => a.name === name)?.value;
 
 /** Depth-first walk in document order. Return false from `visit` to skip a subtree. */
-export function walk(node: Node, visit: (n: Node) => boolean | void): void {
+export function walk(node: Node, visit: (n: Node) => unknown): void {
   if (visit(node) === false) return;
   for (const child of node.childNodes ?? []) walk(child, visit);
 }

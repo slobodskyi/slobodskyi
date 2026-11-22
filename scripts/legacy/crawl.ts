@@ -13,18 +13,7 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { HUBS, LANG_PREFIX, createAnchorer, internalPath, legacyAnchor } from '@slobodskyi/core';
-import {
-  attr,
-  byId,
-  byTag,
-  findAll,
-  innerHtml,
-  meta,
-  parseHtml,
-  rawText,
-  textOf,
-  type Node,
-} from '../lib/html.ts';
+import { attr, byId, byTag, findAll, innerHtml, meta, parseHtml, rawText, textOf } from '../lib/html.ts';
 
 const ORIGIN = 'https://slobodskyi.com';
 const ROOT = join(import.meta.dirname, '..', '..');

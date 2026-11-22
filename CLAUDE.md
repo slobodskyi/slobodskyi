@@ -93,7 +93,13 @@ pnpm content create guides/<id>:<lang> --title "…" --description "…" --field
 pnpm content index --out <file>       # content.json (published public records)
 pnpm content redirects --out <file>   # _redirects from legacyUrls + data/redirects/*.csv
 pnpm content schema --out packages/core/schema.json
+
+pnpm legacy:crawl                     # re-snapshot the live Webflow site into data/legacy/
 ```
+
+`data/legacy/` is the frozen snapshot of the old site (urls.csv, pages.json with SEO fields, JSON-LD,
+links, media and legacy H2 anchors; raw HTML in html/). It is the reference for parity checks; do not
+edit it by hand, re-run the crawler instead.
 
 Exit codes of `pnpm content`: 0 ok, 1 content problems, 2 usage error. `create` checks schema and URL
 uniqueness only; always run `validate` after it.
