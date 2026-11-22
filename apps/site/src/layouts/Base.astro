@@ -3,7 +3,10 @@
 import { Font, getImage } from 'astro:assets';
 import author from '../assets/author.webp';
 import type { Lang } from '@slobodskyi/core';
-import '../styles/global.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/prose.css';
+import '../styles/components.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Analytics from '../components/Analytics.astro';
@@ -70,7 +73,7 @@ const graph = jsonLd([
     )}
     <Font
       cssVariable="--font-heading"
-      preload={[{ weight: 700, subset: head.lang === 'en' ? 'latin' : 'cyrillic' }]}
+      preload={head.lang === 'en' ? [{ subset: 'latin' }] : [{ subset: 'cyrillic' }, { subset: 'latin' }]}
     />
 
     <meta property="og:site_name" content="Oleksandr Slobodskyi" />
@@ -102,6 +105,6 @@ const graph = jsonLd([
     <main id="main">
       <slot />
     </main>
-    <Footer lang={head.lang} disclaimer={disclaimer} />
+    <Footer lang={head.lang} alternates={alternates} disclaimer={disclaimer} />
   </body>
 </html>

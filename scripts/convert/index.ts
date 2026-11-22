@@ -83,6 +83,11 @@ interface WebflowPage {
 const readJson = <T>(path: string): T => JSON.parse(readFileSync(path, 'utf8')) as T;
 const collection = (slug: string) => readJson<CmsCollection>(join(EXPORT, 'collections', `${slug}.json`));
 
+/** Owner text edits of generated records (data/content-edits.json): exact find → replace. */
+const CONTENT_EDITS = readJson<{ edits: { address: string; find: string; replace: string }[] }>(
+  join(ROOT, 'data', 'content-edits.json'),
+).edits;
+
 /** Static redirects (data/redirects/*.csv), chains followed: from → final target. */
 const staticRedirects = new Map<string, string>();
 for (const name of readdirSync(join(ROOT, 'data', 'redirects'))
@@ -198,6 +203,10 @@ function write(collection: Collection, id: string, lang: Lang, data: Record<stri
   // A link rewritten to the record's own URL (e.g. a removed course → this guide) becomes plain text.
   const self = urlFor(lang, collection, parsed.data).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   body = body.replace(new RegExp(`\\[([^\\]]*)\\]\\(${self}\\)`, 'g'), '$1');
+  for (const edit of CONTENT_EDITS.filter((e) => e.address === address)) {
+    if (body.includes(edit.find)) body = body.replace(edit.find, edit.replace);
+    else issues.push({ address, kind: 'edit', detail: `text not found: ${edit.find.slice(0, 80)}` });
+  }
   writeFileSync(file, serializeDocument(data, body));
   written.push({
     address,
@@ -580,6 +589,11 @@ function convertFromSnapshot(
       if (fix.seoTitle !== undefined) seo.seoTitle = fix.seoTitle ?? undefined;
       if (fix.description) seo.description = fix.description;
       if (fix.body) body = fix.body;
+      for (const [from, to] of fix.replace ?? []) {
+        if (!body.includes(from))
+          throw new Error(`FIXES['${url}']: text to replace not found: ${JSON.stringify(from)}`);
+        body = body.replace(from, to);
+      }
     }
     if (!seo.description) {
       seo.description = firstSentences(body);
@@ -679,14 +693,28 @@ interface Fix {
   seoTitle?: string | null;
   description?: string;
   body?: string;
+  /** Exact replacements in the converted body; each `from` must occur, or the conversion fails. */
+  replace?: [from: string, to: string][];
   why: string;
 }
+// The home "Where to Start?" block was never localized in Webflow: /ua and /ru showed it in English,
+// followed by the page's own translation (ru with a heading, uk without one).
+const START_EN =
+  "## Where to Start?\n\nStart with the free guides below. They'll take you from idea to income, step by step.\n\n";
 const CONTACTS_BODY: Record<Lang, string> = {
   en: 'Feel free to contact me with any questions: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
   uk: 'Пишіть з будь-якими питаннями: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
   ru: 'Пишите с любыми вопросами: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
 };
 export const FIXES: Record<string, Fix> = {
+  '/ua': {
+    replace: [[START_EN, '## З чого почати?\n\n']],
+    why: 'the "Where to Start?" block was shown in English; replaced by a Ukrainian heading over the Ukrainian text',
+  },
+  '/ru': {
+    replace: [[START_EN, '']],
+    why: 'the "Where to Start?" block was shown in English next to its Russian translation; the English copy is dropped',
+  },
   '/ua/tools': {
     seoTitle: 'Інструменти для кріейторів',
     why: '<title> was copied from /ua/courses ("Курси для кріейторів")',

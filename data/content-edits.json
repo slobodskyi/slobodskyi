@@ -1,0 +1,209 @@
+{
+  "$comment": "Text edits applied by pnpm convert to generated records (exact find -> replace per record address). An edit whose text is not found is reported as an issue.",
+  "edits": [
+    {
+      "address": "guides/fansly:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fansly:uk",
+      "find": "<Callout>\n  В мене також є практичний [онлайн-курс з заробітку та просування на адалт-платформах](/ua/monetize/memberships/onlyfans). Запрошую всіх, хто хоче розібратися та максимально швидко перейти до роботи.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fanvue:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fanvue:uk",
+      "find": "<Callout>\n  В мене також є практичний [онлайн-курс з заробітку та просування на адалт-платформах](/ua/monetize/memberships/onlyfans). Запрошую всіх, хто хоче розібратися та максимально швидко перейти до роботи.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/patreon:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:uk",
+      "find": "<Callout>\n  В мене також є практичний [онлайн-курс з заробітку та просування на адалт-платформах](/ua/monetize/memberships/onlyfans). Запрошую всіх, хто хоче розібратися та максимально швидко перейти до роботи.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/webcam:ru",
+      "find": "<Callout>\n  У меня также есть практический [онлайн-курс по заработку и продвижению на адалт-платформах по подписке](/ua/monetize/memberships/onlyfans) (на украинском). Приглашаю всех, кто хочет разобраться и максимально быстро приступить к работе.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/webcam:uk",
+      "find": "<Callout>\n  В мене також є практичний [онлайн-курс з заробітку та просування на адалт-платформах по підписці](/ua/monetize/memberships/onlyfans). Запрошую всіх, хто хоче розібратися та максимально швидко перейти до роботи.\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/patreon:uk",
+      "find": "В мене також є практичний [онлайн-курс з заробітку та просування на адалт-платформах](/ua/monetize/memberships/onlyfans). Запрошую всіх, хто хоче розібратися та максимально швидко перейти до роботи.\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fansly:ru",
+      "find": "Также [приглашаю на курс](/ua/monetize/memberships/onlyfans).\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:ru",
+      "find": "Также [приглашаю на курс](/ua/monetize/memberships/onlyfans).\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fansly:uk",
+      "find": "Також [запрошую на курс](/ua/monetize/memberships/onlyfans).\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:uk",
+      "find": "Також [запрошую на курс](/ua/monetize/memberships/onlyfans).\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:ru",
+      "find": ", хотите больше примеров и советов – [приходите на курс](/ua/monetize/memberships/onlyfans) (на украинском). Успехов!",
+      "replace": ". Успехов!",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:uk",
+      "find": " Якщо так, запрошую на онлайн-курс, де зібрано багато практичних прикладів для швидкого старту.",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:uk",
+      "find": " Законодавчу різницю між адалт-контентом та еротикою, а також питання анонімності й безпеки, ми обговорювали в окремому уроці.",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:uk",
+      "find": "В курсі детально обговорювали, де шукати моделей і який контент створювати.\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:uk",
+      "find": ", хочете більше прикладів та порад – запрошую на курс. Успіхів!",
+      "replace": ". Успіхів!",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/about:en",
+      "find": "through a comprehensive [free guides](/), [online courses](/) and [consultations](/contacts).",
+      "replace": "with [free guides](/).",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/about:ru",
+      "find": "[бесплатных статей](/ru/monetize), [онлайн-курсов](/ru) и [консультаций](/ru/contacts).",
+      "replace": "[бесплатных статей](/ru/monetize).",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/about:uk",
+      "find": "[безкоштовних статей](/ua/monetize), [онлайн-курсів](/ua) та [консультацій](/ua/contacts).",
+      "replace": "[безкоштовних статей](/ua/monetize).",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/home:en",
+      "find": "Need faster results? [Book a consultation](/contacts) for a personalized roadmap.\n\n",
+      "replace": "",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/home:ru",
+      "find": "Need faster results? [Book a consultation](/contacts) for a personalized roadmap.\n\n",
+      "replace": "",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/home:uk",
+      "find": "Need faster results? [Book a consultation](/contacts) for a personalized roadmap.\n\n",
+      "replace": "",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/home:ru",
+      "find": "Нужен результат быстрее? [Приходите на консультацию](/ru/contacts).\n\n",
+      "replace": "",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "pages/home:uk",
+      "find": "Потрібен швидший результат? [Приходьте на консультацію](/ua/contacts).\n\n",
+      "replace": "",
+      "why": "courses and consultation removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:en",
+      "find": "the questions that people ask on my course and consultations",
+      "replace": "the questions people ask me",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:uk",
+      "find": "питання, які люди задають на моєму курсі та консультаціях",
+      "replace": "питання, які мені задають люди",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:ru",
+      "find": "вопросы, которые люди задают на моём курсе и консультациях",
+      "replace": "вопросы, которые мне задают люди",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/fansly:uk",
+      "find": "<Callout>\n  Зараз я працюю над практичним онлайн-курсом з заробітку та просування на адалт-платформах. Щоб отримати сповіщення про його запуск, [підпишіться на  Telegram-бот](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/onlyfans:en",
+      "find": "<Callout>\n  I am currently working on a practical online course on earning money and promoting on adult platforms. To receive a notification about its launch, [subscribe to Telegram bot](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    },
+    {
+      "address": "guides/ton-place:en",
+      "find": "<Callout>\n  I am currently working on a practical online course on earning money and promoting on adult platforms. To receive a notification about its launch, [subscribe to Telegram bot](https://t.me/onlyFans_course_bot).\n</Callout>\n\n",
+      "replace": "",
+      "why": "courses removed (owner decision 2026-11-22)"
+    }
+  ]
+}

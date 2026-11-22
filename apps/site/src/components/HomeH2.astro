@@ -10,7 +10,8 @@ const { id, ...rest } = Astro.props;
 const home = Astro.locals.home;
 ---
 
-{home && id === home.cardsBefore && <Cards items={home.cards} id="start" eager />}
+{/* The hero is the LCP element, so the hub cards below it load lazily. */}
+{home && id === home.cardsBefore && <Cards items={home.cards} id="start" />}
 <h2 id={id} {...rest}>
   <slot />
 </h2>

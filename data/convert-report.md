@@ -24,6 +24,12 @@ All match (apart from the documented fixes below).
 
 ### Documented legacy fixes (expected differences)
 
+- `/ua` (pages/home:uk)
+
+  - why: the "Where to Start?" block was shown in English; replaced by a Ukrainian heading over the Ukrainian text
+- `/ru` (pages/home:ru)
+
+  - why: the "Where to Start?" block was shown in English next to its Russian translation; the English copy is dropped
 - `/contacts` (pages/contacts:en)
 
   - why: the page was only a Webflow form; the form is dropped and the email address shown instead (owner decision)
@@ -65,13 +71,7 @@ None.
 
 ## Internal links not found on the live page
 
-- `/ru/monetize/memberships/fansly`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/fanvue`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/patreon`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/ton-place`: `/ua/monetize/memberships/onlyfans`
-- `/ru/monetize/memberships/webcam`: `/ua/monetize/memberships/onlyfans`
-- `/ua`: `/contacts`
-- `/ru`: `/contacts`
+None: every internal link of a published record also exists on its live page.
 
 ## Webflow fields not carried over
 

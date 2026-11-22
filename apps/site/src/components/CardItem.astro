@@ -1,6 +1,6 @@
 ---
 // One card (<li>) of a card list: used by Cards (hubs, categories, guides) and by the MDX <Card>.
-// Desktop: text left, cover right. Phones: cover fills the card, text on a dark overlay (legacy).
+// Styles: styles/components.css (.cards / .card). Wide: text left, cover right; narrow: cover on top.
 import { Picture } from 'astro:assets';
 import { resolveImage, isOptimizable } from '../lib/images';
 
@@ -32,10 +32,17 @@ const external = /^https?:\/\//.test(item.url);
     <div class="card-body">
       <p class="card-title">{item.title}</p>
       {item.text && <p class="card-text">{item.text}</p>}
+      {item.chips && item.chips.length > 0 && (
+        <p class="card-meta">
+          {item.chips.map((c) => (
+            <span>{c}</span>
+          ))}
+        </p>
+      )}
     </div>
-    <div class="card-cover">
-      {image &&
-        (isOptimizable(image) ? (
+    {image && (
+      <div class="card-cover">
+        {isOptimizable(image) ? (
           <Picture
             src={image}
             alt={item.cover?.alt ?? ''}
@@ -54,14 +61,8 @@ const external = /^https?:\/\//.test(item.url);
             alt={item.cover?.alt ?? ''}
             loading="lazy"
           />
-        ))}
-      {item.chips && item.chips.length > 0 && (
-        <span class="card-meta">
-          {item.chips.map((c) => (
-            <span class="chip">{c}</span>
-          ))}
-        </span>
-      )}
-    </div>
+        )}
+      </div>
+    )}
   </a>
 </li>

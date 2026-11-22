@@ -153,6 +153,9 @@ Owner decisions on the migration (2026-11-22):
   `data/redirects/*.csv` and rewrites links to it to the final target (a link that would point to the
   record itself becomes text). `/ua/courses/chatgpt` stays a 404. No broken internal links, with no
   exceptions: `pnpm check:build` fails on every one.
+- Owner text edits of converted records live in `data/content-edits.json` (exact find → replace per
+  record address) and are applied by `pnpm convert`; an edit whose text is not found is reported.
+  Used to drop the course and consultation promos from guides, home and about.
 - No contact form (owner decision 2026-11-22): `/contacts` shows the email address
   oleksandr@slobodskyi.com instead of the Webflow form; the Worker has no `/api/contact`.
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
@@ -160,7 +163,9 @@ Owner decisions on the migration (2026-11-22):
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
 - Analytics = Cloudflare Web Analytics only (cookie-free, no consent banner). GTM/GA4, Meta Pixel and
   Ahrefs Analytics are dropped on purpose (owner decision 2026-11-22). Google Search Console stays.
-- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`) are
+- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`, the
+  never-localized English "Where to Start?" block on `/ua` and `/ru`; `FIXES` in
+  `scripts/convert/index.ts`) are
   reported by the parity check as documented differences, never
   silently.
 - `noindex` is migrated 1:1 (affiliate-disclosure, search, terms-of-service). Those pages carry
@@ -188,3 +193,14 @@ Owner decisions on the migration (2026-11-22):
 
 Stage 1 plan and audit: see the approved plan (owner has it). Current step is tracked in PR titles
 (`step-N-…` branches).
+
+## Skills and CI
+
+- Skills (`.claude/skills/`, all built on `pnpm content …`, owner-invoked): `/audit` runs every check and
+  explains failures in Ukrainian; `/new <type>` creates a draft record on a `draft/<slug>` branch;
+  `/publish` sets `status: published` + `updated`, runs the checks, pushes and opens a PR — never merges.
+- CI (`.github/workflows/ci.yml`, on PRs and pushes to `main`): `checks` (format, lint, check, test,
+  `content validate`) is the required job; `site` (build, `check:build`, `check:parity`, parity report
+  artifact) and `lighthouse` (5 key pages, mobile, budgets in `lighthouserc.json`) are
+  `continue-on-error` until the Step 5–6 templates are merged — then drop that flag.
+- Branch protection on `main` (owner setting): require the `checks` status check and a PR before merging.

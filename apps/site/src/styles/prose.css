@@ -1,0 +1,94 @@
+/* Long-form body (MDX content of every record). */
+@layer prose {
+  .prose {
+    overflow-wrap: break-word;
+  }
+
+  .prose > :first-child {
+    margin-top: 0;
+  }
+
+  .prose :is(p, ul, ol) {
+    margin: 0 0 var(--space-4);
+  }
+
+  .prose :is(ul, ol) {
+    padding-left: 1.3em;
+  }
+
+  .prose li {
+    margin-bottom: var(--space-2);
+  }
+
+  .prose li::marker {
+    color: var(--color-muted);
+  }
+
+  /* Scrolls sideways on narrow screens; edge shadows show there is more (pure CSS). */
+  .prose table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    background:
+      linear-gradient(to right, var(--color-surface) 30%, transparent) left / 40px 100% no-repeat local,
+      linear-gradient(to left, var(--color-surface) 30%, transparent) right / 40px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 14%), transparent) left / 12px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 14%), transparent) right / 12px 100% no-repeat
+        scroll,
+      var(--color-surface);
+    border-radius: var(--radius-sm);
+    border-collapse: collapse;
+    font-size: var(--text-md);
+    line-height: 1.45;
+    margin: var(--space-5) 0;
+  }
+
+  .prose :is(th, td) {
+    border: 1px solid var(--color-border-soft);
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .prose th {
+    background: var(--color-surface-alt);
+    font-weight: 700;
+  }
+
+  .prose code {
+    font-family: var(--font-mono);
+    background: var(--color-surface-alt);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    font-size: 0.88em;
+  }
+
+  .prose pre {
+    background: var(--color-code-bg);
+    color: var(--color-code-text);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    font-size: var(--text-sm);
+    line-height: 1.55;
+  }
+
+  .prose pre code {
+    background: none;
+    padding: 0;
+    font-size: inherit;
+  }
+
+  .prose hr {
+    border: 0;
+    border-top: 1px solid var(--color-border-soft);
+    margin: var(--space-7) 0;
+  }
+
+  .prose blockquote:not([class]) {
+    margin: var(--space-5) 0;
+    padding-left: var(--space-4);
+    border-left: 3px solid var(--color-border-soft);
+    color: var(--color-muted);
+  }
+}

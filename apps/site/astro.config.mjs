@@ -12,23 +12,28 @@ export default defineConfig({
   trailingSlash: 'never',
   build: {
     format: 'file',
-    // Small per-page CSS stays inline: one request less on the critical path.
-    inlineStylesheets: 'auto',
+    // All CSS is inline (~14 KB): no render-blocking stylesheet requests on the critical path.
+    inlineStylesheets: 'always',
   },
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'hover',
   },
   // Unbounded (headings), self-hosted: downloaded at build time and served from /_astro.
+  // One weight on purpose: Astro collects preload data only for the first weight of a variable
+  // file, so a single weight keeps the preload working. Astro's generated fallback metrics were
+  // ~30% too wide for Unbounded (headings re-wrapped on swap), so the metric-matched fallback
+  // "Unbounded Fallback" is hand-measured in src/styles/global.css instead.
   fonts: [
     {
       provider: fontProviders.google(),
       name: 'Unbounded',
       cssVariable: '--font-heading',
-      weights: [500, 600, 700],
+      weights: [600],
       styles: ['normal'],
       subsets: ['latin', 'cyrillic'],
-      fallbacks: ['Arial', 'sans-serif'],
+      fallbacks: ['Unbounded Fallback', 'Arial', 'sans-serif'],
+      optimizedFallbacks: false,
     },
   ],
   integrations: [mdx()],

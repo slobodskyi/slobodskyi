@@ -57,23 +57,28 @@ const { Content } = await render(rec.entry);
 
 <Base head={head} alternates={await alternatesFor(rec)} schema={schema} disclaimer={!hasDisclaimer} progress>
   <article class="container article">
-    <h1>{data.title}</h1>
-    {data.lead && <p class="lead">{data.lead}</p>}
-    <p class="meta">
-      <span class="chip-light">{s.minutes(minutes)}</span>
-      <span class="chip-light">
+    <header class="article-header">
+      <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+      <h1>{data.title}</h1>
+      {data.lead && <p class="lead">{data.lead}</p>}
+      <p class="meta">
+        <span>{s.minutes(minutes)}</span>
         <time datetime={data.updated}>{formatDate(data.updated, rec.lang)}</time>
-      </span>
-    </p>
-    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
-    <Toc headings={headings} title={s.toc} />
-    <div class="prose">
-      <Content components={mdxComponents} />
-      {needsFaqHeading && <h2 id="faq">{s.faq}</h2>}
-      <Faq items={data.faq} />
+      </p>
+    </header>
+    <div class="article-body">
+      <div class="toc-rail">
+        <Toc headings={headings} title={s.toc} />
+      </div>
+      <div class="prose">
+        <Content components={mdxComponents} />
+        {needsFaqHeading && <h2 id="faq">{s.faq}</h2>}
+        <Faq items={data.faq} />
+      </div>
     </div>
-    <AuthorBox lang={rec.lang} />
-    <Share url={url} title={data.title} label={s.share} />
+    <AuthorBox lang={rec.lang}>
+      <Share url={url} title={data.title} label={s.share} />
+    </AuthorBox>
     <PatreonCta lang={rec.lang} />
     {relatedCards.length > 0 && (
       <section>
@@ -81,31 +86,56 @@ const { Content } = await render(rec.entry);
         <Cards items={relatedCards} />
       </section>
     )}
-    <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
   </article>
 </Base>
 
 <style>
-  .article {
-    padding-top: 20px;
+  .article-header {
+    margin-bottom: var(--space-6);
+  }
+  .article-header h1 {
+    margin-top: 0;
   }
   .lead {
-    font-size: 1.05em;
-    margin: 0 0 16px;
+    font-size: 1.1em;
+    line-height: 1.55;
+    color: var(--color-text);
+    margin: 0 0 var(--space-4);
   }
   .meta {
     display: flex;
-    gap: 6px;
+    flex-wrap: wrap;
+    gap: var(--space-3);
     margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-muted);
   }
-  .chip-light {
-    background: var(--surface);
-    border-radius: 6px;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 1;
+  .meta > * + *::before {
+    content: '·';
+    margin-right: var(--space-3);
+  }
+  .article-body {
+    position: relative;
   }
   .related-title {
-    font-size: 24px;
+    font-size: var(--text-lg);
+    margin-top: var(--space-7);
+  }
+  /* Wide screens: the table of contents hangs in the left margin and follows the reader. */
+  @media (min-width: 86rem) {
+    .toc-rail {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: calc(100% + var(--space-7));
+      width: 260px;
+    }
+    .toc-rail :global(.toc) {
+      position: sticky;
+      top: 88px;
+      max-height: calc(100vh - 112px);
+      overflow-y: auto;
+      margin: 0;
+    }
   }
 </style>

@@ -1,7 +1,7 @@
 ---
 // Screenshot / figure. `src` is relative to the record folder ("./file.webp"); the page sets
 // Astro.locals.recordDir before rendering the body.
-import { Picture } from 'astro:assets';
+import { Picture, getImage } from 'astro:assets';
 import { resolveImage, isOptimizable } from '../../lib/images';
 
 interface Props {
@@ -17,20 +17,29 @@ if (!dir) throw new Error(`<Shot src="${src}"> rendered without Astro.locals.rec
 const image = await resolveImage(dir, src);
 const max = Math.min(image.width, 1600);
 const widths = [400, 800, 1200, 1600].filter((w) => w < max).concat(max);
+const optimizable = isOptimizable(image);
+// Large screenshots open at full size (the largest WebP the <picture> already uses: no extra file).
+const full =
+  optimizable && image.width > 1000
+    ? (await getImage({ src: image, width: max, format: 'webp', quality: 72 })).src
+    : undefined;
+const Wrap = full ? 'a' : 'div';
 ---
 
 <figure class:list={['shot', { wide }]}>
-  {isOptimizable(image) ? (
-    <Picture
-      src={image}
-      alt={alt}
-      formats={['avif']}
-      fallbackFormat="webp"
-      quality={72}
-      widths={widths}
-      sizes={`(max-width: 800px) 100vw, ${Math.min(max, wide ? 1080 : 760)}px`}
-      loading="lazy"
-    />
+  {optimizable ? (
+    <Wrap href={full} class="shot-link" target={full ? '_blank' : undefined}>
+      <Picture
+        src={image}
+        alt={alt}
+        formats={['avif']}
+        fallbackFormat="webp"
+        quality={72}
+        widths={widths}
+        sizes={`(max-width: 800px) 100vw, ${Math.min(max, wide ? 1080 : 760)}px`}
+        loading="lazy"
+      />
+    </Wrap>
   ) : (
     <img
       src={image.src}
@@ -46,20 +55,31 @@ const widths = [400, 800, 1200, 1600].filter((w) => w < max).concat(max);
 
 <style>
   .shot {
-    margin: 1.5em 0;
+    margin: var(--space-6) 0;
   }
+  /* Border + placeholder tint: light screenshots stay distinct from the page while loading too. */
   .shot :global(img) {
     display: block;
-    border-radius: 12px;
     max-width: 100%;
     height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border-soft);
+    background: var(--color-surface-alt);
+  }
+  .shot-link {
+    display: block;
+    border-radius: var(--radius-md);
+  }
+  .shot-link[href] {
+    cursor: zoom-in;
   }
   .shot figcaption {
-    font-size: 14px;
-    color: var(--muted);
-    margin-top: 6px;
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    margin-top: var(--space-2);
+    text-align: center;
   }
-  @media (min-width: 1140px) {
+  @media (min-width: 75rem) {
     .shot.wide {
       margin-left: calc((760px - 1080px) / 2);
       margin-right: calc((760px - 1080px) / 2);

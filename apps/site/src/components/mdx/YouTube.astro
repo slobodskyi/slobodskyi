@@ -39,8 +39,8 @@ const { id, title = 'YouTube video' } = Astro.props;
   .embed {
     position: relative;
     aspect-ratio: 16 / 9;
-    margin: 1.5em 0;
-    border-radius: 12px;
+    margin: var(--space-5) 0;
+    border-radius: var(--radius-md);
     overflow: hidden;
     background: #000;
   }

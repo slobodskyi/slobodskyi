@@ -22,21 +22,21 @@ const s = t(Astro.props.lang);
 
 <style>
   .patreon {
-    background: linear-gradient(135deg, #f1e7fb, #fff);
-    border-radius: 40px 40px 40px 0;
-    padding: 40px;
-    margin: 48px 0;
+    background: linear-gradient(135deg, var(--color-tint), var(--color-surface));
+    border-radius: var(--radius-bubble);
+    padding: var(--space-6);
+    margin: var(--space-7) 0;
   }
   .patreon p {
-    margin: 0 0 24px;
+    margin: 0 0 var(--space-5);
   }
   .patreon .button {
     display: block;
     text-align: center;
   }
-  @media (max-width: 479px) {
+  @media (width < 30rem) {
     .patreon {
-      padding: 24px;
+      padding: var(--space-5);
     }
   }
 </style>
