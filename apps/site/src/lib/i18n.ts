@@ -10,7 +10,6 @@ export const LANG_SHORT: Record<Lang, string> = { en: 'EN', uk: 'UA', ru: 'RU' }
 const ui = {
   en: {
     tools: 'Tools',
-    courses: 'Courses',
     guides: 'Guides',
     language: 'Language',
     menu: 'Menu',
@@ -44,7 +43,6 @@ const ui = {
   },
   uk: {
     tools: 'Інструменти',
-    courses: 'Курси',
     guides: 'Гайди',
     language: 'Мова',
     menu: 'Меню',
@@ -78,7 +76,6 @@ const ui = {
   },
   ru: {
     tools: 'Инструменты',
-    courses: 'Курсы',
     guides: 'Гайды',
     language: 'Язык',
     menu: 'Меню',

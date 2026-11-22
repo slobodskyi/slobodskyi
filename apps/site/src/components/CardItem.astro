@@ -1,0 +1,67 @@
+---
+// One card (<li>) of a card list: used by Cards (hubs, categories, guides) and by the MDX <Card>.
+// Desktop: text left, cover right. Phones: cover fills the card, text on a dark overlay (legacy).
+import { Picture } from 'astro:assets';
+import { resolveImage, isOptimizable } from '../lib/images';
+
+export interface CardItem {
+  url: string;
+  title: string;
+  text?: string | undefined;
+  /** Record folder + relative cover path, resolved through astro:assets. */
+  cover?: { dir: string; src: string; alt: string } | undefined;
+  chips?: string[] | undefined;
+}
+
+interface Props {
+  item: CardItem;
+  eager?: boolean;
+}
+const { item, eager = false } = Astro.props;
+const image = item.cover ? await resolveImage(item.cover.dir, item.cover.src) : undefined;
+const external = /^https?:\/\//.test(item.url);
+---
+
+<li class="card-li">
+  <a
+    class="card"
+    href={item.url}
+    target={external ? '_blank' : undefined}
+    rel={external ? 'noopener' : undefined}
+  >
+    <div class="card-body">
+      <p class="card-title">{item.title}</p>
+      {item.text && <p class="card-text">{item.text}</p>}
+    </div>
+    <div class="card-cover">
+      {image &&
+        (isOptimizable(image) ? (
+          <Picture
+            src={image}
+            alt={item.cover?.alt ?? ''}
+            formats={['avif']}
+            fallbackFormat="webp"
+            quality={72}
+            widths={[400, 800]}
+            sizes="(max-width: 767px) 100vw, 270px"
+            loading={eager ? 'eager' : 'lazy'}
+          />
+        ) : (
+          <img
+            src={image.src}
+            width={image.width}
+            height={image.height}
+            alt={item.cover?.alt ?? ''}
+            loading="lazy"
+          />
+        ))}
+      {item.chips && item.chips.length > 0 && (
+        <span class="card-meta">
+          {item.chips.map((c) => (
+            <span class="chip">{c}</span>
+          ))}
+        </span>
+      )}
+    </div>
+  </a>
+</li>

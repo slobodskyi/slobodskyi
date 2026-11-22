@@ -8,10 +8,19 @@
 //   data/legacy/webflow-export/pages.json          static pages (dates)
 //   data/legacy/pages.json + html/                 live snapshot (SEO fields, service page bodies)
 //   data/legacy/media-map.json + media/            CDN URL → local file
-import { copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from 'node:fs';
 import { basename, dirname, join } from 'node:path';
 import {
   frontmatterSchema,
+  parseRedirectsCsv,
   serializeDocument,
   urlFor,
   withLangPrefix,
@@ -56,6 +65,7 @@ interface SnapshotPage {
   title: string;
   description: string;
   robots: string;
+  lang: string;
   inSitemap: boolean;
   h1: string[];
   internalLinks: string[];
@@ -72,6 +82,20 @@ interface WebflowPage {
 
 const readJson = <T>(path: string): T => JSON.parse(readFileSync(path, 'utf8')) as T;
 const collection = (slug: string) => readJson<CmsCollection>(join(EXPORT, 'collections', `${slug}.json`));
+
+/** Static redirects (data/redirects/*.csv), chains followed: from → final target. */
+const staticRedirects = new Map<string, string>();
+for (const name of readdirSync(join(ROOT, 'data', 'redirects'))
+  .filter((n) => n.endsWith('.csv'))
+  .sort()) {
+  const { rules } = parseRedirectsCsv(readFileSync(join(ROOT, 'data', 'redirects', name), 'utf8'), name);
+  for (const r of rules) staticRedirects.set(r.from, r.to);
+}
+function redirectTarget(path: string): string | undefined {
+  let to = staticRedirects.get(path);
+  for (let i = 0; to && staticRedirects.has(to) && i < 10; i++) to = staticRedirects.get(to);
+  return to;
+}
 
 const snapshot = new Map(readJson<SnapshotPage[]>(join(LEGACY, 'pages.json')).map((p) => [p.url, p]));
 const mediaMap = readJson<Record<string, { file: string; variantOf?: string }>>(
@@ -149,8 +173,9 @@ function makeContext(address: string, dir: string, lang: Lang): ConvertContext {
         path = articleRoutes.get(path) ?? path;
         if (lang !== 'en' && !/^\/(ua|ru)(\/|$)/.test(path)) path = withLangPrefix(lang, path);
       }
-      // Owner decision: the ChatGPT 101 course never existed (404); its card points to the guide.
-      if (path === '/ua/courses/chatgpt') path = withLangPrefix(lang, '/create/ai/chatgpt');
+      // Links to redirected URLs (data/redirects/*.csv) point straight to the final target.
+      const target = redirectTarget(path);
+      if (target) return target;
       return (path || '/') + hash;
     },
   };
@@ -170,6 +195,9 @@ function write(collection: Collection, id: string, lang: Lang, data: Record<stri
   }
   const file = join(CONTENT, collection, id, `${lang}.mdx`);
   mkdirSync(dirname(file), { recursive: true });
+  // A link rewritten to the record's own URL (e.g. a removed course → this guide) becomes plain text.
+  const self = urlFor(lang, collection, parsed.data).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  body = body.replace(new RegExp(`\\[([^\\]]*)\\]\\(${self}\\)`, 'g'), '$1');
   writeFileSync(file, serializeDocument(data, body));
   written.push({
     address,
@@ -335,13 +363,59 @@ const DROP_TAGS = new Set([
   'template',
 ]);
 
-function prune(node: HastRoot | Element) {
+type Hidden = (classes: string[]) => boolean;
+
+/**
+ * Elements the page's own Webflow stylesheets hide for its language: top-level (not @media) rules
+ * of the form `.a.b{display:none}`, unless re-shown by `.a.b:lang(<lang>){display:…}`. Webflow
+ * used this to show some blocks (e.g. course cards) only in one locale.
+ */
+function hiddenByCss(doc: HastRoot, lang: string): Hidden {
+  const hidden: string[][] = [];
+  const shown: string[][] = [];
+  const sheets = findAll(doc, 'link')
+    .filter((l) => String(l.properties?.rel ?? '').includes('stylesheet'))
+    .map((l) => basename(String(l.properties?.href ?? '')))
+    .map((name) => join(LEGACY, 'site', 'css', name))
+    .filter((file) => existsSync(file));
+  for (const file of sheets) {
+    const css = readFileSync(file, 'utf8');
+    let depth = 0;
+    let start = 0;
+    for (let i = 0; i < css.length; i++) {
+      if (css[i] === '{') {
+        if (depth === 0) start = i;
+        depth++;
+      } else if (css[i] === '}') {
+        depth--;
+        if (depth !== 0) continue;
+        const head = css.slice(css.lastIndexOf('}', start - 1) + 1, start).trim();
+        const body = css.slice(start + 1, i);
+        if (head.startsWith('@') || body.includes('{')) continue;
+        const none = /display:\s*none/.test(body);
+        const display = /display:/.test(body);
+        for (const sel of head.split(',')) {
+          const m = /^((?:\.[\w-]+)+)(?::lang\((\w+)\))?$/.exec(sel.trim());
+          if (!m) continue;
+          const classes = (m[1] ?? '').slice(1).split('.');
+          if (!m[2] && none) hidden.push(classes);
+          else if (m[2] === lang && display && !none) shown.push(classes);
+        }
+      }
+    }
+  }
+  const has = (cls: string[], set: string[]) => set.every((c) => cls.includes(c));
+  return (cls) => hidden.some((h) => has(cls, h)) && !shown.some((sh) => has(cls, sh));
+}
+
+function prune(node: HastRoot | Element, isHidden: Hidden = () => false) {
   node.children = node.children.filter((c) => {
     if (c.type !== 'element') return c.type === 'text';
     if (DROP_TAGS.has(c.tagName)) return false;
     const cls = Array.isArray(c.properties?.className) ? c.properties.className.map(String) : [];
     if (cls.some((k) => DROP_CLASSES.includes(k))) return false;
-    prune(c);
+    if (isHidden(cls)) return false;
+    prune(c, isHidden);
     return true;
   });
 }
@@ -359,7 +433,8 @@ function mainHtml(page: SnapshotPage, allowLanding: boolean): string {
     }
   };
   find(doc);
-  for (const el of found) prune(el);
+  const isHidden = hiddenByCss(doc, page.lang);
+  for (const el of found) prune(el, isHidden);
   const html = found.map((el) => toHtml(el.children)).join('');
   if (!allowLanding || toText(fromHtml(html, { fragment: true })).trim().length > 200) return html;
   // Landing pages (courses) keep their text in layout sections outside .content: take the whole
@@ -373,7 +448,7 @@ function mainHtml(page: SnapshotPage, allowLanding: boolean): string {
         (['header', 'footer'].includes(c.tagName) || classes(c).some((k) => LANDING_CHROME.includes(k)))
       ),
   );
-  prune(body);
+  prune(body, isHidden);
   landing.add(page.url);
   return toHtml(body.children);
 }
@@ -382,6 +457,16 @@ const LANDING_CHROME = ['site-navbar', 'footer', 'w-nav'];
 const landing = new Set<string>();
 const classes = (el: Element) =>
   Array.isArray(el.properties?.className) ? el.properties.className.map(String) : [];
+function findAll(n: HastRoot | Element, tag: string): Element[] {
+  const out: Element[] = [];
+  for (const c of n.children)
+    if (c.type === 'element') {
+      if (c.tagName === tag) out.push(c);
+      out.push(...findAll(c, tag));
+    }
+  return out;
+}
+
 function findTag(n: HastRoot | Element, tag: string): Element | undefined {
   for (const c of n.children) {
     if (c.type !== 'element') continue;
@@ -441,6 +526,7 @@ function convertFromSnapshot(
 ) {
   for (const lang of LANGS) {
     const url = withLangPrefix(lang, route);
+    if (staticRedirects.has(url)) continue; // removed on purpose, redirected (data/redirects)
     const page = snapshot.get(url);
     const address = `${collection}/${id}:${lang}`;
     const dir = join(CONTENT, collection, id);
@@ -595,96 +681,16 @@ interface Fix {
   body?: string;
   why: string;
 }
-const UA_ONLY = (label: string, path: string, lang: 'en' | 'ru') =>
-  lang === 'en'
-    ? `The full text is available in Ukrainian: [${label}](${path}).\n`
-    : `Полный текст доступен на украинском языке: [${label}](${path}).\n`;
-const PAYMENT_SUCCESS: Record<Lang, Required<Pick<Fix, 'title' | 'description' | 'body'>>> = {
-  en: {
-    title: 'Payment successful',
-    description: 'Thank you for your payment. Access details are on their way to your email.',
-    body: 'Thank you for your payment! Access details are on their way to your email. If anything is missing, [contact me](/contacts).\n',
-  },
-  uk: {
-    title: 'Оплата успішна',
-    description: 'Дякую за оплату. Деталі доступу вже надіслано на вашу пошту.',
-    body: 'Дякую за оплату! Деталі доступу вже надіслано на вашу пошту. Якщо щось не так, [напишіть мені](/ua/contacts).\n',
-  },
-  ru: {
-    title: 'Оплата прошла успешно',
-    description: 'Спасибо за оплату. Детали доступа уже отправлены на вашу почту.',
-    body: 'Спасибо за оплату! Детали доступа уже отправлены на вашу почту. Если что-то не так, [напишите мне](/ru/contacts).\n',
-  },
-};
 const CONTACTS_BODY: Record<Lang, string> = {
   en: 'Feel free to contact me with any questions: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
   uk: 'Пишіть з будь-якими питаннями: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
   ru: 'Пишите с любыми вопросами: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
 };
 export const FIXES: Record<string, Fix> = {
-  '/courses/privacy-policy': {
-    title: 'Privacy Policy',
-    seoTitle: null,
-    description:
-      'Privacy policy for courses and consultations by Oleksandr Slobodskyi. The full text is available in Ukrainian.',
-    body: UA_ONLY('Політика конфіденційності', '/ua/courses/privacy-policy', 'en'),
-    why: 'placeholder page: <title> "privacy-policy", H1 "public-offer-agreement", no description, body "hello/here"',
-  },
-  '/ru/courses/privacy-policy': {
-    title: 'Политика конфиденциальности',
-    seoTitle: null,
-    description:
-      'Политика конфиденциальности курсов и консультаций Александра Слободского. Полный текст доступен на украинском языке.',
-    body: UA_ONLY('Політика конфіденційності', '/ua/courses/privacy-policy', 'ru'),
-    why: 'placeholder page: <title> "privacy-policy", H1 "public-offer-agreement", no description, body "hello/here"',
-  },
-  '/courses/public-offer': {
-    title: 'Public offer',
-    description:
-      'Public offer agreement for courses and consultations by Oleksandr Slobodskyi. The full text is available in Ukrainian.',
-    body: UA_ONLY('Публічна оферта', '/ua/courses/public-offer', 'en'),
-    why: 'placeholder page: H1 "public-offer-agreement", no description, body "hello/here"; <title> kept',
-  },
-  '/ru/courses/public-offer': {
-    title: 'Публичная оферта',
-    seoTitle: 'Public offer',
-    description:
-      'Публичная оферта на курсы и консультации Александра Слободского. Полный текст доступен на украинском языке.',
-    body: UA_ONLY('Публічна оферта', '/ua/courses/public-offer', 'ru'),
-    why: 'placeholder page: H1 "public-offer-agreement", no description, body "hello/here"; <title> kept',
-  },
   '/ua/tools': {
     seoTitle: 'Інструменти для кріейторів',
     why: '<title> was copied from /ua/courses ("Курси для кріейторів")',
   },
-  ...Object.fromEntries(
-    (['en', 'uk', 'ru'] as const).map((lang) => [
-      withLangPrefix(lang, '/courses/payment-success-67dd392a3c9d80c3ee009047'),
-      {
-        ...PAYMENT_SUCCESS[lang],
-        seoTitle: null,
-        why: 'blank page on the live site: <title> "payment-success", no H1, no description, no text',
-      },
-    ]),
-  ),
-  '/courses/payment-problem': {
-    seoTitle: null,
-    description: 'Something went wrong while processing your payment. Contact me and I will help.',
-    why: '<title> "/payment-problem", no description',
-  },
-  '/ru/courses/payment-problem': {
-    seoTitle: null,
-    description: 'Во время обработки оплаты произошла ошибка. Напишите мне, и я помогу.',
-    why: '<title> "/payment-problem", no description',
-  },
-  ...Object.fromEntries(
-    (['en', 'uk', 'ru'] as const).map((lang) => [
-      withLangPrefix(lang, '/courses'),
-      {
-        why: 'ChatGPT 101 card linked to the 404 /ua/courses/chatgpt; now the ChatGPT guide (owner decision)',
-      },
-    ]),
-  ),
   '/ru/tools': {
     seoTitle: 'Инструменты для криейторов',
     why: '<title> was copied from /ru/courses ("Курсы для криейторов")',
@@ -707,16 +713,6 @@ const PAGES: [id: string, path: string][] = [
   ['contacts', '/contacts'],
   ['tools', '/tools'],
   ['affiliate-disclosure', '/affiliate-disclosure'],
-  ['courses', '/courses'],
-  ['consultation', '/courses/consultation'],
-  ['onlyfans', '/courses/onlyfans'],
-  ['public-offer', '/courses/public-offer'],
-  ['privacy-policy', '/courses/privacy-policy'],
-  ['how-to-create-images-with-ai', '/courses/how-to-create-images-with-ai'],
-  ['payment-alternatives', '/courses/payment-alternatives'],
-  // Unlinked Webflow pages, found after the first snapshot (no sitemap entry, noindex on the live site).
-  ['payment-success', '/courses/payment-success-67dd392a3c9d80c3ee009047'],
-  ['payment-problem', '/courses/payment-problem'],
   ['search', '/search'],
   ['terms-of-service', '/terms-of-service'],
 ];
@@ -736,4 +732,11 @@ convertGuides();
 convertHubsAndCategories();
 convertPages();
 
-writeReport({ root: ROOT, issues, written, snapshot, fixes: FIXES });
+writeReport({
+  root: ROOT,
+  issues,
+  written,
+  snapshot,
+  fixes: FIXES,
+  staticRedirects: [...staticRedirects.keys()],
+});

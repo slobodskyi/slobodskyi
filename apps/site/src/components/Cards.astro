@@ -1,73 +1,19 @@
 ---
-import { Picture } from 'astro:assets';
-import type { ImageMetadata } from 'astro';
-import { resolveImage, isOptimizable } from '../lib/images';
+import CardItemView, { type CardItem } from './CardItem.astro';
 
-export interface CardItem {
-  url: string;
-  title: string;
-  text?: string | undefined;
-  /** Record folder + relative cover path, resolved through astro:assets. */
-  cover?: { dir: string; src: string; alt: string } | undefined;
-  chips?: string[] | undefined;
-}
+export type { CardItem };
 
 interface Props {
   items: CardItem[];
-  id?: string;
+  id?: string | undefined;
   /** The first cover is above the fold (home hub list). */
   eager?: boolean;
 }
 const { items, id, eager = false } = Astro.props;
-const resolved = await Promise.all(
-  items.map(async (it) => ({
-    ...it,
-    image: it.cover ? await resolveImage(it.cover.dir, it.cover.src) : undefined,
-  })),
-);
-const sizes = '(max-width: 800px) 34vw, 270px';
-const isRaster = (img: ImageMetadata) => isOptimizable(img);
 ---
 
 <ul class="cards" id={id}>
-  {resolved.map((it) => (
-    <li>
-      <a class="card" href={it.url}>
-        <div class="card-body">
-          <p class="card-title">{it.title}</p>
-          {it.text && <p class="card-text">{it.text}</p>}
-        </div>
-        <div class="card-cover">
-          {it.image &&
-            (isRaster(it.image) ? (
-              <Picture
-                src={it.image}
-                alt={it.cover?.alt ?? ''}
-                formats={['avif']}
-                fallbackFormat="webp"
-                quality={72}
-                widths={[280, 560]}
-                sizes={sizes}
-                loading={eager ? 'eager' : 'lazy'}
-              />
-            ) : (
-              <img
-                src={it.image.src}
-                width={it.image.width}
-                height={it.image.height}
-                alt={it.cover?.alt ?? ''}
-                loading="lazy"
-              />
-            ))}
-          {it.chips && it.chips.length > 0 && (
-            <span class="card-meta">
-              {it.chips.map((c) => (
-                <span class="chip">{c}</span>
-              ))}
-            </span>
-          )}
-        </div>
-      </a>
-    </li>
+  {items.map((item, i) => (
+    <CardItemView item={item} eager={eager && i === 0} />
   ))}
 </ul>
