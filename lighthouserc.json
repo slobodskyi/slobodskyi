@@ -1,0 +1,24 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "python3 -m http.server 4173 --directory apps/site/dist",
+      "startServerReadyPattern": "Serving HTTP",
+      "url": [
+        "http://localhost:4173/",
+        "http://localhost:4173/create/",
+        "http://localhost:4173/create/ai/",
+        "http://localhost:4173/create/ai/chatgpt/",
+        "http://localhost:4173/about/"
+      ],
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.95 }],
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }]
+      }
+    },
+    "upload": { "target": "filesystem", "outputDir": ".lighthouseci/reports" }
+  }
+}

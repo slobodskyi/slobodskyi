@@ -161,3 +161,14 @@ Owner decisions on the migration (2026-11-22):
 
 Stage 1 plan and audit: see the approved plan (owner has it). Current step is tracked in PR titles
 (`step-N-…` branches).
+
+## Skills and CI
+
+- Skills (`.claude/skills/`, all built on `pnpm content …`, owner-invoked): `/audit` runs every check and
+  explains failures in Ukrainian; `/new <type>` creates a draft record on a `draft/<slug>` branch;
+  `/publish` sets `status: published` + `updated`, runs the checks, pushes and opens a PR — never merges.
+- CI (`.github/workflows/ci.yml`, on PRs and pushes to `main`): `checks` (format, lint, check, test,
+  `content validate`) is the required job; `site` (build, `check:build`, `check:parity`, parity report
+  artifact) and `lighthouse` (5 key pages, mobile, budgets in `lighthouserc.json`) are
+  `continue-on-error` until the Step 5–6 templates are merged — then drop that flag.
+- Branch protection on `main` (owner setting): require the `checks` status check and a PR before merging.
