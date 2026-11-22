@@ -1,0 +1,19 @@
+{
+  "differences": [
+    {
+      "url": "/ua/tools",
+      "field": "title",
+      "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was \"Курси для кріейторів\" (copied from the courses page)."
+    },
+    {
+      "url": "/ru/tools",
+      "field": "title",
+      "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was \"Курсы для криейторов\" (copied from the courses page)."
+    },
+    {
+      "url": "/courses/privacy-policy",
+      "field": "title",
+      "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was the slug \"privacy-policy\"."
+    }
+  ]
+}

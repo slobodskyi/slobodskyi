@@ -125,8 +125,11 @@ Owner decisions on the migration (2026-11-22):
   three languages, not in the sitemap) are migrated 1:1 with their current robots: `noindex: true`
   everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
   of the sitemap.
-- The legacy link to `/ua/courses/chatgpt` (404 on the old site, linked from all `/courses` pages) is
-  kept as is; the broken-link check lists it as a known legacy issue instead of failing.
+- No broken internal links, with no exceptions: `pnpm check:build` fails on every one. The legacy
+  link to the 404 `/ua/courses/chatgpt` (the "ChatGPT 101" card on the three `/courses` pages) now
+  points to the ChatGPT guide in the page's language: `/create/ai/chatgpt`, `/ua/create/ai/chatgpt`,
+  `/ru/create/ai/chatgpt`. The URL `/ua/courses/chatgpt` itself stays a 404 (owner decision
+  2026-11-22, replaces "kept as is").
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
   now: no form markup and no Beehiiv attribution script on the new site, the surrounding text stays.
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
