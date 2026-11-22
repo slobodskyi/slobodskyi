@@ -53,7 +53,7 @@ jobs:
       # Cache of optimised images (astro:assets), keyed by what feeds it.
       - uses: actions/cache@v6.1.0
         with:
-          path: node_modules/.astro
+          path: apps/site/node_modules/.astro
           key: astro-assets-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', 'content/**/*.webp', 'content/**/*.png', 'content/**/*.jpg', 'content/**/*.jpeg') }}
           restore-keys: astro-assets-${{ runner.os }}-
       - run: pnpm build
@@ -83,9 +83,10 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - uses: actions/cache@v6.1.0
         with:
-          path: node_modules/.astro
+          path: apps/site/node_modules/.astro
           key: astro-assets-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', 'content/**/*.webp', 'content/**/*.png', 'content/**/*.jpg', 'content/**/*.jpeg') }}
           restore-keys: astro-assets-${{ runner.os }}-
       - run: pnpm build
-      # The built site is served locally on :4173 (lighthouserc.json); five key pages, mobile profile
+      # The built site is served by a plain static server on :4173, which does not map /x to x.html,
+      # so lighthouserc.json lists the .html files; five key pages, mobile profile
       - run: npx --yes @lhci/cli@0.16.1 autorun --config=lighthouserc.json
