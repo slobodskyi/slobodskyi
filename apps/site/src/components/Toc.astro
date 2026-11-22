@@ -4,15 +4,22 @@ import type { Heading } from '@slobodskyi/core';
 interface Props {
   headings: Heading[];
   title: string;
+  /** Side-rail copy (Article template, wide screens): quiet list that marks the section being read. */
+  rail?: boolean;
 }
 // H2 only, like the legacy table of contents. Anchors come from core extractHeadings().
 const headings = Astro.props.headings.filter((h) => h.depth === 2);
+const { rail = false } = Astro.props;
 ---
 
-{/* One list, two looks: a numbered index in the text flow; inside `.toc-rail` on wide screens
-    (Article template) a quiet side rail that marks the section being read. */}
+{/* Default: a numbered index in the text flow. `rail`: the companion that follows the reader
+    on wide screens; it stays out of the way while the index itself is on screen. */}
 {headings.length > 1 && (
-  <nav class="toc" aria-label={Astro.props.title} data-toc>
+  <nav
+    class:list={['toc', rail && 'toc-rail-nav']}
+    aria-label={Astro.props.title}
+    data-toc={rail ? 'rail' : 'index'}
+  >
     <p class="toc-title">{Astro.props.title}</p>
     <ol>
       {headings.map((h) => (
@@ -25,15 +32,17 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
 )}
 
 <script>
-  // Marks the link of the section being read (styled only in the side rail). Without JS the
-  // list is still a complete table of contents.
-  for (const toc of document.querySelectorAll<HTMLElement>('[data-toc]')) {
-    const links = [...toc.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')];
+  // Rail only: show it once the index has left the screen, and mark the section being read.
+  // Without JS the rail is simply always visible.
+  const index = document.querySelector<HTMLElement>('[data-toc="index"]');
+  for (const rail of document.querySelectorAll<HTMLElement>('[data-toc="rail"]')) {
+    const links = [...rail.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')];
     const targets = links.map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1))));
     let current = -1;
     let queued = false;
     const update = () => {
       queued = false;
+      rail.toggleAttribute('data-visible', !index || index.getBoundingClientRect().bottom < 0);
       // The last heading that has passed under the sticky header.
       let active = -1;
       targets.forEach((el, i) => {
@@ -99,7 +108,7 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
     color: var(--color-accent);
   }
   /* Two columns, read top to bottom. The list's bottom rule would close only one column,
-     so each item draws its own rule below and the list hides the doubled top one. */
+     so each item draws its own rule below and the list draws the top one. */
   @media (min-width: 40rem) {
     .toc ol {
       columns: 2;
@@ -113,37 +122,51 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
     }
   }
 
-  /* Side rail (wide screens, Article template positions it). */
+  /* Side rail: exists only where the Article template has a margin to put it in. */
+  .toc-rail-nav {
+    display: none;
+  }
   @media (min-width: 86rem) {
-    :global(.toc-rail) .toc {
+    .toc-rail-nav {
+      display: block;
       font-size: var(--text-sm);
+      transition:
+        opacity var(--duration) var(--ease),
+        visibility var(--duration) var(--ease);
     }
-    :global(.toc-rail) .toc-title {
+    .toc-rail-nav .toc-title {
       padding-left: var(--space-4);
     }
-    :global(.toc-rail) .toc ol {
+    .toc-rail-nav ol {
       columns: auto;
       border: 0;
       border-left: 1px solid var(--color-border-soft);
     }
-    :global(.toc-rail) .toc li {
+    .toc-rail-nav li {
       border: 0;
     }
-    :global(.toc-rail) .toc a {
+    .toc-rail-nav a {
       margin-left: -1px;
       padding: 6px var(--space-4);
       border-left: 2px solid transparent;
       color: var(--color-muted);
     }
-    :global(.toc-rail) .toc a::before {
+    .toc-rail-nav a::before {
       content: none;
     }
-    :global(.toc-rail) .toc a:hover {
+    .toc-rail-nav a:hover {
       color: var(--color-text);
     }
-    :global(.toc-rail) .toc a[aria-current] {
+    .toc-rail-nav a[aria-current] {
       border-left-color: var(--color-accent);
       color: var(--color-accent);
+    }
+  }
+  /* With scripting the rail waits until the index has scrolled away (no flash on load). */
+  @media (min-width: 86rem) and (scripting: enabled) {
+    .toc-rail-nav:not([data-visible]) {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 </style>
