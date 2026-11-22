@@ -24,6 +24,12 @@ All match (apart from the documented fixes below).
 
 ### Documented legacy fixes (expected differences)
 
+- `/ua` (pages/home:uk)
+
+  - why: the "Where to Start?" block was shown in English; replaced by a Ukrainian heading over the Ukrainian text
+- `/ru` (pages/home:ru)
+
+  - why: the "Where to Start?" block was shown in English next to its Russian translation; the English copy is dropped
 - `/contacts` (pages/contacts:en)
 
   - why: the page was only a Webflow form; the form is dropped and the email address shown instead (owner decision)

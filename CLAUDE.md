@@ -163,7 +163,9 @@ Owner decisions on the migration (2026-11-22):
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
 - Analytics = Cloudflare Web Analytics only (cookie-free, no consent banner). GTM/GA4, Meta Pixel and
   Ahrefs Analytics are dropped on purpose (owner decision 2026-11-22). Google Search Console stays.
-- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`) are
+- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`, the
+  never-localized English "Where to Start?" block on `/ua` and `/ru`; `FIXES` in
+  `scripts/convert/index.ts`) are
   reported by the parity check as documented differences, never
   silently.
 - `noindex` is migrated 1:1 (affiliate-disclosure, search, terms-of-service). Those pages carry
