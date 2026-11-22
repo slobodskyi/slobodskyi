@@ -1,12 +1,11 @@
 /// <reference types="@cloudflare/workers-types" />
 // Worker entry. Static pages are served from `dist` by Workers static assets; this code only
 // runs for /api/* (see `run_worker_first` in wrangler.jsonc) and for preview noindex headers.
-import { EmailMessage } from 'cloudflare:email';
 
 interface Env {
   ASSETS: Fetcher;
   ENVIRONMENT: 'production' | 'preview';
-  /** Cloudflare Email Routing `send_email` binding. TODO: add to wrangler.jsonc once the zone is on Cloudflare. */
+  /** Cloudflare `send_email` binding (wrangler.jsonc), restricted to CONTACT_TO. */
   CONTACT_EMAIL?: SendEmail;
   /** Recipient of contact form messages (must be a verified Email Routing destination). */
   CONTACT_TO?: string;
@@ -42,37 +41,6 @@ async function verifyTurnstile(secret: string, token: string, ip: string | null)
   return data.success === true;
 }
 
-const b64 = (text: string): string => {
-  const bytes = new TextEncoder().encode(text);
-  let bin = '';
-  for (const b of bytes) bin += String.fromCharCode(b);
-  return btoa(bin);
-};
-
-/** Minimal RFC 5322 message: UTF-8 subject (encoded-word) and base64 text body. */
-function mimeMessage(opts: {
-  from: string;
-  to: string;
-  replyTo: string;
-  subject: string;
-  text: string;
-}): string {
-  const lines = [
-    `From: slobodskyi.com <${opts.from}>`,
-    `To: <${opts.to}>`,
-    `Reply-To: <${opts.replyTo}>`,
-    `Subject: =?UTF-8?B?${b64(opts.subject)}?=`,
-    `Message-ID: <${crypto.randomUUID()}@slobodskyi.com>`,
-    `Date: ${new Date().toUTCString()}`,
-    'MIME-Version: 1.0',
-    'Content-Type: text/plain; charset=UTF-8',
-    'Content-Transfer-Encoding: base64',
-    '',
-    (b64(opts.text).match(/.{1,76}/g) ?? []).join('\r\n'),
-  ];
-  return lines.join('\r\n');
-}
-
 async function handleContact(request: Request, env: Env): Promise<Response> {
   if (request.method !== 'POST')
     return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST' } });
@@ -105,15 +73,14 @@ async function handleContact(request: Request, env: Env): Promise<Response> {
   )
     return reply(request, false, 403, page);
 
-  const raw = mimeMessage({
-    from: env.CONTACT_FROM,
-    to: env.CONTACT_TO,
-    replyTo: email,
-    subject: `Contact form: ${name || email}`,
-    text: `Name: ${name}\nEmail: ${email}\nPage: ${page}\n\n${message}\n`,
-  });
   try {
-    await env.CONTACT_EMAIL.send(new EmailMessage(env.CONTACT_FROM, env.CONTACT_TO, raw));
+    await env.CONTACT_EMAIL.send({
+      from: { name: 'slobodskyi.com', email: env.CONTACT_FROM },
+      to: env.CONTACT_TO,
+      replyTo: email,
+      subject: `Contact form: ${name || email}`,
+      text: `Name: ${name}\nEmail: ${email}\nPage: ${page}\n\n${message}\n`,
+    });
   } catch (e) {
     console.error('contact form: send failed', e);
     return reply(request, false, 502, page);
