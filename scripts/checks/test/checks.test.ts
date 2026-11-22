@@ -151,8 +151,8 @@ describe('build checks', () => {
     hiddenUrls: new Set(),
     hiddenAddresses: new Set(),
   };
-  const checks = (dist: string, exp = none, allow: string[] = []) =>
-    runBuildChecks({ dist, expectations: exp, brokenLinkAllowlist: allow }).problems.map((p) => p.check);
+  const checks = (dist: string, exp = none, allow: { target: string; from: string[] }[] = []) =>
+    runBuildChecks({ dist, expectations: exp, brokenLinks: allow }).problems.map((p) => p.check);
 
   it('passes on a clean dist', () => {
     const dist = makeDist({
@@ -188,8 +188,19 @@ describe('build checks', () => {
         body: '<a href="/ua/courses/chatgpt">k</a><a href="/old">o</a><a href="/new/">n</a>',
       }),
     });
-    expect(checks(dist, none, ['/ua/courses/chatgpt'])).toEqual([]);
+    const known = [{ target: '/ua/courses/chatgpt', from: ['/'] }];
+    expect(checks(dist, none, known)).toEqual([]);
     expect(checks(dist)).toEqual(['links']);
+  });
+
+  it('rejects a known broken link on a page that is not grandfathered', () => {
+    const dist = makeDist({
+      'index.html': page({ body: '<a href="/ua/courses/chatgpt">k</a>' }),
+      'new-guide.html': page({ body: '<a href="/ua/courses/chatgpt">k</a>' }),
+    });
+    const known = [{ target: '/ua/courses/chatgpt', from: ['/'] }];
+    const problems = runBuildChecks({ dist, expectations: none, brokenLinks: known }).problems;
+    expect(problems.map((p) => p.url)).toEqual(['/new-guide']);
   });
 
   it('noindex only where frontmatter says so (both directions)', () => {

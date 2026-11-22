@@ -19,7 +19,7 @@ import {
   urlForFile,
   walkFiles,
 } from './lib.ts';
-import { loadAllowlist } from './parity.ts';
+import { loadAllowlist, type BrokenLinkException } from './parity.ts';
 
 export interface ContentExpectations {
   /** URLs whose frontmatter says `noindex: true`: the only pages allowed to carry noindex. */
@@ -48,11 +48,13 @@ const isInternal = (href: string): boolean =>
 export function runBuildChecks(opts: {
   dist: string;
   expectations: ContentExpectations;
-  /** Broken link targets that are known and accepted. */
-  brokenLinkAllowlist?: string[] | undefined;
+  /** Known broken links, accepted only on the pages listed in `from`. */
+  brokenLinks?: Pick<BrokenLinkException, 'target' | 'from'>[] | undefined;
 }): BuildCheckResult {
   const { dist, expectations } = opts;
-  const allowedBroken = new Set((opts.brokenLinkAllowlist ?? []).map(toPath));
+  const allowedBroken = new Set(
+    (opts.brokenLinks ?? []).flatMap((b) => b.from.map((from) => `${toPath(from)} -> ${toPath(b.target)}`)),
+  );
   const redirects = readRedirects(dist);
   const problems: BuildProblem[] = [];
   const files = walkFiles(dist);
@@ -90,7 +92,8 @@ export function runBuildChecks(opts: {
       ...byTag(doc, 'img').map((n) => attr(n, 'src')),
     ];
     for (const href of new Set(refs)) {
-      if (!href || !isInternal(href) || linkExists(href) || allowedBroken.has(toPath(href))) continue;
+      if (!href || !isInternal(href) || linkExists(href) || allowedBroken.has(`${url} -> ${toPath(href)}`))
+        continue;
       problems.push({ check: 'links', url, message: `broken internal link: ${href}` });
     }
 
@@ -180,7 +183,7 @@ async function main(): Promise<number> {
   const result = runBuildChecks({
     dist,
     expectations: await loadExpectations(join(root, 'content')),
-    brokenLinkAllowlist: allowlist.brokenLinks?.map((b) => b.target),
+    brokenLinks: allowlist.brokenLinks,
   });
   for (const p of result.problems) console.log(`✗ [${p.check}] ${p.url}: ${p.message}`);
   console.log(

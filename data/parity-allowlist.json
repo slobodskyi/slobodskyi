@@ -19,7 +19,8 @@
   "brokenLinks": [
     {
       "target": "/ua/courses/chatgpt",
-      "reason": "Known legacy issue (owner decision 2026-11-22): 404 on the old site, linked from all /courses pages, kept as is."
+      "from": ["/courses", "/ua/courses", "/ru/courses"],
+      "reason": "Known legacy issue (owner decision 2026-11-22): 404 on the old site, linked from the three /courses pages, kept as is there. Any new link to it fails the build check."
     }
   ]
 }
