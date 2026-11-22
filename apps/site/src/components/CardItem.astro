@@ -1,6 +1,6 @@
 ---
 // One card (<li>) of a card list: used by Cards (hubs, categories, guides) and by the MDX <Card>.
-// Styles: styles/components.css (.cards / .card). Wide: text left, cover right; narrow: cover on top.
+// Styles: styles/components.css (.cards / .card). Wide: cover left, text right; narrow: cover on top.
 import { Picture } from 'astro:assets';
 import { resolveImage, isOptimizable } from '../lib/images';
 
@@ -50,7 +50,7 @@ const external = /^https?:\/\//.test(item.url);
             fallbackFormat="webp"
             quality={72}
             widths={[400, 800]}
-            sizes="(max-width: 767px) 100vw, 270px"
+            sizes="(max-width: 767px) 100vw, 320px"
             loading={eager ? 'eager' : 'lazy'}
           />
         ) : (
