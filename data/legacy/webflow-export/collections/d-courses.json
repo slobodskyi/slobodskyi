@@ -1,0 +1,151 @@
+{
+  "collection": {
+    "id": "66dc2c72a0bd34b541332d41",
+    "displayName": "Monetize / Courses",
+    "singularName": "Monetize / Course",
+    "slug": "d-courses",
+    "createdOn": "2024-09-07T10:35:30.961Z",
+    "lastUpdated": "2025-06-06T09:21:59.027Z",
+    "fields": [
+      {
+        "id": "05552666c8808402ffbebb30ba995f87",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "post-summary",
+        "displayName": "Article Summary",
+        "helpText": "A summary of the blog post that appears on blog post grid",
+        "validations": {
+          "singleLine": false
+        }
+      },
+      {
+        "id": "fe9ab5227a6be47cfe9f9a97be3d2d18",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "RichText",
+        "slug": "post-body",
+        "displayName": "Article Body",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "7caf477ae2f8382a054d33fd590985c0",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "Image",
+        "slug": "main-image",
+        "displayName": "Article Image",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "81aa686c089b0c6975861c9c9dc47818",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "card-title",
+        "displayName": "Card Title",
+        "helpText": null,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "58d2673aa30ef47a6666f7c0cc250ffa",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "card-description",
+        "displayName": "Card Description",
+        "helpText": null,
+        "validations": {
+          "singleLine": false
+        }
+      },
+      {
+        "id": "43c31ce68f264ce823e38fd0a2e3284e",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "time-to-read",
+        "displayName": "Time to read",
+        "helpText": null,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "f20dee1696075d0d1e6d79799a806e65",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "Reference",
+        "slug": "author",
+        "displayName": "Author",
+        "helpText": null,
+        "validations": {
+          "collectionId": "6574517f4a09da77e885bf10"
+        }
+      },
+      {
+        "id": "edc383c98daff6820d8061d1bb65598f",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "Reference",
+        "slug": "category",
+        "displayName": "Category",
+        "helpText": null,
+        "validations": {
+          "collectionId": "6558b9534cb61f6f2b37d7e0"
+        }
+      },
+      {
+        "id": "fc98e2949b4e1c5a8dd6f6dbbe4ff5f4",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "Reference",
+        "slug": "sub-category",
+        "displayName": "Sub Category",
+        "helpText": null,
+        "validations": {
+          "collectionId": "6558c06bceb72f12e739b981"
+        }
+      },
+      {
+        "id": "bb321cf0f0aff64100a3436d1bbb1941",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "name",
+        "displayName": "Article Name",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256
+        }
+      },
+      {
+        "id": "a6fa0992fb714999750557faa0822c44",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "slug",
+        "displayName": "Article Slug",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256,
+          "pattern": {},
+          "messages": {
+            "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+            "maxLength": "Must be less than 256 characters"
+          }
+        }
+      }
+    ],
+    "fieldGroups": []
+  },
+  "items": {
+    "en": [],
+    "uk": [],
+    "ru": []
+  }
+}

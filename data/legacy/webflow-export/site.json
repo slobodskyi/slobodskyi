@@ -1,0 +1,62 @@
+{
+  "id": "6558ae529e9653f7d61a6917",
+  "workspaceId": "62588a8787b258021d7868fc",
+  "displayName": "Oleksandr Slobodskyi",
+  "shortName": "s-001",
+  "previewUrl": "https://screenshots.webflow.com/sites/6558ae529e9653f7d61a6917/20260615093526_f57970bdb6210b5e0e1e59ca3985391a.png",
+  "timeZone": "Europe/Kiev",
+  "createdOn": "2023-11-18T12:30:10.450Z",
+  "lastUpdated": "2026-11-22T14:45:15.112Z",
+  "lastPublished": "2026-06-15T09:36:55.702Z",
+  "fullSiteCompiledAt": "2026-06-15T09:36:55.702Z",
+  "parentFolderId": null,
+  "customDomains": [
+    {
+      "id": "659519583d1a441dd420b0fe",
+      "url": "www.slobodskyi.com",
+      "lastPublished": "2026-06-15T09:36:55.702Z",
+      "fullSiteCompiledAt": "2026-06-15T09:36:55.702Z"
+    },
+    {
+      "id": "659519583d1a441dd420b0f8",
+      "url": "slobodskyi.com",
+      "lastPublished": "2026-06-15T09:36:55.702Z",
+      "fullSiteCompiledAt": "2026-06-15T09:36:55.702Z"
+    }
+  ],
+  "locales": {
+    "primary": {
+      "id": "6558af5bde12de54c59f4318",
+      "cmsLocaleId": "6558b275de12de54c5a146d0",
+      "enabled": false,
+      "displayName": "English",
+      "displayImageId": null,
+      "redirect": true,
+      "subdirectory": "",
+      "tag": "en"
+    },
+    "secondary": [
+      {
+        "id": "657db52262d48bffd4c84945",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "enabled": true,
+        "displayName": "Ukrainian",
+        "displayImageId": null,
+        "subdirectory": "ua",
+        "tag": "uk"
+      },
+      {
+        "id": "657db52262d48bffd4c84946",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "enabled": true,
+        "displayName": "Russian",
+        "displayImageId": null,
+        "subdirectory": "ru",
+        "tag": "ru"
+      }
+    ]
+  },
+  "dataCollectionEnabled": false,
+  "dataCollectionType": "always",
+  "googleTagIds": []
+}

@@ -1,0 +1,32 @@
+{
+  "pageId": "65a417707a94950c7e2907e5",
+  "slug": "affiliate-disclosure",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "308ca713-a571-5594-7829-b1e2482e0785",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Партнерська інформація"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"b45cf567-41af-ae38-6bbc-d7a062f4eab9\">Один із способів монетизації цього блогу це <a href=\"https://slobodskyi.com/ua/monetize/advertisement/affiliate-marketing\" data-w-id=\"aac8156f-9f04-0905-43b2-632fc48f5b5e\">партнерський маркетинг</a>. </p><h2 data-w-id=\"f9f700bb-ddae-a686-b6d1-0edc40f3c8e4\">Як це працює?</h2><p data-w-id=\"bdc78607-0158-298e-2569-cdeacdac2591\">Розглянемо на прикладі OnlyFans. </p><p data-w-id=\"3be6de21-4366-51d7-5d76-55c1e967f891\">OnlyFans пропонує реферальну програму, де ви можете заробити 5% від доходу авторів, яких ви залучили. Після підтвердження вашого акаунту ви отримуєте унікальне реферальне посилання, яким можна поділитися з друзями, зацікавленими у створенні OnlyFans. </p><p data-w-id=\"a6944986-d22e-29c9-7e68-7aaa5d4cf073\">Важливо, що ці 5% віднімаються від комісії OnlyFans. Автор заробляє свої звичайні 80%, незалежно від того, зареєструється він через ваше посилання чи ні. </p><p data-w-id=\"fbfed32f-2eba-6e89-9737-c69edc292e1e\">Детальніше про реферальну програму OnlyFans можна почитати <a href=\"https://onlyfans.com/help/3/22/90\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"b3bc70ae-fb5e-864d-9f11-b34111ffbec7\">тут</a>.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"a33a9cf8-0627-f847-2354-4fed4719cf38\"><div data-w-id=\"42b1c6ad-1342-49fe-7911-bcadf733ee81\"><img width=\"auto\" height=\"auto\" alt=\"Приклад партнерської програми OnlyFans\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb652b56be172913d4cf_onlyfans-referral-program.webp\" loading=\"lazy\" data-w-id=\"f5599961-d36b-da69-309f-2333a4eef46e\"></div></figure><p data-w-id=\"08f3d81c-fd71-2a52-be10-1a6b0f013fd2\">У мене є безкоштовна стаття про те <a href=\"https://slobodskyi.com/ua/monetize/memberships/onlyfans\" data-w-id=\"a0106001-a0eb-abb7-e6bb-cb520fddfe20\">як працює OnlyFans</a>. В статті я розібрав всі кроки від створення облікового запису до просування та монетизації. </p><p data-w-id=\"a2fac842-7325-b27f-70a1-14c6278e716d\">Ця стаття містить мої реферальні посилання.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-w-id=\"06cd55fd-7350-4107-30d4-35ae74d73521\"><div data-w-id=\"53b2e3ba-97f9-4c51-74f6-9eda658fe70f\"><img width=\"auto\" height=\"auto\" alt=\"Розміщення партнерських посилань в статті\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cca2252ed4b0d8f59352_article-onlyfans-affiliate-link.webp\" loading=\"lazy\" data-w-id=\"f549dd11-9fe0-78bc-fe43-02725d1243d3\"></div></figure><p data-w-id=\"2ee15c21-b0f9-0657-1f5e-843cc96a371b\">Деякі читачі відкривають акаунти та починають заробляти, а я отримую комісію. </p><p data-w-id=\"6ba4d0dd-0a47-d3a8-581c-b36ee12a2584\">Це створює безпрограшну ситуацію. </p><p data-w-id=\"a47efc50-8a82-dffd-64d5-c036e51b320a\">Я мотивований створювати корисний контент з ефективними порадами,&nbsp;тому що я заробляю комісію лише в тому випадку, якщо мої читачі досягають успіху.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-w-id=\"60ca8e13-6ee4-0f42-5f1a-3bacf5c53a8c\"><div data-w-id=\"6b28d4a5-6a92-b819-4ab8-0a29125a57be\"><img width=\"auto\" height=\"auto\" alt=\"Статитика OnlyFans\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb7baff324fd003255e1_affiliate-onlyfans.webp\" loading=\"lazy\" data-w-id=\"3fb25a80-e1df-8b21-5837-6a309a0693a0\"></div></figure><p data-w-id=\"3e30e890-c84b-3196-d9e8-1cde7ce750d2\">Це приклад того, як я використовую партнерський маркетинг для монетизації цього блогу. </p><h2 data-w-id=\"670158f4-598d-a7c2-14e5-72ec104139ee\">Мої принципи </h2><ol start=\"1\" data-w-id=\"368f1c32-f682-d524-c319-dd5d7d7fa725\"><li data-w-id=\"53ed6429-1679-4c1d-2bf0-2a2638f98674\">Я пишу лише про теми, де маю практичний досвід.</li><li data-w-id=\"d993dc80-cb15-9c69-66b3-ca2393c97a1b\">Для кожної послуги або продукту, який я обговорюю, я пропоную альтернативні рішення або рекомендації, навіть якщо від них немає партнерських програм.</li><li data-w-id=\"ff791b91-74fd-e83c-fb47-a0daa5c3c74c\">Я уникаю партнерських програм, де комісії вираховуються з заробітку моїх рефералів.</li></ol></div>",
+            "text": null
+          }
+        }
+      ]
+    }
+  ]
+}

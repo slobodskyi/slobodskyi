@@ -1,0 +1,31 @@
+{
+  "pageId": "66d6ed25f848870d6be68e2e",
+  "slug": "detail_paid",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "5fe4b9e8-dd2a-e2e6-b912-03b027e5f626",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "c0906e03-e9ab-8e9c-fb62-5af9a327c087",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4c321fbe-cbcc-d81a-77b5-ab2caeec4b78",
+      "type": "component-instance",
+      "componentId": "ac308377-5c83-6d9a-03c7-09672d177aae",
+      "propertyOverrides": []
+    },
+    {
+      "id": "37318592-137a-30e2-a482-fe09b7f1c8b4",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

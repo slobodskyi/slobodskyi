@@ -1,0 +1,43 @@
+{
+  "pageId": "683429b54772678c268838df",
+  "slug": "how-to-create-images-with-ai",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "b27ad654-120d-7be4-15fe-bbac9ce33ab7",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"h2-heading\">Создание изображений с ИИ</h1>",
+        "text": "Создание изображений с ИИ"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5991b8f0-f06e-d78f-497c-dbb9faa2420a",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-uheader\">Онлайн курс доступен на украинском</div>",
+        "text": "Онлайн курс доступен на украинском"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91df",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683706cd1811bd93742dd1c3"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91ec",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6837026e293581224cdc9105"
+      },
+      "attributes": {}
+    }
+  ]
+}

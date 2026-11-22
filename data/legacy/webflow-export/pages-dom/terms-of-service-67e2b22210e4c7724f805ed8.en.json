@@ -1,0 +1,78 @@
+{
+  "pageId": "67e2b22210e4c7724f805ed8",
+  "slug": "terms-of-service",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "fdedd2d6-20a7-7839-987e-0354783714b5",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "2e73693c-a96d-1b6b-42d0-071050e11b1a",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Terms of Service"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"46b8c3fb-a0b4-9955-5d29-7fbab8aa4219\">These Terms of Service (“Terms”) govern your use of the website <a target=\"_new\" href=\"https://tools.slobodskyi.com\" data-w-id=\"222d51db-e56e-5b78-304d-76613fba818e\">https://tools.slobodskyi.com</a> (the “Site”) and the services provided therein (the “Service”), which include various SaaS tools for creators such as a quiz maker and a web stories generator.</p><p data-w-id=\"d5564e25-e96e-6223-7de4-8c81919cf379\">By accessing or using our Site and Service, you agree to be bound by these Terms. If you do not agree, please do not use our Site or Service.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "f0355ff7-0448-87c8-c2c0-623beb607811",
+      "type": "component-instance",
+      "componentId": "ac5b0084-c0f2-487e-99ba-41f104bd3018",
+      "propertyOverrides": [
+        {
+          "propertyId": "c07be089-c247-4c27-52e3-4ef4350f67d3",
+          "type": "Plain Text",
+          "label": "Time to read",
+          "text": {
+            "html": null,
+            "text": "Time to finish: 2 hours"
+          }
+        },
+        {
+          "propertyId": "aee6b170-45f5-b7b6-1b91-ea85777fa41e",
+          "type": "Plain Text",
+          "label": "Updated On",
+          "text": {
+            "html": null,
+            "text": "Updated: 25 March 2025"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5414648a-fd5f-e8e5-a774-f5fbaec6bbb6",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"ac825094-6ed8-59c7-c847-c16da20c4c25\">1. Acceptance of Terms</h2><p data-w-id=\"b9eefb11-4b9e-90f9-9df7-8ba899c04cc5\">By using the Site, you acknowledge that you have read, understood, and agree to these Terms.</p><h2 data-w-id=\"daae1703-7168-fb4f-4b71-bdbec7f5d5ec\">2. Description of the Service</h2><p data-w-id=\"10772574-b7af-036f-c673-dd05c0147d38\">The Service is offered by Oleksandr Slobodskyi, operating as an individual solopreneur (FOP – ФОП фізична особа підприємець) in Ukraine. Our Service provides various tools designed to help creators, currently including a quiz maker and a web stories generator.</p><h2 data-w-id=\"fde43e71-c29b-699e-75b1-0067a00a39be\">3. Eligibility</h2><p data-w-id=\"6c649f87-48e8-7a83-8ad4-c11db051aed1\">You represent that you are at least 18 years of age and capable of entering into legally binding agreements. Use of the Service is limited to those who meet these criteria.</p><h2 data-w-id=\"38ded811-0a31-31af-a2ed-72df6f9dfaea\">4. User Accounts and Registration</h2><p data-w-id=\"a76ccf11-0b97-432b-c491-5b693405fdf7\">If you register an account, you agree to provide accurate, current, and complete information and to maintain the confidentiality of your account credentials. You are responsible for all activities under your account.</p><h2 data-w-id=\"266a411c-3056-40c8-ffd5-05211512d394\">5. User Conduct</h2><p data-w-id=\"1d72883d-ed86-fb6d-f53b-e1c88a9cf50c\">You agree to use the Service only for lawful purposes and in a manner that does not infringe the rights of, restrict, or inhibit anyone else’s use of the Service. Prohibited behavior includes, but is not limited to, any actions that could harm our Service or its users.</p><h2 data-w-id=\"d1b928f0-26ca-ff67-cd10-fbca2f06a019\">6. Payment and Subscription</h2><p data-w-id=\"d5a85ccd-f765-c6d2-cb59-266f671b4f94\">If the Service requires payment, you agree to pay all fees as listed on the Site. Payments are processed according to our pricing policy, and any subscription fees will be billed on the cycle specified at the time of purchase. All fees are non-refundable unless otherwise stated.</p><h2 data-w-id=\"855becc6-8099-6638-5d0b-b86e2fdf757a\">7. Intellectual Property</h2><p data-w-id=\"b5475d64-5fe8-0c6a-1268-cd5da386cc88\">All content, trademarks, logos, and software provided on the Site are the exclusive property of Oleksandr Slobodskyi or its licensors. You may not reproduce, modify, distribute, or create derivative works without explicit permission.</p><h2 data-w-id=\"b6297aa9-d9fe-2363-22f5-8e45d49347bf\">8. Disclaimer of Warranties</h2><p data-w-id=\"c1d86c46-2770-29fe-7dc7-b6781622f372\">The Service is provided “as is” and “as available” without any warranties of any kind, either express or implied. We do not guarantee that the Service will be uninterrupted, error-free, or secure.</p><h2 data-w-id=\"e93284be-1386-00f4-dd45-ac26b3202f8c\">9. Limitation of Liability</h2><p data-w-id=\"a32ba225-58ae-ef5d-6b90-9fe729946cb5\">To the fullest extent permitted by applicable law, Oleksandr Slobodskyi shall not be liable for any indirect, incidental, consequential, or punitive damages arising out of or related to your use of the Service. Our total liability, whether in contract, tort, or otherwise, shall not exceed the amount you paid (if any) for accessing the Service during the 12 months prior to the claim.</p><h2 data-w-id=\"984796ac-500b-a57b-fc79-174231a67019\">10. Changes to These Terms</h2><p data-w-id=\"411d85ed-37d5-783e-1371-46fcae3cc95c\">We reserve the right to modify these Terms at any time. Any changes will be posted on the Site with an updated effective date. Your continued use of the Service after changes constitutes your acceptance of the new Terms.</p><h2 data-w-id=\"336667dd-860a-2abd-1721-e15128ed08e2\">11. Governing Law</h2><p data-w-id=\"8dafa3b8-2eed-c7a8-00c1-d00e53348462\">These Terms shall be governed by and construed in accordance with the laws of Ukraine. Any disputes arising under or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of Ukraine.</p><h2 data-w-id=\"8e99fb77-c5bc-29ad-2fae-001df27d58c8\">12. Contact Information</h2><p data-w-id=\"4499aa6a-9852-42d0-fd97-5c8d13dea234\">If you have any questions or concerns about these Terms, <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"dc1ae571-cc6d-8117-af10-1cf702aa0e68\">please contact us</a>.<br data-w-id=\"24f88b36-63fd-6bf2-fbe1-9ac486c13a0a\"></p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "18fd735a-8e94-a39c-86d1-54cfb87388e5",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

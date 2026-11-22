@@ -1,0 +1,32 @@
+{
+  "pageId": "65a417707a94950c7e2907e5",
+  "slug": "affiliate-disclosure",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "308ca713-a571-5594-7829-b1e2482e0785",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Партнёрская информация"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"4029678a-927f-8422-5528-820600a5c6e7\">Одним из способов монетизации этого блога является <a href=\"https://slobodskyi.com/ru/monetize/advertisement/affiliate-marketing\" data-w-id=\"29f5f052-cf99-49dc-d1ed-4da42e536f8f\">партнёрский маркетинг</a>. </p><h2 data-w-id=\"e4a642ff-c85d-d88c-2261-90827a30cd01\">Как это работает?</h2><p data-w-id=\"5890cfd8-a4d5-23bc-a223-a8cc99805ff8\">Давайте разберём на примере OnlyFans. </p><p data-w-id=\"c4312ff1-8837-499c-383b-3cc6d2b6f28c\">OnlyFans предлагает реферальную программу, по которой вы можете зарабатывать 5% от доходов привлеченных вами авторов. После верификации аккаунта, вы получите уникальную реферальную ссылку, которой сможете поделиться с друзьями, заинтересованными в создании OnlyFans. </p><p data-w-id=\"c2d95214-4eea-cc73-2d40-646947b684cb\">Эти 5% отнимаются от комиссии сервиса. Привлеченный автор зарабатывает свои обычные 80%, независимо от того, зарегистрируется ли он по вашей ссылке или нет.</p><p data-w-id=\"b68ff952-9ccf-e7de-e1e6-84f0b2a96c0b\">Более подробную информацию о реферальной программе OnlyFans можно найти <a href=\"https://onlyfans.com/help/3/22/90\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"e146e91d-6b56-2641-c6e8-e8ef8c8b5f06\">здесь</a>.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"5e914427-9906-5fb7-1b92-df8f3b5c8761\"><div data-w-id=\"7e7e0ab8-e0e5-c69d-b5d5-fa55e37cc7ea\"><img width=\"auto\" height=\"auto\" alt=\"Реферальная программа OnlyFans\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb652b56be172913d4cf_onlyfans-referral-program.webp\" loading=\"lazy\" data-w-id=\"06f98799-ef06-73c4-e223-5ed4a900be75\"></div></figure><p data-w-id=\"27c7e27b-b1df-3592-1d4c-d87693e1614d\">У меня есть бесплатная подробная статья про то <a href=\"https://slobodskyi.com/ru/monetize/memberships/onlyfans\" data-w-id=\"c9fc9d68-20ab-cd76-2752-cffb165cb66f\">что такое OnlyFans</a>. В&nbsp;ней я разобрал все этапы работы: от создания аккаунта до продвижения и монетизации. </p><p data-w-id=\"5b610db5-1204-50bc-a98f-736cd755a31b\">В статье оставил свои реферальные ссылки на регистрацию.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"8a625354-acdb-86ed-9d45-1b2736a849b7\"><div data-w-id=\"1747e285-eb85-d748-c262-68f4c8c72a51\"><img width=\"auto\" height=\"auto\" alt=\"Пример реферальной ссылки \" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cca2252ed4b0d8f59352_article-onlyfans-affiliate-link.webp\" loading=\"lazy\" data-w-id=\"70d8f6e4-7c73-714f-58a9-a4ba359a4e4c\"></div></figure><p data-w-id=\"cc6744d1-c1b8-4c34-42b7-eb78e71379f7\">Некоторые читатели регистрируются и начинают зарабатывать, а я получаю комиссию. </p><p data-w-id=\"4e5a50cb-8593-cebd-45ad-308e77f99fb9\">Win-win. </p><p data-w-id=\"1f5df778-b991-d86b-7903-d668248c728e\">Я&nbsp;заинтересован создавать полезный контент с работающими советами.&nbsp;</p><p data-w-id=\"bf772e66-e8a5-18dd-fa38-e10e1025aded\">Я зарабатываю комиссию только в том случае, если мои читатели добиваются успеха.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"6d88600c-c573-643e-6975-c278a87ce8c6\"><div data-w-id=\"8133d633-503c-b341-4748-6177b25e6a69\"><img width=\"auto\" height=\"auto\" alt=\"Статистика доходов рефералов\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb7baff324fd003255e1_affiliate-onlyfans.webp\" loading=\"lazy\" data-w-id=\"3e2df42f-63ea-580e-8725-fdea6f77e2b6\"></div></figure><p data-w-id=\"98d5815d-d609-cf9d-cfe0-ca537fa6fd0b\">Вот и всё.</p><p data-w-id=\"ed477763-51ed-2c96-1c5f-643d6c4075c6\">Это был пример того, как я использую партнерский маркетинг для монетизации этого блога. </p><h2 data-w-id=\"da807d8b-44a5-be9e-dfab-f14405a0f299\">Мои принципы </h2><ol start=\"1\" data-w-id=\"3a4dace6-05e6-83db-e617-c761318b474f\"><li data-w-id=\"1fab2e9c-c0f3-dd53-e609-d37ef08cf52f\">Я пишу только на темы, в которых у меня есть опыт.</li><li data-w-id=\"fb8f565b-b247-ccce-530d-64d0b09204c7\">Для каждого продукта я предлагаю альтернативные решения или рекомендации, даже если для них нет партнерских программ.</li><li data-w-id=\"47ed478a-fd37-978b-448a-cdcb409d90aa\">Я не использую партнерские программы, в которых комиссионные вычитаются из доходов моих рефералов.</li></ol></div>",
+            "text": null
+          }
+        }
+      ]
+    }
+  ]
+}

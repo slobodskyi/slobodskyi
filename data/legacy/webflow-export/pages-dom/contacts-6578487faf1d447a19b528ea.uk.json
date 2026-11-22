@@ -1,0 +1,72 @@
+{
+  "pageId": "6578487faf1d447a19b528ea",
+  "slug": "contacts",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "f37b640c-4e31-8e61-40b6-60ba5c075ce4",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Контакти"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c797d4f9-fcbf-a67c-05ff-56e139618470\">Ви можете задати питання через цю форму.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fdd",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"name\">Ім'я</label>",
+        "text": "Ім'я"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe0",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"email\">Електронна пошта</label>",
+        "text": "Електронна пошта"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "4ca04911-43c3-e79b-0e20-42e60cd7249d",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"field\">Повідомлення</label>",
+        "text": "Повідомлення"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe3",
+      "type": "submit-button",
+      "waitingText": "Please wait...",
+      "value": "ВІДПРАВИТИ",
+      "attributes": {}
+    },
+    {
+      "id": "539b1ef5-2339-60e5-c1fa-ae9459b094e0",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"ФОП Слободський Олександр Миколайович\",\n  \"url\": \"https://slobodskyi.com/ua/\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"Георгіївський провулок 7, кабінет 205\",\n    \"addressLocality\": \"Київ\",\n    \"postalCode\": \"01054\",\n    \"addressCountry\": \"UA\"\n  },\n  \"contactPoint\": {\n    \"@type\": \"ContactPoint\",\n    \"telephone\": \"+380 073 545 1872\",\n    \"contactType\": \"customer service\",\n    \"availableLanguage\": [\"en\", \"Ukrainian\", \"Russian\"]\n  },\n  \"sameAs\": [\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.linkedin.com/in/oslobodskyi\",\n    \"https://www.pinterest.com/slobodskyi\"\n  ]\n}\n</script>",
+      "attributes": {}
+    }
+  ]
+}

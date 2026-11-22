@@ -1,0 +1,202 @@
+{
+  "pageId": "66d6e1ae00f616bc88d06b7b",
+  "slug": "ai",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "30ef8b9a-f98f-70ff-6c34-206e5e57b61f",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "93970a92-ae1b-fdf6-f0f8-4e299169b565",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "563012b0-a836-224c-0d19-a0d66a460154",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "What is Artificial Intelligence?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"6ec85782-e7b2-44e4-fdaf-91d727a510fa\">Artificial Intelligence (<em data-w-id=\"1f7f98d3-dde1-db9a-aa1e-8f129d3b29c5\">AI</em>) is a technology that enables computers to perform tasks usually done by humans.</p><p data-w-id=\"9216e0c0-76ee-99a8-5085-9d52ce8c948d\">For example, AI can recognize speech, write texts, analyze data, or create images.</p><p data-w-id=\"5ea2be35-1f64-a5af-9527-beb7bf946619\"><strong data-w-id=\"229410eb-e338-1e6f-4024-cad2b5585ee8\">This article includes examples of real-world usage.</strong></p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "a81c4255-7e2a-ba7e-bc35-c1e37f046136",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Create"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6ff2f119-c96e-0145-a92f-daef96e28c3e",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "cf7aef8c-f546-9f88-922e-7f1da351d2dd",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "954e9aeb-e345-1073-a846-1bbcaae0c359",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"72842407-0eab-33e8-3a47-50d2de4fd636\">I use AI daily: generating ideas, editing and translating texts, creating illustrations for articles, videos, and voiceovers in English.</p><p data-w-id=\"cce14ef2-7c6d-dfff-a665-7cc9bdfa6168\">Below are several detailed guides on individual AI tools, as well as general information on how artificial intelligence works.</p><h2 data-w-id=\"b26db59c-db23-a328-3bf5-aa57ac057e35\">AI&nbsp;Tools for Text</h2><p data-w-id=\"ce18d6ab-fa38-0d89-515c-a9f888677a96\">Overview of chatbots.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f9ef5107-4657-bd1f-4572-1efd3228d59f",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "baa6413a-52c6-0e80-83d2-f87f456a73f8",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "24179b14-97d4-5efe-8fb0-d47f12f212aa",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"24179b14-97d4-5efe-8fb0-d47f12f212ab\">AI&nbsp;Tools for Images</h2><p data-w-id=\"24179b14-97d4-5efe-8fb0-d47f12f212ad\">Overview of AI tools for working with images.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1571322f-7476-79bb-d941-786047db22a2",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1571322f-7476-79bb-d941-786047db22a4",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "0a3cc6f4-c547-084b-8990-3c807076ac8b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"7e695166-668d-447c-412d-b826adf4dd21\">AI&nbsp;Tools for Voices</h2><p data-w-id=\"0a3cc6f4-c547-084b-8990-3c807076ac8e\">Overview of AI tools for working with voice and sound.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9873f1d8-296c-96e2-9e4d-ac7f060605d6",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "9873f1d8-296c-96e2-9e4d-ac7f060605d8",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "8b35f4e1-23e6-f92d-42f1-b55fe8ed0cb5",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"d2f45987-bb25-6722-c766-9493afd5f52d\">How Does Artificial Intelligence Work</h2><p data-w-id=\"5e32bb66-7204-1310-cbde-a31875d9d249\"><strong data-w-id=\"e7951a8a-862c-f514-6041-fa752ca2439f\">To use AI, you don’t need to fully understand how it works.</strong></p><p data-w-id=\"65e916ba-462c-154f-e964-82762aca9d72\">Just like you don’t need to know how a phone operates to make calls or take countless photos of your dog (<em data-w-id=\"94f08591-e4c5-fa04-cd4c-0a77975597c4\">my case</em>).</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\" data-rt-max-width=\"\" data-w-id=\"8c18fbf2-34f9-5b98-9a62-f97bd6a8c2bb\"><div data-w-id=\"d0371aa9-3f2c-a6bd-bfdb-1c7038fb542d\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810fe5429aa2bc8b09ad_6778734f0b5424b9efdce85c_6778733c633bd6ebc927b7d7_jinni.webp\" loading=\"lazy\" alt=\"This is my dog, you’re welcome\" width=\"auto\" height=\"auto\" data-w-id=\"b7177db1-0595-efec-2052-7197087e9c59\"></div></figure><p data-w-id=\"87d64e01-3ffc-8b0b-7526-f384a0122bc6\">However, you need to spend some time figuring out the specific tool you’ll be using.</p><p data-w-id=\"23cbdce7-1052-1816-9530-3c66bd1c5493\">Most of the time, working with AI comes down to sending messages known as prompts.</p><h3 data-w-id=\"cd735a6a-ff0d-d12a-5015-b375bf62e4a9\">What Is a Prompt</h3><p data-w-id=\"b34a9c8a-48fe-0b5b-f7fa-23b6608f40a0\">A prompt is a text query you send to AI to perform a task.</p><p data-w-id=\"b12edc4a-ab79-4454-973c-adb6048ebd31\">It tells the system what you want to get, whether it’s text, an image, or a generated voice.</p><h3 data-w-id=\"b8d010ce-3534-1429-6018-012df2efd0df\">Types of Prompts</h3><p data-w-id=\"9550c683-ce05-e45d-d366-eab410d8e518\">Let’s explore a few examples of real prompts.</p><p data-w-id=\"e959716d-ddc5-432b-63a7-bbd762bdd157\">We’ll use four popular services:</p><ol start=\"1\" data-w-id=\"8629c586-aa70-5a2b-22a4-0185770d5e0f\"><li data-w-id=\"5a002d3c-dcce-7681-7449-8dcfef95995d\"><a href=\"/ai/chatgpt\" data-w-id=\"01b2fbae-6abc-7009-ffcb-96668e04cc65\">ChatGPT</a>: for generating ideas and texts.</li><li data-w-id=\"dd97254d-5ae0-8f3b-6687-9c45ab85aa78\"><a href=\"https://www.midjourney.com/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"cf0ded97-709f-613e-90f0-18a8989cf48a\">Midjourney</a>: for creating images.</li><li data-w-id=\"799571cd-1dad-77e6-85c9-ae8db574c7e5\"><a href=\"https://slobo.click/runway\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"5fc6d0e4-69ec-9f92-e322-7585552a58c9\">Runway</a>: for creating videos from images.</li><li data-w-id=\"054c13b2-35b6-7a1c-6bce-afb6719ed87b\"><a href=\"/ai/elevenlabs\" data-w-id=\"debaa5e8-172e-a0f3-becf-f4962af6dd59\">ElevenLabs</a>: for generating voiceovers from text.</li></ol><blockquote data-w-id=\"7156f742-1207-a2d8-e96f-08c89fbfbe27\">My prompts are in English, but for ChatGPT, you can use any language you prefer.</blockquote><p data-w-id=\"4626b289-2029-7cb9-5c06-a7b606a8c44c\">Spelling and punctuation don’t matter — sometimes, I write one prompt in multiple languages, and ChatGPT still understands it.</p><h4 data-w-id=\"51ccfcfa-df36-92f6-4d1f-ade6b1a2289a\">Step 1: Generating Ideas in ChatGPT</h4><p data-w-id=\"af28a9c7-c754-e29d-3386-edc3221d5b96\">I send a prompt requesting a list of video ideas.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"58becc0e-a57f-f35e-bc4c-857d2c1698de\"><div data-w-id=\"7cc38315-694b-3de8-36a3-999ab8529471\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810f6d256422e32da1fe_67786077486b6e96b78bd766_6778606203bfc2abf85f59b0_1-ai-chatgpt-prompt-example.webp\" loading=\"lazy\" alt=\"Example of a text prompt for ChatGPT to generate ideas or content\" width=\"auto\" height=\"auto\" data-w-id=\"8a7e0952-8c71-c92f-4c71-94bf02d5ed09\"></div></figure><p data-w-id=\"38ce2bb2-9081-292c-5119-76646ba34f4d\">ChatGPT sends a list.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"79233432-126a-f1e3-3abc-7bfda431f93d\"><div data-w-id=\"3ee7299b-f066-83e9-7105-4b2fd5366ba6\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67868110c2371d558cc01fc5_6778637844d870059fd48efe_6778634162ba50749ae5fb47_2-chatgpt-response-example.webp\" loading=\"lazy\" alt=\"A response from ChatGPT with ready-to-use ideas for videos or articles\" width=\"auto\" height=\"auto\" data-w-id=\"48bbe5e9-1cb4-25d1-8d73-80463e21b729\"></div></figure><p data-w-id=\"be8b044f-16c7-fc68-972a-4b787359bb60\">I pick an idea I like, send its number, and ChatGPT generates a ready-made script for the video, along with prompts for creating images in Midjourney.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"3471b2d3-b3a0-1094-9f0d-441b5358f9d4\"><div data-w-id=\"3acd7de2-a08c-b29f-7789-05eb7dece890\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810f6bfa482d6b12cf40_6778637844d870059fd48f01_6778634ad4b53d00b8ebb366_3-custom-chatgpt-example.webp\" loading=\"lazy\" alt=\"A custom ChatGPT setup optimized for generating repetitive tasks like lists or text ideas\" width=\"auto\" height=\"auto\" data-w-id=\"89811b16-0103-472e-f7bf-7051b3cb6f3b\"></div></figure><p data-w-id=\"8064c0ce-2898-d1c9-d7ec-256eb4a92199\">In this example, I used a custom ChatGPT optimized for repetitive tasks. </p><p data-w-id=\"fee93a52-868d-a909-4961-fd13e082bb68\">I explained what I needed and in what format (<em data-w-id=\"d4c4dcb3-c660-cfaf-af58-c730953e5ec3\">list of ideas, then text and prompts</em>).</p><p data-w-id=\"97a1dd8a-c5bd-2129-f424-a6cfd2b5271b\">This saves time, as I don’t have to give detailed instructions every time. </p><p data-w-id=\"51309ade-3b85-317a-f302-c604ad50dcde\">I have a separate article on <a href=\"/ai/chatgpt\" data-w-id=\"3fad82de-6e56-ecda-f118-207bee1df624\">how to use ChatGPT</a>.</p><h4 data-w-id=\"b43e3aa4-c02b-501b-9dba-f2f30e588309\">Step 2: Creating Images in Midjourney</h4><p data-w-id=\"4fbae4d7-fbe7-0cc2-c23d-959f3635b529\">Next, I switch to Midjourney, copy the generated prompt, refine it if needed, and send it.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"e1fbe634-ee82-92d2-b876-00c0294ec07d\"><div data-w-id=\"67dd5080-27e6-392c-60c3-1377a52e06ba\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810f309b6c257779b9e3_677860e7f1ae40b9cdcf19d0_677860c1486b6e96b78c22c3_4-midjourney-image-generation-prompt.webp\" loading=\"lazy\" alt=\"Example of a prompt for generating illustrations in MidJourney with detailed style descriptions\" width=\"auto\" height=\"auto\" data-w-id=\"11954b3b-bc81-0f29-a3f9-44e70d999741\"></div></figure><p data-w-id=\"8dc6f4eb-7abe-3133-bf9f-6bfd6d2a6516\">Midjourney generates four image options.</p><p data-w-id=\"ec946950-6017-e317-a4dd-c6d6fee08650\">I can choose the one I like or ask for revisions.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-w-id=\"e6c82c7b-8ab5-1107-e5a4-a0ee1a510852\"><div data-w-id=\"3551812a-fca0-cbf8-377d-7814f49480f3\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810fe4221fb525ab15b2_677860e7f1ae40b9cdcf19d3_677860cdca7d379bb098bd14_5-midjourney-image-generation-results.webp\" loading=\"lazy\" alt=\"Results from MidJourney image generation showing four creative design options for selection\" width=\"auto\" height=\"auto\" data-w-id=\"067f3327-bdd9-b41d-ce92-89f282f83371\"></div></figure><h4 data-w-id=\"3fd9e8e7-38ef-630e-33f6-a0a76b6046bb\">Step 3: Animating in Runway</h4><p data-w-id=\"41d36587-fa36-b359-52ea-9b5f32e089f3\">After creating the necessary images, I upload them to Runway for animation.</p><p data-w-id=\"b9e8ebe5-8711-a39f-7820-d95ebf995894\">Since I’m still learning Runway, I don’t create prompts myself but let the system determine how to animate the images.</p><h4 data-w-id=\"88928f5a-95b1-6ed7-6b77-10f7bf0b4f76\">Step 4: Generating Voiceover in ElevenLabs</h4><p data-w-id=\"bf9a0bab-9a53-f7e1-a6c0-1303f3fffb70\">When the video is ready, I switch to ElevenLabs, copy the text, and generate a voiceover in English.</p><p data-w-id=\"690ca0ef-12a3-4df7-93c3-ba8763997844\">I <a href=\"/ai/elevenlabs\" data-w-id=\"c56d5175-71dc-9cbb-dae1-36ef661467f9\">pre-created a copy of my voice in ElevenLabs</a>, and now I can voice any text in any language without an accent.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"78e183b5-88de-53c5-8cc9-7259356afc80\"><div data-w-id=\"c320f24c-2753-763b-ab08-3c34b1be34bc\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/678681100b4fb7a9e9a608b2_677860e7f1ae40b9cdcf19cd_677860d6c6fdc72c7efdd203_6-elevenlabs-text-to-speech-prompt.webp\" loading=\"lazy\" alt=\"Example of a text prompt for ElevenLabs to create a voiceover or narration\" width=\"auto\" height=\"auto\" data-w-id=\"c40d734c-be35-53b2-9d65-31ba10ed1cd9\"></div></figure><h4 data-w-id=\"679c007f-2f2e-f55b-57f5-eed9f796f03d\">Done!</h4><p data-w-id=\"b891e075-c109-76aa-b3b4-1a9762a2d170\">All these real examples show how I create videos for TikTok, Shorts, or Reels in just 10 minutes.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"175ac4d6-1d0a-776b-d69d-52d95372de9c\"><div data-w-id=\"8fa5994d-5793-f43a-9695-88a88d3ca2c7\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67868110ec271341fe467614_677860e7f1ae40b9cdcf19b7_677860e26f30c5e95c93b366_7-ai-youtube-shorts.webp\" loading=\"lazy\" alt=\"Examples of short videos for YouTube Shorts created using AI tools like MidJourney and ElevenLabs\" width=\"auto\" height=\"auto\" data-w-id=\"75df39c4-aff7-8718-2146-3576f5863435\"></div></figure><h3 data-w-id=\"7e7ea2ed-07b6-ab5d-b7ba-e9ad6dda0538\">What Are Models</h3><p data-w-id=\"7749126c-2cbe-d860-6b6f-2965a6283f1b\">Models are versions of algorithms trained to perform specific tasks.</p><p data-w-id=\"f6eb69c3-380a-ed5e-ecfc-0f310cfe1679\">Different models are suitable for different purposes.</p><p data-w-id=\"e21124e9-6bae-82b7-582d-2666c87acd82\">In AI tools, you often get to choose a model.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\" data-rt-max-width=\"\" data-w-id=\"2d8b467a-81d7-6dda-6f23-970d24114778\"><div data-w-id=\"e76c6fed-0884-9b9d-e75f-317c200a0c0a\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6786810fe781e3b7360dca5e_6778637844d870059fd48efb_6778637056a2e86e20b33d99_8-example-of-ai-model.webp\" loading=\"lazy\" alt=\" An example of models in ChatGPT\" width=\"auto\" height=\"auto\" data-w-id=\"406e8489-43ff-03d1-f7c8-ff6f26ef0adc\"></div></figure><p data-w-id=\"4de649e4-fa43-8367-1e3e-b127e6ac17a5\">The choice depends on your tasks, priorities (<em data-w-id=\"b8d0d8ef-4267-f8fc-8fbd-beb500adc1d3\">accuracy, speed, cost</em>), and developer recommendations.</p><p data-w-id=\"8f56ce04-bcae-8377-9883-9d2a793912f8\"><strong data-w-id=\"867ca094-d1ff-8933-1c4c-8ee4026fd150\">The best way to find the right model is to test several options.</strong></p><p data-w-id=\"2955d221-6ecc-c861-e7e6-cd09b61174ea\">Comparisons and recommendations for choosing models can be found in <a data-wf-link-page-id=\"66d6e1ae00f616bc88d06b7b\" data-w-id=\"5c4c318a-47e6-2efe-2e1e-947eabd7d046\">reviews of specific AI tools</a>.</p><h2 data-w-id=\"154f03b7-bbed-3a90-31ca-907034d3314f\">How Is AI Useful for Creators</h2><p data-w-id=\"e44a1dd1-cd6a-f5ae-1776-386bf536470e\">Artificial intelligence simplifies routine tasks, enhances work quality, and helps discover unique ideas.</p><p data-w-id=\"dea985d0-6e79-533b-2875-b254b6cd55f8\">Examples:</p><ol start=\"1\" data-w-id=\"0a83fac0-37b1-5594-5477-32361790bbab\"><li data-w-id=\"2776928f-7a01-c3be-e8a1-6ade528fc89e\"><strong data-w-id=\"ff79bd39-bd73-c1de-3077-86600e4fee20\">Designers:</strong> Create mockups for presentations, ad creatives, and test new visual concepts with Figma or Canva.</li><li data-w-id=\"4096d5f5-732e-3b35-7be4-feb11149fda1\"><strong data-w-id=\"b01df165-3407-2f57-586f-4ff9d8e3a26b\">Artists:</strong> Generate sketches and select color palettes with tools like Midjourney.</li><li data-w-id=\"8ee326b4-f9d5-284d-527a-3b467cc4237c\"><strong data-w-id=\"69d51269-1efd-1d87-a09d-97b1691f44dc\">Programmers:</strong> Optimize code, find bugs, and generate functions using Microsoft Copilot.</li><li data-w-id=\"c7513a75-2bd1-303d-3af1-8e93e2717407\"><strong data-w-id=\"fc511530-f9d2-7f02-e9f5-127394c07a02\">Musicians:</strong> Compose melodies and arrangements with Suno, experimenting with styles and rhythms.</li><li data-w-id=\"7e52a96f-0140-ce9f-abe9-46af131b9cba\"><strong data-w-id=\"6354f41b-bde5-d772-5b4e-0199f2d2a95a\">Bloggers:</strong> Analyze the audience, generate content, and write texts with ChatGPT.</li><li data-w-id=\"1eb97d8f-90f5-cc54-fd06-a18656dfcf7d\"><strong data-w-id=\"69c1fcce-e240-0de4-13aa-0e765f22dba7\">Experts:</strong> Create articles, infographics, and videos with tools like ElevenLabs and Canva.</li><li data-w-id=\"fb41e4bf-ed41-d04b-5c59-5b81023322cf\"><strong data-w-id=\"cef2ca6b-6906-29e4-7f76-8377c65e132b\">Scriptwriters:</strong> Develop plots for films and videos based on AI suggestions and analysis of popular genres.</li><li data-w-id=\"a81a3418-b7a1-0232-35b6-a302f4721cfa\"><strong data-w-id=\"3d9473cd-346b-1318-095d-7632e901845f\">Analysts:</strong> Process data and automate tasks with Make.</li></ol><h2 data-w-id=\"123d4e39-0d2f-d68b-2479-a925438cbedd\">Which AI Tools to Use</h2><p data-w-id=\"202c5e1f-7133-cb03-48b3-2146ddffd428\">Let’s explore some popular tools in different categories.</p><h3 data-w-id=\"1539331d-8066-cfc0-2680-aa2a9e17bc7d\">For Text Work</h3><ol start=\"1\" data-w-id=\"8c16c66e-df19-3a66-ae6c-b99debafa77d\"><li data-w-id=\"acba1d26-ba7e-cad8-dae7-41d95ba9cd88\"><a href=\"https://chatgpt.com/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"fe8d98fd-4e32-f34a-d5aa-1243852999eb\">ChatGPT</a>: The most popular tool for generating articles, scripts, and ideas. Great for drafts, <a href=\"/organic/seo\" data-w-id=\"90e6edf0-3720-7749-44a2-614cc1851fb2\">SEO optimization</a>, and brainstorming. For example, it can help come up with titles or post topics.</li><li data-w-id=\"7217b552-4f38-330d-6e09-871df0d437da\"><a href=\"https://claude.ai/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"87ef19d7-6b0a-db0b-10af-c9117f67ec8d\">Claude AI</a>: Specialist in complex tasks: data analysis, business plans, legal texts. Suitable for reports and structured documents.</li><li data-w-id=\"a1851597-c829-ff48-b322-6b90eb0195df\"><a href=\"https://gemini.google.com/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"c1ab5c5c-24ae-684b-650b-24c2608a278f\">Google Gemini</a>: Integrates AI with Google search. Ideal for authors needing up-to-date data. Example: Journalists can quickly create materials based on fresh information.</li></ol><h3 data-w-id=\"b0950c44-c2cb-3642-db76-71ca95ca6d62\">For Creating Images</h3><ol start=\"1\" data-w-id=\"4ed0a7e7-40ce-34a9-a95b-5636f02c7f73\"><li data-w-id=\"ad2bbd3c-f568-1e5d-ba72-ec67dcc487a6\"><a href=\"https://www.midjourney.com/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"839103cc-2b4e-293e-00fc-cf31c891408a\">Midjourney</a>: Creates concept art and unique illustrations. Suitable for inspiration and vibrant visuals. You can customize the style.</li><li data-w-id=\"ed0c5cb6-1182-431d-5675-ffe782dba1d5\"><a href=\"https://slobo.click/diffus\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"6be1cb3a-3551-8353-193a-5246e8d8974c\">Stable Diffusion</a> (<em data-w-id=\"c348be22-c271-ebca-e939-8b6c9c56bfc5\">Difuss</em>):&nbsp;Offers full control over the generation process and editing options. It is used, for example, to create NSFW content and <a href=\"/memberships/patreon\" data-w-id=\"6f1f9e17-ec3c-4505-b88a-f6108c3339c5\">earn money through Patreon</a> or <a href=\"/memberships/fanvue\" data-w-id=\"caedc0e8-da88-258c-bb8a-35f5ac98230d\">Fanvue</a>.</li></ol><h3 data-w-id=\"d932594e-4047-604f-fea9-6a357f241ec0\">For Creating Videos</h3><ol start=\"1\" data-w-id=\"116383a7-17cb-aede-e605-90ea041ac9cd\"><li data-w-id=\"cdcf8b0b-5736-d458-5082-23ac918f5a0f\"><a href=\"https://slobo.click/runway\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"b0dc714f-196d-dba6-7e56-7e471897521d\">Runway</a>: A versatile tool for creating and editing videos. Removes objects, generates backgrounds, and adds complex effects.</li><li data-w-id=\"344f3f11-0103-bb22-1e44-4a1b7b62c44d\"><a href=\"https://slobo.click/synthesia\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"7689169b-7e8c-f544-b8cd-2d0f11425555\">Synthesia</a>: Creates videos with virtual hosts. Suitable for lessons, ads, or presentations without actors.</li><li data-w-id=\"a5b097c2-9d68-7ae8-e2e2-e85007fff03e\"><a href=\"https://sora.com/\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"f657a124-46df-dac9-2508-e9a4570ec95b\">Sora</a>: A new tool from OpenAI for video creation. Still testing it, and I’ll write a separate article later.</li></ol><h3 data-w-id=\"211d7976-f05b-97e5-7c98-65c7525269ad\">For Generating Sound</h3><ol start=\"1\" data-w-id=\"a7e81d8a-f58a-1f56-0720-4c2c7fd4d26a\"><li data-w-id=\"7ff54711-6056-bb56-4fa9-dcb85969b15f\"><a href=\"https://slobo.click/elevenlabs\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"3c872987-36f7-f363-8d76-faf961754a10\">ElevenLabs</a>: Generates realistic voices for video and podcast voiceovers. You can <a href=\"/ai/elevenlabs\" data-w-id=\"815c8a16-5b73-0d71-3d8d-4adef5d0baa3\">create an exact copy of your voice</a> and voice any text in 32 languages.</li></ol><h3 data-w-id=\"270bf64c-93d0-9293-466b-bf302a5f6103\">For Creating Music</h3><ol start=\"1\" data-w-id=\"c4c4353a-88a5-1137-4b3c-0dab01a0875e\"><li data-w-id=\"58ea4cff-8ff8-5b03-d823-ad18a3b9f66e\"><a href=\"https://slobo.click/suno\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"d6465b5d-334a-3757-a760-86b16eeb4322\">Suno</a>: Creates melodies and musical fragments. Suitable for experimenting with styles and adding unique music to projects.</li></ol><h3 data-w-id=\"d6cbdb1a-86c7-ceb6-dcd6-de700578ab58\">For Task Automation</h3><ol start=\"1\" data-w-id=\"541d66ac-ec9e-ccd0-7d7b-e11b73d1e546\"><li data-w-id=\"42d1d6a5-72da-a434-4631-60c0f779568a\"><a href=\"https://slobo.click/make\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"61e72110-5154-86c3-2093-442b286dcb22\">Make.com:</a> While not exactly an AI tool, it helps automate tasks and integrate other AI services. For example, it can <a href=\"/no-code/make\" data-w-id=\"53612dd2-a1f2-894c-ee71-ecc9cef18fe8\">automate content creation</a> and posting on social networks.</li></ol><p data-w-id=\"6096032c-40af-8e9e-ec2d-5949d20a42a3\">There are many specialized AI tools designed for specific technical or business tasks.</p><blockquote data-w-id=\"9167a1e7-3dc0-e9d5-ad04-36e4f65f475d\">In this blog, I focus on tools that help solve creative tasks and create content.</blockquote><h2 data-w-id=\"3804d199-f6a5-ace3-618d-38d53e23c9af\">How Much Do AI Tools Cost</h2><p data-w-id=\"5fb84b0c-b768-e5bf-92de-501884ec28c7\">The cost depends on the specific tool.</p><p data-w-id=\"95ff6acd-93b5-6c6d-0a35-fe9ad595e90d\"><strong data-w-id=\"c1962fc2-ce52-8751-6021-d393ffe0e42e\">Many offer free packages sufficient to test and understand whether they’ll be useful for you.</strong></p><p data-w-id=\"68b27721-1166-b2a5-d972-2b616dd59cd9\">For example, ChatGPT has a free version, while the paid one costs $20/month, Midjourney starts at $10, and ElevenLabs starts at $5.</p><p data-w-id=\"eb5e3749-c537-512d-0ef2-805ae13b169b\">In some cases, payment is based on the number of generations.</p><h2 data-w-id=\"9c296725-03e5-6dbd-c68e-0bdbf0bf4810\">Can You Earn Money With AI</h2><p data-w-id=\"61ae9c8f-c9e6-af95-395a-f407b9dd9c69\">As you’ve already seen, artificial intelligence helps with various tasks.</p><p data-w-id=\"81030e5d-5788-9406-9e3b-5acb1235e541\"><strong data-w-id=\"c9cb1696-28b1-a07e-5fad-efe74801adb8\">Whatever you’re doing now, you can find a way to optimize tasks and work more efficiently.</strong></p><p data-w-id=\"ddaa57d0-bb7d-b300-d5d2-6b2f32c016dc\">But don’t expect to simply ask ChatGPT how to earn money and get a magical list of ideas.</p><p data-w-id=\"d03d6dc0-8ccb-fbfb-2d74-6599a681ab62\">AI-generated money-making ideas are often superficial.</p><blockquote data-w-id=\"d01cc215-8f8c-59be-7ff6-63889647b5ec\">AI has made it easier to answer “<em data-w-id=\"bd2783d4-e042-198d-60ac-2b58590a725a\">how to create</em>,” but the questions “<em data-w-id=\"20836d90-7b6a-8229-ad15-5e22b59986cb\">what exactly to create</em>” and “<em data-w-id=\"840ef247-b140-6a80-3506-f2a0f50b4328\">how to sell it</em>” remain key.</blockquote><p data-w-id=\"d1f01af2-3f20-4289-5f9f-292d82f4c49d\">Here are some online business ideas where AI is already actively used:</p><ol start=\"1\" data-w-id=\"9aeaa4ba-c352-1af3-c680-529ae4e3dd0a\"><li data-w-id=\"ea513d32-6182-702e-30e3-8beacc5eee89\"><strong data-w-id=\"8d608649-3c73-6c57-5641-e1f8c72c1089\">Book Creation:</strong> Using generative tools to write and <a href=\"/marketplaces/gumroad\" data-w-id=\"54be75c3-2c49-f29c-a028-e1121a30a810\">sell books on Gumroad</a> or Amazon.</li><li data-w-id=\"874f7b29-d961-a8d9-f820-5d65028914d8\"><strong data-w-id=\"6f17344a-4b33-2eeb-6982-da0a9b72eb05\">Video Content:</strong> Producing videos and voiceovers for YouTube, as I do in my examples.</li><li data-w-id=\"cba83f89-9cd4-1cb6-5b52-c6494443e9d7\"><strong data-w-id=\"7105d2b3-ba80-abd8-afb1-bb3edd95999e\">Image Sales:</strong> Creating and <a href=\"/marketplaces/shutterstock\" data-w-id=\"db7b2a0a-cd3b-f9e8-2005-dac992388bc6\">selling images on Shutterstock</a> or <a href=\"/marketplaces/etsy\" data-w-id=\"aadc4877-f327-67e1-c24b-914a31427987\">Etsy</a>.</li></ol><blockquote data-w-id=\"0ecbcd06-67b6-6669-e3d9-d5055e2ecf6f\">These ideas work if AI helps unleash your creativity and uniqueness rather than producing template copies.</blockquote><p data-w-id=\"82aa1e28-616b-5fb7-cc64-8af88eff08da\">If you’re interested in online earning, <a data-wf-link-page-id=\"65796e443c20ad34c3c0d9d1\" data-w-id=\"97537079-a213-c217-3408-9cddd8bf91d5\">check out my articles on monetization</a>.</p><h2 data-w-id=\"c413c73e-2ced-7a16-729c-dd312977b0f2\">How to Start Using AI</h2><p data-w-id=\"3e843018-6d06-caf3-9235-f5238c39af35\">Steps:</p><ol start=\"1\" data-w-id=\"856f2b3e-12af-119c-9bf4-73113d32cc20\"><li data-w-id=\"e37461b7-a329-11fc-4a9c-7ed5929c6246\"><strong data-w-id=\"7c7b061d-d77a-6bb9-45b9-42f57f9bde03\">Identify tasks:</strong> idea generation, data analysis, or content creation.</li><li data-w-id=\"46af3b27-5b28-f044-e4e8-0d6a7cc27abb\"><strong data-w-id=\"4305c4e6-b96a-1b37-2327-213c961a1000\">Choose a tool:</strong> e.g., ChatGPT for texts.</li><li data-w-id=\"93691cfe-1318-58d5-7052-13d4ddc5b730\"><strong data-w-id=\"cbda641f-2b5d-27e8-b6ea-309db3c41a5a\">Learn the basics:</strong> Through videos or <a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"c445d2a2-c040-9ce7-d027-7b5194f190aa\">guides</a>.</li><li data-w-id=\"6f5c239f-16be-9f79-b3c2-ed90041bc788\"><strong data-w-id=\"39b53c05-214b-1fc5-7c26-2373e967f05d\">Start with small projects:</strong> Experiment and try different approaches.</li></ol><p data-w-id=\"9752a974-dc7d-2509-7109-b0d69331262a\">A few ideas to get started.</p><h3 data-w-id=\"9b1f5b7b-bd65-e63d-b784-4615969cc66e\">Generating Ideas</h3><p data-w-id=\"946d0f62-13d7-22d6-7fcb-77cb755f8c6c\">Artificial intelligence is great for brainstorming.</p><p data-w-id=\"adbd3b34-0220-3c99-91a4-5a8fa59c7b4e\"><strong data-w-id=\"ff67ab87-90a2-fa38-91d4-63ebfb877317\">You can write in any language that’s convenient for you.</strong></p><p data-w-id=\"c2c80779-45bd-973f-de0e-b6cf5544fec7\">Try adapting prompts to your needs and ideas.</p><p data-w-id=\"08c62cce-9984-0af2-43b0-8dc9f11403d0\"><code data-w-id=\"3ccdf0d1-116d-ab00-b928-9beb989aad76\">I want to start a business in education. What unique ideas can you suggest?</code></p><p data-w-id=\"74b6d5e1-9615-989d-75ba-6c43ad87fa96\"><code data-w-id=\"1d52fd8f-f9ef-b087-1aff-a77143477153\">Suggest 5 blog topics about cooking that will be trending in 2025.</code></p><p data-w-id=\"aa2b2b26-487c-34e8-4402-1e7f0bc41dab\">It’s important to add uniqueness to ideas — generic concepts rarely succeed.</p><h3 data-w-id=\"c19c2606-7399-c86b-dfa6-fb7e01fb38c4\">Analyzing Ideas</h3><p data-w-id=\"1a33130e-de4c-b238-74da-baf206c04710\">Artificial intelligence helps identify weaknesses in your ideas:</p><p data-w-id=\"999e8762-c99f-998a-621f-bcae6b7a4d11\"><code data-w-id=\"f480a283-3d21-d29d-2e2d-f83fd01d8e6a\">I want to launch an online language course. What risks and challenges should I consider?</code></p><p data-w-id=\"a66f1d6d-e0b5-a8f0-e6ca-2d060ca0e56c\"><code data-w-id=\"9ab1fff9-022f-7273-886e-566686c0c13b\">My idea is a mobile app for home workouts. What functionality might I be overlooking?</code></p><h3 data-w-id=\"2c07ce4a-d37e-a23c-8a54-fd03461ea2d2\">Testing Hypotheses</h3><p data-w-id=\"acba1b06-50ac-de04-6158-1e84d3886881\">Developing a plan to validate an idea with minimal costs becomes easier:</p><p data-w-id=\"8503b932-39bf-e2e9-f10f-114bfe6c92a0\"><code data-w-id=\"ea8c77c3-aa50-be95-63e7-a2f6469e6454\">How can I test an online eco-friendly store idea with minimal investment?</code></p><p data-w-id=\"a44b1393-24fa-037d-9fdc-58e050cce375\"><code data-w-id=\"b7e7b5a3-1df1-45f4-16ec-e5170932b898\">Create a step-by-step plan to validate a rental service for sports equipment.</code></p><h3 data-w-id=\"ec6a2320-2966-bf48-361d-97fccd02af2d\">Learning</h3><p data-w-id=\"31033667-daa1-f694-b9e6-dbefbb92b13e\">Artificial intelligence helps quickly acquire new skills:</p><p data-w-id=\"f1492222-a131-7098-c547-bece36a75375\"><code data-w-id=\"35f679ae-feb7-9b76-348f-fb3cc3d60fc4\">Explain the basics of marketing for promoting online courses.</code></p><p data-w-id=\"b91d193d-1c9d-39a4-fafc-8a87d51f4bba\"><code data-w-id=\"c9262580-86b8-f576-4b90-802f0f88f022\">What do I need to know to start a book-selling business online?</code></p><blockquote data-w-id=\"c457bbfc-675c-e1ac-ff2f-45584c406795\">More <a href=\"https://slobodskyi.com/create/ai/chatgpt#what-can-chatgpt-do\" data-w-id=\"4dcfccfe-3961-ba5c-f82d-20831ddd5aa0\">examples of prompts for ChatGPT</a>.</blockquote><h3 data-w-id=\"0411f98b-e12c-0db3-5a7b-4fce3094e7d1\">Copyright</h3><p data-w-id=\"30c5402f-3c0b-6702-ebb1-c4ae24e8a69a\">Content created by artificial intelligence is generally not protected by copyright.</p><p data-w-id=\"40c293a9-3c9d-98fc-28d7-14612303c488\">However, this depends on your country’s laws, the usage context, and the licensing terms.</p><p data-w-id=\"163df4d8-d7cb-7f70-b63d-389c24c879b9\"><strong data-w-id=\"7230dbdd-6217-975a-ca2d-39d2ca67ceb1\">Be sure to review the commercial licensing terms of your chosen tool.</strong></p><h3 data-w-id=\"c48af16a-f184-04e4-9f8f-48f03f4f799d\">Challenges in Working With AI</h3><p data-w-id=\"193f2f33-c7ca-bbc3-e327-88587f0463b7\">When you’re just starting, AI might produce surface-level or inappropriate ideas that need refinement.</p><p data-w-id=\"50df2eda-9ced-3432-7448-f1e1517892cc\"><strong data-w-id=\"f0ae1e2b-5539-900d-9940-9afa706e6670\">Don’t stop after a few unsuccessful attempts — adjust your approach and try again.</strong></p><p data-w-id=\"a157fb5f-5094-1d99-8744-f5bb53630adb\">AI doesn’t know your goals or style, so prompts need to be tailored to the task.</p><p data-w-id=\"a5f85363-3d55-f32d-6eaf-452fff0039ff\">Some tools can consider context and remember your prompts, but working with AI still requires active participation and creativity.</p><blockquote data-w-id=\"3a9e4dd6-121d-5739-78c8-73009e415455\">I love the thrill of discovering a solution or idea through AI that I never would have thought of on my own.</blockquote><p data-w-id=\"995e059b-dc0a-d01d-d56b-f4ed233910e6\">I wish you success in mastering new tools and making them reliable assistants in your creative and professional endeavors.</p><p data-w-id=\"94412686-648a-63ea-d39d-8e553b7f3339\">All the best!</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "39152c6e-ad9d-6ce6-09f2-af57d4a6da8e",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Create"
+          }
+        }
+      ]
+    },
+    {
+      "id": "300d9d75-da86-3e11-3748-552e44e7bf66",
+      "type": "component-instance",
+      "componentId": "ac308377-5c83-6d9a-03c7-09672d177aae",
+      "propertyOverrides": []
+    },
+    {
+      "id": "f116fdf2-57e2-3521-90cb-0b7352ae7fa3",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "0e70b331-d267-2eca-e9f4-d49da5e24424",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "6f816fb5-0f7c-d0dd-77d1-ceca5ea4df4e",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1a858b5b-8659-d5e3-8e3f-9dbcdc835031",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Create\",\n          \"item\": \"https://slobodskyi.com/create/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"AI\",\n          \"item\": \"https://slobodskyi.com/create/ai\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

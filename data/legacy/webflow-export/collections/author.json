@@ -1,0 +1,140 @@
+{
+  "collection": {
+    "id": "6574517f4a09da77e885bf10",
+    "displayName": "Authors",
+    "singularName": "Author",
+    "slug": "author",
+    "createdOn": "2023-12-09T11:37:35.656Z",
+    "lastUpdated": "2025-06-06T09:21:59.010Z",
+    "fields": [
+      {
+        "id": "e3e4f9e11fa50cf378746b4c9daf1d89",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Image",
+        "slug": "picture",
+        "displayName": "Picture",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "2ebfd0fd08e0b1fa289ab272431085db",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Link",
+        "slug": "about-link",
+        "displayName": "About Link",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "a02e05aae5060a53f011da0ca238f583",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "RichText",
+        "slug": "about-desctiption",
+        "displayName": "About Desctiption",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "6990af912ba2b3173b995ff41c7d2205",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "name",
+        "displayName": "Name",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256
+        }
+      },
+      {
+        "id": "4d580f32648a214a252eef1449bfb1e9",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "slug",
+        "displayName": "Slug",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256,
+          "pattern": {},
+          "messages": {
+            "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+            "maxLength": "Must be less than 256 characters"
+          }
+        }
+      }
+    ],
+    "fieldGroups": []
+  },
+  "items": {
+    "en": [
+      {
+        "id": "65745195e6a75ffbd2c1bae9",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-01-15T12:23:36.237Z",
+        "lastUpdated": "2025-01-15T11:20:16.002Z",
+        "createdOn": "2023-12-09T11:37:57.953Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "picture": {
+            "fileId": "678799ef56f0e94395524fd3",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/678799ef56f0e94395524fd3_65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+            "alt": null
+          },
+          "about-link": "https://slobodskyi.com/about",
+          "about-desctiption": "<p id=\"\">I've been helping creators monetize successfully for over a decade. Learn more <a id=\"\" href=\"/about\">about me</a> or <a id=\"\" href=\"/contacts\">reach out</a>.</p>",
+          "name": "Oleksandr Slobodskyi",
+          "slug": "oleksandr-slobodskyi"
+        }
+      }
+    ],
+    "uk": [
+      {
+        "id": "65745195e6a75ffbd2c1bae9",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-01-10T14:45:13.748Z",
+        "lastUpdated": "2025-01-10T14:45:13.748Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "picture": {
+            "fileId": "677f2d0bb825c12f1e726f1e",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677f2d0bb825c12f1e726f1e_65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+            "alt": null
+          },
+          "about-link": "https://slobodskyi.com/ua/about",
+          "about-desctiption": "<p id=\"\">Понад 10 років допомагаю кріейторам заробляти. Більше <a id=\"\" href=\"/about\">про мене</a> та <a id=\"\" href=\"/contacts\">контакти</a>.</p>",
+          "name": "Олександр Слободський",
+          "slug": "oleksandr-slobodskyi"
+        }
+      }
+    ],
+    "ru": [
+      {
+        "id": "65745195e6a75ffbd2c1bae9",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-01-10T14:44:47.007Z",
+        "lastUpdated": "2025-01-10T14:44:47.007Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "picture": {
+            "fileId": "677f2d0bb825c12f1e726f1e",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677f2d0bb825c12f1e726f1e_65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+            "alt": null
+          },
+          "about-link": "https://slobodskyi.com/ru/about",
+          "about-desctiption": "<p id=\"\">Больше 10 лет помогаю креаторам зарабатывать. Подробнее <a id=\"\" href=\"/about\">обо мне</a> и <a id=\"\" href=\"/contacts\">контакты</a>.</p>",
+          "name": "Александр Слободской",
+          "slug": "oleksandr-slobodskyi"
+        }
+      }
+    ]
+  }
+}

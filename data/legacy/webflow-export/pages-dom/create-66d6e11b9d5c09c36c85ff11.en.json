@@ -1,0 +1,80 @@
+{
+  "pageId": "66d6e11b9d5c09c36c85ff11",
+  "slug": "create",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Bring Ideas to Life, Validate Faster"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"5b7782b2-9344-194f-75c8-8a20482063a4\">Turn your ideas into reality with the power of AI and no-code tools—fast and precise. </p><p data-w-id=\"4dcf6c30-e03d-e4a1-f78a-8a40d15807a8\">Whether you're creating content, designing, or building apps, these tools make it simple for both beginners and pros.</p><p data-w-id=\"bdb7c22e-c747-4c08-f5be-01dc4c698ca5\"><strong data-w-id=\"386e80d7-4886-0f8d-8f55-9d37d655f67b\">Stop waiting: your ideas deserve action. </strong></p><p data-w-id=\"d53c243b-5668-bb2d-6d87-a20d5f43255a\">Build in days, not months, and share your vision with the world.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "b69c5f9a-d5b1-cddb-e2d5-7e2cd3a6ebca",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "31b02c2a-1776-178e-2f0e-63fd0658ca8b",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "8ed6452b-b9a1-8ea9-dc6a-6989633738cf",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "230011a8-d0ee-15a2-7550-ae50c0155af6",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><blockquote data-w-id=\"02f25ee2-7b5c-8c1e-5ea0-3958dc6b6149\">Creation is step one. Step two? Discovering <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"2a767618-79b0-7f52-8545-f9900845f50f\">how to find your audience</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Create\",\n          \"item\": \"https://slobodskyi.com/create\"\n        }\n      ]\n    }\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"ItemList\",\n  \"name\": \"Learn Al and No-Code Tools to Create and Validate Ideas\",\n  \"description\": \"Discover how to create content, apps, and designs with Al and no-code tools. Build faster and bring your vision to life with step-by-step guides.\",\n  \"numberOfItems\": 2,\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Artificial Intelligence: What It Is and How It Helps Creators\",\n      \"url\": \"https://slobodskyi.com/create/ai\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163da29f082f1f50ad9f2_create-ai.webp\", \n      \"description\": \"Simple examples to help you understand how to use artificial intelligence to create texts, images, videos, and tackle other creative tasks.\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"How to Build Anything with No-code Tools\",\n      \"url\": \"https://slobodskyi.com/create/no-code\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163d140f530adcbd00454_create-no-code.webp\",\n      \"description\": \"No-code tool reviews will help you choose a platform for building apps, automations, and websites without coding. Here you’ll find comparisons of services, their features, pros, and cons.\"\n    }\n  ]\n}\n</script>",
+      "attributes": {}
+    }
+  ]
+}

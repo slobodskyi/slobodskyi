@@ -1,0 +1,59 @@
+{
+  "pageId": "668c785ea2921c4be5115ef1",
+  "slug": "consultation",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "c7bab4e5-225b-9bbd-f9e8-4750dacbd23d",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Individual Consultation"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><h2 data-w-id=\"19d65817-6dc5-cb8c-32c1-ddda4bd2402d\">What Can I Help With?</h2><p data-w-id=\"928c35eb-5d73-c184-e28e-3a951ff90862\">From monetization strategy development to technical implementation.</p><ol data-w-id=\"c8665fa7-05da-8981-46a8-0d91f7dec46c\"><li data-w-id=\"fca4d5a9-11ad-b1a7-d45a-f30cbda082d8\"><strong data-w-id=\"1d85c6d6-67ba-ef5d-281b-41e91847d952\">Creating Educational Products</strong><strong data-w-id=\"c7d6f214-7978-5b49-0f99-96b273923ee3\">:</strong> I can help you develop and structure courses, guides, and other educational materials to make them as effective and engaging as possible for your audience.</li><li data-w-id=\"ce5ee734-dec4-fe56-af83-06d7103ed37f\"><strong data-w-id=\"d93faa8d-00b3-f906-9246-31906a5d7b8f\">Promotion on Adult Platforms</strong><strong data-w-id=\"90c62475-fb24-2a79-01c1-d5d4266bd2bf\">:</strong> I will advise you on how to effectively promote your content on specialized platforms (Patreon, OnlyFans, Fansly) to achieve maximum reach and attract more subscribers.</li><li data-w-id=\"b6b5dc0b-b34c-025a-0481-55d8364b17a2\"><strong data-w-id=\"a8e219cc-005d-663d-4b13-4ac556f2674e\">Technical Issues</strong><strong data-w-id=\"8411d52d-a29d-c8ff-53e0-043de95b8b42\">:</strong> I will provide support in solving technical tasks related to platform setup, service integration, and optimization.</li></ol><h2 data-w-id=\"c0718f8b-0781-f474-bc17-91ba7c10e780\">How Does the Meeting Work?</h2><p data-w-id=\"78e48d95-f392-e45c-abda-e6cb0209493c\">Four simple steps:</p><ol data-w-id=\"60293248-52a5-aa67-124d-6482f8ff6cfb\"><li data-w-id=\"ef8e610a-b6e9-6de1-d36c-5968442b0930\"><strong data-w-id=\"53f361fc-ff86-9fe1-d78a-324ccb14b68c\">Preparation</strong><strong data-w-id=\"c3075599-2c92-4b92-722a-11420cf7d442\">:</strong> Write to me on Telegram and tell me about your project. I provide consultations only when I am confident that I can be helpful.</li><li data-w-id=\"a9350e85-cd00-3729-918f-ee2d3abd5252\"><strong data-w-id=\"24f3c629-bf3e-4c38-23d1-7772817133df\">Payment</strong><strong data-w-id=\"76d1e786-7e43-d252-903f-3336d7fc65a5\">:</strong> After discussing the details, you can pay for the consultation in a way that is convenient for you: by bank transfer, through payment systems, or cryptocurrency. After payment, we will schedule a convenient time for the meeting.</li><li data-w-id=\"a8b47cea-313b-7a23-5497-fc04ca161a15\"><strong data-w-id=\"3885a158-6b0c-f326-e1b8-b20a7b76067c\">Call</strong><strong data-w-id=\"b4ffc053-406e-4567-c98d-d20c8aa7d175\">:</strong> During the consultation, we will address all your questions and develop a plan for further actions. The meeting will be recorded, and you will have lifetime access to the recording.</li><li data-w-id=\"1ee946a1-911a-aaf1-2df2-c539e9cb62e8\"><strong data-w-id=\"8e5714d8-2026-9747-03ec-36d8ff120d6b\">Feedback</strong><strong data-w-id=\"5c03b622-93cf-eb6f-55fe-4d2ceea48d11\">:</strong> After the meeting, you can ask additional questions about the discussed topics on Telegram. This will help you clarify details and continue working on your project with confidence.</li></ol><blockquote data-w-id=\"259ddece-e8c8-a317-0ac9-499178cb7271\">In all my projects, I build the most transparent relationships with clients. After the first consultation, you can get a refund with no questions asked.</blockquote><ul data-w-id=\"6e95bfe7-4076-e02c-b458-eba41d12fdb8\"><li data-w-id=\"aa8821d5-ac38-0bd9-246d-24c4b45a2948\"><strong data-w-id=\"253adc6d-4819-5e3f-1fe0-e19c7ad08c01\">Cost</strong>: 100 USD / 92 EUR / 4200 UAH.</li></ul></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3e386d7-a1b7-79c5-16b1-b57659d79ea3",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"submit-button-tg\" href=\"https://t.me/slobodskyi1\">WRITE&nbsp;in TELEGRAM →</a>",
+        "text": "WRITE in TELEGRAM →"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1feb7712-a795-5661-1b52-2c5696d60387",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Courses\",\n          \"item\": \"https://slobodskyi.com/courses\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Individual Consultation\",\n          \"item\": \"https://slobodskyi.com/courses/consultation\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

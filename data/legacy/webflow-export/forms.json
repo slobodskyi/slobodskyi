@@ -1,0 +1,218 @@
+[
+  {
+    "displayName": "Newsletter Form",
+    "createdOn": "2025-12-09T15:42:53.828Z",
+    "lastUpdated": "2026-06-15T09:36:51.517Z",
+    "fields": {
+      "6a2fc7b372653a3354131593": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "Enter your email address",
+        "userVisible": true,
+        "fieldElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4af"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "6938437d161cb09dba61ec12",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "6558ae529e9653f7d61a6917",
+    "pageId": "6558ae529e9653f7d61a6924",
+    "formElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4a9",
+    "pageName": "Home",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  },
+  {
+    "displayName": "Newsletter Form",
+    "createdOn": "2025-12-09T15:42:53.802Z",
+    "lastUpdated": "2026-06-15T09:36:51.499Z",
+    "fields": {
+      "6a2fc7b372653a3354131587": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "Enter your email address",
+        "userVisible": true,
+        "fieldElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4af"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "6938437d161cb09dba61ec04",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "659519583d1a441dd420b0fe",
+    "pageId": "6558ae529e9653f7d61a6924",
+    "formElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4a9",
+    "pageName": "Home",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  },
+  {
+    "displayName": "Newsletter Form",
+    "createdOn": "2025-12-09T15:42:53.772Z",
+    "lastUpdated": "2026-06-15T09:36:51.481Z",
+    "fields": {
+      "6a2fc7b372653a335413157b": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "Enter your email address",
+        "userVisible": true,
+        "fieldElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4af"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "6938437d161cb09dba61ebf6",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "659519583d1a441dd420b0f8",
+    "pageId": "6558ae529e9653f7d61a6924",
+    "formElementId": "d49dbbe7-1334-0774-cc95-c86d2d99e4a9",
+    "pageName": "Home",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  },
+  {
+    "displayName": "Contact Form",
+    "createdOn": "2024-01-03T08:26:25.578Z",
+    "lastUpdated": "2026-06-15T09:36:51.490Z",
+    "fields": {
+      "6a2fc7b372653a335413157f": {
+        "displayName": "Name",
+        "type": "Plain",
+        "placeholder": null,
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fdf"
+      },
+      "6a2fc7b372653a3354131580": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "ivan@ivanenko.com",
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fe2"
+      },
+      "6a2fc7b372653a3354131581": {
+        "displayName": "Field",
+        "type": "Plain",
+        "placeholder": "Example Text",
+        "userVisible": true,
+        "fieldElementId": "3a410a95-53a0-a304-ffce-5cb0f78778b6"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "65951a31c91728171ceacb9d",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "659519583d1a441dd420b0fe",
+    "pageId": "6578487faf1d447a19b528ea",
+    "formElementId": "855ebce1-16ca-6157-b944-e2af57712fdc",
+    "pageName": "Contacts",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  },
+  {
+    "displayName": "Contact Form",
+    "createdOn": "2024-01-03T08:26:25.571Z",
+    "lastUpdated": "2026-06-15T09:36:51.471Z",
+    "fields": {
+      "6a2fc7b372653a3354131573": {
+        "displayName": "Name",
+        "type": "Plain",
+        "placeholder": null,
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fdf"
+      },
+      "6a2fc7b372653a3354131574": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "ivan@ivanenko.com",
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fe2"
+      },
+      "6a2fc7b372653a3354131575": {
+        "displayName": "Field",
+        "type": "Plain",
+        "placeholder": "Example Text",
+        "userVisible": true,
+        "fieldElementId": "3a410a95-53a0-a304-ffce-5cb0f78778b6"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "65951a31c91728171ceacb97",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "659519583d1a441dd420b0f8",
+    "pageId": "6578487faf1d447a19b528ea",
+    "formElementId": "855ebce1-16ca-6157-b944-e2af57712fdc",
+    "pageName": "Contacts",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  },
+  {
+    "displayName": "Contact Form",
+    "createdOn": "2023-12-12T11:52:03.334Z",
+    "lastUpdated": "2026-06-15T09:36:51.507Z",
+    "fields": {
+      "6a2fc7b372653a335413158b": {
+        "displayName": "Name",
+        "type": "Plain",
+        "placeholder": null,
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fdf"
+      },
+      "6a2fc7b372653a335413158c": {
+        "displayName": "Email",
+        "type": "Email",
+        "placeholder": "ivan@ivanenko.com",
+        "userVisible": true,
+        "fieldElementId": "855ebce1-16ca-6157-b944-e2af57712fe2"
+      },
+      "6a2fc7b372653a335413158d": {
+        "displayName": "Field",
+        "type": "Plain",
+        "placeholder": "Example Text",
+        "userVisible": true,
+        "fieldElementId": "3a410a95-53a0-a304-ffce-5cb0f78778b6"
+      }
+    },
+    "responseSettings": {
+      "redirectUrl": null,
+      "redirectMethod": "GET",
+      "redirectAction": null,
+      "sendEmailConfirmation": false
+    },
+    "id": "65784963f750d8590fd26ff8",
+    "siteId": "6558ae529e9653f7d61a6917",
+    "siteDomainId": "6558ae529e9653f7d61a6917",
+    "pageId": "6578487faf1d447a19b528ea",
+    "formElementId": "855ebce1-16ca-6157-b944-e2af57712fdc",
+    "pageName": "Contacts",
+    "workspaceId": "62588a8787b258021d7868fc",
+    "componentId": null,
+    "componentElementId": null
+  }
+]

@@ -1,0 +1,850 @@
+{
+  "pageId": "683429b54772678c268838df",
+  "slug": "how-to-create-images-with-ai",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "3097e894-bad2-478b-f649-fab650be3d2a",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "b27ad654-120d-7be4-15fe-bbac9ce33ab7",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"h2-heading\">How to make images with AI</h1>",
+        "text": "How to make images with AI"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5991b8f0-f06e-d78f-497c-dbb9faa2420a",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-uheader\">Online course availible in ukrainian.</div>",
+        "text": "Online course availible in ukrainian."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ba4b4f8-a744-a283-4a35-7183e45c17f8",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-sticky-button-text\">Приєднатися</div>",
+        "text": "Приєднатися"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d5298",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66c438189448642f1bf"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d529c",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f6c5883aff653e2da2"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52a0",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66cddd56846e1f5c8a0"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52a4",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f69f527f73657c831c"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52a8",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f82f5745ff54593180"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52ac",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f7c887cc3743a41613"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52b0",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66ce7e2c795580e9c52"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52b4",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66c49dfaa25f2166cfa"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52b9",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66c8f814ea02dc3119c"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52bd",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f6834849913d6be59e"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52c1",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f67b3b24e348c42e61"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52c5",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f6a6efc36254cf2805"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52c9",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836ec70e9db6393301ecbb9"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52cd",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f3f6f584bd7c34046222"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52d1",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836eab6b505e2fc3cbbd972"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "b7b9081b-c497-30c0-cbbd-0fbdc07d52d5",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6836f66c1ab505a76615e9ae"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67bff2",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"h2-heading\">Для кого цей курс?</h2>",
+        "text": "Для кого цей курс?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67bff6",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"text-block-uheader\">Курс підходить для маркетологів, підприємців, викладачів та всіх, хто хоче створювати яскраві зображення за допомогою ChatGPT та Midjourney.</p>",
+        "text": "Курс підходить для маркетологів, підприємців, викладачів та всіх, хто хоче створювати яскраві зображення за допомогою ChatGPT та Midjourney."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c000",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683768e111604d54edbc9e4a"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c004",
+      "type": "text",
+      "text": {
+        "html": "<div>1</div>",
+        "text": "1"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c008",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">Для маркетологів та дизайнерів</h6>",
+        "text": "Для маркетологів та дизайнерів"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c00a",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Створюйте креативи, мокапи,&nbsp;іконки та варіанти дизайну за хвилини й одразу тестуйте ідеї перед запуском реклами або лендингу. ШІ-інструменти замінять довгі брифи та скоротять час на погодження.</p>",
+        "text": "Створюйте креативи, мокапи, іконки та варіанти дизайну за хвилини й одразу тестуйте ідеї перед запуском реклами або лендингу. ШІ-інструменти замінять довгі брифи та скоротять час на погодження."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c014",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">Для кріейторів та підприємців</h6>",
+        "text": "Для кріейторів та підприємців"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c016",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Візуалізуйте будь-яку ідею — від шапки YouTube-каналу до лукбуку для бренду одягу чи обкладинки книги. Якісний візуал без найму окремого дизайнера дозволить швидше презентувати продукт і зекономити бюджет.</p>",
+        "text": "Візуалізуйте будь-яку ідею — від шапки YouTube-каналу до лукбуку для бренду одягу чи обкладинки книги. Якісний візуал без найму окремого дизайнера дозволить швидше презентувати продукт і зекономити бюджет."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c01d",
+      "type": "text",
+      "text": {
+        "html": "<div>2</div>",
+        "text": "2"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c020",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683768f2e9221e9f69b8e8e6"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c023",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6837691982c1c5ecbb7dfbe6"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c027",
+      "type": "text",
+      "text": {
+        "html": "<div>3</div>",
+        "text": "3"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c02b",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">Для викладачів та експертів</h6>",
+        "text": "Для викладачів та експертів"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c02d",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Швидко оформлюйте слайди, чек-листи, PDF та обкладинки до курсів. Генеруйте персонажів і сцени, які роблять складні теми простішими й додають авторським матеріалам впізнаваного стилю.</p>",
+        "text": "Швидко оформлюйте слайди, чек-листи, PDF та обкладинки до курсів. Генеруйте персонажів і сцени, які роблять складні теми простішими й додають авторським матеріалам впізнаваного стилю."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c037",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">І всіх, хто любить експерименти</h6>",
+        "text": "І всіх, хто любить експерименти"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c039",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Працювати зі штучним інтелектом весело і цікаво. Навчіться перетворювати ідеї на яскраві картинки та використовуйте цю навичку в роботі, навчанні чи хобі.</p>",
+        "text": "Працювати зі штучним інтелектом весело і цікаво. Навчіться перетворювати ідеї на яскраві картинки та використовуйте цю навичку в роботі, навчанні чи хобі."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c040",
+      "type": "text",
+      "text": {
+        "html": "<div>4</div>",
+        "text": "4"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c043",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "68395c88a1a594bbe206c256"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc985",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\">\n<g clip-path=\"url(#clip0_882_1288)\">\n<circle cx=\"10\" cy=\"10\" r=\"7.75\" fill=\"#FFE9E4\" stroke=\"#FFC8BC\" stroke-width=\"0.5\"/>\n<g filter=\"url(#filter0_dddd_882_1288)\">\n<circle cx=\"10\" cy=\"10\" r=\"3\" fill=\"#FF443D\"/>\n<circle cx=\"10\" cy=\"10\" r=\"3.5\" stroke=\"white\"/>\n</g>\n</g>\n<defs>\n<filter id=\"filter0_dddd_882_1288\" x=\"2\" y=\"5\" width=\"16\" height=\"24\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n<feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"1\"/>\n<feGaussianBlur stdDeviation=\"1\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0\"/>\n<feBlend mode=\"normal\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"3\"/>\n<feGaussianBlur stdDeviation=\"1.5\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.09 0\"/>\n<feBlend mode=\"normal\" in2=\"effect1_dropShadow_882_1288\" result=\"effect2_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"6\"/>\n<feGaussianBlur stdDeviation=\"2\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.05 0\"/>\n<feBlend mode=\"normal\" in2=\"effect2_dropShadow_882_1288\" result=\"effect3_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"11\"/>\n<feGaussianBlur stdDeviation=\"2\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.01 0\"/>\n<feBlend mode=\"normal\" in2=\"effect3_dropShadow_882_1288\" result=\"effect4_dropShadow_882_1288\"/>\n<feBlend mode=\"normal\" in=\"SourceGraphic\" in2=\"effect4_dropShadow_882_1288\" result=\"shape\"/>\n</filter>\n<clipPath id=\"clip0_882_1288\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc986",
+      "type": "text",
+      "text": {
+        "html": "<div>оновлено 29 травня</div>",
+        "text": "оновлено 29 травня"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc988",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"h2-heading\">Що всередині?</h2>",
+        "text": "Що всередині?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1be5faab-ae31-2abf-2bd5-100d0c4b1b9d",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"text-block-uheader\">Актуальні уроки з генерації зображень у ChatGPT та Midjourney — оновлено 30 травня 2025 року.</p>",
+        "text": "Актуальні уроки з генерації зображень у ChatGPT та Midjourney — оновлено 30 травня 2025 року."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc992",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Чому ідеї важливіші за візуал?</div>",
+        "text": "Чому ідеї важливіші за візуал?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc994",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Розберемо, чому ідеї та креативні метафори важливіші за технічну якість візуалу та як використовувати методи генерації ідей (SCAMPER, 5 Ws)</p>",
+        "text": "Розберемо, чому ідеї та креативні метафори важливіші за технічну якість візуалу та як використовувати методи генерації ідей (SCAMPER, 5 Ws)"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc99d",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "97bbe83d-8dbe-c75b-b5ef-2393e32dc99e",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">9 хвилин</div>",
+        "text": "9 хвилин"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "46fd0465-5875-f440-b490-ba9ac7f88c1b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Як працювати з референами?</div>",
+        "text": "Як працювати з референами?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "46fd0465-5875-f440-b490-ba9ac7f88c1d",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Навчимося збирати референси й мудборди з різних джерел та підбирати оптимальний інструмент для генерації зображень</p>",
+        "text": "Навчимося збирати референси й мудборди з різних джерел та підбирати оптимальний інструмент для генерації зображень"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "46fd0465-5875-f440-b490-ba9ac7f88c22",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "46fd0465-5875-f440-b490-ba9ac7f88c23",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">13 хвилин</div>",
+        "text": "13 хвилин"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "523ca1bd-78e3-3a2c-30dd-eced0712652a",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Як будувати промпти?</div>",
+        "text": "Як будувати промпти?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "523ca1bd-78e3-3a2c-30dd-eced0712652c",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Створюватимемо ефективні промпти — простою мовою, за допомогою шаблонів, голосом, а також генерувати зображення на основі інших зображень чи скетчів</p>",
+        "text": "Створюватимемо ефективні промпти — простою мовою, за допомогою шаблонів, голосом, а також генерувати зображення на основі інших зображень чи скетчів"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "523ca1bd-78e3-3a2c-30dd-eced07126531",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "523ca1bd-78e3-3a2c-30dd-eced07126532",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">37 хвилин</div>",
+        "text": "37 хвилин"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "bee8a08b-0c50-007a-f09a-891dfdc956c1",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Як працювати зі стилем?</div>",
+        "text": "Як працювати зі стилем?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "bee8a08b-0c50-007a-f09a-891dfdc956c3",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Детально розберемо способи стилізації згенерованих зображень, використання референсів, персоналізацію та ретекстурування готових ілюстрацій</p>",
+        "text": "Детально розберемо способи стилізації згенерованих зображень, використання референсів, персоналізацію та ретекстурування готових ілюстрацій"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "bee8a08b-0c50-007a-f09a-891dfdc956c8",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "bee8a08b-0c50-007a-f09a-891dfdc956c9",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">42 хвилини</div>",
+        "text": "42 хвилини"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "09832c4e-c182-529e-1784-5f1f75fd7036",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Як редагувати зображення?</div>",
+        "text": "Як редагувати зображення?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "09832c4e-c182-529e-1784-5f1f75fd7038",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Зосередимось на ітераціях і редагуванні згенерованих зображень: розберемо версії моделей, естетичні налаштування, &nbsp;послідовні персонажі та точкові зміни</p>",
+        "text": "Зосередимось на ітераціях і редагуванні згенерованих зображень: розберемо версії моделей, естетичні налаштування,  послідовні персонажі та точкові зміни"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "09832c4e-c182-529e-1784-5f1f75fd703d",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "09832c4e-c182-529e-1784-5f1f75fd703e",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">36 хвилин</div>",
+        "text": "36 хвилин"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "8c361666-8a6d-9c0c-c19e-3e52b538deda",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"h6-heading\">Як експортувати?</div>",
+        "text": "Як експортувати?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "8c361666-8a6d-9c0c-c19e-3e52b538dedc",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">На фінальному етапі навчимося експортувати та рендерити зображення у високій якості і розглянемо зовнішні інструменти для підвищення якості зображень</p>",
+        "text": "На фінальному етапі навчимося експортувати та рендерити зображення у високій якості і розглянемо зовнішні інструменти для підвищення якості зображень"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "8c361666-8a6d-9c0c-c19e-3e52b538dee1",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\">\n  <path d=\"M7.99998 1.33331C11.68 1.33331 14.6666 4.31998 14.6666 7.99998C14.6666 11.68 11.68 14.6666 7.99998 14.6666C4.31998 14.6666 1.33331 11.68 1.33331 7.99998C1.33331 4.31998 4.31998 1.33331 7.99998 1.33331ZM7.99998 13.3333C10.9466 13.3333 13.3333 10.9466 13.3333 7.99998C13.3333 5.05331 10.9466 2.66665 7.99998 2.66665C5.05331 2.66665 2.66665 5.05331 2.66665 7.99998C2.66665 10.9466 5.05331 13.3333 7.99998 13.3333ZM10.357 4.70015L11.2998 5.64296L7.99998 8.94278L7.05718 7.99998L10.357 4.70015Z\" fill=\"#4D4C4B\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "8c361666-8a6d-9c0c-c19e-3e52b538dee2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-lesson-time\">9 хвилин</div>",
+        "text": "9 хвилин"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91d2",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\">\n<g clip-path=\"url(#clip0_882_1288)\">\n<circle cx=\"10\" cy=\"10\" r=\"7.75\" fill=\"#FFE9E4\" stroke=\"#FFC8BC\" stroke-width=\"0.5\"/>\n<g filter=\"url(#filter0_dddd_882_1288)\">\n<circle cx=\"10\" cy=\"10\" r=\"3\" fill=\"#FF443D\"/>\n<circle cx=\"10\" cy=\"10\" r=\"3.5\" stroke=\"white\"/>\n</g>\n</g>\n<defs>\n<filter id=\"filter0_dddd_882_1288\" x=\"2\" y=\"5\" width=\"16\" height=\"24\" filterUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n<feFlood flood-opacity=\"0\" result=\"BackgroundImageFix\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"1\"/>\n<feGaussianBlur stdDeviation=\"1\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.1 0\"/>\n<feBlend mode=\"normal\" in2=\"BackgroundImageFix\" result=\"effect1_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"3\"/>\n<feGaussianBlur stdDeviation=\"1.5\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.09 0\"/>\n<feBlend mode=\"normal\" in2=\"effect1_dropShadow_882_1288\" result=\"effect2_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"6\"/>\n<feGaussianBlur stdDeviation=\"2\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.05 0\"/>\n<feBlend mode=\"normal\" in2=\"effect2_dropShadow_882_1288\" result=\"effect3_dropShadow_882_1288\"/>\n<feColorMatrix in=\"SourceAlpha\" type=\"matrix\" values=\"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0\" result=\"hardAlpha\"/>\n<feOffset dy=\"11\"/>\n<feGaussianBlur stdDeviation=\"2\"/>\n<feColorMatrix type=\"matrix\" values=\"0 0 0 0 0.12549 0 0 0 0 0.121569 0 0 0 0 0.121569 0 0 0 0.01 0\"/>\n<feBlend mode=\"normal\" in2=\"effect3_dropShadow_882_1288\" result=\"effect4_dropShadow_882_1288\"/>\n<feBlend mode=\"normal\" in=\"SourceGraphic\" in2=\"effect4_dropShadow_882_1288\" result=\"shape\"/>\n</filter>\n<clipPath id=\"clip0_882_1288\">\n<rect width=\"20\" height=\"20\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91d3",
+      "type": "text",
+      "text": {
+        "html": "<div>The #1 online courses</div>",
+        "text": "The #1 online courses"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91d5",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"h2-heading\">Як почати?</h2>",
+        "text": "Як почати?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91d8",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"text-block-uheader\">Доступні два формати: самостійне проходження або з індивідуальними консультаціями.</p>",
+        "text": "Доступні два формати: самостійне проходження або з індивідуальними консультаціями."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91df",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683706cd1811bd93742dd1c3"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91e2",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">Онлайн-курс</h6>",
+        "text": "Онлайн-курс"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91e7",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Миттєвий доступ до всіх уроків, промптів і інтерактивної презентації в Telegram-боті одразу після оплати.</p>",
+        "text": "Миттєвий доступ до всіх уроків, промптів і інтерактивної презентації в Telegram-боті одразу після оплати."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91e9",
+      "type": "text",
+      "text": {
+        "html": "<a href=\"https://secure.wayforpay.com/payment/slobodskyi-course-ai-images\" class=\"button-primary\">Придбати за 1000 гривень</a>",
+        "text": "Придбати за 1000 гривень"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91ec",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6837026e293581224cdc9105"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91ef",
+      "type": "text",
+      "text": {
+        "html": "<h6 class=\"h6-heading\">Онлайн-курс <span class=\"text-color-red-500\" data-w-id=\"39c6f726-6d74-6344-524a-9dae828259b3\">+ супровід</span></h6>",
+        "text": "Онлайн-курс + супровід"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91f1",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-regular\">Окрім курсу — два індивідуальні дзвінки: перед стартом і після завершення, щоб підібрати рішення саме під ваші завдання. Доступно 3 місця.</p>",
+        "text": "Окрім курсу — два індивідуальні дзвінки: перед стартом і після завершення, щоб підібрати рішення саме під ваші завдання. Доступно 3 місця."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91f3",
+      "type": "text",
+      "text": {
+        "html": "<a href=\"https://secure.wayforpay.com/payment/s53b8b1b3d26d\" class=\"button-primary\">Придбати за 5000 гривень</a>",
+        "text": "Придбати за 5000 гривень"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca4792",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"h2-heading\">Є&nbsp;питання?</h2>",
+        "text": "Є питання?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47a7",
+      "type": "text",
+      "text": {
+        "html": "<div>Чи потрібен досвід роботи для участі в курсі?</div>",
+        "text": "Чи потрібен досвід роботи для участі в курсі?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47a9",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47ac",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">Ні, ми почнемо з основ, тож вам не потрібні жодні спеціальні знання.</p>",
+        "text": "Ні, ми почнемо з основ, тож вам не потрібні жодні спеціальні знання."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47b0",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-faq\">Які конкретні навички я отримаю після проходження курсу?</div>",
+        "text": "Які конкретні навички я отримаю після проходження курсу?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47b2",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47b5",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">Після проходження курсу ви зможете генерувати зображення будь-якої складності та в різних стилях — від фотореалістичних до ілюстративних.</p>",
+        "text": "Після проходження курсу ви зможете генерувати зображення будь-якої складності та в різних стилях — від фотореалістичних до ілюстративних."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3ecbd512-c83e-d82f-aa75-3d32ac3fba2d",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-faq\">Чим цей курс відрізняється від безкоштовних матеріалів у мережі?</div>",
+        "text": "Чим цей курс відрізняється від безкоштовних матеріалів у мережі?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3ecbd512-c83e-d82f-aa75-3d32ac3fba2f",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "3ecbd512-c83e-d82f-aa75-3d32ac3fba32",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">У цьому курсі ви знайдете структуровані уроки з реальними прикладами. Матеріали створено на основі мого трьохрічного досвіду роботи. Я ділився лише тим, що дійсно працює, щоб ви не витрачали зайвий час.</p>",
+        "text": "У цьому курсі ви знайдете структуровані уроки з реальними прикладами. Матеріали створено на основі мого трьохрічного досвіду роботи. Я ділився лише тим, що дійсно працює, щоб ви не витрачали зайвий час."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47b9",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-faq\">Чи можна буде повернути гроші?</div>",
+        "text": "Чи можна буде повернути гроші?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47bb",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47be",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">Звісно, ви можете повернути кошти протягом 14 днів без зайвих запитань. Для цього <a href=\"https://slobodskyi.com/ua/contacts\" data-w-id=\"36b71246-f20f-d99b-5012-fb814a441f85\">напишіть мені</a>, вказавши номер телефону, який ви використовували при оплаті.</p>",
+        "text": "Звісно, ви можете повернути кошти протягом 14 днів без зайвих запитань. Для цього напишіть мені, вказавши номер телефону, який ви використовували при оплаті."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "098efbcc-5ea8-46c7-3344-606e27e91c08",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-faq\">Чи можна розбити оплату на декілька платежів?</div>",
+        "text": "Чи можна розбити оплату на декілька платежів?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "098efbcc-5ea8-46c7-3344-606e27e91c0a",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "098efbcc-5ea8-46c7-3344-606e27e91c0d",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">Так, ви можете використати оплату частинами від monobank, або ПриватБанк. Для цього на сторінці оплати оберіть «У розстрочку». Також ви можете оплатити готівкою через термінали ПриватБанку.</p>",
+        "text": "Так, ви можете використати оплату частинами від monobank, або ПриватБанк. Для цього на сторінці оплати оберіть «У розстрочку». Також ви можете оплатити готівкою через термінали ПриватБанку."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47c2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-faq\">Чи можна оплатити іншим способом?</div>",
+        "text": "Чи можна оплатити іншим способом?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47c4",
+      "type": "html-embed",
+      "html": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\">\n  <path d=\"M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z\" fill=\"#201F1F\"/>\n</svg>",
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47c7",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2 text-color-gray-800\">Так, можна оплатити через PayPal, Payoneer, Wise, Payeer та криптовалюти. Реквізити можете <a href=\"https://slobodskyi.com/ua/courses/payment-alternatives\" data-w-id=\"58e866bb-77d7-b6ac-7e27-c43aa2fac753\">знайти тут</a>.</p>",
+        "text": "Так, можна оплатити через PayPal, Payoneer, Wise, Payeer та криптовалюти. Реквізити можете знайти тут."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e65164a4-a02f-7bb2-45b9-d27b44ca47c9",
+      "type": "text",
+      "text": {
+        "html": "<a href=\"https://slobodskyi.com/ua/contacts\" class=\"button-primary\">Задати питання</a>",
+        "text": "Задати питання"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3bdbae84-4328-df4a-3ba1-cb4e5c95518f",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

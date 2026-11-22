@@ -1,0 +1,78 @@
+{
+  "pageId": "6558d2181f4650d9c508f1da",
+  "slug": "memberships",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "e1f264d3-653a-8e68-0a01-3c4338377251",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Як заробити на підписках?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"f6f4d296-ce14-5b52-a519-10bf900d061a\">Оберіть тему, яка вас надихає, та знайдіть відповідну платформу для вашого контенту. Використовуйте соціальні мережі для просування та будуйте спільноту.</p><p data-w-id=\"1e5ff5f5-da76-628e-3649-83bd83d226fd\">У кожної платформи свої особливості, нижче детальні огляди.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "587c7bc5-6f9f-d387-5328-a5ec306b74c1",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Монетизація"
+          }
+        }
+      ]
+    },
+    {
+      "id": "923b2d9d-5e1f-4e3d-269b-75678aad5f02",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"4480061b-b0c5-d890-987b-332e6bc4a8e6\">Побудова стабільного доходу як кріейтора починається з вибору правильної платформи для вашого контенту та аудиторії.</p><p data-w-id=\"325a584c-707b-dcfa-5056-a4dcd9182ef9\">Незалежно від того, чи пропонуєте ви цифрові продукти, ексклюзивний контент або персоналізовані послуги, платформи підписки дозволяють перетворити вашу творчість на стабільний дохід.</p><h2 data-w-id=\"b2a2ce49-03a6-bfdf-0712-5364dbb5d05e\">Загальні платформи монетизації</h2><p data-w-id=\"dcdf8538-dfc1-a1f9-0eef-b162995f7e7a\">Дізнайтеся про платформи, такі як Buy Me a Coffee та Patreon, які надають авторам можливість монетизувати свою роботу.</p><p data-w-id=\"2d895885-7d18-f9bb-f19f-2178fad3373a\">Навчіться збирати донати, продавати цифрові продукти та створювати регулярні потоки доходів.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "acbdce69-9e4a-a000-d24a-89d73a61ac6b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"31b81acd-9538-9549-9478-61c5414606e6\">Платформи для монетизації NSFW&nbsp;контенту</h2><p data-w-id=\"30511002-963a-d774-010e-4cfc16ba57cd\">Досліджуйте платформи, такі як OnlyFans, Fansly та Ton.place, створені для творців контенту для дорослих.</p><p data-w-id=\"9814922a-48e1-baf0-a5a7-da05848a4b38\">Дізнайтеся, як розвивати свою аудиторію, максимізувати доходи та використовувати унікальні можливості цих платформ.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "090cff51-af63-77b4-60cb-2b89745796cf",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/ua/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "57037ba6-87f1-07a3-ea20-080f060124d7",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Монетизація\",\n          \"item\": \"https://slobodskyi.com/ua/monetize\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Підписки\",\n          \"item\": \"https://slobodskyi.com/ua/monetize/memberships\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

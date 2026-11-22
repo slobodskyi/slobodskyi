@@ -1,0 +1,16 @@
+{
+  "pageId": "678e211a0e6252963a631d73",
+  "slug": "payment-problem",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "09b86fb0-92dd-2596-c04d-b3cfe5740555",
+      "type": "text",
+      "text": {
+        "html": "<div><h1 data-w-id=\"09b86fb0-92dd-2596-c04d-b3cfe5740556\">Проблема с оплатой :(</h1><p data-w-id=\"5cd662fa-4222-5e70-29ae-3aac700666e9\"><a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"aec728c1-b0c1-0ee6-8bbf-45fb97f64927\">Свяжитесь со мной</a></p></div>",
+        "text": null
+      },
+      "attributes": {}
+    }
+  ]
+}

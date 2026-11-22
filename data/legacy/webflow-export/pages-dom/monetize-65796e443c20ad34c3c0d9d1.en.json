@@ -1,0 +1,80 @@
+{
+  "pageId": "65796e443c20ad34c3c0d9d1",
+  "slug": "monetize",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Monetize Your Work With Purpose and Strategy"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"51394d9e-b5d6-fd63-68e5-0d173933bcdf\">Turn your passion into profit with proven methods to help creators thrive.</p><p data-w-id=\"24d32de8-b885-c327-8801-a114b42951fb\"><strong data-w-id=\"47ab2632-a2f7-d3cc-7a64-80eca8e210d7\">Earn ethically and effectively from what you’ve created—staying aligned with your goals and values.</strong></p><p data-w-id=\"71be3e92-13e9-d904-e9f5-aedb3573abc3\">Explore tools and platforms for selling products, offering subscriptions, running ads, and leveraging affiliate marketing to build sustainable income streams.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "97bd08b3-bea1-6e1a-fc7b-a36067cb0701",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "12bfc967-ad27-abbe-f56f-e881ef87f4d0",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "be5a64fc-e7c8-0deb-5aae-1bb6f50d3821",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb7ee26a-8715-85a7-5604-338f24dcd350",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"ce1eaab2-f825-f2ff-88fb-3318faeddd78\">If you’ve reached this point, great job—you’re making progress.<a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"d2bbc663-35a3-9b83-3eac-2559083752cd\">‍</a></p><p data-w-id=\"19d3111b-554d-1054-dc38-c3ce8e6ac7a8\">After <a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"3ee3fe66-820c-7af1-22d8-595fb132ee3a\">creating something valuable</a>, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"a742e537-3226-3c76-773f-57834c31b971\">finding your audience</a>, and monetizing your work, it’s time to take next step.</p><blockquote data-w-id=\"ef6d4efa-280d-8661-8921-6c295bfcb4bb\">Elevate your journey with a balanced mind-body approach, using strategies, systems, and analytics to <a data-wf-link-page-id=\"676ac6b1b4c345c7e99d2f54\" data-w-id=\"c4ca2afe-b50a-0b02-d71a-6c3af69e3936\">expand your impact and income</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Monetize\",\n          \"item\": \"https://slobodskyi.com/monetize\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

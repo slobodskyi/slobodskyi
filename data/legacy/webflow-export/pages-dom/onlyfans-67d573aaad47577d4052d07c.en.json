@@ -1,0 +1,871 @@
+{
+  "pageId": "67d573aaad47577d4052d07c",
+  "slug": "onlyfans",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "3097e894-bad2-478b-f649-fab650be3d2a",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e191",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"course-title\">OnlyFans Course</h1>",
+        "text": "OnlyFans Course"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e193",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><p data-w-id=\"579e5546-01af-36ee-8cfa-c5a4358fd465\">The course is <a href=\"https://slobodskyi.com/ua/courses/onlyfans\" data-w-id=\"4b913716-d5f5-8e04-82c2-dd26637fc6ac\">currently available in Ukrainian</a> and will soon be offered in English.</p><p data-w-id=\"5fba17d2-77cb-f9f3-47eb-d80668a7fb47\">If you want to know when it will be released, you can <a href=\"https://www.instagram.com/slobodskyi\" target=\"_blank\" data-w-id=\"2eba4b48-d367-bf69-13c8-5fc6e48de75f\">subscribe on Instagram</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e19c",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e19d\">Для кого цей курс?</h2><p data-w-id=\"b3c71828-1ac7-11c8-2c89-8ac15bf6f23a\">Для тих, хто кожен день проводить за екраном, але хоче повернути час для себе та зосередитися на важливому.</p><p data-w-id=\"f5bad126-8d05-48bc-09d2-241f2c3fa439\">Буде корисно, якщо:</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80d4",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Не знаєте, з чого почати</h3>",
+        "text": "Не знаєте, з чого почати"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80d6",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Чули про ChatGPT, але не знаєте, як його використовувати? Здається, всі вже щось «автоматизують», а ви ні?</p>",
+        "text": "Чули про ChatGPT, але не знаєте, як його використовувати? Здається, всі вже щось «автоматизують», а ви ні?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80da",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">Урок 1</p>",
+        "text": "Урок 1"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80dc",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80de",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "678ecfd42512530c090e75d7"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baec",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Спробували, але вийшло дивно</h3>",
+        "text": "Спробували, але вийшло дивно"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baee",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Щось спробували але отримали неочікувані (або безглузді) відповіді й подумали: «Це точно працює?»</p>",
+        "text": "Щось спробували але отримали неочікувані (або безглузді) відповіді й подумали: «Це точно працює?»"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baf2",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">January 9, 2025</p>",
+        "text": "January 9, 2025"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baf4",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baf6",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de84959813cb129fe53259"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a95",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Відчуваєте, що є потенціал</h3>",
+        "text": "Відчуваєте, що є потенціал"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a97",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Знаєте, що ChatGPT може допомогти, але здається складним і через це відлякує?</p>",
+        "text": "Знаєте, що ChatGPT може допомогти, але здається складним і через це відлякує?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a9b",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">January 9, 2025</p>",
+        "text": "January 9, 2025"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a9d",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a9f",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de843fe3ee9546a40d742f"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "35de29de-b025-d920-be81-a59fbd247b4c",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"8394aa4b-57b1-2d29-58b2-b351545f4855\">Незалежно від того, чим ви займаєтесь, ми навчимося:</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c77",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Знаходити відповіді</h3>",
+        "text": "Знаходити відповіді"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c79",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Не просто воду, а конкретні рішення для ваших задач. ChatGPT врахує контекст: цифри, деталі, робочі процеси — і дасть відповіді, які можна застосувати одразу.</p>",
+        "text": "Не просто воду, а конкретні рішення для ваших задач. ChatGPT врахує контекст: цифри, деталі, робочі процеси — і дасть відповіді, які можна застосувати одразу."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c7d",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">Урок 2</p>",
+        "text": "Урок 2"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c7f",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c81",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de86912eff45c1fa667348"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c84",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Генерувати ідеї</h3>",
+        "text": "Генерувати ідеї"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c86",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Від білого аркуша — до потоку варіантів. ChatGPT структурує думки, допоможе побачити можливості там, де були сумніви, і знайти нестандартні ідеї.</p>",
+        "text": "Від білого аркуша — до потоку варіантів. ChatGPT структурує думки, допоможе побачити можливості там, де були сумніви, і знайти нестандартні ідеї."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c8a",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">Урок 2</p>",
+        "text": "Урок 2"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c8c",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c8e",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de87135b1d1dd83181528c"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c91",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Оптимізовувати процеси</h3>",
+        "text": "Оптимізовувати процеси"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c93",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Робіть важливе — рутину лишіть ChatGPT. Листи пишуться самі, звіти не треба збирати вручну. Ваш час — на головне, а не на те, що треба «просто зробити».</p>",
+        "text": "Робіть важливе — рутину лишіть ChatGPT. Листи пишуться самі, звіти не треба збирати вручну. Ваш час — на головне, а не на те, що треба «просто зробити»."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c97",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"metadata-course\">Урок 3<br data-w-id=\"717e598b-cdb8-8d61-39cd-08cc92565c99\"></p>",
+        "text": "Урок 3\n"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c9a",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"metadata-time-or-counter\">10:22</div>",
+        "text": "10:22"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c9c",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de882b360768e358826080"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5262656c-0ab8-3cc4-ab14-ab7a96c1a8bf",
+      "type": "text",
+      "text": {
+        "html": "<div><p data-w-id=\"d7743241-7c8f-e947-9c57-9dfb734f8664\">text</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1eb",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Перший запит"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Дізнаємось, як працює ChatGPT, налаштуємо його під себе, створимо перший запит та розпочнемо цю подорож."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "16 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1f0",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Персоналізація"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Розберемо, що впливає на якість відповідей і як зробити так, щоб ШІ підлаштовувався саме під ваш стиль та потреби."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "23 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1f5",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Генерація ідей"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Навчимося шукати ідеї з ChatGPT: від назви бренду до сценарію чи статті. Змусимо ШІ самофільтруватися на крінж."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "21 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1fb",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Оптимізація рутини"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Усе, що можна не робити самостійно, навчимось оптимізувати без втрати якості. "
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "31 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1ff",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Вижимаємо максимум"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Робота з файлами, документами, голосом та відео —  заставимо роботів працювати на повну."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "32 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc312c48-d973-4d7f-5a23-cd2546089ce4",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Вижимаємо максимум"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Робота з файлами, документами, голосом та відео —  заставимо роботів працювати на повну."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "32 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "61b292da-2209-7b3b-e2b6-fcafa7ba56bf",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Вижимаємо максимум"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Робота з файлами, документами, голосом та відео —  заставимо роботів працювати на повну."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "32 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0db9c4fc-6f5c-48b3-bf31-f09e8243a1d8",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Вижимаємо максимум"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Робота з файлами, документами, голосом та відео —  заставимо роботів працювати на повну."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "32 хв"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1b8",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><p data-w-id=\"3b71e13e-3384-9c15-4fd8-0e9c2d882366\">text</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e203",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e204\">Як проходить навчання?</h2><p data-w-id=\"cfbb98ff-eb6f-3d81-2dc3-bbf97f907c04\">Корисно,&nbsp;ефективно,&nbsp;швидко.</p><p data-w-id=\"482ea85a-3250-11d3-8fcf-28e3bfd117e2\">Обіцяю прості кроки, практичні приклади та дружню атмосферу, де ви нарешті зрозумієте, як взяти максимум з цього інструмента.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9975ddd4-3dc2-bfa1-a362-e609d92c962c",
+      "type": "component-instance",
+      "componentId": "b29c2c28-55b0-bc18-2f35-0bdf726d8f0e",
+      "propertyOverrides": [
+        {
+          "propertyId": "4e302c11-7455-564d-b436-75b745ef8f75",
+          "type": "Plain Text",
+          "label": "Text Block 4 - Text",
+          "text": {
+            "html": null,
+            "text": "Після оплати миттєвий доступ до Telegram-бота з уроками."
+          }
+        }
+      ]
+    },
+    {
+      "id": "80a87e3d-cc97-dfc2-292d-582db0278a17",
+      "type": "component-instance",
+      "componentId": "b29c2c28-55b0-bc18-2f35-0bdf726d8f0e",
+      "propertyOverrides": [
+        {
+          "propertyId": "4e302c11-7455-564d-b436-75b745ef8f75",
+          "type": "Plain Text",
+          "label": "Text Block 4 - Text",
+          "text": {
+            "html": null,
+            "text": "Закритий чат для обміну досвідом, спілкування та запитань."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ce173328-c6b6-803b-0c87-f705223a494f",
+      "type": "component-instance",
+      "componentId": "b29c2c28-55b0-bc18-2f35-0bdf726d8f0e",
+      "propertyOverrides": [
+        {
+          "propertyId": "4e302c11-7455-564d-b436-75b745ef8f75",
+          "type": "Plain Text",
+          "label": "Text Block 4 - Text",
+          "text": {
+            "html": null,
+            "text": "Практичні завдання для закріплення знань та бібліотека промтів."
+          }
+        }
+      ]
+    },
+    {
+      "id": "4a36eb61-1114-b1de-b20a-79bad4cf5b8d",
+      "type": "component-instance",
+      "componentId": "b29c2c28-55b0-bc18-2f35-0bdf726d8f0e",
+      "propertyOverrides": [
+        {
+          "propertyId": "4e302c11-7455-564d-b436-75b745ef8f75",
+          "type": "Plain Text",
+          "label": "Text Block 4 - Text",
+          "text": {
+            "html": null,
+            "text": "Пожиттєвий доступ і оновлення курсу без доплат.\n"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bea34e5d-fde3-1870-9fc1-b23f5d0b739b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><h2 data-w-id=\"1f4095e6-78d3-8cf5-2c3f-0275fc70aa07\">Як почати?</h2><p data-w-id=\"c4eabb48-319a-0651-6bb3-8014e382c356\">Інструменти ШІ розвиваються дуже швидко: з одного боку, вони стають кориснішими, а з іншого — складнішими. </p><p data-w-id=\"a57c93f4-a008-99da-c054-4731249f1d88\">На власному досвіді знаю: чим довше зволікати, тим важче розпочати. </p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "60d675c5-f056-2f49-34af-bdbd932c7229",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-5\">Я за довіру та прозорість: жодних вигаданих закреслених цін чи штучних обмежень. <strong class=\"bold-text-2\" data-w-id=\"e6b21a02-8749-12b0-ee07-47931fa4f180\">Якщо курс вам не підійде, я поверну кошти</strong>.</div>",
+        "text": "Я за довіру та прозорість: жодних вигаданих закреслених цін чи штучних обмежень. Якщо курс вам не підійде, я поверну кошти."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e444f298-9442-3705-60f0-6e9d547a0f59",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "678b9ca5aaf08b1557ac8260"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f36b6a24-3e6b-bc7b-4e19-633866ae3c82",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-puchase-button-text\">Придбати за ₴1999</div>",
+        "text": "Придбати за ₴1999"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d98345e2-5271-33dd-5f68-7226adb3f1d2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-puchase-button-text\">Придбати за ₴1999</div>",
+        "text": "Придбати за ₴1999"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d8bd20ec-9fa4-cead-d067-56b7ea83f9d2",
+      "type": "html-embed",
+      "html": "<iframe src=\"https://www.videoask.com/f04hqhul8\" allow=\"camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;\" width=\"100%\" height=\"480px\" style=\"border: none; border-radius: 24px\"></iframe>",
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e218",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e219\">Часті запитання</h2></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e21b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"faq-container-course\"><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e21c\">Чи потрібен досвід роботи з ШІ або технічна підготовка для участі в курсі?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e21e\">Ні, курс розроблений для новачків. Ми почнемо з основ, тож вам не потрібні жодні спеціальні знання.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e220\">Які конкретні навички я отримаю після проходження курсу?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e222\">Ви навчитеся створювати ефективні запити до ChatGPT, автоматизувати рутинні завдання, генерувати ідеї для роботи чи творчості та інтегрувати штучний інтелект у свої проєкти.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e224\">Чим цей курс відрізняється від безкоштовних матеріалів у мережі?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e226\">У цьому курсі ви знайдете структуровані уроки з практичними завданнями, реальними прикладами використання ChatGPT та доступом до ексклюзивних матеріалів, створених на основі мого реального досвіду.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e228\">Чи зможу я використовувати знання з курсу для своєї професії?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e22a\">Так, курс охоплює різні сценарії використання ChatGPT, які підходять для творчих професіоналів, підприємців, фрілансерів та навіть для повсякденних завдань.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e22c\">Чи є гарантії результату після курсу?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e22e\">Виконуючи всі завдання, ви отримаєте практичні навички та зрозумієте, як використовувати ChatGPT для економії часу й підвищення продуктивності. Якщо курс не виправдає очікувань, ви зможете повернути гроші.</p><h3 data-w-id=\"806e23fc-b443-78d9-c75a-59c3655b22c0\">Чи можна буде повернути гроші?</h3><p data-w-id=\"9eb51096-4ebf-dc36-e874-d76e42005b1a\">Звісно, ви можете повернути кошти протягом 30 днів без жодних питань. Для цього <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"dd5b2852-d298-e17e-79c8-b88b0e060efa\">напишить мені</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e230",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-contants-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e231\">Реквізити</h2><p class=\"course-contacts-p\" data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e233\">Фізична особа-підприємець:</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e235\">Слободський Олександр Миколайович</h3><p class=\"course-contacts-p\" data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e237\">Індивідуальний податковий номер:</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e239\">3432501553</h3><p class=\"course-contacts-p\" data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e23b\">Юридична адреса: </p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e23d\">Георгіївський провулок 7, Київ, 01054</h3><p class=\"course-contacts-p\" data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e23f\">Електронна пошта: </p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e241\">oleksandr@slobodskyi.com</h3><p class=\"course-contacts-p\" data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e243\">Банк (<em data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e245\">Універсал Банк,&nbsp;МФО: 322001</em>):</p><h4 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e248\">IBAN: UA963220010000026009300008485</h4></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "123198d1-4ce2-7c83-59b7-507532686bd6",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"course-small-button\" data-wf-link-page-id=\"6788df03c50b6bb70a2ee19b\">Публічна оферта</a>",
+        "text": "Публічна оферта"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "123198d1-4ce2-7c83-59b7-507532686bd8",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"course-small-button\" data-wf-link-page-id=\"6788e3688f44faff8a7d4cde\">Політика конфіденційності</a>",
+        "text": "Політика конфіденційності"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ef2bcf8-7605-86b2-a6f8-3086a8c67b57",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-sticky-button-text\">Приєднатися</div>",
+        "text": "Приєднатися"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3bdbae84-4328-df4a-3ba1-cb4e5c95518f",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "087804be-d28f-95f3-2fd3-f31547510908",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Courses\",\n          \"item\": \"https://slobodskyi.com/courses\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"OnlyFans\",\n          \"item\": \"https://slobodskyi.com/courses/onlyfans\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

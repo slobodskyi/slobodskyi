@@ -1,0 +1,79 @@
+{
+  "pageId": "694fdac5d77b7f47bbe2ebce",
+  "slug": "tools",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курси"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e165d78d-dac6-64fd-f04f-d2dadf693ecc",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Інструменти"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c75f7731-938f-d3e5-b9f6-9bb648ca940c\">Інструменти, які я створюю для таких авторів, як я. </p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "3b29ed1a-0a94-d165-b348-00775004f674",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Zori.bio — Link-in-Bio для креаторів"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Link-in-bio платформа, яку я створюю. Показує креаторам, звідки приходять кліки та дохід. A/B тестування, розумна маршрутизація, аналітика трафіку — все з коробки."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1c07329f-52d9-d477-6575-203dd1ade7bf",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Курси\",\n          \"item\": \"https://slobodskyi.com/ua/courses\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

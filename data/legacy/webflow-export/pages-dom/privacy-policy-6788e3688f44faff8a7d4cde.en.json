@@ -1,0 +1,78 @@
+{
+  "pageId": "6788e3688f44faff8a7d4cde",
+  "slug": "privacy-policy",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "fdedd2d6-20a7-7839-987e-0354783714b5",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "2e73693c-a96d-1b6b-42d0-071050e11b1a",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "public-offer-agreement"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"1aa980a2-0f7b-ccab-6941-758e56961403\">hello</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "f0355ff7-0448-87c8-c2c0-623beb607811",
+      "type": "component-instance",
+      "componentId": "ac5b0084-c0f2-487e-99ba-41f104bd3018",
+      "propertyOverrides": [
+        {
+          "propertyId": "c07be089-c247-4c27-52e3-4ef4350f67d3",
+          "type": "Plain Text",
+          "label": "Time to read",
+          "text": {
+            "html": null,
+            "text": "Time to finish: 2 hours"
+          }
+        },
+        {
+          "propertyId": "aee6b170-45f5-b7b6-1b91-ea85777fa41e",
+          "type": "Plain Text",
+          "label": "Updated On",
+          "text": {
+            "html": null,
+            "text": "Updated: 16 January 2025"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5414648a-fd5f-e8e5-a774-f5fbaec6bbb6",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"a5324e34-fae3-aceb-bf27-b2fc33c72ac7\">here</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "18fd735a-8e94-a39c-86d1-54cfb87388e5",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

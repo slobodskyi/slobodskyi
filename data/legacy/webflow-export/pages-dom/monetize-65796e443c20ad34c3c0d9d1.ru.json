@@ -1,0 +1,47 @@
+{
+  "pageId": "65796e443c20ad34c3c0d9d1",
+  "slug": "monetize",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Какие способы монетизации бывают?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"849e1711-cf45-4b98-6d2a-502263dc6506\">Продажа цифровых и физических товаров, создание эксклюзивного контента и образовательных продуктов, партнёрский маркетинг и реклама.</p><p data-w-id=\"6373be02-6176-dc3e-fdf8-d465f6556a4c\">Ниже обзоры маркетплейсов, сервисов для сбора подписок и донатов, а так же платёжных систем для вывода денег.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "fb7ee26a-8715-85a7-5604-338f24dcd350",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"66b0027e-1eb0-9081-142d-9a3ef000ba7a\">Если вы уже на этом этапе – отлично, вы движетесь вперёд.</p><p data-w-id=\"ba4c59f7-3973-1f9d-10a1-d7a3f6c63433\"><a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"b82134dc-8632-077e-5b4c-9fd6e619321e\">Создав что-то полезное</a>, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"b373694f-2f98-4657-14f6-5af88ea26d4d\">найдя свою аудиторию</a> и начав зарабатывать,<br data-w-id=\"2afb976a-337b-6836-cca0-74846401d235\">пора двигаться дальше.</p><blockquote data-w-id=\"3405e194-c821-ef8c-5be1-9934c2c19584\">Изучайте <a data-wf-link-page-id=\"676ac6b1b4c345c7e99d2f54\" data-w-id=\"18e9f407-3439-720e-4841-6a7c0ae51657\">стратегии, системы и аналитику</a>, чтобы расширить свое влияние и увеличить доход, сохраняя баланс между работой и отдыхом.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Главная\",\n          \"item\": \"https://slobodskyi.com/ru/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Монетизация\",\n          \"item\": \"https://slobodskyi.com/ru/monetize\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

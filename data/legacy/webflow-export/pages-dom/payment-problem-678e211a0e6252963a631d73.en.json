@@ -1,0 +1,28 @@
+{
+  "pageId": "678e211a0e6252963a631d73",
+  "slug": "payment-problem",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "26bcd3c7-76a7-c7bc-6acf-7329db146a0d",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "09b86fb0-92dd-2596-c04d-b3cfe5740555",
+      "type": "text",
+      "text": {
+        "html": "<div><h1 data-w-id=\"09b86fb0-92dd-2596-c04d-b3cfe5740556\">Payment problem :(</h1><p data-w-id=\"5cd662fa-4222-5e70-29ae-3aac700666e9\"><a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"aec728c1-b0c1-0ee6-8bbf-45fb97f64927\">Contact me</a></p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "569cd6eb-1e35-5cbe-5c50-47e58975dfde",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

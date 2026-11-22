@@ -1,0 +1,38 @@
+{
+  "pageId": "676ac6b1b4c345c7e99d2f54",
+  "slug": "grow",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Зростай з розумом, а не через силу"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"8deae025-b022-86b9-2291-15aac4f65033\">Покращення аналітики, збільшення продажів, створення систем, розвиток мислення та опанування стратегій навчання.</p><p data-w-id=\"fbe4280c-2bad-f469-cb77-441f39ac858c\">Нижче ви знайдете поради, інструменти та ресурси, які допоможуть креаторам ефективно розвивати свої проєкти, розуміючи дані, оптимізуючи процеси та вдосконалюючи як особисті, так і професійні навички.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Розвиток\",\n          \"item\": \"https://slobodskyi.com/ua/grow\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

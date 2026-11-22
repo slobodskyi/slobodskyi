@@ -1,0 +1,100 @@
+{
+  "pageId": "656e0ea1c5b7f3087f21a1d1",
+  "slug": "search",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "2dcc485f-7737-588d-d278-c20e259f47d5",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d500000000000b",
+      "type": "text",
+      "text": {
+        "html": "<h1>Search results</h1>",
+        "text": "Search results"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "0c4cc1b6-7e06-bedf-f4cc-248464f128c7",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"0c4cc1b6-7e06-bedf-f4cc-248464f128c8\"><strong data-w-id=\"c15d50ab-b2fe-b92a-20a1-0b43b44d12bb\">It looks like you tried to access a page that doesn't exist. </strong></p><p data-w-id=\"ffdcf0bc-6468-74d1-aeed-85f8a2bb2a35\">I've redirected you to search page so you can quickly find what you're looking for. </p><p data-w-id=\"d0500e9d-1f1d-c228-0276-c6f20809a026\">Not sure where to start?</p><p data-w-id=\"0bde3356-ef6a-332b-df90-29593c76fcb6\">My blog is all about giving you practical, hands-on tips to bring your creative ideas to life. Whether you're looking to <a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"1d39d691-87c7-5059-5249-41efbd44f661\">Create</a>, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"60990aa1-fa3e-74e0-c2ef-0455fcbccd48\">Connect</a>, <a data-wf-link-page-id=\"65796e443c20ad34c3c0d9d1\" data-w-id=\"45a00e13-c3ee-14b8-3dbb-f50032752a55\">Monetize</a>, or <a data-wf-link-page-id=\"676ac6b1b4c345c7e99d2f54\" data-w-id=\"35fbd242-1f23-b3b0-8c87-85caf47e434c\">Grow</a>, dive into these categories for free articles and real-world insights.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5b92ab48-cef2-a244-26ad-b7cc0fc1d2cb",
+      "type": "html-embed",
+      "html": "<amp-story-player style=\"width: 100%; height: 100%;\">\n  <a href=\"https://tools.slobodskyi.com/stories/7d2c156d-2dfb-4177-b4bc-3e564c3048ac\">\n    Your Web Story\n  </a>\n</amp-story-player>",
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d500000000000e",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"search\">Search</label>",
+        "text": "Search"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d5000000000010",
+      "type": "text-input",
+      "placeholder": "Search…",
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d5000000000011",
+      "type": "search-button",
+      "value": "Search",
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d5000000000015",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"search-link\" href=\"#\"></a>",
+        "text": ""
+      },
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d5000000000017",
+      "type": "text",
+      "text": {
+        "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d500000000001a",
+      "type": "text",
+      "text": {
+        "html": "<div>No matching results.</div>",
+        "text": "No matching results."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "df8aea60-c2c7-1603-9fbc-16750f057113",
+      "type": "text",
+      "text": {
+        "html": "<div><blockquote data-w-id=\"ab5595de-0d02-b9d0-6170-1ad28c38014a\">If you're having trouble locating the right content, try checking out our <a href=\"https://slobodskyi.com/ua\" data-w-id=\"206e4acf-f579-c282-0699-8e74af4d93e2\">Ukrainian</a> or <a href=\"https://slobodskyi.com/ru\" data-w-id=\"8e70e626-6ca8-b241-6919-9a6ec87d15e3\">Russian</a> versions of the site, or <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"9ca06196-ada4-765f-27c6-4b13585c2bd7\">contact me</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "866d9be1-1bd2-3c38-5591-f63dbb799f9b",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "pageId": "67dff73bbdea44f6b28d99e7",
+  "slug": "payment-alternatives",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "c7bab4e5-225b-9bbd-f9e8-4750dacbd23d",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Alternative Payment Methods"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"8027258e-f5ec-19eb-2602-18d708d925ce\">If you prefer an alternative payment method, please choose one of the following:</p><ol data-w-id=\"8278cfd7-0c79-1147-ea8d-fefad7ed1ac1\"><li data-w-id=\"28ff21b9-d557-d9d7-4b1b-22114de312ef\">PayPal: paypal@slobodskyi.com</li><li data-w-id=\"28ff21b9-d557-d9d7-4b1b-22114de312f1\">Payoneer: payoneer@slobodskyi.com</li><li data-w-id=\"916d1e08-2c83-56a0-a194-1471aaf243f4\">Wise: <a href=\"https://wise.com/pay/me/oleksandrs637\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"83f6a587-098d-7b22-3e15-728d04c3549d\">https://wise.com/pay/me/oleksandrs637</a></li><li data-w-id=\"91270698-e4c8-2652-ffa8-194c8ff4bcdf\">Payeer: P1047870299</li><li data-w-id=\"04251223-7877-811c-e285-3c09bc9ca7da\">Bitcoin: 18V5M5wXCGTPXYV4SswRAf4eVkgGMWbTGB</li><li data-w-id=\"d469ab21-f6a1-6a98-4dce-0442b855c64f\">USDT&nbsp;(TRC20): TL3ybzFhJsRpzjG1HXGXKAjP4pjwXihPEv</li><li data-w-id=\"c7f93886-6d57-743e-3823-d73d2160e1a1\">USDT&nbsp;(ERC20): 0xc5bec92fbb42a8a3e059e80dc937eaefc4c13106</li></ol><p data-w-id=\"fcf66faf-c68e-12b0-8d1d-d5f8c8cd5845\">You’ll need to enter the amount manually.</p><p data-w-id=\"83be37dd-65f6-a3f4-f07e-c27eea09715c\">After sending the payment, please email your transaction details and the product information <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"324963e4-4a72-5dbf-5524-d38a5cff093d\">via contact form</a>.</p><blockquote data-w-id=\"259ddece-e8c8-a317-0ac9-499178cb7271\">All alternative payment methods require verification, so it typically takes a few hours before you receive your product. Thank you for your patience.</blockquote></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3e386d7-a1b7-79c5-16b1-b57659d79ea3",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"submit-button-tg\" data-wf-link-page-id=\"6578487faf1d447a19b528ea\">contacts →</a>",
+        "text": "contacts →"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}
