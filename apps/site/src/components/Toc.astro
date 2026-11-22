@@ -1,5 +1,6 @@
 ---
 import type { Heading } from '@slobodskyi/core';
+import Icon from './Icon.astro';
 
 interface Props {
   headings: Heading[];
@@ -12,20 +13,7 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
 {headings.length > 1 && (
   <details class="toc" open>
     <summary>
-      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="11" fill="#2a64f6" />
-        <text
-          x="12"
-          y="17"
-          text-anchor="middle"
-          font-size="14"
-          font-family="Arial"
-          font-weight="700"
-          fill="#fff"
-        >
-          ?
-        </text>
-      </svg>
+      <Icon name="list" size={20} class="toc-icon" />
       {Astro.props.title}
     </summary>
     <ol>
@@ -40,13 +28,13 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
 
 <style>
   .toc {
-    border: 1px solid var(--line);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0 32px;
     font-size: 16px;
     line-height: 24px;
-    background: var(--surface);
+    background: var(--color-surface);
   }
   .toc summary {
     display: flex;
@@ -56,22 +44,25 @@ const headings = Astro.props.headings.filter((h) => h.depth === 2);
     font-weight: 700;
     cursor: pointer;
   }
+  .toc :global(.toc-icon) {
+    color: var(--color-accent);
+  }
   .toc ol {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   .toc li {
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--color-border);
   }
   .toc a {
     display: block;
     padding: 10px 15px;
-    color: var(--text);
+    color: var(--color-text);
     text-decoration: none;
-    background: var(--bg);
+    background: var(--color-bg);
   }
   .toc a:hover {
-    background: var(--purple);
+    background: var(--color-tint);
   }
 </style>

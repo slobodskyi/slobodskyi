@@ -2,6 +2,7 @@
 import { LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
 import { LANG_NAME, LANG_SHORT, t } from '../lib/i18n';
 import { hubsOf, labelOf } from '../lib/content';
+import Icon from './Icon.astro';
 
 interface Props {
   lang: Lang;
@@ -26,7 +27,10 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
         {s.tools}
       </a>
       <details class="dropdown">
-        <summary class="nav-link">{s.guides}</summary>
+        <summary class="nav-link">
+          {s.guides}
+          <Icon name="chevron-down" size={16} />
+        </summary>
         <div class="dropdown-list">
           {hubs.map((h) => (
             <a href={h.url}>{h.label}</a>
@@ -36,6 +40,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
       <details class="dropdown">
         <summary class="nav-link" aria-label={s.language}>
           {LANG_SHORT[lang]}
+          <Icon name="chevron-down" size={16} />
         </summary>
         <div class="dropdown-list dropdown-right">
           {langs.map((l) => (
@@ -98,7 +103,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
   .nav-link {
     display: block;
     padding: 12px;
-    color: var(--text);
+    color: var(--color-text);
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -110,15 +115,16 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
   summary.nav-link::-webkit-details-marker {
     display: none;
   }
-  summary.nav-link::after {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin-left: 7px;
-    border-right: 2px solid currentColor;
-    border-bottom: 2px solid currentColor;
-    transform: translateY(-3px) rotate(45deg);
+  summary.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+  summary.nav-link :global(.icon) {
+    transition: transform var(--duration-fast) var(--ease);
+  }
+  .dropdown[open] > summary :global(.icon) {
+    transform: rotate(180deg);
   }
   .dropdown {
     position: relative;
@@ -129,10 +135,10 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
     left: 0;
     z-index: 20;
     min-width: 180px;
-    background: var(--soft-line);
+    background: var(--color-surface-alt);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-md);
   }
   .dropdown-right {
     left: auto;
@@ -142,13 +148,13 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
   .mobile-panel a {
     display: block;
     padding: 12px 20px;
-    color: var(--text);
+    color: var(--color-text);
     text-decoration: none;
     font-size: 16px;
   }
   .dropdown-list a:hover,
   .mobile-panel a:hover {
-    background: var(--purple);
+    background: var(--color-tint);
   }
   .nav-mobile {
     display: none;
@@ -177,7 +183,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
     .nav-mobile summary span {
       display: block;
       height: 2px;
-      background: var(--text);
+      background: var(--color-text);
     }
     .mobile-panel {
       position: absolute;
@@ -185,17 +191,17 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
       right: var(--gutter);
       top: 70px;
       z-index: 30;
-      background: var(--bg);
-      border: 1px solid var(--line);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow-md);
       padding: 6px 0;
     }
     .mobile-group {
       margin: 8px 20px 0;
       font-size: 13px;
-      color: var(--muted);
+      color: var(--color-muted);
       text-transform: uppercase;
     }
     .mobile-panel .mobile-sub {

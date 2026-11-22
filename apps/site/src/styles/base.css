@@ -1,0 +1,189 @@
+/* Reset, element defaults and utilities. Component styles live in their .astro files (unlayered,
+   so they always win over these layers without specificity fights). */
+
+/* Metric-matched fallback for Unbounded 600 while the web font loads (no re-wrap on swap).
+   size-adjust = width of Unbounded 600 / width of Arial Bold over typical headings, measured
+   per script; ascent/descent = Unbounded's 0.995 / 0.245 em divided by size-adjust. */
+@font-face {
+  font-family: 'Unbounded Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  font-weight: 600;
+  size-adjust: 127.9%;
+  ascent-override: 77.8%;
+  descent-override: 19.2%;
+  line-gap-override: 0%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F;
+}
+
+@font-face {
+  font-family: 'Unbounded Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT');
+  font-weight: 600;
+  size-adjust: 129.1%;
+  ascent-override: 77.1%;
+  descent-override: 19%;
+  line-gap-override: 0%;
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  img,
+  picture,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    font: inherit;
+  }
+}
+
+@layer base {
+  html {
+    scroll-padding-top: var(--space-5);
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: var(--text-base);
+    line-height: var(--leading-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    display: block;
+    padding-top: var(--space-4);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-head);
+    font-weight: 600;
+    line-height: var(--leading-snug);
+    margin: var(--space-7) 0 var(--space-4);
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    line-height: var(--leading-tight);
+    margin: var(--space-4) 0;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    margin: var(--space-6) 0 var(--space-3);
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    margin: var(--space-5) 0 var(--space-2);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    transition:
+      color var(--duration-fast) var(--ease),
+      text-decoration-thickness var(--duration-fast) var(--ease);
+  }
+
+  a:hover {
+    color: var(--color-accent-hover);
+    text-decoration-thickness: 2px;
+  }
+
+  /* Highlighter on the lower part of the line, so long highlights stay readable. */
+  strong {
+    font-weight: 700;
+    background: linear-gradient(transparent 58%, var(--color-mark) 0);
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  ::selection {
+    background: var(--color-tint);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: calc(var(--w-text) + 2 * var(--gutter));
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: var(--space-3);
+    top: var(--space-3);
+    z-index: 100;
+    background: var(--color-surface);
+    color: var(--color-text);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: none;
+  }
+}
