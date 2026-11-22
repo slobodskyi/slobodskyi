@@ -70,7 +70,7 @@ const graph = jsonLd([
     )}
     <Font
       cssVariable="--font-heading"
-      preload={[{ weight: 700, subset: head.lang === 'en' ? 'latin' : 'cyrillic' }]}
+      preload={head.lang === 'en' ? [{ subset: 'latin' }] : [{ subset: 'cyrillic' }, { subset: 'latin' }]}
     />
 
     <meta property="og:site_name" content="Oleksandr Slobodskyi" />
