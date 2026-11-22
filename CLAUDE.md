@@ -124,8 +124,10 @@ Owner decisions on the migration (2026-11-22):
   everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
   of the sitemap.
 - No broken internal links, with no exceptions: `pnpm check:build` fails on every one. The legacy
-  link to the 404 `/ua/courses/chatgpt` (on the three `/courses` pages) must be fixed or removed in
-  content; the URL itself stays a 404 (owner decision 2026-11-22, replaces "kept as is").
+  link to the 404 `/ua/courses/chatgpt` (the "ChatGPT 101" card on the three `/courses` pages) now
+  points to the ChatGPT guide in the page's language: `/create/ai/chatgpt`, `/ua/create/ai/chatgpt`,
+  `/ru/create/ai/chatgpt`. The URL `/ua/courses/chatgpt` itself stays a 404 (owner decision
+  2026-11-22, replaces "kept as is").
 - Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
   `/courses/privacy-policy`, legal pages missing from the sitemap) are reported by the parity check as
   documented differences, never silently.
