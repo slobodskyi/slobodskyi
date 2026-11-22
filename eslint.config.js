@@ -5,7 +5,14 @@ import astro from 'eslint-plugin-astro';
 
 export default tseslint.config(
   {
-    ignores: ['**/dist/**', '**/.astro/**', '**/.wrangler/**', '**/node_modules/**', 'data/**'],
+    ignores: [
+      '.claude/worktrees/**',
+      '**/dist/**',
+      '**/.astro/**',
+      '**/.wrangler/**',
+      '**/node_modules/**',
+      'data/**',
+    ],
   },
   js.configs.recommended,
   ...tseslint.configs.strict,

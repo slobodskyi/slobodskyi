@@ -1,9 +1,9 @@
 {
   "crawledAt": "2026-11-22",
   "origin": "https://slobodskyi.com",
-  "urls": 184,
+  "urls": 196,
   "byStatus": {
-    "200": 183,
+    "200": 195,
     "404": 1
   },
   "pages200ByLangAndType": {
@@ -11,44 +11,60 @@
     "en:category": 8,
     "en:home": 1,
     "en:hub": 4,
-    "en:page": 11,
+    "en:page": 15,
     "ru:article": 36,
     "ru:category": 8,
     "ru:home": 1,
     "ru:hub": 4,
-    "ru:page": 11,
+    "ru:page": 15,
     "uk:article": 36,
     "uk:category": 8,
     "uk:home": 1,
     "uk:hub": 4,
-    "uk:page": 11
+    "uk:page": 15
   },
   "inSitemap": 166,
   "notInSitemap200": [
     "/affiliate-disclosure",
     "/courses/how-to-create-images-with-ai",
     "/courses/payment-alternatives",
+    "/courses/payment-problem",
+    "/courses/payment-success-67dd392a3c9d80c3ee009047",
     "/courses/privacy-policy",
     "/courses/public-offer",
     "/ru/affiliate-disclosure",
     "/ru/courses/how-to-create-images-with-ai",
     "/ru/courses/payment-alternatives",
+    "/ru/courses/payment-problem",
+    "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
     "/ru/courses/privacy-policy",
     "/ru/courses/public-offer",
     "/ru/create/no-code/prd-for-vibe-coding",
+    "/ru/search",
+    "/ru/terms-of-service",
+    "/search",
+    "/terms-of-service",
     "/ua/affiliate-disclosure",
     "/ua/courses/how-to-create-images-with-ai",
     "/ua/courses/payment-alternatives",
+    "/ua/courses/payment-problem",
+    "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
     "/ua/courses/privacy-policy",
     "/ua/courses/public-offer",
-    "/ua/create/no-code/prd-for-vibe-coding"
+    "/ua/create/no-code/prd-for-vibe-coding",
+    "/ua/search",
+    "/ua/terms-of-service"
   ],
   "sitemapNot200": [],
   "invalidJsonLd": [
     "/monetize/memberships/fanvue",
     "/ru/create/no-code/webflow"
   ],
-  "h1NotOne": [],
+  "h1NotOne": [
+    "/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "/ua/courses/payment-success-67dd392a3c9d80c3ee009047"
+  ],
   "h2Anchors": 135,
   "h2AnchorsDifferingFromSlugger": [
     "/connect/organic/hashtags#hashtags-and-seo-how-they’re-connected",
@@ -82,5 +98,5 @@
     "/ua/monetize/memberships#платформи-для-монетизації-nsfwnbspконтенту",
     "/ua/monetize/memberships/ton-place#часті-запитання-про-tonplace-faqsbr"
   ],
-  "uniqueMedia": 1131
+  "uniqueMedia": 1135
 }

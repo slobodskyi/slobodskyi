@@ -270,7 +270,7 @@
     "title": "Affiliate Disclosure",
     "description": "How does the referral system work on this site?",
     "canonical": "https://slobodskyi.com/affiliate-disclosure",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Affiliate Disclosure",
     "ogDescription": "How does the referral system work on this site?",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
@@ -1749,7 +1749,7 @@
     "title": "How to make images with AI",
     "description": "Available in ukrainian.",
     "canonical": "https://slobodskyi.com/courses/how-to-create-images-with-ai",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "How to make images with AI",
     "ogDescription": "Available in ukrainian.",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/68395c88a1a594bbe206c256_6837528b7efd2232c2e1224b_0_2_640_N.webp",
@@ -1994,7 +1994,7 @@
     "title": "Alternative Payment Methods",
     "description": "After sending the payment, please email your transaction details and the product information via contact form.",
     "canonical": "https://slobodskyi.com/courses/payment-alternatives",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Alternative Payment Methods",
     "ogDescription": "After sending the payment, please email your transaction details and the product information via contact form.",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
@@ -2072,6 +2072,147 @@
     "bytes": 17783
   },
   {
+    "url": "/courses/payment-problem",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "en",
+    "pageType": "page",
+    "title": "/payment-problem",
+    "description": null,
+    "canonical": "https://slobodskyi.com/courses/payment-problem",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "/payment-problem",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/courses/payment-problem",
+      "en": "/courses/payment-problem",
+      "uk": "/ua/courses/payment-problem",
+      "ru": "/ru/courses/payment-problem"
+    },
+    "h1": [
+      "Payment problem :("
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/connect",
+      "/contacts",
+      "/courses",
+      "/courses/payment-problem",
+      "/create",
+      "/grow",
+      "/monetize",
+      "/ru/courses/payment-problem",
+      "/tools",
+      "/ua/courses/payment-problem"
+    ],
+    "externalLinks": [
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e211a0e6252963a631d73.02c27a987.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "courses/payment-problem.html",
+    "bytes": 15546
+  },
+  {
+    "url": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "en",
+    "pageType": "page",
+    "title": "payment-success",
+    "description": null,
+    "canonical": "https://slobodskyi.com/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "payment-success",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "en": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "uk": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "ru": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047"
+    },
+    "h1": [],
+    "anchors": [],
+    "internalLinks": [],
+    "externalLinks": [],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e653c19c0d2631c34641a.91ede7c9c.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "courses/payment-success-67dd392a3c9d80c3ee009047.html",
+    "bytes": 12538
+  },
+  {
     "url": "/courses/privacy-policy",
     "status": 200,
     "redirectTo": null,
@@ -2081,7 +2222,7 @@
     "title": "privacy-policy",
     "description": null,
     "canonical": "https://slobodskyi.com/courses/privacy-policy",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "privacy-policy",
     "ogDescription": null,
     "ogImage": null,
@@ -2166,7 +2307,7 @@
     "title": "Public offer",
     "description": null,
     "canonical": "https://slobodskyi.com/courses/public-offer",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Public offer",
     "ogDescription": null,
     "ogImage": null,
@@ -9961,7 +10102,7 @@
     "title": "Партнёрская информация",
     "description": "Как это работает?",
     "canonical": "https://slobodskyi.com/ru/affiliate-disclosure",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Партнёрская информация",
     "ogDescription": "Как это работает?",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
@@ -11268,7 +11409,7 @@
     "title": "Курс: как создавать изображения с помощью ИИ?",
     "description": "Курс по созданию изображений доступен на украинском.",
     "canonical": "https://slobodskyi.com/ru/courses/how-to-create-images-with-ai",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Курс: как создавать изображения с помощью ИИ?",
     "ogDescription": "Курс по созданию изображений доступен на украинском.",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/68395c88a1a594bbe206c256_6837528b7efd2232c2e1224b_0_2_640_N.webp",
@@ -11513,7 +11654,7 @@
     "title": "Альтернативные способы оплаты",
     "description": "После оплаты, пожалуйста, отправьте детали транзакции и информацию о продукте через контактную форму.",
     "canonical": "https://slobodskyi.com/ru/courses/payment-alternatives",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Альтернативные способы оплаты",
     "ogDescription": "После оплаты, пожалуйста, отправьте детали транзакции и информацию о продукте через контактную форму.",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
@@ -11591,6 +11732,147 @@
     "bytes": 17793
   },
   {
+    "url": "/ru/courses/payment-problem",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "ru",
+    "pageType": "page",
+    "title": "/payment-problem",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ru/courses/payment-problem",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "/payment-problem",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/courses/payment-problem",
+      "en": "/courses/payment-problem",
+      "uk": "/ua/courses/payment-problem",
+      "ru": "/ru/courses/payment-problem"
+    },
+    "h1": [
+      "Проблема с оплатой :("
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/courses/payment-problem",
+      "/ru",
+      "/ru/about",
+      "/ru/affiliate-disclosure",
+      "/ru/connect",
+      "/ru/contacts",
+      "/ru/courses",
+      "/ru/courses/payment-problem",
+      "/ru/create",
+      "/ru/grow",
+      "/ru/monetize",
+      "/ru/tools",
+      "/ua/courses/payment-problem"
+    ],
+    "externalLinks": [
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e211a0e6252963a631d73.02c27a987.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ru/courses/payment-problem.html",
+    "bytes": 15606
+  },
+  {
+    "url": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "ru",
+    "pageType": "page",
+    "title": "payment-success",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "payment-success",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "en": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "uk": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "ru": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047"
+    },
+    "h1": [],
+    "anchors": [],
+    "internalLinks": [],
+    "externalLinks": [],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e653c19c0d2631c34641a.91ede7c9c.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ru/courses/payment-success-67dd392a3c9d80c3ee009047.html",
+    "bytes": 12541
+  },
+  {
     "url": "/ru/courses/privacy-policy",
     "status": 200,
     "redirectTo": null,
@@ -11600,7 +11882,7 @@
     "title": "privacy-policy",
     "description": null,
     "canonical": "https://slobodskyi.com/ru/courses/privacy-policy",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "privacy-policy",
     "ogDescription": null,
     "ogImage": null,
@@ -11685,7 +11967,7 @@
     "title": "Public offer",
     "description": null,
     "canonical": "https://slobodskyi.com/ru/courses/public-offer",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Public offer",
     "ogDescription": null,
     "ogImage": null,
@@ -19086,6 +19368,181 @@
     "bytes": 49181
   },
   {
+    "url": "/ru/search",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "ru",
+    "pageType": "page",
+    "title": "Search Results",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ru/search",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Search Results",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/search",
+      "en": "/search",
+      "uk": "/ua/search",
+      "ru": "/ru/search"
+    },
+    "h1": [
+      "Результаты поиска"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/ru",
+      "/ru/about",
+      "/ru/affiliate-disclosure",
+      "/ru/connect",
+      "/ru/contacts",
+      "/ru/courses",
+      "/ru/create",
+      "/ru/grow",
+      "/ru/monetize",
+      "/ru/search",
+      "/ru/tools",
+      "/search",
+      "/ua",
+      "/ua/search"
+    ],
+    "externalLinks": [
+      "https://tools.slobodskyi.com/stories/7d2c156d-2dfb-4177-b4bc-3e564c3048ac",
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.656e0ea1c5b7f3087f21a1d1.fbf2934d2.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [
+      "(form)"
+    ],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ru/search.html",
+    "bytes": 18094
+  },
+  {
+    "url": "/ru/terms-of-service",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "ru",
+    "pageType": "page",
+    "title": "Terms of Service",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ru/terms-of-service",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Terms of Service",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/terms-of-service",
+      "en": "/terms-of-service",
+      "uk": "/ua/terms-of-service",
+      "ru": "/ru/terms-of-service"
+    },
+    "h1": [
+      "Terms of Service"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/ru",
+      "/ru/about",
+      "/ru/affiliate-disclosure",
+      "/ru/connect",
+      "/ru/contacts",
+      "/ru/courses",
+      "/ru/create",
+      "/ru/grow",
+      "/ru/monetize",
+      "/ru/terms-of-service",
+      "/ru/tools",
+      "/terms-of-service",
+      "/ua/terms-of-service"
+    ],
+    "externalLinks": [
+      "https://tools.slobodskyi.com",
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.67e2b22210e4c7724f805ed8.20e4c8d58.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ru/terms-of-service.html",
+    "bytes": 19377
+  },
+  {
     "url": "/ru/tools",
     "status": 200,
     "redirectTo": null,
@@ -19184,6 +19641,182 @@
     ],
     "htmlFile": "ru/tools.html",
     "bytes": 19477
+  },
+  {
+    "url": "/search",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "en",
+    "pageType": "page",
+    "title": "Search Results",
+    "description": null,
+    "canonical": "https://slobodskyi.com/search",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Search Results",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/search",
+      "en": "/search",
+      "uk": "/ua/search",
+      "ru": "/ru/search"
+    },
+    "h1": [
+      "Search results"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/connect",
+      "/contacts",
+      "/courses",
+      "/create",
+      "/grow",
+      "/monetize",
+      "/ru",
+      "/ru/search",
+      "/search",
+      "/tools",
+      "/ua",
+      "/ua/search"
+    ],
+    "externalLinks": [
+      "https://tools.slobodskyi.com/stories/7d2c156d-2dfb-4177-b4bc-3e564c3048ac",
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.656e0ea1c5b7f3087f21a1d1.fbf2934d2.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [
+      "(form)"
+    ],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "search.html",
+    "bytes": 18027
+  },
+  {
+    "url": "/terms-of-service",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "en",
+    "pageType": "page",
+    "title": "Terms of Service",
+    "description": null,
+    "canonical": "https://slobodskyi.com/terms-of-service",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Terms of Service",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/terms-of-service",
+      "en": "/terms-of-service",
+      "uk": "/ua/terms-of-service",
+      "ru": "/ru/terms-of-service"
+    },
+    "h1": [
+      "Terms of Service"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/",
+      "/about",
+      "/affiliate-disclosure",
+      "/connect",
+      "/contacts",
+      "/courses",
+      "/create",
+      "/grow",
+      "/monetize",
+      "/ru/terms-of-service",
+      "/terms-of-service",
+      "/tools",
+      "/ua/terms-of-service"
+    ],
+    "externalLinks": [
+      "https://tools.slobodskyi.com",
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.67e2b22210e4c7724f805ed8.20e4c8d58.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "terms-of-service.html",
+    "bytes": 19327
   },
   {
     "url": "/tools",
@@ -19532,7 +20165,7 @@
     "title": "Партнерська інформація",
     "description": "Як це працює?",
     "canonical": "https://slobodskyi.com/ua/affiliate-disclosure",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Партнерська інформація",
     "ogDescription": "Як це працює?",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
@@ -21126,7 +21759,7 @@
     "title": "Альтернативні способи оплати",
     "description": "Після оплати, будь ласка, надішліть деталі транзакції та інформацію про продукт через контактну форму.",
     "canonical": "https://slobodskyi.com/ua/courses/payment-alternatives",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Альтернативні способи оплати",
     "ogDescription": "Після оплати, будь ласка, надішліть деталі транзакції та інформацію про продукт через контактну форму.",
     "ogImage": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
@@ -21204,6 +21837,148 @@
     "bytes": 17809
   },
   {
+    "url": "/ua/courses/payment-problem",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "uk",
+    "pageType": "page",
+    "title": "Проблема з оплатою",
+    "description": "Сталася помилка під час обробки вашої оплати. Будь ласка, перевірте платіжні дані або спробуйте інший спосіб оплати.Якщо проблема не зникає, напишіть мені.",
+    "canonical": "https://slobodskyi.com/ua/courses/payment-problem",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Проблема з оплатою",
+    "ogDescription": "Сталася помилка під час обробки вашої оплати. Будь ласка, перевірте платіжні дані або спробуйте інший спосіб оплати.Якщо проблема не зникає, напишіть мені.",
+    "ogImage": null,
+    "ogType": "website",
+    "hreflang": {
+      "x-default": "/courses/payment-problem",
+      "en": "/courses/payment-problem",
+      "uk": "/ua/courses/payment-problem",
+      "ru": "/ru/courses/payment-problem"
+    },
+    "h1": [
+      "Проблема з оплатою"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/courses/payment-problem",
+      "/ru/courses/payment-problem",
+      "/ua",
+      "/ua/about",
+      "/ua/affiliate-disclosure",
+      "/ua/connect",
+      "/ua/contacts",
+      "/ua/courses",
+      "/ua/courses/payment-alternatives",
+      "/ua/courses/payment-problem",
+      "/ua/create",
+      "/ua/grow",
+      "/ua/monetize",
+      "/ua/tools"
+    ],
+    "externalLinks": [
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e211a0e6252963a631d73.02c27a987.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ua/courses/payment-problem.html",
+    "bytes": 16504
+  },
+  {
+    "url": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "uk",
+    "pageType": "page",
+    "title": "payment-success",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "payment-success",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "en": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "uk": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "ru": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047"
+    },
+    "h1": [],
+    "anchors": [],
+    "internalLinks": [],
+    "externalLinks": [],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.678e653c19c0d2631c34641a.91ede7c9c.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ua/courses/payment-success-67dd392a3c9d80c3ee009047.html",
+    "bytes": 12541
+  },
+  {
     "url": "/ua/courses/privacy-policy",
     "status": 200,
     "redirectTo": null,
@@ -21213,7 +21988,7 @@
     "title": "Політика конфіденційності",
     "description": "Ця Полiтика конфiденцiйностi описує, як ФОП Слободський Олександр Миколайович обробляє персональні дані користувачів при використанні послуг Виконавця.",
     "canonical": "https://slobodskyi.com/ua/courses/privacy-policy",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Політика конфіденційності",
     "ogDescription": "Ця Полiтика конфiденцiйностi описує, як ФОП Слободський Олександр Миколайович обробляє персональні дані користувачів при використанні послуг Виконавця.",
     "ogImage": null,
@@ -21298,7 +22073,7 @@
     "title": "Публiчна оферта",
     "description": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів.",
     "canonical": "https://slobodskyi.com/ua/courses/public-offer",
-    "robots": "noindex",
+    "robots": "noindex, max-image-preview:large",
     "ogTitle": "Публiчна оферта",
     "ogDescription": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів.",
     "ogImage": null,
@@ -28705,6 +29480,181 @@
     ],
     "htmlFile": "ua/monetize/payments/wise.html",
     "bytes": 49921
+  },
+  {
+    "url": "/ua/search",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "uk",
+    "pageType": "page",
+    "title": "Search Results",
+    "description": null,
+    "canonical": "https://slobodskyi.com/ua/search",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Search Results",
+    "ogDescription": null,
+    "ogImage": null,
+    "ogType": null,
+    "hreflang": {
+      "x-default": "/search",
+      "en": "/search",
+      "uk": "/ua/search",
+      "ru": "/ru/search"
+    },
+    "h1": [
+      "Результати пошуку"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/ru",
+      "/ru/search",
+      "/search",
+      "/ua",
+      "/ua/about",
+      "/ua/affiliate-disclosure",
+      "/ua/connect",
+      "/ua/contacts",
+      "/ua/courses",
+      "/ua/create",
+      "/ua/grow",
+      "/ua/monetize",
+      "/ua/search",
+      "/ua/tools"
+    ],
+    "externalLinks": [
+      "https://tools.slobodskyi.com/stories/7d2c156d-2dfb-4177-b4bc-3e564c3048ac",
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.656e0ea1c5b7f3087f21a1d1.fbf2934d2.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [
+      "(form)"
+    ],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ua/search.html",
+    "bytes": 18098
+  },
+  {
+    "url": "/ua/terms-of-service",
+    "status": 200,
+    "redirectTo": null,
+    "inSitemap": false,
+    "lang": "uk",
+    "pageType": "page",
+    "title": "Публiчна оферта",
+    "description": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів.",
+    "canonical": "https://slobodskyi.com/ua/terms-of-service",
+    "robots": "noindex, max-image-preview:large",
+    "ogTitle": "Публiчна оферта",
+    "ogDescription": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів.",
+    "ogImage": null,
+    "ogType": "website",
+    "hreflang": {
+      "x-default": "/terms-of-service",
+      "en": "/terms-of-service",
+      "uk": "/ua/terms-of-service",
+      "ru": "/ru/terms-of-service"
+    },
+    "h1": [
+      "Публiчна оферта"
+    ],
+    "anchors": [],
+    "internalLinks": [
+      "/ru/terms-of-service",
+      "/terms-of-service",
+      "/ua",
+      "/ua/about",
+      "/ua/affiliate-disclosure",
+      "/ua/connect",
+      "/ua/contacts",
+      "/ua/courses",
+      "/ua/courses/public-offer",
+      "/ua/create",
+      "/ua/grow",
+      "/ua/monetize",
+      "/ua/terms-of-service",
+      "/ua/tools"
+    ],
+    "externalLinks": [
+      "https://www.instagram.com/slobodskyi",
+      "https://www.threads.com/@slobodskyi",
+      "https://www.youtube.com/@slobodskyi"
+    ],
+    "jsonLd": [
+      {
+        "valid": true,
+        "types": [
+          "Organization"
+        ],
+        "raw": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Oleksandr Slobodskyi\",\n  \"url\": \"https://slobodskyi.com\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"alternateName\": \"slobodskyi\",\n  \"sameAs\": [\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.pinterest.com/slobodskyi\",\n    \"https://www.threads.net/@slobodskyi\",\n    \"https://www.reddit.com/r/slobodskyi\"\n  ],\n  \"contactPoint\": [\n    {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+380735451872\",\n      \"contactType\": \"customer service\",\n      \"email\": \"oleksandr@slobodskyi.com\",\n      \"availableLanguage\": [\n        \"en\",\n        \"ru\",\n        \"uk\"\n      ]\n    }\n  ]\n}"
+      }
+    ],
+    "media": [
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2d3972ebac076f9a36d6_favicon-32x32.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656f2e5a46fdee5771c20652_webclip.png",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dbb50d5a68b2e6c77d413_language_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/657dc1d4b5510e0d5238b141_expand_more_FILL0_wght400_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e21b86d42ac0f38a3f3db4_download_done_FILL1_wght500_GRAD0_opsz24.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/65e87c4e3477ba12b56b802c_oleksandr-slobodskyi.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730cbb20e0d67d7235ed69f_Instagram_Glyph_Black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6730d0c1486b93abd33bfbb6_yt_icon_mono_light.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c3b68f2c6365a106d_connect.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5c9cbd1b3dcfdf4032_monetize.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5cd28bc92575f6dad1_create.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/69526e5ce577713d2554a4a0_grow.webp",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6a2fc6e534ef22f7b40cdfc5_threads-logo-black.svg",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.67e2b22210e4c7724f805ed8.20e4c8d58.opt.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/css/s-001.webflow.shared.20af53cb0.min.css",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "forms": [],
+    "iframes": [],
+    "scripts": [
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "/avljl2rk9q5pNjU1OGFlNTI5ZTk2NTNmN2Q2MWE2OTE3/3BsJY3eH-RSEytLjrK9vLWFbnDM",
+      "https://analytics.ahrefs.com/analytics.js",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6558ae529e9653f7d61a6917",
+      "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/js/webflow.b42ea797.486918043b8ccedf.js"
+    ],
+    "htmlFile": "ua/terms-of-service.html",
+    "bytes": 19611
   },
   {
     "url": "/ua/tools",
