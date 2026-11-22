@@ -12,6 +12,8 @@
     "build": "pnpm --filter site build",
     "preview": "pnpm --filter site preview",
     "check": "pnpm -r check",
+    "test": "pnpm -r test",
+    "content": "node --disable-warning=ExperimentalWarning packages/core/src/cli.ts",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
