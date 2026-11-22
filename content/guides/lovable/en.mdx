@@ -1,0 +1,826 @@
+---
+type: guide
+title: "Lovable.dev: How I Built a Working App with AI in 12 Prompts in 2 Hours"
+description: Discover how to save time and launch your MVP in just a few hours using Lovable.dev. Explore project examples, feature overviews, limitations, and expert prompt writing tips.
+lead: Discover how to save time and launch your MVP in just a few hours using Lovable.dev. Explore project examples, feature overviews, limitations, and expert prompt writing tips.
+cover: ./67bb62ad23b017da457a7738_what-is-lovable-and-how-to-use-it.webp
+hub: create
+category: no-code
+slug: lovable
+stage: evergreen
+visibility: public
+status: published
+created: 2025-02-19
+updated: 2025-12-21
+faq:
+  - q: How does Lovable.dev ensure the security of data and user information?
+    a: Lovable.dev uses proven cloud storage and encryption protocols to protect data. Depending on the selected integration (for example, Supabase), the provider is also responsible for security. Users can configure authentication, roles, and permissions within the platform to control data access.
+  - q: Can Lovable.dev applications be deployed on private servers or offline?
+    a: By default, applications are deployed in the cloud (on Lovable.dev servers or that of the integrated provider). However, thanks to GitHub integration, you can export the code and deploy the project in any environment, including your own servers or an offline setup. This will require manual configuration and managing all dependencies.
+  - q: How flexible is the customization of the generated design?
+    a: Lovable.dev offers a visual editor and the ability to upload mockups (for example, from Figma) to recreate the interface. After generation, you can manually edit styles and components via the GitHub repository for deep customization.
+  - q: Is Lovable.dev suitable for creating mobile applications or only web applications?
+    a: Lovable.dev is focused on web applications, though some users create PWAs (Progressive Web Apps) that function like mobile apps. For full-scale mobile development (iOS/Android), additional configuration or the use of frameworks like React Native is required, which is not provided "out of the box."
+  - q: How does Lovable.dev handle scalability and high loads?
+    a: Scalability depends on the connected infrastructure (for example, Supabase or AWS). The platform generates code that can be deployed in the cloud with auto-scaling. For high loads, it is recommended to use providers that support sharding and clustering.
+  - q: Can a role-based access control system be created without additional code?
+    a: Yes, Lovable.dev supports a basic role model through integrations with authentication systems (for example, Supabase Auth). You simply need to specify the required roles and their permissions in the prompt. If necessary, you can manually modify the access logic in the code.
+  - q: Does Lovable.dev have tools for A/B testing or experiments?
+    a: There are no built-in tools for A/B testing, but you can connect external services (for example, PostHog) or add your own logic. Lovable.dev can generate basic code if you provide a detailed description of the task in the prompt.
+  - q: How can analytics tools be configured in an application built with Lovable.dev?
+    a: You can integrate third-party analytics services ([Google Analytics](/grow/analytics/google-analytics), PostHog, etc.) via chat prompts or manually through the GitHub repository. Just specify which tool needs to be added, and Lovable.dev will include the necessary scripts and settings.
+  - q: Is programming knowledge required to work with Lovable.dev?
+    a: Although Lovable.dev simplifies the development process, basic knowledge of web applications is beneficial. Understanding terms like "backend," "database," "API," and "authorization" will speed up the process. Programming is not mandatory, but being able to read code will help you customize your project more deeply.
+  - q: What monetization options does Lovable.dev offer for applications?
+    a: Lovable.dev supports integration with Stripe and other payment systems. Simply specify in your prompt whether you need a payment page or a subscription system, and the platform will generate the corresponding code and UI components. After that, you can test and launch payment functionality for users.
+  - q: Is Lovable.dev suitable for creating e-commerce applications?
+    a: Yes, the platform can be adapted for online stores. It supports integrations with payment systems (Stripe, PayPal) and databases (for example, Supabase) for product management. Lovable.dev can generate the backend and interface, but for complex functions (logistics, analytics, A/B testing), additional configuration may be required.
+  - q: Are there any limitations on project size or number of users?
+    a: Limitations depend on the pricing plan and integrations. The platform generates code capable of working with large databases and scaling in the cloud. For projects with high loads, it is important to plan the infrastructure in advance and choose an appropriate provider (AWS, Supabase, GCP).
+ai:
+  assisted: false
+---
+
+Creating digital products is difficult, especially without full-stack development experience.
+
+I used to have it like this: I had plenty of ideas, but it would take months to code them, or I would have to hire a developer.
+
+I remember spending half a year and over $10K to create an educational startup, only to realize in the end that the idea wasn’t very good.
+
+Now everything is simpler — [AI tools](/create/ai) and [no-code platforms](/create/no-code) allow you to build an MVP in just a few hours.
+
+**If you're an indie hacker or solo entrepreneur with a bunch of ideas but are intimidated by technical details — testing an idea is now easier than ever.**
+
+In this article, we'll explore a service that can help with this — [Lovable.dev](https://slobo.click/lovable).
+
+Using it, I built a simple app in just 12 prompts and 2 hours – Quests.
+
+<Shot src="./67bb60f035cde6cc39759cfa_67bb22b7cabf6acfef2aeeee_1-example-of-app-made-in-lovable-dev.webp" alt="Interface of the startup built with Lovable.dev" wide />
+
+## What is Lovable.dev?
+
+[Lovable.dev](https://slobo.click/lovable) is a platform for creative professionals that lets you quickly launch fully functional SaaS products without complex development.
+
+It operates in a chat-based format: you simply describe what you want to create and watch your app come together in real time.
+
+<Shot src="./67bb60f035cde6cc39759ceb_67bb25977a2ea65794d174c6_2-how-to-create-app-in-lovable.webp" alt="Step-by-step guide to using Lovable.dev to create apps" wide />
+
+You can specify the desired interface design, the required functionality, add authentication, or connect third-party services via API.
+
+The platform will clarify the details and generate a ready-to-use app that you can publish and use immediately.
+
+<Shot src="./67bb60f035cde6cc39759d00_67bb22dac78b6a3912acbdfc_3-lovable-dev-interface.webp" alt="Example of an app interface created using AI on Lovable.dev" wide />
+
+Lovable.dev simplifies the journey from idea to working product by removing technical barriers and allowing you to focus on the creative side.
+
+### What can you do with Lovable.dev?
+
+Lovable.dev combines code generation, design, and integrations on one platform.
+
+- **Rapid prototyping:** lets you assemble a working app mockup in minutes and test hypotheses.
+- **Real-time preview:** changes in code and design are reflected instantly, making adjustments and improvements easier.
+- **Database integration:** no need to set up a server or database separately — everything is available in one place, with the option to choose a provider (e.g., Supabase).
+- **AI-assisted development:** AI helps automatically generate code, fix errors, and optimize your app's logic.
+- **Version control integration:** projects can be easily linked to GitHub, giving you full access to the code, enabling teamwork, and allowing deployment on any server.
+
+All of this without having to write code yourself.
+
+### Examples of projects built on Lovable.dev
+
+I've seen a wide variety of projects created on Lovable.
+
+As always – some are cringe-worthy, while others are fascinating.
+
+For example, one service allows you to generate coloring pages for children based on a personalized request.
+
+<Shot src="./67bb60f035cde6cc39759ce8_67bb4320de89e0331758b9c6_lovable-example-1.webp" alt="Interface of the image generation service built on Lovable.dev" wide />
+
+I've also seen a website that generates audiobooks for children based on parents' requests. For narration, the voice is generated using [ElevenLabs](/create/ai/elevenlabs).
+
+Another service is an alternative to [AlsoAsked and AnswerThePublic](/connect/organic/alsoasked-vs-answerthepublic).
+
+It gathers keywords and questions that users ask on Google, Reddit, or Quora.
+
+It builds mind maps and helps with writing articles.
+
+<Shot src="./67bb60f035cde6cc39759cc6_67bb462e6caa4ca3b29dabd3_lovable-example-2.webp" alt="SEO service, an alternative to AlsoAsked, built on Lovable.dev" wide />
+
+And that happens too.
+
+<Shot src="./67bb60f035cde6cc39759cd2_67bb47c3a413b4f920104a96_lovable-example-3.webp" alt="Interface of the actress search service built on Lovable.dev" wide />
+
+### What does Quests do?
+
+Quests is a service for creators and entrepreneurs that offers a new challenge each day to foster creativity, overcome creative blocks, and approach tasks from a different angle.
+
+After completing a challenge, you can share your result on X and see how others have tackled it.
+
+<Shot src="./67bb60f035cde6cc39759ccf_67bb4b42ad62bdfb0de1f94a_lovable-example-4.webp" alt="An example of my service built using Lovable.dev" wide />
+
+It's a mix between Wreck This Journal and BeReal.
+
+The service is fully automated, synchronizes with a database, and requires no constant oversight.
+
+<Callout>
+  When I was working on an article, I wanted to create something interactive — so you could click around and see the result immediately.
+</Callout>
+
+<Quiz id="94a39957-ra5vwz" theme="light" />
+
+### What is Lovable suitable for?
+
+[Lovable](https://slobo.click/lovable) is ideal for quickly turning an idea into a working product.
+
+Examples show that you can build almost anything with it — from prototypes to fully functional web applications.
+
+The main advantage of Lovable is the quality of its code and the ease of integrating standard web functions, allowing you to focus on core business logic rather than routine tasks.
+
+### What is Lovable not suitable for?
+
+Now, let's talk about its limitations.
+
+**Lovable is not suitable for:**
+
+#### Non-web applications
+
+1. Native mobile apps.
+2. Desktop applications.
+3. Command line tools.
+4. System services.
+5. Static websites (instead, use static site generators).
+
+#### When there are complex backend requirements
+
+1. Heavy server processing.
+2. Complex microservices architecture.
+3. Need for specific backend frameworks.
+4. Custom server configurations.
+
+#### For projects that depend on a specific framework
+
+1. Next.js applications.
+2. Gatsby sites.
+3. Angular apps.
+4. Vue.js projects.
+
+### Do you need to know how to code to use Lovable.dev?
+
+While Lovable simplifies the development process, basic knowledge of web applications is helpful.
+
+Understanding terms like “backend”, “database”, “API”, and “authentication” will speed up your work.
+
+Coding isn’t mandatory, but knowing how to read code will help you customize your project more deeply.
+
+If you do know how to code and it's important for you to use specific technologies, here's what Lovable uses.
+
+### Which technologies does Lovable use?
+
+#### Frontend (React + TypeScript)
+
+1. Modern React hooks and features.
+2. TypeScript for type safety and easier development.
+3. Vite for fast bundling.
+
+#### UI and Styles
+
+1. Tailwind CSS for a flexible styling approach.
+2. shadcn/ui with customizable components.
+3. The ability to use custom CSS and animations.
+
+#### State and Data Management
+
+1. React Query for data fetching and caching.
+2. React Router for navigation.
+3. Context API for global state.
+
+#### Backend Integration
+
+Supabase: PostgreSQL, authentication, real-time subscriptions, Edge functions, file storage, backups, and RLS (Row Level Security).
+
+## How to start using Lovable.dev?
+
+### Creating an account
+
+[Go to lovable.dev](https://slobo.click/lovable) — you'll immediately see an interface where you can describe your app idea.
+
+When you try to send a message, the system will prompt you to log in or register.
+
+You can register using your GitHub, Google account, or via email.
+
+After registering, you'll be taken to the app creation interface: a chat on the left and your future app on the right.
+
+## How much does Lovable.dev cost?
+
+**All users get 5 free messages per day, and paid plans include an additional fixed monthly message limit.**
+
+<Callout>
+  When I first saw the limit of 5 free messages per day and an extra 100 messages per month on the most affordable plan, I thought it wouldn't be enough for full-scale project work.
+</Callout>
+
+But in practice, it turned out differently:
+
+1. Well-crafted prompts allow you to implement several features in one query. We'll discuss how to write effective prompts later.
+2. The limits are not always strictly enforced. I didn't find an explanation in the documentation, but I noticed that I often send more messages than the limit suggests. Perhaps there is a minimum threshold of code changes below which a message isn't counted.
+
+<Shot src="./67bb60f035cde6cc39759cc9_67bb232e06192e3027e6ffe5_4-lovable-dev-how-messages-counting.webp" alt="How Lovable message limits work" />
+
+In the end, even with the cheapest plan, you can build several fully functional apps.
+
+Over time, it becomes easier to achieve better results while using fewer messages.
+
+Here is a comparison table of the plans:
+
+| Feature                         | Starter                       | Launch                      | Scale                              | Teams                                          |
+| ------------------------------- | ----------------------------- | --------------------------- | ---------------------------------- | ---------------------------------------------- |
+| Monthly Price (USD)             | $20                           | $50                         | $100                               | Custom                                         |
+| Monthly Message Limit           | 100                           | 250                         | 500+                               | Custom                                         |
+| Suitable For                    | Personal and testing projects | Freelancers and small teams | Businesses with high query volumes | Large organizations with specific requirements |
+| Includes previous plan features | —                             | Yes                         | Yes                                | Yes                                            |
+| Priority Support                | No                            | No                          | Yes                                | Yes                                            |
+| Early Access to New Features    | No                            | No                          | Yes                                | Yes                                            |
+| Best For                        | Personal and testing projects | Freelancers and small teams | Businesses with high query volumes | Large organizations with specific requirements |
+
+Note:
+
+1. Messages triggered by the "Try to fix it" button are not counted towards the limits if you use the button. However, if you manually send an additional query to fix an error, it counts as one message.
+2. Unused messages do not carry over — limits reset daily or monthly depending on the plan. The remaining messages do not accumulate.
+
+**5 free messages per day are enough to evaluate whether Lovable meets your needs.**
+
+## How to make requests in Lovable.dev correctly?
+
+At first, the message limits may seem restrictive, but even one well-crafted prompt can yield excellent results.
+
+<Callout>
+  I have studied all available guides on using Lovable and gathered some practical tips for creating effective prompts.
+</Callout>
+
+To simplify the process, I created a free custom GPT that helps turn ideas into clear and structured prompts for Lovable.
+
+### How to use the Lovable Prompt Machine?
+
+Open the [Lovable Prompt Machine](https://chatgpt.com/g/g-67b9c290cc7c8191911bf7cd65c363da-lovable-prompt-machine).
+
+Use one of the suggested options or directly describe your idea.
+
+<Shot src="./67bb60f035cde6cc39759ccc_67bb23405741c3c70f98f282_5-how-to-prompt-lovable-custom-gpt.webp" alt="Interface of the custom GPT for generating prompts in Lovable.dev" wide />
+
+Answer the follow-up questions.
+
+<Shot src="./67bb60f035cde6cc39759d03_67bb234b90b5675afdbec8f8_6-lovable-prompt-example.webp" alt="Example of an application idea description for development on Lovable.dev" wide />
+
+Copy the generated prompt into Lovable.
+
+Here’s an example of an application built using a single prompt through the Lovable Prompt Machine.
+
+<Shot src="./67bb60f035cde6cc39759cdf_67bb235ee336707ac80927a0_7-example-of-lovable-dev-app.webp" alt="Service built using a single prompt in Lovable.dev" wide />
+
+This service can transform articles into social media posts tailored to their specifics.
+
+For the application to work fully, you need to connect the OpenAI API.
+
+Therefore, you cannot create a complete app with just one prompt.
+
+However, the generated interface is an excellent starting point for further development.
+
+<Shot src="./67bb60f035cde6cc39759cee_67bb237af0cc6a61d5bbf838_8-app-idea.webp" alt="Cringe example" wide />
+
+You can even build silly applications.
+
+<Shot src="./67bb60f035cde6cc39759d0c_67bb23849296863ae1c117cf_9-app-execution.webp" alt="Cringe example (dog)" wide />
+
+How to make effective prompts?
+
+### Break down tasks into smaller parts
+
+Don’t try to cover the entire project in one prompt.
+
+Divide the task into stages — it's easier to control the outcome.
+
+#### ❌ Bad:
+
+`Create a full e-commerce site with products, cart, checkout and admin panel`
+
+#### ✅ Good:
+
+`Let's start by creating a product card component that displays the image, title, and price`
+
+`Now add a grid layout to display multiple product cards on the homepage`
+
+`Add an 'Add to Cart' button to the product card with a click animation`
+
+`Create a shopping cart sidebar that slides in from the right`
+
+#### 🤔 Why?
+
+<Callout>
+  A step-by-step approach allows you to monitor the outcome at each stage and makes it easier to make adjustments.
+</Callout>
+
+### Use built-in features
+
+Lovable.dev offers ready-made integrations (e.g., Supabase, shadcn/ui).
+
+Use them to speed up development.
+
+#### ❌ Bad:
+
+`Can we add a custom authentication system using JWT tokens?`
+
+#### ✅ Good:
+
+`Let's implement Supabase authentication with email and password login`
+
+`Add a protected route that only logged-in users can access`
+
+`Create a user profile page that displays data from Supabase`
+
+`Add the shadcn/ui Dialog component for the login modal`
+
+#### 🤔 Why?
+
+<Callout>
+  Ready-made solutions speed up development and reduce the likelihood of errors.
+</Callout>
+
+### Follow best practices
+
+Adhere to security and architectural standards.
+
+#### ❌ Bad:
+
+`Store the API key in a component and fetch data directly`
+
+#### ✅ Good:
+
+`Create a posts table in Supabase with proper RLS policies`
+
+`Add error handling to the login form with toast notifications`
+
+`Create a reusable LoadingSpinner component for async operations`
+
+`Implement form validation using react-hook-form and zod
+`
+
+#### 🤔 Why?
+
+<Callout>
+  Following best practices makes the project easier to maintain and reduces risks.
+</Callout>
+
+### Structure your project
+
+Try not to keep all your code in one file — break your project into modules.
+
+#### ❌ Bad:
+
+`Put all the code in App.tsx`
+
+#### ✅ Good:
+
+`Create a components/auth folder for login-related components`
+
+`Move the product types to types/product.ts`
+
+`Create a hooks folder and add useCart custom hook`
+
+`Set up a layout component with header and footer`
+
+#### 👀 Example:
+
+`src/
+├── components/
+│   ├── auth/
+│   │   ├── LoginForm.tsx
+│   │   └── SignUpForm.tsx
+│   └── products/
+│         ├── ProductCard.tsx
+│         └── ProductGrid.tsx
+├── hooks/
+│   ├── useCart.ts
+│   └── useAuth.ts
+└── types/
+     ├── product.ts
+     └── user.ts
+`
+
+#### 🤔 Why?
+
+<Callout>
+  A clear structure facilitates scaling and teamwork.
+</Callout>
+
+### Develop functionality step by step
+
+Add complex features gradually, starting with simple components.
+
+#### ❌ Bad:
+
+`Add a complete blog system`
+
+#### ✅ Good:
+
+`First, create a simple BlogPost component that shows title and content`
+
+`Add markdown support to the blog post content`
+
+`Create a BlogList component to display post previews`
+
+`Add pagination to the blog list`
+
+#### 🤔 Why?
+
+<Callout>
+  A phased approach simplifies debugging and reduces the likelihood of errors.
+</Callout>
+
+### Manage state properly
+
+Avoid storing all state in one place — use Context API, React Query, and other tools.
+
+#### ❌ Bad:
+
+`Handle all the app state globally`
+
+#### ✅ Good:
+
+`Create a CartContext to manage shopping cart state`
+
+`Add React Query hooks for fetching and caching products`
+
+`Implement local storage persistence for the shopping cart`
+
+#### 🤔 Why?
+
+<Callout>
+  Proper state management makes the project more stable and easier to maintain.
+</Callout>
+
+### Set up your database and backend
+
+Use ready-made integrations (such as Supabase) and only configure what is necessary.
+
+#### ❌ Bad:
+
+`Add a database with all possible tables we might need`
+
+#### ✅ Good:
+
+`Create a products table with basic fields: id, name, price, description`
+
+`Add image_url and category_id columns to the products table`
+
+`Set up RLS policy to allow public read but authenticated create`
+
+`Create an edge function to handle Stripe payment initialization`
+
+#### 🤔 Why?
+
+<Callout>
+  Creating only the necessary entities simplifies project maintenance and speeds up development.
+</Callout>
+
+### Improve the interface and UX
+
+Provide clear instructions for improving visual elements and user interaction.
+
+#### ❌ Bad:
+
+`Make the site look better`
+
+#### ✅ Good:
+
+`Add a loading skeleton while products are being fetched`
+
+`Implement a smooth fade-in animation for product cards`
+
+`Add a tooltip to explain the 'Save for Later' feature`
+
+`Make the header sticky and add a subtle shadow on scroll`
+
+#### 🤔 Why?
+
+<Callout>
+  Specific instructions help achieve the desired result more quickly.
+</Callout>
+
+### Chat modes
+
+In each message, Lovable expects clear instructions on what needs to be changed in the project.
+
+If you need to clarify details or discuss ideas without making changes, use the chat mode.
+
+To enable it:
+
+1. Go to settings and open the _Account Settings_ tab.
+2. In the _Labs_ section, activate _Chat modes_.
+3. Once activated, you will be able to send follow-up messages.
+
+<Shot src="./67bb60f035cde6cc39759d06_67bb239dbed8a4118e8c64e1_10-what-is-chat-mode-lovable.webp" alt="Chat interface without changes in Lovable.dev" />
+
+Keep in mind that messages in the chat may also count against your daily query limit.
+
+#### Let's summarize:
+
+- **Be specific:** clearly indicate fields, styles, and animations.
+- **Provide feedback:** specify what needs to be fixed if the result is unsatisfactory.
+- **Work with errors:** use the "Try to fix it" button or describe the problem manually.
+
+#### Good prompts in Lovable.dev:
+
+- Solve a single task or a related set of tasks.
+- Use built-in tools (Supabase, shadcn/ui).
+- Follow best practices (code structure, security, validation).
+- Develop functionality gradually, avoiding overloading prompts.
+
+## How to get the most out of Lovable.dev?
+
+### Visual editing
+
+To make changes to the interface without sending a message in the chat, click _Edit_ and select the desired interface element.
+
+Customize it directly in the editor as needed.
+
+<Shot src="./67bb60f035cde6cc39759d09_67bb23b03ef970437241649a_11-edit-lovable-ui-in-web-interface.webp" alt="Step-by-step guide to editing the interface on Lovable.dev" wide />
+
+### Using images for UI hints
+
+Upload a screenshot, and Lovable will recreate the interface based on it.
+
+`Attached is a screenshot of the current layout. Create a UI that closely resembles the provided image, adjusting margins for mobile responsiveness.`
+
+### Import from Figma into Lovable
+
+If you have a paid Figma subscription with access to Dev Mode, you can import your finished design directly into Lovable and speed up the development process.
+
+For this, you'll need a plugin from Builder.io.
+
+<Shot src="./67bc7a6085432e7f633eec0c_17-figma-to-lovable-builder-io.webp" alt="How to transfer a design from Figma to Lovable via Builder-io" />
+
+To ensure the layout exports correctly, you must use auto-layouts.
+
+I don't yet know how to work with auto-layouts, so I asked Figma AI to generate a simple interface for the tool I plan to create.
+
+Here's what the design looked like in Figma.
+
+<Shot src="./67bc7a7fff58d3bfc6f8a89c_18-figma-to-lovable-example.webp" alt="Example of a design created in Figma" wide />
+
+And here's how it exported to Lovable.
+
+<Shot src="./67bc7a9f7ee112b3467999d8_19-how-figma-exported-in-lovable.webp" alt="Example of exporting a design from Figma to Lovable" wide />
+
+The result looks good, but the design is transferred without any description of the functionality.
+
+When I added explanations directly in Lovable, the layout "fell apart."
+
+I plan to test it in more detail and update the article later.
+
+### Uploading project knowledge
+
+In the project settings, you can add additional information about the product.
+
+This data will be taken into account with every code change, helping maintain the project's integrity and speeding up development.
+
+### Full code ownership
+
+One of the key advantages of Lovable.dev is its integration with GitHub.
+
+You can easily export your code:
+
+- Customize it to your liking.
+- Scale your project.
+
+The platform does not lock you into a closed ecosystem, which is especially important for long-term projects.
+
+I edited my code using GitHub's visual interface, and after saving, the updated version was automatically reflected in Lovable.
+
+<Shot src="./67bb60f035cde6cc39759cc3_67bb23c4e336707ac8096a3a_13-lovable-git-integration.webp" alt="Lovable.dev integration with GitHub for version control" />
+
+### Project versions
+
+If the project goes off track, you always have the option to roll back to a previous version.
+
+<Shot src="./67bb60f035cde6cc39759ce2_67bb23a761636e40e3b98583_12-lovable-dev-history-of-edits.webp" alt="Project version history on Lovable.dev" />
+
+### Integrating monetization
+
+Lovable.dev supports integration with [Stripe](/monetize/payments/stripe) and other [payment systems](/monetize/payments).
+
+Simply specify in your prompt that you need a payment page or subscription system, and the platform will generate the appropriate code and UI components.
+
+After that, you can test and launch the payment system for users.
+
+What options are there besides Stripe?
+
+<Shot src="./67bb60f035cde6cc39759ce5_67bb23d528820cb88d5219b1_14-how-to-implements-payments-lovable.webp" alt="Guide to setting up monetization with Stripe on Lovable.dev" />
+
+I want to test if I can integrate payments on the site through Ukrainian services.
+
+### SEO Settings
+
+I am a big fan of search engine optimization.
+
+<Callout>
+  This site receives over 500K visitors per year, and 90% of its traffic comes organically from search. This year, I also plan to start growing social media.
+</Callout>
+
+Clearly, promoting a content-driven site is easier than an app or service.
+
+If the project has little content, most organic traffic will likely come from branded queries—when users search for your project directly.
+
+Nevertheless, it was important to me that a project built on Lovable is optimized for search.
+
+I asked the platform what it could do for SEO, and it immediately made several improvements.
+
+<Shot src="./67bb60f035cde6cc39759cfd_67bb2405300720200e809d8f_15-how-to-optimize-lovable-to-seo.webp" alt="SEO optimization guide for projects on Lovable.dev" />
+
+And it yielded good results.
+
+<Shot src="./67bb60f035cde6cc39759cf1_67bb240dff81f49ddced26c3_16-lighthouse-audit-perfomance-lovable-site.webp" alt="Report of the analysis of a site built on Lovable.dev in Google Lighthouse" />
+
+If you want to dive deeper into SEO, check out my article on [how to properly optimize a website for search](/connect/organic/seo).
+
+If your project includes a blog or a large amount of content, it might make sense to consider alternative platforms, such as [Webflow](/create/no-code/webflow).
+
+You could build the core functionality with Lovable, and host the blog on a Webflow subdomain.
+
+## How to publish your project on Lovable.dev?
+
+All projects are automatically published on a subdomain: https\://your-project.lovable.app/
+
+If you want to use your own domain, you can connect services like Netlify or Cloudflare Pages.
+
+1. **Netlify:** a simple option for quick deployment.
+2. **Cloudflare Pages:** ideal if you already use Cloudflare for other purposes.
+
+**Both services allow you to host your project on your own domain for free.**
+
+### Publishing via Cloudflare Pages
+
+I chose Cloudflare for deployment because I use it for other tasks as well and wanted everything in one place.
+
+After connecting the repository from GitHub, Cloudflare automatically publishes all updates.
+
+However, the project didn't work on the first try — Cloudflare threw errors related to missing libraries.
+
+How did I solve the problem?
+
+1. I opened the project repository on GitHub.
+2. I launched a terminal directly from the browser (or used the console if that's more convenient).
+3. I ran several commands in the terminal to install the missing dependencies.
+
+In the terminal, I executed the following commands:
+
+1. bun install
+2. git status
+3. git diff bun.lockb
+4. git add bun.lockb
+5. git commit -m "Update bun lockfile after dependency resolution"
+6. git push
+
+And after that, I configured Cloudflare Pages with the following commands.
+
+1. **Build command:** npm install && npm run build
+2. **Build output directory:** dist
+
+The commands may vary in your case.
+
+First, try publishing your project via Cloudflare Pages.
+
+If something goes wrong, copy the message from the console and [send it to ChatGPT](/create/ai/chatgpt) — it will advise you on the necessary steps.
+
+**After successful publication, all updates made in Lovable will automatically appear on your domain.**
+
+## What integrations does Lovable offer?
+
+[Lovable.dev](https://slobo.click/lovable) supports many integrations.
+
+### Native
+
+They can be connected in just a few clicks:
+
+1. **Supabase:** for managing databases and backend.
+2. **GitHub:** for code management.
+3. **Stripe:** for convenient monetization.
+
+The Supabase integration in Lovable is simple and user-friendly.
+
+Lovable will help create the required database and synchronize your service with it.
+
+### Verified
+
+They are easily configured through chat.
+
+Artificial Intelligence:
+
+1. **OpenAI:** adds [ChatGPT AI functions](/create/ai/chatgpt) to your application.
+2. **Stability AI:** provides AI for various applications, [including generating AI images](/create/ai/stable-diffusion).
+3. **Anthropic:** integrates AI through Anthropic’s Claude models.
+4. **Replicate:** runs and configures open-source AI models.
+5. **Runware:** allows you to generate images based on text prompts.
+6. **Together.ai:** a cloud solution for integrating different models.
+
+Data visualization and graphics:
+
+1. **Three.js:** adds interactive 3D graphics to your application.
+2. **D3.js:** creates dynamic and interactive data visualizations.
+3. **Highcharts:** develops professional charts and graphs.
+4. **p5.js:** suitable for creative coding and interactive graphics.
+5. **Rive:** allows you to create interactive animations.
+
+Tools for development and analytics:
+
+1. **Builder.io:** converts Figma designs into full-stack applications within Lovable.
+2. **Resend:** expands email sending capabilities via API.
+3. **PostHog:** provides user behavior analytics, session replays, and A/B testing.
+
+### Non-verified
+
+Those that require a bit more context, but still work well:
+
+Process automation:
+
+- **Make**: a visual platform for automating tasks and integrating applications. You can implement almost any functionality with it. Read more in my article on [how to automate tasks in Make](/create/no-code/make).
+- **Bannerbear**: automates the creation of images and videos for social media.
+- **Zapier:** an automation platform for integrating various web applications.
+
+Navigation and maps:
+
+- **Mapbox**: a platform for navigating people, parcels, and vehicles.
+
+AI and data processing tools:
+
+- **Firecrawl**: converts websites into structured data suitable for LLMs.
+- **Perplexity**: adds search capabilities for up-to-date information from the internet.
+- **Transformers.js (HF)**: runs machine learning models directly in the browser without a server.
+- **HeyGen**: a service for creating videos using artificial intelligence.
+
+Communications and planning:
+
+- **Twilio**: a platform for voice calls, text messages, and other communication services.
+- **xAI**: a tool for automating meeting scheduling.
+- **Calendly**: a tool for convenient meeting scheduling.
+
+Email:
+
+- **Mailgun**: a service for sending, receiving, and tracking emails.
+- **SendGrid**: an email delivery service for transactional and marketing messages.
+
+Search and data integration:
+
+- **Serper.dev**: an API for integrating Google search results into applications.
+
+Tools for work and management:
+
+- **Google Workspace**: a cloud suite of productivity and collaboration tools from Google.
+- **Notion**: a versatile tool for note-taking, task management, and working with databases.
+- **GoJS**: a library for creating flowcharts and visualizing workflows.
+- **TinyMCE**: a visual editor for creating and editing text.
+
+E-commerce and finance:
+
+- **Lemon Squeezy**: an e-commerce platform that simplifies selling digital products.
+- **Square**: a solution for processing payments and managing sales in retail.
+- **GetLago**: an open platform for usage tracking and pay-as-you-go billing.
+
+<Callout>
+  These are just integrations with simplified connectivity, pre-added to the system. In practice, you can connect any service to your application built on Lovable.
+</Callout>
+
+## What are the alternatives to Lovable.dev?
+
+There are many tools that speed up product development.
+
+I plan to test the most popular ones and prepare separate guides.
+
+Here are my favorites:
+
+1. **Lovable.dev:** distinguished by its focus on AI-driven full-stack solutions and real-time collaborative development. A great choice for rapid prototyping and projects where interactive features and a flexible backend are important.
+2. **Cursor:** focuses more on enhancing code within a dedicated editor with AI suggestions. Useful if you already have the infrastructure and just want to speed up coding.
+3. **v0.dev:** a tool for quickly building React/Node applications using AI. Convenient for typical CRUD apps and authentication.
+4. **GitHub Copilot/Codespaces:** AI autocomplete in an IDE plus a cloud development environment. Strong GitHub integration, but lacks ready-made full-stack templates.
+5. **AWS Amplify / CodeCatalyst:** a cloud serverless approach that scales well, but requires an understanding of the AWS ecosystem.
+6. **Bubble:** a no-code platform for web applications; fast development, but may have limitations in performance and customization.
+7. **Retool:** ideal for internal dashboards; a simple builder, but not well-suited for public-facing applications.
+
+Thus, the choice of tool depends on your specific needs: whether you require full AI support at every stage (Lovable.dev, v0), an AI code editor (Cursor), an enterprise solution (PowerApps, AWS), or a no-code platform for an MVP (Bubble).
+
+<Quiz id="084d6c4e-7bgz9r" theme="light" />
+
+### What's next?
+
+**If you're an indie hacker or solo entrepreneur, the key is not to get stuck in the endless pursuit of perfection.**
+
+Start small: build a simple MVP and see how users respond to it.
+
+Even a product that 'mostly' works can provide valuable insights and reveal its potential.
+
+Use AI to automate routine tasks and speed up development — it will save you time and effort.
+
+And platforms like Lovable.dev allow you to make changes "on the fly" without starting over, making the process flexible and convenient.
+
+<Callout>
+  With [lovable.dev](https://slobo.click/lovable), you can easily test different features and integrations, and when it's time for more complex solutions, switch to full-scale development via GitHub integration.
+</Callout>
+
+## Frequently Asked Questions about Lovable (FAQs)

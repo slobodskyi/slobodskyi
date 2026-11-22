@@ -1,0 +1,429 @@
+---
+type: guide
+title: "PRD for Vibe Coding: How to Write Requirements AI Tools Actually Understand"
+description: Learn how to write a simple PRD that makes Cursor, Lovable, and Bolt actually understand what you want. Stop the fix-break-fix loop with clear documentation.
+lead: Learn how to write a simple PRD that makes Cursor, Lovable, and Bolt actually understand what you want. Stop the fix-break-fix loop with clear documentation.
+cover: ./6947bf82d676493b34d0c0fa_0_0.avif
+hub: create
+category: no-code
+slug: prd-for-vibe-coding
+stage: evergreen
+visibility: public
+status: published
+created: 2025-12-19
+updated: 2026-09-16
+faq:
+  - q: What is a PRD in simple terms?
+    a: A PRD (Product Requirements Document) describes what you're building and how it should work. Think of it as a detailed instruction manual for your app before the app exists. For solo creators, a one-page PRD covering features, behaviors, and scope is enough to dramatically improve AI output.
+  - q: Do I need a PRD for vibe coding?
+    a: You don't need a PRD for simple projects like basic landing pages. But for anything with multiple features, spending 30 minutes on documentation saves hours of fixing AI mistakes. If you've said "that's not what I meant" to an AI tool more than twice in one session, you need a PRD.
+  - q: What's the difference between a PRD and a prompt?
+    a: A prompt is a single instruction. A PRD is the complete picture of what you're building. Prompts are like giving driving directions one turn at a time, while a PRD is like providing the full address and a map. The AI makes better decisions when it understands the whole journey.
+  - q: What are vibe coding best practices?
+    a: The most effective practice is documenting before you build. Write a simple PRD outlining features and scope, break work into phases, start fresh conversations for new features to avoid context loss, and define what NOT to build. Testing each feature before moving to the next prevents the fix-break-fix loop.
+  - q: Why does AI keep building the wrong thing?
+    a: AI coding tools are pattern-matching systems that fill gaps with assumptions when you're not specific. Saying "build me an app like Airbnb" forces the AI to guess which features you mean. The fix isn't a smarter AI — it's clearer documentation that leaves nothing to interpret.
+  - q: How do I stop the fix-break-fix loop?
+    a: The loop happens when AI loses context of your overall requirements while working on new features. Keep a PRD as your source of truth and reference it when AI drifts. Start new chat sessions for major features and be explicit about what shouldn't change when adding new functionality.
+  - q: What should a PRD for AI coding include?
+    a: "Focus on six elements: a one-sentence description of what the app does, who it's for, how each feature behaves (trigger, action, result), what you're explicitly NOT building, the step-by-step user flow, and success criteria for testing. Skip enterprise sections like stakeholder sign-offs and sprint planning."
+  - q: Which vibe coding tools work best with PRDs?
+    a: All major platforms benefit from PRDs. Cursor works best with a markdown file saved in your project folder. Lovable prefers PRDs broken into phases, prompting one phase at a time. Bolt responds well when you paste the full PRD and ask it to confirm understanding before building.
+  - q: Can I use ChatGPT to write my PRD?
+    a: Yes. Prompt ChatGPT or Claude with "I want to build \[your app]. Ask me questions to understand exactly what I need, then write a PRD I can use with AI coding tools." The AI will interview you about features, users, and behaviors. Your answers become the documentation.
+  - q: How long should a PRD be?
+    a: One to two pages is enough for most solo projects. The goal is clarity, not comprehensiveness. A PRD that's too long won't get read by you or the AI. If your document grows past three pages, you're probably overcomplicating your MVP and should consider cutting scope.
+  - q: What's the biggest PRD mistake beginners make?
+    a: Describing solutions instead of problems. "Add a hamburger menu" limits the AI's options. "User needs to access Settings, Profile, and Logout from any screen" lets AI propose the best approach. Describe what you need to accomplish, then accept or redirect the AI's solution based on your vision.
+ai:
+  assisted: false
+---
+
+You describe your app idea to Cursor, [Lovable](/ru/create/no-code/lovable), or Bolt.
+
+The AI builds something. It's wrong.
+
+You explain again.
+
+The AI "fixes" it by breaking three other things.
+
+You spend four hours in a loop, burning credits, questioning your life choices.
+
+This sounds familiar because it's the most common frustration in the AI coding community. The fix isn't a better prompt or a smarter AI. It's a document that most creators have never heard of: a Product Requirements Document, or PRD.
+
+<Callout>
+  PRDs aren't new. Product managers at tech companies have used them for decades. But every existing PRD guide is written for enterprise teams with sprints, stakeholders, and Jira tickets — useless for a solo creator building an app with AI.
+</Callout>
+
+**This article translates PRD concepts into something you can actually use. No corporate jargon. No team workflows. Just a simple system that makes AI tools actually understand what you want.**
+
+## What is a PRD (and Why AI Tools Need It)
+
+A PRD is a document that describes what you're building and how it should work.
+
+That's it.
+
+Traditional PRDs are long and complex because they need to align entire teams.
+
+Your version can be one page — as long as it tells the AI exactly what to do.
+
+### Why does this matter for AI coding tools?
+
+**AI tools are pattern-matching machines.**
+
+They've seen millions of code examples and try to match your request to something similar. When you say "build me an app like Airbnb," the AI has to guess which aspects of Airbnb you mean.
+
+The search? The booking flow? The messaging system? The review system? The host dashboard?
+
+Without specifics, AI fills in gaps with assumptions. Sometimes those assumptions match what you wanted.
+
+Usually, they don't.
+
+**A PRD removes the guessing.**
+
+Instead of "build me an app like Airbnb," you write: "When a user clicks 'Book Now,' show a calendar with available dates. Selected dates turn blue. Unavailable dates are grayed out and not clickable. Below the calendar, show the total price: nightly rate × number of nights."
+
+Now the AI knows exactly what to build.
+
+No assumptions.
+
+No loops.
+
+<Callout>
+  According to research from Medium and developer forums, **82% of developers using AI tools report hallucinated code due to unclear context**. That number drops significantly when working from documented requirements.
+</Callout>
+
+## Why Traditional PRD Guides Won't Help You
+
+Before I explain what works, let me save you time: don't bother with the PRD templates from Atlassian, ProductPlan, Notion, or Product School. I've analyzed all of them for this article.
+
+They assume you have:
+
+- A product owner, stakeholders, and sprint planning meetings
+- A team that needs sign-offs and approval workflows
+- Jira integration and backlog grooming sessions
+- Multiple roles with RACI charts
+
+You have none of this.
+
+You're one person with an idea and an AI tool.
+
+Their templates will slow you down.
+
+More importantly, **none of the major PRD guides mention AI tools at all**. They were written for traditional development workflows where humans write all the code.
+
+The gap between "how to communicate with developers" and "how to communicate with AI" is massive.
+
+What AI tools need is different from what human developers need:
+
+- **Explicit behavior descriptions** — When X happens, do Y
+- **Example inputs and outputs** — What does the user type? What appears on screen?
+- **Error state handling** — What happens when something goes wrong?
+- **MVP scope constraints** — What should you explicitly NOT build?
+
+Traditional PRDs skip these because human developers ask clarifying questions.
+
+AI tools don't ask — they assume.
+
+## The Simple PRD Template for Non-Technical Creators
+
+Here's a template that works for Cursor, Lovable, Bolt, and similar tools.
+
+It's one page.
+
+Fill in what applies; skip what doesn't.
+
+### 1. One-Sentence Description
+
+**What is this?** \[Describe the core function in one sentence]
+
+Example: "A web app where freelancers track their unpaid invoices and send automatic payment reminders."
+
+### 2. Who Is This For?
+
+**Primary user:** \[Specific description — not "everyone"]\
+**What problem does this solve for them?** \[Their actual pain point]
+
+Example:
+
+- Primary user: Freelance designers who send 5-10 invoices per month
+- Problem: They forget to follow up on unpaid invoices and lose money
+
+### 3. Core Features (MVP Only)
+
+List only what's essential for the first version.
+
+For each feature, describe the exact behavior.
+
+**Feature 1: \[Name]**
+
+- What triggers it: \[User action]
+- What happens: \[Exact result]
+- What the user sees: \[Screen/message/change]
+
+**Feature 2: \[Name]** \[Same structure]
+
+Example:
+
+Feature: Invoice Reminder
+
+- What triggers it: Invoice is unpaid for 7 days
+- What happens: System sends an email to the client
+- What the user sees: Dashboard shows "Reminder sent" badge on that invoice
+
+### 4. What NOT to Build
+
+This section prevents AI from adding features you didn't ask for.
+
+- Do NOT include: \[Feature that seems related but isn't needed]
+- Do NOT include: \[Another feature to skip]
+
+Example:
+
+- Do NOT include: Payment processing (users will handle payments externally)
+- Do NOT include: Client portal (clients only receive emails)
+
+### 5. User Flow
+
+Describe the main journey step by step. Number each step.
+
+1. User opens the app
+2. User sees \[what]
+3. User clicks \[what]
+4. Screen shows \[what]
+5. User enters \[what]
+6. System does \[what]
+
+Example:
+
+1. User opens the app and sees a list of all invoices
+2. User clicks "Add Invoice"
+3. Form appears with fields: client name, amount, due date
+4. User fills in the form and clicks "Save"
+5. Invoice appears in the list with status "Unpaid"
+6. When due date passes, status changes to "Overdue" (red color)
+
+### 6. Success Criteria
+
+How do you know each feature works correctly?
+
+- Feature 1 works if: \[Specific testable outcome]
+- Feature 2 works if: \[Specific testable outcome]
+
+Example:
+
+- Invoice reminder works if: I add an invoice with a date 8 days ago, and the system shows "Reminder sent" within 1 minute
+
+## Translating PRD Jargon Into Plain Language
+
+If you've seen other PRD guides, you've encountered confusing terms.
+
+Here's what they actually mean for solo creators:
+
+**Table: PRD Jargon vs. What You Actually Need**
+
+| Enterprise Term              | What You Actually Need                      |
+| ---------------------------- | ------------------------------------------- |
+| User stories in Agile format | Simple description of what users want to do |
+| Backlog grooming             | Your list of things to build next           |
+| Acceptance criteria          | How to know if a feature works              |
+| Sprint planning              | What to build this week                     |
+| Functional specification     | How features should behave                  |
+| RACI chart                   | Not needed — you're doing everything        |
+| Stakeholder sign-off         | Not needed — you're the only decision-maker |
+
+When you see these terms in other guides, translate them.
+
+Don't copy the format literally.
+
+## Before and After: How a PRD Changes AI Output
+
+Let me show you the difference documentation makes.
+
+### Without PRD
+
+**Prompt:** "Build me a habit tracker app"
+
+What AI might build:
+
+- A calendar view (maybe not what you wanted)
+- Daily, weekly, and monthly views (did you need all three?)
+- Streak counting (useful, but implemented with assumptions)
+- Social sharing (you never asked for this)
+- Gamification badges (definitely didn't ask for this)
+
+You spend the next hour removing features and fixing the ones that remain.
+
+### With PRD
+
+**From your PRD:**
+
+Feature: Daily Check-In
+
+- What triggers it: User clicks on a habit for today's date
+- What happens: Habit is marked complete for that day
+- What the user sees: Checkmark appears next to the habit, streak counter increases by 1
+
+Feature: Streak Display
+
+- Each habit shows "Current streak: X days" below the habit name
+- Streak resets to 0 if user misses a day
+
+Do NOT include: Sharing, badges, rewards, weekly/monthly views
+
+**What AI builds:** Exactly what you described. The check-in works as specified. Streaks work as specified. No extra features to remove.
+
+Time saved: 2-3 hours on a simple app. More on complex ones.
+
+## Platform-Specific Tips
+
+Different AI tools have different quirks. Here's how to adapt your PRD for each.
+
+### For Cursor
+
+Cursor works best when your PRD is saved as a markdown file in your project folder. Name it `PRD.md` or `requirements.md`.
+
+When prompting, reference it directly: "Following the requirements in PRD.md, build the invoice reminder feature."
+
+Cursor also supports `.cursorrules` files for ongoing instructions. You can include a condensed version of your PRD there.
+
+### For Lovable
+
+Lovable's documentation recommends planning before building — they call it the "15-minute spec."
+
+Your PRD is essentially this spec, but more thorough.
+
+Break your PRD into phases when using Lovable:
+
+1. Basic UI and navigation (Phase 1)
+2. Core feature logic (Phase 2)
+3. Data persistence (Phase 3)
+
+[Prompt Lovable](/ru/create/no-code/lovable) with one phase at a time.
+
+This prevents the tool from trying to build everything at once.
+
+### For Bolt
+
+Bolt works well with natural language, but still benefits from structure.
+
+When pasting your PRD into Bolt, format it clearly with headers. Start with: "I'm going to share my requirements document. After you read it, confirm you understand before building anything."
+
+This forces Bolt to process the whole document before acting.
+
+## The Fix-Break-Fix Loop (And How PRDs Prevent It)
+
+<Callout>
+  The most common complaint in AI coding communities: "Every time I fix one thing, it breaks something else."
+</Callout>
+
+This happens because AI tools lose context as conversations grow.
+
+They've seen your initial request, 47 follow-up messages, and can't remember what was important.
+
+**A PRD anchors the conversation.** When you've described the exact behavior of Feature A, and the AI breaks it while building Feature B, you catch it immediately. More importantly, you can reference the PRD: "Feature A should work as specified in the PRD. You changed the behavior. Revert that change."
+
+Practical tips for avoiding the loop:
+
+- **Start new chat sessions** for major features instead of one endless conversation
+- **Reference your PRD** at the start of each new session
+- **Test features individually** before combining them
+- **Keep your PRD updated** when requirements genuinely change (not when AI introduces bugs)
+
+## Common Mistakes When Writing Your First PRD
+
+### Mistake 1: Being too vague
+
+"The app should be user-friendly" means nothing to AI. What specific actions should be easy? What should happen in how many clicks?
+
+**Fix:** Replace adjectives with behaviors. "User-friendly" becomes "User can add an invoice in 3 clicks or fewer."
+
+### Mistake 2: Describing solutions instead of problems
+
+"Add a hamburger menu" is a solution. Maybe the AI has a better approach. Maybe a bottom navigation works better for your app.
+
+**Fix:** Describe the problem first. "User needs to access Settings, Profile, and Logout from any screen." Let the AI propose solutions, then accept or redirect.
+
+### Mistake 3: Skipping error states
+
+What happens when the user enters an invalid email? What if the server doesn't respond? What if they click a button twice?
+
+**Fix:** For each feature, ask yourself: "What could go wrong?" Document those scenarios.
+
+### Mistake 4: Not defining scope
+
+If you don't explicitly say what's out of scope, AI will add features it thinks are helpful.
+
+**Fix:** Always include a "Do NOT build" section. Be specific.
+
+### Mistake 5: Writing once and forgetting
+
+Your PRD is a living document. As you build and learn, update it.
+
+**Fix:** Spend 5 minutes after each work session updating the PRD with any decisions made.
+
+## Quick Reference: PRD Writing Checklist
+
+Before you share your PRD with an AI tool, verify:
+
+- \[ ] One-sentence description is specific (not "an app for X")
+- \[ ] Target user is defined (not "anyone who needs Y")
+- \[ ] Each feature has trigger, action, and result described
+- \[ ] User flow is numbered step by step
+- \[ ] "Do NOT build" section exists
+- \[ ] Success criteria are testable
+- \[ ] No jargon that AI might misinterpret
+
+## Getting Help With Your PRD
+
+If writing from scratch feels daunting, you can use ChatGPT or Claude to help draft your PRD.
+
+A useful prompt:
+
+`I want to build [app description]. Ask me questions to understand exactly what I need, then write a PRD I can use with AI coding tools like Cursor or Lovable.`
+
+The AI will interview you about features, users, and behaviors. Your answers become the PRD.
+
+For ongoing writing and content needs, I have a [detailed ChatGPT guide](/ru/create/ai/chatgpt) that covers effective prompting patterns.
+
+## Who Should NOT Use This Approach
+
+Let's be honest about limitations.
+
+This approach works if:
+
+- You have a clear vision of what you want to build
+- You're willing to think through details before coding
+- You're building something relatively simple (MVPs, internal tools, landing pages)
+
+This approach struggles if:
+
+- You don't know what you want yet (explore first, document later)
+- You're building something highly complex (enterprise software, real-time systems)
+- You prefer to discover requirements by building (some people do, and that's valid)
+
+A PRD is a tool, not a religion.
+
+Use it when it helps.
+
+Skip it when it doesn't.
+
+### That's All
+
+If you've read this far, you have everything you need to write a PRD that AI tools will actually understand.
+
+The pattern is simple: describe what you're building, who it's for, what each feature does exactly, what not to build, and how to know it works. Save it as a document. Reference it when prompting.
+
+The 30-60 minutes you spend writing a PRD will save hours of fix-break-fix loops.
+
+That's not motivation — that's math.
+
+Start small.
+
+Write a PRD for your next project, even if it's simple. See how it changes the AI's output. Adjust the template to fit how you think.
+
+For related tools and workflows, check out my guides on Lovable for AI web development and [Make.com for automating](/ru/create/no-code/make) the boring stuff around your builds.
+
+If you have questions, feel free to reach out through the contact form. I'm curious to hear how this works for your projects.
+
+## Frequently Asked Questions
