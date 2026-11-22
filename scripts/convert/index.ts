@@ -56,6 +56,7 @@ interface SnapshotPage {
   title: string;
   description: string;
   robots: string;
+  inSitemap: boolean;
   h1: string[];
   internalLinks: string[];
   anchors: { text: string; legacy: string; slugger: string }[];
@@ -93,7 +94,7 @@ const ARTICLE_COLLECTIONS = [
 // ---------- report ----------
 
 const issues: { address: string; kind: string; detail: string }[] = [];
-const written: { address: string; url: string; status: string }[] = [];
+const written: { address: string; url: string; status: string; legacyUrls: string[] }[] = [];
 
 // ---------- helpers ----------
 
@@ -615,6 +616,11 @@ const PAYMENT_SUCCESS: Record<Lang, Required<Pick<Fix, 'title' | 'description' |
     body: 'Спасибо за оплату! Детали доступа уже отправлены на вашу почту. Если что-то не так, [напишите мне](/ru/contacts).\n',
   },
 };
+const CONTACTS_BODY: Record<Lang, string> = {
+  en: 'Feel free to contact me with any questions: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
+  uk: 'Пишіть з будь-якими питаннями: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
+  ru: 'Пишите с любыми вопросами: [oleksandr@slobodskyi.com](mailto:oleksandr@slobodskyi.com).\n',
+};
 export const FIXES: Record<string, Fix> = {
   '/courses/privacy-policy': {
     title: 'Privacy Policy',
@@ -683,6 +689,15 @@ export const FIXES: Record<string, Fix> = {
     seoTitle: 'Инструменты для криейторов',
     why: '<title> was copied from /ru/courses ("Курсы для криейторов")',
   },
+  ...Object.fromEntries(
+    (['en', 'uk', 'ru'] as const).map((lang) => [
+      withLangPrefix(lang, '/contacts'),
+      {
+        body: CONTACTS_BODY[lang],
+        why: 'the page was only a Webflow form; the form is dropped and the email address shown instead (owner decision)',
+      },
+    ]),
+  ),
 };
 
 // Service pages: id = Webflow page slug (en), path = legacy route.

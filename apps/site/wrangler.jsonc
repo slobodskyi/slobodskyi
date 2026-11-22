@@ -12,9 +12,6 @@
     // Only API routes hit the Worker; every page is served as a static file.
     "run_worker_first": ["/api/*"],
   },
-  // Contact form (/api/contact): mail goes only to CONTACT_TO. Turnstile secret:
-  //   wrangler secret put TURNSTILE_SECRET [--env preview]
-  "send_email": [{ "name": "CONTACT_EMAIL", "destination_address": "oleksandr@slobodskyi.com" }],
   "observability": { "enabled": true },
   "env": {
     "preview": {
@@ -28,17 +25,8 @@
         "not_found_handling": "404-page",
         "run_worker_first": true,
       },
-      "send_email": [{ "name": "CONTACT_EMAIL", "destination_address": "oleksandr@slobodskyi.com" }],
-      "vars": {
-        "ENVIRONMENT": "preview",
-        "CONTACT_TO": "oleksandr@slobodskyi.com",
-        "CONTACT_FROM": "contact-form@slobodskyi.com",
-      },
+      "vars": { "ENVIRONMENT": "preview" },
     },
   },
-  "vars": {
-    "ENVIRONMENT": "production",
-    "CONTACT_TO": "oleksandr@slobodskyi.com",
-    "CONTACT_FROM": "contact-form@slobodskyi.com",
-  },
+  "vars": { "ENVIRONMENT": "production" },
 }
