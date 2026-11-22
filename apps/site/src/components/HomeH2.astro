@@ -1,0 +1,30 @@
+---
+// h2 replacement for the home page body (MDX `components.h2`): puts the hero image (LCP) after
+// the subtitle heading and the hub card list before the heading that follows "Where to Start".
+import { Picture } from 'astro:assets';
+import Cards from './Cards.astro';
+import hero from '../assets/home-hero.jpg';
+import { HERO_SIZES, HERO_WIDTHS } from '../lib/hero';
+
+const { id, ...rest } = Astro.props;
+const home = Astro.locals.home;
+---
+
+{home && id === home.cardsBefore && <Cards items={home.cards} id="start" eager />}
+<h2 id={id} {...rest}>
+  <slot />
+</h2>
+{home && id === home.heroAfter && (
+  <Picture
+    src={hero}
+    alt={home.heroAlt}
+    formats={['avif']}
+    fallbackFormat="webp"
+    quality={72}
+    widths={HERO_WIDTHS}
+    sizes={HERO_SIZES}
+    loading="eager"
+    fetchpriority="high"
+    class="hero"
+  />
+)}

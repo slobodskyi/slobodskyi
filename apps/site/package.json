@@ -4,10 +4,11 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pnpm run redirects",
     "preview": "wrangler dev",
     "check": "astro check && tsc -p tsconfig.worker.json",
-    "deploy:preview": "astro build && wrangler deploy --env preview"
+    "deploy:preview": "pnpm run build && wrangler deploy --env preview",
+    "redirects": "node --disable-warning=ExperimentalWarning ../../packages/core/src/cli.ts redirects --out apps/site/dist/_redirects"
   },
   "dependencies": {
     "@slobodskyi/core": "workspace:*",

@@ -1,22 +1,107 @@
 ---
-// Minimal base layout for the scaffold. Real templates and the SEO layer arrive in Steps 5–6.
+// Base layout: SEO head, header, footer, deferred analytics.
+import { Font, getImage } from 'astro:assets';
+import author from '../assets/author.webp';
+import type { Lang } from '@slobodskyi/core';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Analytics from '../components/Analytics.astro';
+import { HTML_LANG, OG_LOCALE } from '../lib/i18n';
+import { jsonLd, siteGraph } from '../lib/schema-org';
+import { absoluteUrl } from '../lib/content';
+import type { HeadData } from '../lib/seo';
+
 interface Props {
-  title: string;
-  description: string;
-  lang: 'en' | 'uk' | 'ru';
+  head: HeadData;
+  alternates?: Partial<Record<Lang, string>>;
+  /** Page-specific JSON-LD nodes; Person, Organization and WebSite are always added. */
+  schema?: Record<string, unknown>[];
+  disclaimer?: boolean;
+  progress?: boolean;
+  /** Preload for the LCP image (srcset of the hero). */
+  preloadImage?: { srcset: string; sizes: string; type: string };
 }
-const { title, description, lang } = Astro.props;
+const {
+  head,
+  alternates = {},
+  schema = [],
+  disclaimer = false,
+  progress = false,
+  preloadImage,
+} = Astro.props;
+const authorImage = await getImage({ src: author, width: 500, format: 'webp' });
+const graph = jsonLd([
+  ...siteGraph({ logo: absoluteUrl('/logo.svg'), authorImage: absoluteUrl(authorImage.src) }),
+  ...schema,
+]);
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={HTML_LANG[head.lang]}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+    <title>{head.title}</title>
+    {head.description && <meta name="description" content={head.description} />}
+    {head.canonical && <link rel="canonical" href={head.canonical} />}
+    {head.robots && <meta name="robots" content={head.robots} />}
+    {Object.entries(head.hreflang).map(([lang, href]) => (
+      <link rel="alternate" hreflang={lang} href={href} />
+    ))}
+    {head.markdown && <link rel="alternate" type="text/markdown" href={head.markdown} />}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="slobodskyi.com"
+      href={head.lang === 'en' ? '/rss.xml' : head.lang === 'uk' ? '/ua/rss.xml' : '/ru/rss.xml'}
+    />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    {preloadImage && (
+      <link
+        rel="preload"
+        as="image"
+        imagesrcset={preloadImage.srcset}
+        imagesizes={preloadImage.sizes}
+        type={preloadImage.type}
+        fetchpriority="high"
+      />
+    )}
+    <Font
+      cssVariable="--font-heading"
+      preload={[{ weight: 700, subset: head.lang === 'en' ? 'latin' : 'cyrillic' }]}
+    />
+
+    <meta property="og:site_name" content="Oleksandr Slobodskyi" />
+    <meta property="og:type" content={head.ogType} />
+    <meta property="og:title" content={head.title} />
+    {head.description && <meta property="og:description" content={head.description} />}
+    {head.canonical && <meta property="og:url" content={head.canonical} />}
+    <meta property="og:image" content={head.ogImage} />
+    {head.ogImageAlt && <meta property="og:image:alt" content={head.ogImageAlt} />}
+    <meta property="og:locale" content={OG_LOCALE[head.lang]} />
+    {head.published && <meta property="article:published_time" content={`${head.published}T00:00:00Z`} />}
+    {head.modified && <meta property="article:modified_time" content={`${head.modified}T00:00:00Z`} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@slobodskyi" />
+    <meta name="twitter:creator" content="@slobodskyi" />
+    <meta name="twitter:title" content={head.title} />
+    {head.description && <meta name="twitter:description" content={head.description} />}
+    <meta name="twitter:image" content={head.ogImage} />
+
+    <script type="application/ld+json" set:html={graph} />
+    <Analytics />
   </head>
   <body>
-    <slot />
+    {progress && <div class="progress" aria-hidden="true"></div>}
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <Header lang={head.lang} alternates={alternates} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={head.lang} disclaimer={disclaimer} />
   </body>
 </html>

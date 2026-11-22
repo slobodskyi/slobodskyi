@@ -1,0 +1,44 @@
+# slobodskyi.com – The Creator's Guide
+
+> Oleksandr Slobodskyi is a Ukrainian designer-turned-educator with 10+ years of hands-on experience in the creator economy.
+> His trilingual blog (English, Ukrainian, Russian) has welcomed more than 2 million readers and shares step-by-step guides, tool reviews, and real-world experiments that help solo creators build, grow, and monetise digital projects ethically.
+
+For readers and AI agents, the site offers:
+
+- **Actionable playbooks:** AI prompts, no-code builds, SEO tactics, payment setups.
+- **Transparent case studies:** income reports, A/B tests, and lessons from past wins and flops.
+- **Multi-format learning:** free articles, and detailed video walkthroughs.
+- **Creator-first mindset:** every tutorial is tested on Oleksandr's own projects before it is published.
+
+Below are the four pillar sections with direct links to each category overview.
+
+## Create - Build & Validate
+
+- [Create (overview)](https://slobodskyi.com/create)
+- [AI](https://slobodskyi.com/create/ai) - guides to ChatGPT, Stable Diffusion, ElevenLabs and more
+- [No-code](https://slobodskyi.com/create/no-code) - automation tools, website builders, Webflow tips
+
+## Connect - Audience & SEO
+
+- [Connect (overview)](https://slobodskyi.com/connect)
+- [Organic](https://slobodskyi.com/connect/organic) - SEO, hashtags, audience research tools
+
+## Monetize - Ethical Earnings
+
+- [Monetize (overview)](https://slobodskyi.com/monetize)
+- [Memberships](https://slobodskyi.com/monetize/memberships) - Patreon, Buy Me a Coffee, OnlyFans, Fansly, etc.
+- [Payments](https://slobodskyi.com/monetize/payments) - payment gateways, Apple Pay / Google Pay setup
+- [Marketplaces](https://slobodskyi.com/monetize/marketplaces) - selling digital and physical goods worldwide
+- [Advertisement](https://slobodskyi.com/monetize/advertisement) - affiliate marketing, sponsorships, ads
+
+## Grow - Systems & Analytics
+
+- [Grow (overview)](https://slobodskyi.com/grow)
+- [Analytics](https://slobodskyi.com/grow/analytics) - tools and dashboards for data-driven scaling
+
+## Optional
+
+- [About](https://slobodskyi.com/about) - Oleksandr's story and mission
+- [Courses](https://slobodskyi.com/courses) - paid and free programmes
+- [Affiliate Disclosure](https://slobodskyi.com/affiliate-disclosure)
+- [Contacts](https://slobodskyi.com/contacts)

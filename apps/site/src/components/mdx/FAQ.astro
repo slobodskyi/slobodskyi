@@ -1,0 +1,10 @@
+---
+// Inline FAQ block for MDX; page-level questions live in frontmatter `faq`.
+import Faq from '../Faq.astro';
+
+interface Props {
+  items: { q: string; a: string }[];
+}
+---
+
+<Faq items={Astro.props.items} />

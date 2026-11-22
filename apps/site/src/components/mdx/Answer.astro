@@ -1,0 +1,19 @@
+---
+// Short direct answer box (for AI search / featured snippets).
+---
+
+<div class="answer">
+  <slot />
+</div>
+
+<style>
+  .answer {
+    background: var(--purple);
+    border-radius: 20px;
+    padding: 20px 24px;
+    margin: 1.5em 0;
+  }
+  .answer :global(p:last-child) {
+    margin-bottom: 0;
+  }
+</style>

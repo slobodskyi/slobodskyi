@@ -113,6 +113,16 @@ edit it by hand, re-run the crawler instead.
 Exit codes of `pnpm content`: 0 ok, 1 content problems, 2 usage error. `create` checks schema and URL
 uniqueness only; always run `validate` after it.
 
+Site templates (Step 5–6): one catch-all route `apps/site/src/pages/[...path].astro` renders every
+published record at `urlFor()` and picks a template from `src/templates/` (Home, Article, Hub, Category,
+Page). Records, translations, related guides: `src/lib/content.ts`; head/SEO: `src/lib/seo.ts`; JSON-LD
+(one Person/Organization `@id`): `src/lib/schema-org.ts`; UI strings and short hub/category labels:
+`src/lib/i18n.ts`. MDX images (`<Shot src="./x">`, `cover`) resolve against the record folder via
+`src/lib/images.ts` (`Astro.locals.recordDir`). Endpoints: `sitemap.xml`, `robots.txt`, RSS
+(`<prefix>/rss.xml`, `<prefix>/rss/<collection>.xml`), `<url>.md` copies. `pnpm build` also writes
+`dist/_redirects` via `pnpm content redirects`. Cold build ≈6 min (image encoding, cached in
+`node_modules/.astro`), warm ≈10 s.
+
 The site reads content through one Astro collection (`apps/site/src/content.config.ts`) whose schema
 is the core schema and whose entry ids are record addresses. Pages must filter with `isPublished()`.
 

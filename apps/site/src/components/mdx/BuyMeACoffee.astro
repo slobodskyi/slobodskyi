@@ -1,0 +1,38 @@
+---
+// Buy Me a Coffee button as a plain link (no third-party widget script).
+interface Props {
+  slug: string;
+  text?: string;
+  emoji?: string;
+  color?: string;
+}
+const { slug, text = 'Buy me a coffee', emoji = '☕', color = '#5F7FFF' } = Astro.props;
+---
+
+<p class="bmc-wrap">
+  <a
+    class="bmc"
+    href={`https://www.buymeacoffee.com/${slug}`}
+    target="_blank"
+    rel="noopener"
+    style={`--bmc:${color}`}
+  >
+    <span aria-hidden="true">{emoji}</span>
+    {text}
+  </a>
+</p>
+
+<style>
+  .bmc {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    background: var(--bmc);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-family: var(--heading);
+    font-size: 17px;
+    text-decoration: none;
+  }
+</style>
