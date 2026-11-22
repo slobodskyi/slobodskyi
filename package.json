@@ -21,6 +21,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "check:parity": "node --disable-warning=ExperimentalWarning scripts/checks/parity.ts",
+    "check:build": "node --disable-warning=ExperimentalWarning scripts/checks/build.ts",
     "deploy:preview": "pnpm --filter site deploy:preview"
   },
   "devDependencies": {
