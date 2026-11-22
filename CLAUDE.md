@@ -53,8 +53,9 @@ Types: `guides essays log til links notes projects pages hubs categories`.
 - Languages: `en` (root), `uk` (URL prefix `/ua`, hreflang `uk`), `ru` (`/ru`). Do not rename `/ua`.
 - Changing a published URL requires adding the old path to `legacyUrls` in frontmatter; `_redirects` is
   generated from it. No redirect chains.
-- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`, and the
-  click-to-load embeds `BuyMeACoffee`, `VideoAsk`). No arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
+- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`,
+  `Cards`/`Card` (same card as hub and category lists), and the click-to-load embeds `BuyMeACoffee`,
+  `VideoAsk`). No arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
 - Heading anchors: Markdown headings get the github-slugger id Astro injects. A legacy Webflow H2 anchor
   that differs from it is preserved with a JSX heading on its own line: `<h2 id="fees-amp-rates">Fees
 &amp; rates</h2>` (`legacyAnchor()` reproduces the Webflow script exactly). Never use `{#id}`: in MDX
@@ -141,6 +142,8 @@ Owner decisions on the migration (2026-11-22):
   translations: `pnpm convert` skips them and puts their live URLs into `legacyUrls` of the English
   guide, so they 301 there (owner decision 2026-11-22, supersedes "migrated 1:1"; today only
   `/ua|/ru/create/no-code/prd-for-vibe-coding`).
+- `pnpm convert` drops elements that the page's own Webflow CSS hid for its language
+  (`.x{display:none}` without a matching `.x:lang(<lang>)` rule), so records hold only what was visible.
 - Prefer data over code: short names of hubs/categories are frontmatter `label` (Webflow CMS
   `name`), sitemap exclusions are `sitemap: false` (from the legacy sitemap), reading time is
   computed. Do not add per-record tables or special cases to the site code.

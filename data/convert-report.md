@@ -128,7 +128,7 @@ None: every internal link of a published record also exists on its live page.
 
 ## Not converted automatically
 
-### empty-link (57)
+### empty-link (45)
 
 - guides/affiliate-marketing:ru: link without content dropped: /ru/monetize/advertisement/affiliate-marketing#%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3
 - guides/affiliate-marketing:ru: link without content dropped: /ru/monetize/advertisement/affiliate-marketing#%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-%D0%B2-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D0%BA%D0%BE%D0%BC-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3%D0%B5
@@ -169,27 +169,17 @@ None: every internal link of a published record also exists on its live page.
 - pages/about:en: link without content dropped: https://www.instagram.com/scorpyoga/
 - pages/about:en: link without content dropped: https://www.instagram.com/maguza_/
 - pages/about:en: link without content dropped: https://united24media.com
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./683711230c9b7dcbf824cd95_2-ідея-1-щоробитидубль-transcode.mp4
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./68371f99ee4ce2aaf7fb12f0_2--export-ezgifcom-gif-maker-transcode.mp4
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./68371e7fd04112f95393b10e_промпт-transcode.mp4
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./683713b9feb0144a13843fbd_4-стиль-2-copy-transcode.mp4
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./68371b2f307741ee73981120_5-iterate-studio-copy-transcode.mp4
-- pages/how-to-create-images-with-ai:en: link without content dropped: ./6837219ea83783b99718adcf_6-render1-copy-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./683711230c9b7dcbf824cd95_2-ідея-1-щоробитидубль-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./68371f99ee4ce2aaf7fb12f0_2--export-ezgifcom-gif-maker-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./68371e7fd04112f95393b10e_промпт-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./683713b9feb0144a13843fbd_4-стиль-2-copy-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./68371b2f307741ee73981120_5-iterate-studio-copy-transcode.mp4
 - pages/how-to-create-images-with-ai:uk: link without content dropped: ./6837219ea83783b99718adcf_6-render1-copy-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./683711230c9b7dcbf824cd95_2-ідея-1-щоробитидубль-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./68371f99ee4ce2aaf7fb12f0_2--export-ezgifcom-gif-maker-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./68371e7fd04112f95393b10e_промпт-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./683713b9feb0144a13843fbd_4-стиль-2-copy-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./68371b2f307741ee73981120_5-iterate-studio-copy-transcode.mp4
-- pages/how-to-create-images-with-ai:ru: link without content dropped: ./6837219ea83783b99718adcf_6-render1-copy-transcode.mp4
 
-### landing (6)
+### landing (8)
 
+- pages/onlyfans:en: landing page: body is a text extraction of the whole page; rebuild layout in Step 5
+- pages/onlyfans:ru: landing page: body is a text extraction of the whole page; rebuild layout in Step 5
 - pages/how-to-create-images-with-ai:en: landing page: body is a text extraction of the whole page; rebuild layout in Step 5
 - pages/how-to-create-images-with-ai:uk: landing page: body is a text extraction of the whole page; rebuild layout in Step 5
 - pages/how-to-create-images-with-ai:ru: landing page: body is a text extraction of the whole page; rebuild layout in Step 5

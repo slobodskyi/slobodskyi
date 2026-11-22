@@ -10,19 +10,20 @@
 //   iframe VideoAsk             → <VideoAsk id />      (click-to-load facade later)
 //   embed: other scripts/styles → dropped, reported
 //   blockquote                  → <Callout> (a real quotation with attribution stays `>`)
+//   link block with a heading + image  → <Card href title text chip image />, runs → <Cards>
 //   h2 whose legacy Webflow id differs from github-slugger → <h2 id="legacy">…</h2>
 import { legacyAnchor, extractHeadings } from '@slobodskyi/core';
 import type { Element, ElementContent, Root as HastRoot, Text as HastText } from 'hast';
 import { fromHtml } from 'hast-util-from-html';
 import { toHtml } from 'hast-util-to-html';
-import { toMdast, type Handle, type State } from 'hast-util-to-mdast';
+import { defaultHandlers, toMdast, type Handle, type State } from 'hast-util-to-mdast';
 import { toText } from 'hast-util-to-text';
 import type { BlockContent, Nodes, PhrasingContent, Root, RootContent } from 'mdast';
 import { gfmToMarkdown } from 'mdast-util-gfm';
 import { mdxToMarkdown } from 'mdast-util-mdx';
 import type { MdxJsxAttribute, MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
 import { toMarkdown } from 'mdast-util-to-markdown';
-import { visit } from 'unist-util-visit';
+import { SKIP, visit } from 'unist-util-visit';
 import { byTag, innerHtml, parseHtml } from '../lib/html.ts';
 
 export interface ConvertContext {
@@ -159,7 +160,45 @@ function handlers(ctx: ConvertContext): Record<string, Handle> {
     return jsx('Callout', [], children);
   };
 
+  // Webflow link block laid out as a card (heading, description, metadata chip, image).
+  const a: Handle = (state, node) => {
+    const heading = elements(node).find((e) => /^h[1-6]$/.test(e.tagName));
+    const img = elements(node, 'img')[0];
+    if (!heading || !img) return defaultHandlers.a(state, node);
+    const inMeta = new Set<Element>();
+    const markMeta = (n: Element, meta: boolean) => {
+      for (const c of n.children)
+        if (c.type === 'element') {
+          const m = meta || cls(c).some((k) => k.includes('metadata'));
+          if (m && c.tagName === 'p') inMeta.add(c);
+          markMeta(c, m);
+        }
+    };
+    markMeta(node, false);
+    const paragraphs = elements(node, 'p');
+    const text = paragraphs
+      .filter((p) => !inMeta.has(p))
+      .map((p) => toText(p).trim())
+      .filter(Boolean)
+      .join(' ');
+    const chip = [...inMeta]
+      .map((p) => toText(p).trim())
+      .filter(Boolean)
+      .join(' · ');
+    const src = prop(img, 'src') ?? '';
+    const file = ctx.asset(src);
+    if (!file) ctx.issue('image', `card image not in media map, dropped: ${src}`);
+    return jsx('Card', [
+      ...attr('href', ctx.link(prop(node, 'href') ?? '')),
+      ...attr('title', toText(heading).trim()),
+      ...attr('text', text || undefined),
+      ...attr('chip', chip || undefined),
+      ...attr('image', file ? `./${file}` : undefined),
+    ]);
+  };
+
   return {
+    a,
     figure,
     div,
     blockquote,
@@ -180,7 +219,25 @@ function cleanHast(tree: HastRoot): void {
   rec(tree);
 }
 
+/** Wraps each run of sibling <Card> elements in one <Cards> list. */
+function groupCards(tree: Root): void {
+  visit(tree, (node) => {
+    if (node.type === 'mdxJsxFlowElement' && node.name === 'Cards') return SKIP;
+    if (!('children' in node) || !Array.isArray(node.children)) return;
+    const out: RootContent[] = [];
+    for (const child of node.children as RootContent[]) {
+      const isCard = child.type === 'mdxJsxFlowElement' && child.name === 'Card';
+      const last = out[out.length - 1];
+      if (isCard && last?.type === 'mdxJsxFlowElement' && last.name === 'Cards') last.children.push(child);
+      else if (isCard) out.push(jsx('Cards', [], [child as BlockContent]));
+      else out.push(child);
+    }
+    (node as { children: RootContent[] }).children = out;
+  });
+}
+
 function postMdast(tree: Root, ctx: ConvertContext): void {
+  groupCards(tree);
   visit(tree, (node: Nodes) => {
     if (node.type === 'link') node.url = ctx.link(node.url);
     if (node.type === 'image') {

@@ -1,0 +1,24 @@
+---
+// MDX card: same markup as every other card list. `image` is relative to the record folder.
+import CardItem from '../CardItem.astro';
+
+interface Props {
+  href: string;
+  title: string;
+  text?: string;
+  chip?: string;
+  image?: string;
+}
+const { href, title, text, chip, image } = Astro.props;
+const dir = Astro.locals.recordDir;
+---
+
+<CardItem
+  item={{
+    url: href,
+    title,
+    text,
+    cover: image && dir ? { dir, src: image, alt: '' } : undefined,
+    chips: chip ? [chip] : undefined,
+  }}
+/>

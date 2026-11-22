@@ -56,6 +56,7 @@ interface SnapshotPage {
   title: string;
   description: string;
   robots: string;
+  lang: string;
   inSitemap: boolean;
   h1: string[];
   internalLinks: string[];
@@ -335,13 +336,59 @@ const DROP_TAGS = new Set([
   'template',
 ]);
 
-function prune(node: HastRoot | Element) {
+type Hidden = (classes: string[]) => boolean;
+
+/**
+ * Elements the page's own Webflow stylesheets hide for its language: top-level (not @media) rules
+ * of the form `.a.b{display:none}`, unless re-shown by `.a.b:lang(<lang>){display:…}`. Webflow
+ * used this to show some blocks (e.g. course cards) only in one locale.
+ */
+function hiddenByCss(doc: HastRoot, lang: string): Hidden {
+  const hidden: string[][] = [];
+  const shown: string[][] = [];
+  const sheets = findAll(doc, 'link')
+    .filter((l) => String(l.properties?.rel ?? '').includes('stylesheet'))
+    .map((l) => basename(String(l.properties?.href ?? '')))
+    .map((name) => join(LEGACY, 'site', 'css', name))
+    .filter((file) => existsSync(file));
+  for (const file of sheets) {
+    const css = readFileSync(file, 'utf8');
+    let depth = 0;
+    let start = 0;
+    for (let i = 0; i < css.length; i++) {
+      if (css[i] === '{') {
+        if (depth === 0) start = i;
+        depth++;
+      } else if (css[i] === '}') {
+        depth--;
+        if (depth !== 0) continue;
+        const head = css.slice(css.lastIndexOf('}', start - 1) + 1, start).trim();
+        const body = css.slice(start + 1, i);
+        if (head.startsWith('@') || body.includes('{')) continue;
+        const none = /display:\s*none/.test(body);
+        const display = /display:/.test(body);
+        for (const sel of head.split(',')) {
+          const m = /^((?:\.[\w-]+)+)(?::lang\((\w+)\))?$/.exec(sel.trim());
+          if (!m) continue;
+          const classes = (m[1] ?? '').slice(1).split('.');
+          if (!m[2] && none) hidden.push(classes);
+          else if (m[2] === lang && display && !none) shown.push(classes);
+        }
+      }
+    }
+  }
+  const has = (cls: string[], set: string[]) => set.every((c) => cls.includes(c));
+  return (cls) => hidden.some((h) => has(cls, h)) && !shown.some((sh) => has(cls, sh));
+}
+
+function prune(node: HastRoot | Element, isHidden: Hidden = () => false) {
   node.children = node.children.filter((c) => {
     if (c.type !== 'element') return c.type === 'text';
     if (DROP_TAGS.has(c.tagName)) return false;
     const cls = Array.isArray(c.properties?.className) ? c.properties.className.map(String) : [];
     if (cls.some((k) => DROP_CLASSES.includes(k))) return false;
-    prune(c);
+    if (isHidden(cls)) return false;
+    prune(c, isHidden);
     return true;
   });
 }
@@ -359,7 +406,8 @@ function mainHtml(page: SnapshotPage, allowLanding: boolean): string {
     }
   };
   find(doc);
-  for (const el of found) prune(el);
+  const isHidden = hiddenByCss(doc, page.lang);
+  for (const el of found) prune(el, isHidden);
   const html = found.map((el) => toHtml(el.children)).join('');
   if (!allowLanding || toText(fromHtml(html, { fragment: true })).trim().length > 200) return html;
   // Landing pages (courses) keep their text in layout sections outside .content: take the whole
@@ -373,7 +421,7 @@ function mainHtml(page: SnapshotPage, allowLanding: boolean): string {
         (['header', 'footer'].includes(c.tagName) || classes(c).some((k) => LANDING_CHROME.includes(k)))
       ),
   );
-  prune(body);
+  prune(body, isHidden);
   landing.add(page.url);
   return toHtml(body.children);
 }
@@ -382,6 +430,16 @@ const LANDING_CHROME = ['site-navbar', 'footer', 'w-nav'];
 const landing = new Set<string>();
 const classes = (el: Element) =>
   Array.isArray(el.properties?.className) ? el.properties.className.map(String) : [];
+function findAll(n: HastRoot | Element, tag: string): Element[] {
+  const out: Element[] = [];
+  for (const c of n.children)
+    if (c.type === 'element') {
+      if (c.tagName === tag) out.push(c);
+      out.push(...findAll(c, tag));
+    }
+  return out;
+}
+
 function findTag(n: HastRoot | Element, tag: string): Element | undefined {
   for (const c of n.children) {
     if (c.type !== 'element') continue;

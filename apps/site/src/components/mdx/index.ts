@@ -7,5 +7,18 @@ import Quiz from './Quiz.astro';
 import YouTube from './YouTube.astro';
 import BuyMeACoffee from './BuyMeACoffee.astro';
 import VideoAsk from './VideoAsk.astro';
+import Card from './Card.astro';
+import Cards from './Cards.astro';
 
-export const mdxComponents = { Shot, Callout, Answer, FAQ, Quiz, YouTube, BuyMeACoffee, VideoAsk };
+export const mdxComponents = {
+  Shot,
+  Callout,
+  Answer,
+  FAQ,
+  Quiz,
+  YouTube,
+  BuyMeACoffee,
+  VideoAsk,
+  Card,
+  Cards,
+};
