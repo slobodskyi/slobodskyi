@@ -1,0 +1,199 @@
+{
+  "assetFolders": [
+    {
+      "id": "69526f01ea419c30509f0c29",
+      "displayName": "assets",
+      "parentFolder": null,
+      "assets": [],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-12-29T12:07:29.612Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "67893fb9d49f59539583f400",
+      "displayName": "courses",
+      "parentFolder": null,
+      "assets": [],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-01-16T17:19:53.255Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "676e832823bef4db1ec587e9",
+      "displayName": "patreon",
+      "parentFolder": null,
+      "assets": [
+        "676e85c46e4a274c259c6c5d",
+        "676e85c49cc394b4fb44793d",
+        "676e85c5a1f93eca621e7f16",
+        "676e8db53d5450a8adaf4133",
+        "676e8e129792b6db3d0e2aaa",
+        "676ea2f1339b32cc94c68b12",
+        "676ea2f14a52c37c724e4be1",
+        "676eb1911cf654b30b082fa8",
+        "676eb28affd8c1a9d23cbd59",
+        "676ec358b93a44d389835ff1",
+        "676ec4dccb2a23a689198ef3"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2024-12-27T10:36:24.121Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "69ccedea809733c2f487f822",
+      "displayName": "sea-sky",
+      "parentFolder": null,
+      "assets": [
+        "69ccedf915202c2201b3b1b8",
+        "69ccf54ce06a09f5cf74c1ab",
+        "69ccf54df529723b968c00db",
+        "69ccf8364fe2acd762a590eb",
+        "69ccf8363571ec9db62dadce",
+        "69ccf8369d14d2cb22188b70",
+        "69ccfa50bce263d5dcb8d128",
+        "69ccfa508af7d5ce0798f259",
+        "69ccfa519028e4dd87f7b1dd",
+        "69ccfbd3ee371855a5885954",
+        "69ccfbd3483f9a1d3e14a011",
+        "69ccfbd51334679e4ec748c8",
+        "69cd013e32852297cfdc2c63",
+        "69cd013f1334679e4ec8a0f0",
+        "69cd013f3c90a0498a987968",
+        "69cd0201e78ba62a542cee6c",
+        "69cd0201e2c0e3185dd746dd",
+        "69cd02025e9c8d5be11fa3ee"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2026-04-01T10:05:30.259Z",
+      "lastUpdated": "2026-04-01T11:31:14.572Z"
+    },
+    {
+      "id": "67ccd74350d85994e29f4487",
+      "displayName": "tools",
+      "parentFolder": null,
+      "assets": [
+        "67cce604e6d2b0612f3cf7a2",
+        "67cce6046be9b56d96f00be0",
+        "67cce604f20d12844bb5a4d5",
+        "67cce6043748d7a57465d6a6",
+        "67cce604343296bcc10b7938",
+        "67cd717599f2dc1087c38647",
+        "67d6cd9cbedede1779ae9285",
+        "67d6ce1ecd2bfc505c18dee2",
+        "67d6e24c8680cecebbcc26d3",
+        "67d1fe46100d9926ab26b3f1",
+        "67d1feb3a41024d77b93ddc6"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-03-08T23:48:19.290Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "67dd435b588004cdd605493d",
+      "displayName": "adult",
+      "parentFolder": "67893fb9d49f59539583f400",
+      "assets": [
+        "67dd3f693849e5e936bac593",
+        "67dd407300f7b9e03da1c9df",
+        "67dd4166e5abd759bc64fe81",
+        "67dd424d099925fed2bed4e1",
+        "67dd4329cacb0f4e918999a7",
+        "67d57a1e86ed2b38b682e115",
+        "67d57b55ec8577ad32936311",
+        "67d57dac2485fd10fedb6d1f"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-03-21T10:45:47.198Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "6836ec66055c02cac24ce3d0",
+      "displayName": "ai-visuals",
+      "parentFolder": "67893fb9d49f59539583f400",
+      "assets": [
+        "6836ec705a39df80e415e898",
+        "6836ec70589a67ac1eba5458",
+        "6836ec704ea6f9378c3ecd1a",
+        "6836ec70180154dcacdbbfdc",
+        "6836ec70e9db6393301ecbb9",
+        "6836ec70bd9d33497e47c83f",
+        "6836ec70b4393ef8082afd14",
+        "6836ec70341581164c73ceb9",
+        "6836f3f6f584bd7c34046222",
+        "6836f3f6267baf6da937599f",
+        "6836f3f6180154dcace15c71",
+        "6836f3f67b3b24e348c42e61",
+        "6836f3f69f527f73657c831c",
+        "6836f3f6a6efc36254cf2805",
+        "6836f3f614e24187b78893a1",
+        "6836f3f50f7938a727d49bf9",
+        "6836f3f6a6efc36254cf2814",
+        "6836f3f6c5883aff653e2da2",
+        "6836f3f79f527f73657c841c",
+        "6836f3f7c887cc3743a41613",
+        "6836f3f6834849913d6be59e",
+        "6836f3f7bb21ca7668f7a0b5",
+        "6836f3f82f5745ff54593180",
+        "6836f66ce7e2c795580e9c52",
+        "6836f66c8f814ea02dc3119c",
+        "6836f66c49dfaa25f2166cfa",
+        "6836f66cddd56846e1f5c8a0",
+        "6836f66c1ab505a76615e9ae",
+        "6836f66c177cec252c65f165",
+        "6836f66c438189448642f1bf",
+        "6836f66ce98905afa0146d78"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-05-28T10:58:46.448Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "69526d9fd5c33e359199655f",
+      "displayName": "categories",
+      "parentFolder": "69526f01ea419c30509f0c29",
+      "assets": [
+        "69526e5ce577713d2554a4a0",
+        "69526e5cd28bc92575f6dad1",
+        "69526e5c3b68f2c6365a106d",
+        "69526e5c9cbd1b3dcfdf4032",
+        "6952714b15a932f35e1f82c6"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2025-12-29T12:01:35.217Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "6771691ddcdb05753739e4a3",
+      "displayName": "page-covers",
+      "parentFolder": "69526f01ea419c30509f0c29",
+      "assets": [
+        "67716929221b882c4a181ecb",
+        "67716929f2a207f8b5752fee",
+        "677169290e1485dc7e925cea",
+        "6771692972a7a2bc0c049404",
+        "6771bde9b6fe8eb4d09164f8"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2024-12-29T15:22:05.033Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    },
+    {
+      "id": "656f35cfa8ea19fa161b85b8",
+      "displayName": "system",
+      "parentFolder": "69526f01ea419c30509f0c29",
+      "assets": [
+        "656f2e5a46fdee5771c20652",
+        "656f2d3972ebac076f9a36d6",
+        "656df2cea3403274f902b6f7"
+      ],
+      "siteId": "6558ae529e9653f7d61a6917",
+      "createdOn": "2023-12-05T14:38:07.914Z",
+      "lastUpdated": "2026-04-01T11:31:14.565Z"
+    }
+  ],
+  "pagination": {
+    "limit": 25,
+    "offset": 0,
+    "total": 10
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "pageId": "65796e443c20ad34c3c0d9d1",
+  "slug": "monetize",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Які існують способи монетизації?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c9777a08-a0a1-5101-2056-08a66432c025\">Продаж цифрових та фізичних товарів, створення ексклюзивного контенту та освітніх продуктів, партнерський маркетинг та реклама.</p><p data-w-id=\"74e19693-9b5e-dee9-f388-ee2dd72afad5\">Нижче огляди маркетплейсів, сервісів для збору підписок та донатів, а також платіжних систем для виведення грошей.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "fb7ee26a-8715-85a7-5604-338f24dcd350",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"1c1003ce-007b-bc61-7a07-cb0afbe0c343\">Якщо ви вже на цьому етапі – чудово, ви рухаєтеся вперед. </p><p data-w-id=\"391db019-0a49-6195-4adf-c46842290ed1\"><a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"ca55b97d-eeb3-7dae-1de3-c99f7adb3dfb\">Створивши щось корисне</a>, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"f7ece999-696b-3151-3d99-dbfe74c1931e\">знайшовши свою аудиторію</a> та почавши заробляти, час рухатися далі. </p><blockquote data-w-id=\"b9e064b4-1dff-aecb-2ead-fe233dc969aa\">Досліджуйте <a data-wf-link-page-id=\"676ac6b1b4c345c7e99d2f54\" data-w-id=\"137496d0-e9a8-9d4c-549f-3a788b702fc8\">стратегії, системи та аналітику</a>, щоб розширити свій вплив і збільшити дохід, підтримуючи баланс між роботою та відпочинком.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Монетизація\",\n          \"item\": \"https://slobodskyi.com/ua/monetize\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

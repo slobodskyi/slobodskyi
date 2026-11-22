@@ -1,0 +1,80 @@
+{
+  "pageId": "66d6e6405e4aaf11d4bfcc75",
+  "slug": "connect",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Find Your Audience and Build Genuine Connections"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"e90c214c-af01-762a-5f07-e8cf8353815c\">Turning ideas into impact starts with sharing them with the world. </p><p data-w-id=\"ff52e9cd-fb23-9b70-17ba-8d809ca57dcb\"><strong data-w-id=\"c6b63f41-2fe6-1001-a193-e313fbbe161e\">But the real magic happens when your work reaches and resonates with the right audience.</strong></p><p data-w-id=\"02e3d0fa-8bfa-0137-e14b-5d142e068fca\">Learn to use social media, search engine optimization, and paid ads to grow your community, boost engagement, and build lasting relationships.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "5d9f281b-1202-d525-ceea-74928c4c40e5",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "09a716ff-070c-d5d1-4cc8-bda63fc47190",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "18b7adde-80eb-0ff5-5adc-5f82d6d79cf0",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f7355df7-03f8-c7e7-1721-c120944a6ae4",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><blockquote data-w-id=\"e1d7a44f-1e7b-9de4-035c-8f1cdeddb048\">Once you've <a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"7749f1c0-63be-08e3-b7b0-869621a0e6dc\">created something meaningful</a> and found your audience, <a data-wf-link-page-id=\"65796e443c20ad34c3c0d9d1\" data-w-id=\"22ab3a72-bc12-2fa2-8355-73d7b41dd7a9\">it's time to monetize</a> in a way that benefits you both.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Connect\",\n          \"item\": \"https://slobodskyi.com/connect\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

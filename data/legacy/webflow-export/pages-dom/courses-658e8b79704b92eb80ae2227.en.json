@@ -1,0 +1,228 @@
+{
+  "pageId": "658e8b79704b92eb80ae2227",
+  "slug": "courses",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "e165d78d-dac6-64fd-f04f-d2dadf693ecc",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Courses for Сreators"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c75f7731-938f-d3e5-b9f6-9bb648ca940c\">Currently, courses are <a href=\"https://slobodskyi.com/ua/courses\" data-w-id=\"1087c9e1-ce2f-7abd-8fe2-a79206a2db77\">available in Ukrainian</a>, and English versions will be added soon.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "f8df5490-9b26-9995-e1a9-552ae7f1c824",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "170da606-4c9b-63a9-4dde-d3b982111dbe",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Як створювати зображення зі ШІ?"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Практичний онлайн-курс, який навчить вас генерувати якісні візуали для бізнесу, навчання чи творчості — швидко, просто і без досвіду в дизайні."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "3 години"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "459fc228-85bc-0c1e-c6bc-76f56b0e4ddd",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "How to Start on OnlyFans"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "A practical online course on earning money by selling content on OnlyFans. It offers step-by-step lessons, real examples, and strategies to turn your idea into income."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "3 hours"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f155dbde-8a19-3a17-2c4d-7d3938a0e602",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "ChatGPT 101"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "We navigate the hype and learn to use ChatGPT in daily life and work. For those who spend their days on screens but want to reclaim time and focus on what matters."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "2 hours"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "170da606-4c9b-63a9-4dde-d3b982111dc8",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Individual Consultation"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "I help with monetization strategies, creating engaging educational content and solving technical issues."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "1 hour"
+          }
+        },
+        {
+          "propertyId": "83c20159-7394-8792-15fb-d8cf220865c5",
+          "type": "Plain Text",
+          "label": "metadata-time-or-counter-text",
+          "text": {
+            "html": null,
+            "text": "10:22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1c07329f-52d9-d477-6575-203dd1ade7bf",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"courses\",\n          \"item\": \"https://slobodskyi.com/courses\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

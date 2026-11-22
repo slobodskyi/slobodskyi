@@ -1,0 +1,105 @@
+{
+  "exportedAt": "2026-11-22",
+  "locales": {
+    "en": "/",
+    "uk": "/ua",
+    "ru": "/ru"
+  },
+  "collections": {
+    "advertisement": {
+      "items": 3,
+      "published": 3,
+      "drafts": [],
+      "archived": []
+    },
+    "ai": {
+      "items": 4,
+      "published": 4,
+      "drafts": [],
+      "archived": []
+    },
+    "analytics": {
+      "items": 1,
+      "published": 1,
+      "drafts": [],
+      "archived": []
+    },
+    "author": {
+      "items": 1,
+      "published": 1,
+      "drafts": [],
+      "archived": []
+    },
+    "categories": {
+      "items": 5,
+      "published": 4,
+      "drafts": [
+        "start"
+      ],
+      "archived": []
+    },
+    "d-courses": {
+      "items": 0,
+      "published": 0,
+      "drafts": [],
+      "archived": []
+    },
+    "marketplaces": {
+      "items": 5,
+      "published": 5,
+      "drafts": [],
+      "archived": []
+    },
+    "memberships": {
+      "items": 9,
+      "published": 8,
+      "drafts": [
+        "mym-fans"
+      ],
+      "archived": []
+    },
+    "no-code": {
+      "items": 4,
+      "published": 4,
+      "drafts": [],
+      "archived": []
+    },
+    "organic": {
+      "items": 5,
+      "published": 5,
+      "drafts": [],
+      "archived": []
+    },
+    "paid": {
+      "items": 1,
+      "published": 0,
+      "drafts": [
+        "article-paid"
+      ],
+      "archived": []
+    },
+    "payments": {
+      "items": 9,
+      "published": 9,
+      "drafts": [],
+      "archived": []
+    },
+    "sub-categories": {
+      "items": 10,
+      "published": 8,
+      "drafts": [
+        "content",
+        "paid"
+      ],
+      "archived": []
+    }
+  },
+  "pages": {
+    "count": 43,
+    "domFiles": 129,
+    "templates": 13
+  },
+  "forms": 6,
+  "assets": 259,
+  "redirects": "not available via API (Enterprise only): export from the Webflow UI"
+}

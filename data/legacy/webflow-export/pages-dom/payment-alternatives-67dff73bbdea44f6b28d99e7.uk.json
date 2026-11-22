@@ -1,0 +1,57 @@
+{
+  "pageId": "67dff73bbdea44f6b28d99e7",
+  "slug": "payment-alternatives",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курси"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c7bab4e5-225b-9bbd-f9e8-4750dacbd23d",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Альтернативні способи оплати"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"f230e791-ad17-aa4d-b949-6fb80cf589be\">Якщо ви надаєте перевагу альтернативному способу оплати, будь ласка, оберіть один із наведених нижче:</p><ol data-w-id=\"8278cfd7-0c79-1147-ea8d-fefad7ed1ac1\"><li data-w-id=\"28ff21b9-d557-d9d7-4b1b-22114de312ef\">PayPal: paypal@slobodskyi.com</li><li data-w-id=\"28ff21b9-d557-d9d7-4b1b-22114de312f1\">Payoneer: payoneer@slobodskyi.com</li><li data-w-id=\"916d1e08-2c83-56a0-a194-1471aaf243f4\">Wise: <a href=\"https://wise.com/pay/me/oleksandrs637\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"83f6a587-098d-7b22-3e15-728d04c3549d\">https://wise.com/pay/me/oleksandrs637</a></li><li data-w-id=\"91270698-e4c8-2652-ffa8-194c8ff4bcdf\">Payeer: P1047870299</li><li data-w-id=\"04251223-7877-811c-e285-3c09bc9ca7da\">Bitcoin: 18V5M5wXCGTPXYV4SswRAf4eVkgGMWbTGB</li><li data-w-id=\"d469ab21-f6a1-6a98-4dce-0442b855c64f\">USDT&nbsp;(TRC20): TL3ybzFhJsRpzjG1HXGXKAjP4pjwXihPEv</li><li data-w-id=\"c7f93886-6d57-743e-3823-d73d2160e1a1\">USDT&nbsp;(ERC20): 0xc5bec92fbb42a8a3e059e80dc937eaefc4c13106</li></ol><p data-w-id=\"af2d2708-076d-2120-6cb8-b96bedaa8247\">Суму потрібно вводити вручну.</p><p data-w-id=\"8e61bb40-f26f-5fcd-a9b3-2402472634be\">Після оплати, будь ласка, надішліть деталі транзакції та інформацію про продукт <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"90d13dd6-5017-dfcc-d90e-34036f4e6676\">через контактну форму</a>.</p><blockquote data-w-id=\"ee7aa50b-0873-5906-8be0-57b23fce8ea4\">Усі альтернативні способи оплати перевіряються вручну, тож зазвичай минає кілька годин, перш ніж ви отримаєте продукт. Дякую за терпіння.</blockquote></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3e386d7-a1b7-79c5-16b1-b57659d79ea3",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"submit-button-tg\" data-wf-link-page-id=\"6578487faf1d447a19b528ea\">контакти →</a>",
+        "text": "контакти →"
+      },
+      "attributes": {}
+    }
+  ]
+}

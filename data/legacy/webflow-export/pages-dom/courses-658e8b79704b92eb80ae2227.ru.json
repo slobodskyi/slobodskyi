@@ -1,0 +1,156 @@
+{
+  "pageId": "658e8b79704b92eb80ae2227",
+  "slug": "courses",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курсы"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e165d78d-dac6-64fd-f04f-d2dadf693ecc",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Курсы для криейторов"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c75f7731-938f-d3e5-b9f6-9bb648ca940c\">Практичные онлайн-курсы для тех, кто хочет создавать новое и монетизировать свои навыки онлайн.</p><p data-w-id=\"3170bc80-6b29-b92c-bd6c-11a626ca386b\">Доступны <a href=\"https://slobodskyi.com/ua/courses\" data-w-id=\"ff22d824-15be-423d-f976-2b9e8594fd7d\">на украинском языке</a>.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "170da606-4c9b-63a9-4dde-d3b982111dbe",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Курс по OnlyFans"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Практический онлайн-курс, который поможет вам зарабатывать, продавая контент на OnlyFans. Он включает пошаговые уроки, реальные примеры и стратегии раскрутки."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "3 часа"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f155dbde-8a19-3a17-2c4d-7d3938a0e602",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Основы ChatGPT"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Проходим сквозь хайп и учимся использовать ChatGPT в повседневной жизни и работе."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "2 часа"
+          }
+        }
+      ]
+    },
+    {
+      "id": "170da606-4c9b-63a9-4dde-d3b982111dc8",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Индивидуальная консультация"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Я помогаю с разработкой стратегий монетизации, созданием эффективного учебного контента и решением технических вопросов."
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "1 час"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1c07329f-52d9-d477-6575-203dd1ade7bf",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Главная\",\n          \"item\": \"https://slobodskyi.com/ru\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Курсы\",\n          \"item\": \"https://slobodskyi.com/ru/courses\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

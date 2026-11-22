@@ -1,0 +1,850 @@
+{
+  "collection": {
+    "id": "6558c06bceb72f12e739b981",
+    "displayName": "Sub Categories",
+    "singularName": "Sub Category",
+    "slug": "sub-categories",
+    "createdOn": "2023-11-18T13:47:23.335Z",
+    "lastUpdated": "2025-12-29T12:12:32.701Z",
+    "fields": [
+      {
+        "id": "491844b0d31e02dd982e44b0052c4f11",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Link",
+        "slug": "link",
+        "displayName": "Sub Category Link",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "1a0ba0c094fe61d4dd6270b5cb6294e4",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "PlainText",
+        "slug": "dd",
+        "displayName": "Sub Category Description",
+        "helpText": null,
+        "validations": {
+          "singleLine": false
+        }
+      },
+      {
+        "id": "22c419983c177065bf8ecdbe26478a1d",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Image",
+        "slug": "sub-category-cover",
+        "displayName": "Sub Category Image",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "060424770ae249f869eda95b515196e3",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Reference",
+        "slug": "category",
+        "displayName": "Category",
+        "helpText": null,
+        "validations": {
+          "collectionId": "6558b9534cb61f6f2b37d7e0"
+        }
+      },
+      {
+        "id": "567264ad18ea9e4da3ae0817e28d433d",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "PlainText",
+        "slug": "article-counter",
+        "displayName": "Article Counter (Make)",
+        "helpText": null,
+        "validations": {
+          "singleLine": true
+        }
+      },
+      {
+        "id": "5dfd418625a88b5d5a3ba06e5515f3a0",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "DateTime",
+        "slug": "latest-updated-article-date-make",
+        "displayName": "Latest Updated Article Date (Make)",
+        "helpText": null,
+        "validations": null
+      },
+      {
+        "id": "2857661ad79155b497e64d01eedc3d43",
+        "isEditable": true,
+        "isRequired": false,
+        "type": "Number",
+        "slug": "subcategoryarticlecount",
+        "displayName": "subcategoryArticleCount",
+        "helpText": null,
+        "validations": {
+          "format": "integer",
+          "precision": 1,
+          "allowNegative": false
+        }
+      },
+      {
+        "id": "92041ab52394da6681957f16cda52421",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "name",
+        "displayName": "Name",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256
+        }
+      },
+      {
+        "id": "1e469b9547d3746f6888793c6c5890fb",
+        "isEditable": true,
+        "isRequired": true,
+        "type": "PlainText",
+        "slug": "slug",
+        "displayName": "Slug",
+        "helpText": null,
+        "validations": {
+          "maxLength": 256,
+          "pattern": {},
+          "messages": {
+            "pattern": "Must be alphanumerical and not contain any spaces or special characters",
+            "maxLength": "Must be less than 256 characters"
+          }
+        }
+      }
+    ],
+    "fieldGroups": []
+  },
+  "items": {
+    "en": [
+      {
+        "id": "66d5e0e11a22edcd22149fbc",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:50:25.066Z",
+        "createdOn": "2024-09-02T15:59:29.222Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/monetize/advertisement",
+          "dd": "Generate income through affiliate marketing, sponsored content, or ads across diverse channels.",
+          "sub-category-cover": {
+            "fileId": "69525cee1761dda77ec66d4c",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cee1761dda77ec66d4c_monetize-advertisement.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "3 Articles",
+          "latest-updated-article-date-make": "2024-12-12T00:00:00.000Z",
+          "subcategoryarticlecount": 3,
+          "name": "Advertisement",
+          "slug": "advertisement"
+        }
+      },
+      {
+        "id": "66d6dea9e4f991c57392b64b",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:50:09.558Z",
+        "createdOn": "2024-09-03T10:02:17.695Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/create/ai",
+          "dd": "Enhance productivity, spark creativity and simplify content creation with AI tools designed for creators.",
+          "sub-category-cover": {
+            "fileId": "69525cdd13cfc9cc8bb062d9",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cdd13cfc9cc8bb062d9_create-artificial-intelligence.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "4 Articles",
+          "latest-updated-article-date-make": "2025-01-03T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "AI",
+          "slug": "ai"
+        }
+      },
+      {
+        "id": "676ac62efc8122172131970a",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:49:03.656Z",
+        "createdOn": "2024-12-24T14:33:18.775Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/grow/analytics",
+          "dd": "Discover tools and strategies to improve analytics, gain insights, and make smarter decisions for growth.",
+          "sub-category-cover": {
+            "fileId": "69525c9a821ee3ea17a2df3d",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525c9a821ee3ea17a2df3d_grow-analytics.webp",
+            "alt": null
+          },
+          "category": "6730accb3dd45057d0459bde",
+          "article-counter": "1 Article",
+          "latest-updated-article-date-make": "2024-12-24T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "Analytics",
+          "slug": "analytics"
+        }
+      },
+      {
+        "id": "6730bea8099228f6b31b5f1e",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": null,
+        "lastUpdated": "2026-05-15T10:26:18.834Z",
+        "createdOn": "2024-11-10T14:09:44.092Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "http://slobodskyi.com/create/content",
+          "dd": "Learn how to start, grow, and monetize as a content creator with realistic strategies that actually work.",
+          "sub-category-cover": {
+            "fileId": "69525ca8caa8583b96cadf1c",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525ca8caa8583b96cadf1c_create-content.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "1 Article",
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Content",
+          "slug": "content"
+        }
+      },
+      {
+        "id": "6558c08e557a0a7fd6526ab6",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:53:53.522Z",
+        "createdOn": "2023-11-18T13:47:58.881Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/monetize/marketplaces",
+          "dd": "Reach global buyers by selling digital and physical products on platforms designed for creators.",
+          "sub-category-cover": {
+            "fileId": "69525d1001b9b1ab51d243bf",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525d1001b9b1ab51d243bf_monetize-marketplaces.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "4 Articles",
+          "latest-updated-article-date-make": "2024-12-13T00:00:00.000Z",
+          "subcategoryarticlecount": 4,
+          "name": "Marketplaces",
+          "slug": "marketplaces"
+        }
+      },
+      {
+        "id": "656c6ab54c3117db5eb910f5",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:50:50.047Z",
+        "createdOn": "2023-12-03T11:47:01.312Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/monetize/memberships",
+          "dd": "Build lasting relationships with loyal supporters through flexible subscription models.",
+          "sub-category-cover": {
+            "fileId": "69525d046d3ef70c95e8b62a",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525d046d3ef70c95e8b62a_monetize-memberships.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "7 Articles",
+          "latest-updated-article-date-make": "2025-01-09T00:00:00.000Z",
+          "subcategoryarticlecount": 8,
+          "name": "Memberships",
+          "slug": "memberships"
+        }
+      },
+      {
+        "id": "66d6ded8198c659ea5b91644",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:49:56.596Z",
+        "createdOn": "2024-09-03T10:03:04.218Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/create/no-code",
+          "dd": "Build apps, automate tasks, and design websites with streamlined, easy-to-use tools.",
+          "sub-category-cover": {
+            "fileId": "69525ccf2a37f4a86fa37e7b",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525ccf2a37f4a86fa37e7b_create-no-code.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "3 Articles",
+          "latest-updated-article-date-make": "2024-12-19T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "No-code",
+          "slug": "no-code"
+        }
+      },
+      {
+        "id": "66d6dfffe9f520601fd87f8b",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:49:41.751Z",
+        "createdOn": "2024-09-03T10:07:59.053Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/connect/organic",
+          "dd": "Reach your audience with proven SEO and social media strategies that foster meaningful connections.",
+          "sub-category-cover": {
+            "fileId": "69525cbbbb4f1de23b35de4d",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cbbbb4f1de23b35de4d_connect-organic.webp",
+            "alt": null
+          },
+          "category": "66d6de4dd5cdb7ca3d8e2bb8",
+          "article-counter": "4 Articles",
+          "latest-updated-article-date-make": "2025-01-04T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "Organic",
+          "slug": "organic"
+        }
+      },
+      {
+        "id": "66d6e044ff74a4ec992ce38b",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": null,
+        "lastUpdated": "2025-01-15T11:20:15.864Z",
+        "createdOn": "2024-09-03T10:09:08.479Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "https://slobodskyi.com/connect/paid",
+          "dd": "How to use paid tools to find an audience",
+          "sub-category-cover": {
+            "fileId": "678799eff63466270af5ec34",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/678799eff63466270af5ec34_connect-paid.webp",
+            "alt": null
+          },
+          "category": null,
+          "article-counter": null,
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Paid",
+          "slug": "paid"
+        }
+      },
+      {
+        "id": "656c6acd98d222e8875059f4",
+        "cmsLocaleId": "6558b275de12de54c5a146d0",
+        "lastPublished": "2025-12-29T10:55:32.118Z",
+        "lastUpdated": "2025-12-29T10:50:39.139Z",
+        "createdOn": "2023-12-03T11:47:25.510Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/monetize/payments",
+          "dd": "Simplify how you receive funds with secure, reliable systems for managing and withdrawing earnings.",
+          "sub-category-cover": {
+            "fileId": "69525cf88d50edaae2e7a882",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cf88d50edaae2e7a882_monetize-payments.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "9 Articles",
+          "latest-updated-article-date-make": "2024-12-29T00:00:00.000Z",
+          "subcategoryarticlecount": 9,
+          "name": "Payments",
+          "slug": "payments"
+        }
+      }
+    ],
+    "uk": [
+      {
+        "id": "66d5e0e11a22edcd22149fbc",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:50:25.062Z",
+        "lastUpdated": "2025-12-29T10:50:25.062Z",
+        "createdOn": "2024-09-02T15:59:29.222Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/monetize/advertisement",
+          "dd": "Огляд варіантів заробітку на рекламі",
+          "sub-category-cover": {
+            "fileId": "677163ecfeec7013b3d528a8",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163ecfeec7013b3d528a8_monetize-advertisment.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "3 статті",
+          "latest-updated-article-date-make": "2024-12-12T00:00:00.000Z",
+          "subcategoryarticlecount": 3,
+          "name": "Реклама",
+          "slug": "advertisement"
+        }
+      },
+      {
+        "id": "66d6dea9e4f991c57392b64b",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-02-11T17:42:45.690Z",
+        "lastUpdated": "2025-12-29T10:50:09.554Z",
+        "createdOn": "2024-09-03T10:02:17.695Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/create/ai",
+          "dd": "Працюйте ефективніше й розкривайте креативність з інструментами ШІ.",
+          "sub-category-cover": {
+            "fileId": "677163da29f082f1f50ad9f2",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163da29f082f1f50ad9f2_create-ai.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "4 статті",
+          "latest-updated-article-date-make": "2025-01-03T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "ШІ",
+          "slug": "ai"
+        }
+      },
+      {
+        "id": "676ac62efc8122172131970a",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:49:03.652Z",
+        "lastUpdated": "2025-12-29T10:49:03.652Z",
+        "createdOn": "2024-12-24T14:33:18.775Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/grow/analytics",
+          "dd": "Про інструменти та стратегії для покращення аналітики, отримання інсайтів та прийняття розумних рішень для зростання.",
+          "sub-category-cover": {
+            "fileId": "677163b9e0e51fd9b847af5b",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163b9e0e51fd9b847af5b_grow-analytics.webp",
+            "alt": null
+          },
+          "category": "6730accb3dd45057d0459bde",
+          "article-counter": "1 стаття",
+          "latest-updated-article-date-make": "2024-12-24T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "Аналітика",
+          "slug": "analytics"
+        }
+      },
+      {
+        "id": "6730bea8099228f6b31b5f1e",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": null,
+        "lastUpdated": "2026-05-15T10:26:18.834Z",
+        "createdOn": "2024-11-10T14:09:44.092Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "http://slobodskyi.com/create/content",
+          "dd": "Learn how to start, grow, and monetize as a content creator with realistic strategies that actually work.",
+          "sub-category-cover": {
+            "fileId": "6730bea2bc6b6bb16076aece",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6730bea2bc6b6bb16076aece_create-content.png",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "1 Article",
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Content",
+          "slug": "content"
+        }
+      },
+      {
+        "id": "6558c08e557a0a7fd6526ab6",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:53:53.519Z",
+        "lastUpdated": "2025-12-29T10:53:53.519Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/monetize/marketplaces",
+          "dd": "Продаж цифрових і фізичних товарів",
+          "sub-category-cover": {
+            "fileId": "67716417b6fe8eb4d0533015",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/67716417b6fe8eb4d0533015_monetize-marketplaces.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "4 статті",
+          "latest-updated-article-date-make": "2024-12-13T00:00:00.000Z",
+          "subcategoryarticlecount": 4,
+          "name": "Маркетплейси",
+          "slug": "marketplaces"
+        }
+      },
+      {
+        "id": "656c6ab54c3117db5eb910f5",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:50:50.044Z",
+        "lastUpdated": "2025-12-29T10:50:50.044Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/monetize/memberships",
+          "dd": "Продаж ексклюзивного контенту через підписки",
+          "sub-category-cover": {
+            "fileId": "6771640eebf97e1cfbc8c287",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6771640eebf97e1cfbc8c287_monetize-memberships.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "7 статей",
+          "latest-updated-article-date-make": "2025-01-09T00:00:00.000Z",
+          "subcategoryarticlecount": 8,
+          "name": "Підписки",
+          "slug": "memberships"
+        }
+      },
+      {
+        "id": "66d6ded8198c659ea5b91644",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-02-24T13:46:44.269Z",
+        "lastUpdated": "2025-12-29T10:49:56.589Z",
+        "createdOn": "2024-09-03T10:03:04.218Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/create/no-code",
+          "dd": "Створюйте застосунки, автоматизуйте процеси та розробляйте вебсайти легко.",
+          "sub-category-cover": {
+            "fileId": "677163d140f530adcbd00454",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163d140f530adcbd00454_create-no-code.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "3 статті",
+          "latest-updated-article-date-make": "2024-12-19T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "No-code",
+          "slug": "no-code"
+        }
+      },
+      {
+        "id": "66d6dfffe9f520601fd87f8b",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:49:41.748Z",
+        "lastUpdated": "2025-12-29T10:49:41.748Z",
+        "createdOn": "2024-09-03T10:07:59.053Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/connect/organic",
+          "dd": "Як використовувати SEO та соціальні медіа, щоб знайти свою аудиторію.",
+          "sub-category-cover": {
+            "fileId": "677163c87711e81aa3e2eb01",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163c87711e81aa3e2eb01_connect-orgainc.webp",
+            "alt": null
+          },
+          "category": "66d6de4dd5cdb7ca3d8e2bb8",
+          "article-counter": "4 статті",
+          "latest-updated-article-date-make": "2025-01-04T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "Органіка",
+          "slug": "organic"
+        }
+      },
+      {
+        "id": "66d6e044ff74a4ec992ce38b",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": null,
+        "lastUpdated": "2024-11-10T14:16:04.425Z",
+        "createdOn": "2024-09-03T10:09:08.479Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "https://slobodskyi.com/connect/paid",
+          "dd": "How to use paid tools to find an audience",
+          "sub-category-cover": {
+            "fileId": "6730b814a30d972d2b5fe40e",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6730b814a30d972d2b5fe40e_connect-paid.png",
+            "alt": null
+          },
+          "category": null,
+          "article-counter": null,
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Paid",
+          "slug": "paid"
+        }
+      },
+      {
+        "id": "656c6acd98d222e8875059f4",
+        "cmsLocaleId": "657db52362d48bffd4c8494e",
+        "lastPublished": "2025-12-29T10:50:39.151Z",
+        "lastUpdated": "2025-12-29T10:50:39.151Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ua/monetize/payments",
+          "dd": "Огляд платіжних систем для виведення грошей",
+          "sub-category-cover": {
+            "fileId": "677163f63779394afae37931",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163f63779394afae37931_money-payments.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "9 статей",
+          "latest-updated-article-date-make": "2024-12-29T00:00:00.000Z",
+          "subcategoryarticlecount": 9,
+          "name": "Платежі",
+          "slug": "payments"
+        }
+      }
+    ],
+    "ru": [
+      {
+        "id": "66d5e0e11a22edcd22149fbc",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:50:25.076Z",
+        "lastUpdated": "2025-12-29T10:50:25.076Z",
+        "createdOn": "2024-09-02T15:59:29.222Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/monetize/advertisement",
+          "dd": "Обзор вариантов заработка на рекламе.",
+          "sub-category-cover": {
+            "fileId": "677163ecfeec7013b3d528a8",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163ecfeec7013b3d528a8_monetize-advertisment.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "3 статьи",
+          "latest-updated-article-date-make": "2024-12-12T00:00:00.000Z",
+          "subcategoryarticlecount": 3,
+          "name": "Реклама",
+          "slug": "advertisement"
+        }
+      },
+      {
+        "id": "66d6dea9e4f991c57392b64b",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-02-11T17:43:16.921Z",
+        "lastUpdated": "2025-12-29T10:50:09.550Z",
+        "createdOn": "2024-09-03T10:02:17.695Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/create/ai",
+          "dd": "Работайте эффективнее и раскрывайте креативность с инструментами ИИ.",
+          "sub-category-cover": {
+            "fileId": "677163da29f082f1f50ad9f2",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163da29f082f1f50ad9f2_create-ai.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "4 статьи",
+          "latest-updated-article-date-make": "2025-01-03T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "ИИ",
+          "slug": "ai"
+        }
+      },
+      {
+        "id": "676ac62efc8122172131970a",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:49:03.660Z",
+        "lastUpdated": "2025-12-29T10:49:03.660Z",
+        "createdOn": "2024-12-24T14:33:18.775Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/grow/analytics",
+          "dd": "Обзор инструментов и стратегий для улучшения аналитики, получения инсайтов и принятия решений для роста.",
+          "sub-category-cover": {
+            "fileId": "677163b9e0e51fd9b847af5b",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163b9e0e51fd9b847af5b_grow-analytics.webp",
+            "alt": null
+          },
+          "category": "6730accb3dd45057d0459bde",
+          "article-counter": "1 статья",
+          "latest-updated-article-date-make": "2024-12-24T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "Аналитика",
+          "slug": "analytics"
+        }
+      },
+      {
+        "id": "6730bea8099228f6b31b5f1e",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": null,
+        "lastUpdated": "2026-05-15T10:26:18.834Z",
+        "createdOn": "2024-11-10T14:09:44.092Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "http://slobodskyi.com/create/content",
+          "dd": "Learn how to start, grow, and monetize as a content creator with realistic strategies that actually work.",
+          "sub-category-cover": {
+            "fileId": "6730bea2bc6b6bb16076aece",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6730bea2bc6b6bb16076aece_create-content.png",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "1 Article",
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Content",
+          "slug": "content"
+        }
+      },
+      {
+        "id": "6558c08e557a0a7fd6526ab6",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:53:53.525Z",
+        "lastUpdated": "2025-12-29T10:53:53.525Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/monetize/marketplaces",
+          "dd": "Продажа цифровых и физических товаров",
+          "sub-category-cover": {
+            "fileId": "67716417b6fe8eb4d0533015",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/67716417b6fe8eb4d0533015_monetize-marketplaces.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "4 статьи",
+          "latest-updated-article-date-make": "2024-12-13T00:00:00.000Z",
+          "subcategoryarticlecount": 4,
+          "name": "Маркетплейсы",
+          "slug": "marketplaces"
+        }
+      },
+      {
+        "id": "656c6ab54c3117db5eb910f5",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:50:50.041Z",
+        "lastUpdated": "2025-12-29T10:50:50.041Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/monetize/memberships",
+          "dd": "Продажа эксклюзивного контента через подписки",
+          "sub-category-cover": {
+            "fileId": "6771640eebf97e1cfbc8c287",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6771640eebf97e1cfbc8c287_monetize-memberships.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "7 статей",
+          "latest-updated-article-date-make": "2025-01-09T00:00:00.000Z",
+          "subcategoryarticlecount": 8,
+          "name": "Подписки",
+          "slug": "memberships"
+        }
+      },
+      {
+        "id": "66d6ded8198c659ea5b91644",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-02-24T13:46:44.263Z",
+        "lastUpdated": "2025-12-29T10:49:56.593Z",
+        "createdOn": "2024-09-03T10:03:04.218Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/create/no-code",
+          "dd": "Создавайте приложения, автоматизируйте процессы и разрабатывайте сайты легко.",
+          "sub-category-cover": {
+            "fileId": "677163d140f530adcbd00454",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163d140f530adcbd00454_create-no-code.webp",
+            "alt": null
+          },
+          "category": "66d6ddedc37f29e2550b632b",
+          "article-counter": "3 статьи",
+          "latest-updated-article-date-make": "2024-12-19T00:00:00.000Z",
+          "subcategoryarticlecount": 1,
+          "name": "No-code",
+          "slug": "no-code"
+        }
+      },
+      {
+        "id": "66d6dfffe9f520601fd87f8b",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:49:41.754Z",
+        "lastUpdated": "2025-12-29T10:49:41.754Z",
+        "createdOn": "2024-09-03T10:07:59.053Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/connect/organic",
+          "dd": "Как использовать SEO и социальные сети для привлечения аудитории.",
+          "sub-category-cover": {
+            "fileId": "677163c87711e81aa3e2eb01",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163c87711e81aa3e2eb01_connect-orgainc.webp",
+            "alt": null
+          },
+          "category": "66d6de4dd5cdb7ca3d8e2bb8",
+          "article-counter": "4 статьи",
+          "latest-updated-article-date-make": "2025-01-04T00:00:00.000Z",
+          "subcategoryarticlecount": 2,
+          "name": "Органика",
+          "slug": "organic"
+        }
+      },
+      {
+        "id": "66d6e044ff74a4ec992ce38b",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": null,
+        "lastUpdated": "2024-11-10T14:16:04.432Z",
+        "createdOn": "2024-09-03T10:09:08.479Z",
+        "isArchived": false,
+        "isDraft": true,
+        "fieldData": {
+          "link": "https://slobodskyi.com/connect/paid",
+          "dd": "How to use paid tools to find an audience",
+          "sub-category-cover": {
+            "fileId": "6730b814a30d972d2b5fe40e",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6730b814a30d972d2b5fe40e_connect-paid.png",
+            "alt": null
+          },
+          "category": null,
+          "article-counter": null,
+          "latest-updated-article-date-make": null,
+          "subcategoryarticlecount": null,
+          "name": "Paid",
+          "slug": "paid"
+        }
+      },
+      {
+        "id": "656c6acd98d222e8875059f4",
+        "cmsLocaleId": "657db52362d48bffd4c8494f",
+        "lastPublished": "2025-12-29T10:50:39.125Z",
+        "lastUpdated": "2025-12-29T10:50:39.125Z",
+        "createdOn": "2023-12-16T14:33:07.221Z",
+        "isArchived": false,
+        "isDraft": false,
+        "fieldData": {
+          "link": "https://slobodskyi.com/ru/monetize/payments",
+          "dd": "Обзор платёжных систем для вывода денег",
+          "sub-category-cover": {
+            "fileId": "677163f63779394afae37931",
+            "url": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163f63779394afae37931_money-payments.webp",
+            "alt": null
+          },
+          "category": "6558c04d95abd345867c2d20",
+          "article-counter": "9 статей",
+          "latest-updated-article-date-make": "2024-12-29T00:00:00.000Z",
+          "subcategoryarticlecount": 9,
+          "name": "Платежи",
+          "slug": "payments"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3878 @@
+{
+  "en": [
+    {
+      "id": "694fdac5d77b7f47bbe2ebce",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Tools",
+      "slug": "tools",
+      "createdOn": "2025-12-27T13:10:29.032Z",
+      "lastUpdated": "2026-05-15T10:01:26.171Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Creator Tools ",
+        "description": "Tools I build for creators like myself. Start with the fee calculator to see exactly what you keep across 30+ platforms."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/694fdc9ef7c8dbcab588f751_creator-tools-by-slobodskyi.avif",
+        "imageAssetId": null
+      },
+      "publishedPath": "/tools",
+      "localeId": null
+    },
+    {
+      "id": "683429b54772678c268838df",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "AI Images",
+      "slug": "how-to-create-images-with-ai",
+      "createdOn": "2025-05-26T08:43:33.488Z",
+      "lastUpdated": "2026-04-13T15:15:00.676Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to make images with AI",
+        "description": "Available in ukrainian."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/68395c88a1a594bbe206c256_6837528b7efd2232c2e1224b_0_2_640_N.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/how-to-create-images-with-ai",
+      "localeId": null
+    },
+    {
+      "id": "67e2b22210e4c7724f805ed8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Terms of Service",
+      "slug": "terms-of-service",
+      "createdOn": "2025-03-25T13:39:46.845Z",
+      "lastUpdated": "2025-07-30T20:44:04.346Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Terms of Service",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/terms-of-service",
+      "localeId": null
+    },
+    {
+      "id": "67dff73bbdea44f6b28d99e7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Alternative",
+      "slug": "payment-alternatives",
+      "createdOn": "2025-03-23T11:57:47.426Z",
+      "lastUpdated": "2025-03-24T13:43:43.787Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Alternative Payment Methods",
+        "description": "After sending the payment, please email your transaction details and the product information via contact form."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/payment-alternatives",
+      "localeId": null
+    },
+    {
+      "id": "67d573aaad47577d4052d07c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "OnlyFans",
+      "slug": "onlyfans",
+      "createdOn": "2025-03-15T12:33:46.424Z",
+      "lastUpdated": "2026-05-15T15:59:50.922Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "OnlyFans Course",
+        "description": "The course will soon be available in Ukrainian, followed by English."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/onlyfans",
+      "localeId": null
+    },
+    {
+      "id": "678e653c19c0d2631c34641a",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Success",
+      "slug": "payment-success-67dd392a3c9d80c3ee009047",
+      "createdOn": "2025-01-20T15:01:16.299Z",
+      "lastUpdated": "2025-03-25T18:02:10.428Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "payment-success",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "localeId": null
+    },
+    {
+      "id": "678e211a0e6252963a631d73",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Problem",
+      "slug": "payment-problem",
+      "createdOn": "2025-01-20T10:10:34.221Z",
+      "lastUpdated": "2025-03-24T13:20:56.741Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "/payment-problem",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/payment-problem",
+      "localeId": null
+    },
+    {
+      "id": "6788e3688f44faff8a7d4cde",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "createdOn": "2025-01-16T10:46:00.231Z",
+      "lastUpdated": "2025-03-24T13:21:34.402Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "privacy-policy",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/privacy-policy",
+      "localeId": null
+    },
+    {
+      "id": "6788df03c50b6bb70a2ee19b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Public Offer",
+      "slug": "public-offer",
+      "createdOn": "2025-01-16T10:27:15.991Z",
+      "lastUpdated": "2025-03-24T13:21:27.229Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Public offer",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/public-offer",
+      "localeId": null
+    },
+    {
+      "id": "676ac7c0875b23e6f5b26d8b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": null,
+      "title": "Analytics",
+      "slug": "analytics",
+      "createdOn": "2024-12-24T14:40:00.467Z",
+      "lastUpdated": "2025-12-29T10:53:41.011Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Understand, Optimize, Grow",
+        "description": "Discover tools and strategies to improve analytics, gain insights, and make smarter decisions for growth."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/ae04083f-0807-47aa-9447-fb47fa76d7ee",
+        "imageAssetId": null
+      },
+      "publishedPath": "/grow/analytics",
+      "localeId": null
+    },
+    {
+      "id": "676ac6b1b4c345c7e99d2f54",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Grow",
+      "slug": "grow",
+      "createdOn": "2024-12-24T14:35:29.361Z",
+      "lastUpdated": "2025-12-29T10:55:25.561Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Grow Smarter, Not Harder",
+        "description": "Improving analytics, boosting sales, building systems, nurturing your mindset, and mastering learning strategies."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cddc44baa02580455c2e_4-grow.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/grow",
+      "localeId": null
+    },
+    {
+      "id": "676ac58008c66c81c2b46481",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": "676ac58008c66c81c2b46451",
+      "title": "Grow / Analytics Template",
+      "slug": "detail_analytics",
+      "createdOn": "2024-12-24T14:30:24.988Z",
+      "lastUpdated": "2026-02-21T16:06:17.168Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/grow/analytics",
+      "localeId": null
+    },
+    {
+      "id": "66dc2c73a0bd34b541332d75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66dc2c72a0bd34b541332d41",
+      "title": "Monetize / Courses Template",
+      "slug": "detail_d-courses",
+      "createdOn": "2024-09-07T10:35:31.245Z",
+      "lastUpdated": "2025-01-07T13:03:59.641Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/d-courses",
+      "localeId": null
+    },
+    {
+      "id": "66d6ed25f848870d6be68e2e",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed25f848870d6be68e11",
+      "title": "Connect / Paid Template",
+      "slug": "detail_paid",
+      "createdOn": "2024-09-03T11:04:05.655Z",
+      "lastUpdated": "2025-01-14T10:47:09.169Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/connect/paid",
+      "localeId": null
+    },
+    {
+      "id": "66d6ed06ebb01c3bc8ca5476",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed06ebb01c3bc8ca545a",
+      "title": "Connect / Organic Template",
+      "slug": "detail_organic",
+      "createdOn": "2024-09-03T11:03:34.644Z",
+      "lastUpdated": "2025-12-27T11:08:38.158Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/connect/organic",
+      "localeId": null
+    },
+    {
+      "id": "66d6eae98c8f748c91384f31",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6eae98c8f748c91384f08",
+      "title": "Create / No-code Template",
+      "slug": "detail_no-code",
+      "createdOn": "2024-09-03T10:54:33.470Z",
+      "lastUpdated": "2026-09-16T10:52:19.489Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/create/no-code",
+      "localeId": null
+    },
+    {
+      "id": "66d6e844eab0da3364b725f3",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6e844eab0da3364b72469",
+      "title": "Create / AI Template",
+      "slug": "detail_ai",
+      "createdOn": "2024-09-03T10:43:16.872Z",
+      "lastUpdated": "2026-02-21T16:03:40.569Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/create/ai",
+      "localeId": null
+    },
+    {
+      "id": "66d6e6edff74a4ec9932e8d8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": null,
+      "title": "Organic",
+      "slug": "organic",
+      "createdOn": "2024-09-03T10:37:33.944Z",
+      "lastUpdated": "2026-05-15T15:22:50.051Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Find an Audience Through Search Engine Optimization?",
+        "description": "An overview of strategies and tactics for attracting an audience from search engines, social media, and marketplaces."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cbbbb4f1de23b35de4d_connect-organic.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/connect/organic",
+      "localeId": null
+    },
+    {
+      "id": "66d6e6405e4aaf11d4bfcc75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Connect",
+      "slug": "connect",
+      "createdOn": "2024-09-03T10:34:40.198Z",
+      "lastUpdated": "2025-12-29T10:54:56.802Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Find Your Audience and Build Connections",
+        "description": "Discover proven strategies in SEO, social media, and ads for creators to grow their audience, boost engagement, and build meaningful connections."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdc786e3f8d9707850c0_2-connect.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/connect",
+      "localeId": null
+    },
+    {
+      "id": "66d6e223999739fdb60cb489",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "No-code",
+      "slug": "no-code",
+      "createdOn": "2024-09-03T10:17:07.527Z",
+      "lastUpdated": "2026-05-15T15:22:50.076Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Build Anything with No-code Tools",
+        "description": "No-code tool reviews will help you choose a platform for building apps, automations, and websites without coding. Here you’ll find comparisons of services, their features, pros, and cons."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525ccf2a37f4a86fa37e7b_create-no-code.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/create/no-code",
+      "localeId": null
+    },
+    {
+      "id": "66d6e1ae00f616bc88d06b7b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "AI",
+      "slug": "ai",
+      "createdOn": "2024-09-03T10:15:10.094Z",
+      "lastUpdated": "2025-12-29T10:52:06.706Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Artificial Intelligence: What It Is and How It Helps Creators",
+        "description": "Simple examples to help you understand how to use artificial intelligence to create texts, images, videos, and tackle other creative tasks."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/be321d17-5c27-4358-8439-8d1dd13c1d8e",
+        "imageAssetId": null
+      },
+      "publishedPath": "/create/ai",
+      "localeId": null
+    },
+    {
+      "id": "66d6e11b9d5c09c36c85ff11",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Create",
+      "slug": "create",
+      "createdOn": "2024-09-03T10:12:43.860Z",
+      "lastUpdated": "2026-05-15T15:21:49.870Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Learn Al and No-Code Tools to Create and Validate Ideas",
+        "description": "Discover how to create content, apps, and designs with Al and no-code tools. Build faster and bring your vision to life with step-by-step guides."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdae6a0db0940f655bef_1-create.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/create",
+      "localeId": null
+    },
+    {
+      "id": "66d6db6afd5d951ee93d80b7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Advertisement",
+      "slug": "advertisement",
+      "createdOn": "2024-09-03T09:48:26.420Z",
+      "lastUpdated": "2025-12-29T10:53:07.013Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Make Money with Advertising",
+        "description": "Advertising can be a powerful tool for content creators looking to monetize their platforms, offering a way to turn audience engagement into steady income. Whether through banner ads, sponsored content, or affiliate marketing, leveraging ads allows creators to earn while maintaining creative freedom."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cee1761dda77ec66d4c_monetize-advertisement.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/advertisement",
+      "localeId": null
+    },
+    {
+      "id": "66d6d016379847199aa30974",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66d6d016379847199aa30900",
+      "title": "Monetize / Advertisements Template",
+      "slug": "detail_advertisement",
+      "createdOn": "2024-09-03T09:00:06.624Z",
+      "lastUpdated": "2026-02-21T16:05:14.762Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/advertisement",
+      "localeId": null
+    },
+    {
+      "id": "668c785ea2921c4be5115ef1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Consultation",
+      "slug": "consultation",
+      "createdOn": "2024-07-08T23:38:06.114Z",
+      "lastUpdated": "2025-03-24T13:24:34.604Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Individual Consultation",
+        "description": "From monetization strategy development to technical implementation."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses/consultation",
+      "localeId": null
+    },
+    {
+      "id": "65a417707a94950c7e2907e5",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Affiliate Disclosure",
+      "slug": "affiliate-disclosure",
+      "createdOn": "2024-01-14T17:18:40.621Z",
+      "lastUpdated": "2025-03-24T13:18:47.023Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Affiliate Disclosure",
+        "description": "How does the referral system work on this site?"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/affiliate-disclosure",
+      "localeId": null
+    },
+    {
+      "id": "658e8b79704b92eb80ae2227",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Courses",
+      "slug": "courses",
+      "createdOn": "2023-12-29T09:03:53.184Z",
+      "lastUpdated": "2025-07-30T08:36:56.887Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Courses for Сreators",
+        "description": "Currently, courses are available in Ukrainian, and English versions will be added soon."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/courses",
+      "localeId": null
+    },
+    {
+      "id": "657982387afa43671e48a03f",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Payments",
+      "slug": "payments",
+      "createdOn": "2023-12-13T10:06:48.431Z",
+      "lastUpdated": "2025-12-29T10:53:31.210Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Withdraw Money",
+        "description": "Reviews of payment systems for receiving and withdrawing money: Payoneer, PayPal, Skrill, Wise, Payeer, Stripe, etc."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cf88d50edaae2e7a882_monetize-payments.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/payments",
+      "localeId": null
+    },
+    {
+      "id": "6579816a4b597e2544612caf",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Marketplaces",
+      "slug": "marketplaces",
+      "createdOn": "2023-12-13T10:03:22.817Z",
+      "lastUpdated": "2025-12-29T10:54:10.321Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Sell on Marketplaces",
+        "description": "Start by choosing the right site, register as a seller, list your products, and attract buyers. Detailed instructions on how to do this can be found in the reviews below."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/10da98a0-ab3f-4667-b377-b008e7938eef",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/marketplaces",
+      "localeId": null
+    },
+    {
+      "id": "65796e443c20ad34c3c0d9d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Monetize",
+      "slug": "monetize",
+      "createdOn": "2023-12-13T08:41:40.273Z",
+      "lastUpdated": "2025-12-29T10:55:07.992Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Ethical and Effective Monetization Strategies for Creators",
+        "description": "Learn how creators can monetize their work: sell products, offer subscriptions, run ads, and use affiliate marketing to build sustainable income streams."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdd3e6e5e80d3546f6d0_3-monetize.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize",
+      "localeId": null
+    },
+    {
+      "id": "65796a349b64f717c9a9cc66",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "65796a349b64f717c9a9cc49",
+      "title": "Monetize / Payments Template",
+      "slug": "detail_payments",
+      "createdOn": "2023-12-13T08:24:20.725Z",
+      "lastUpdated": "2026-02-21T16:06:07.353Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/payments",
+      "localeId": null
+    },
+    {
+      "id": "6578c1c4f474ec967b269d2b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "6578c1c4f474ec967b269d0f",
+      "title": "Monetize / Marketplaces Template",
+      "slug": "detail_marketplaces",
+      "createdOn": "2023-12-12T20:25:40.336Z",
+      "lastUpdated": "2026-02-21T16:05:26.345Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/marketplaces",
+      "localeId": null
+    },
+    {
+      "id": "65784e15e630bd49130de5cd",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Password",
+      "slug": "401",
+      "createdOn": "2023-12-12T12:12:05.211Z",
+      "lastUpdated": "2023-12-12T12:12:21.735Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Protected page",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/401",
+      "localeId": null
+    },
+    {
+      "id": "6578487faf1d447a19b528ea",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Contacts",
+      "slug": "contacts",
+      "createdOn": "2023-12-12T11:48:15.126Z",
+      "lastUpdated": "2025-09-11T09:09:10.803Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Contacts",
+        "description": "Feel free to contact me with any questions or advice.\n"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929221b882c4a181ecb_contacts.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/contacts",
+      "localeId": null
+    },
+    {
+      "id": "65783e15af1d447a19ae7c2d",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "About",
+      "slug": "about",
+      "createdOn": "2023-12-12T11:03:49.468Z",
+      "lastUpdated": "2025-12-28T10:27:14.590Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Oleksandr Slobodskyi",
+        "description": "I'm exploring how people in the creative economy — experts, bloggers, developers, and writers — can monetize their passions."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771692972a7a2bc0c049404_about.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/about",
+      "localeId": null
+    },
+    {
+      "id": "6574517f4a09da77e885bf1c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6574517f4a09da77e885bf10",
+      "title": "Authors Template",
+      "slug": "detail_author",
+      "createdOn": "2023-12-09T11:37:35.783Z",
+      "lastUpdated": "2025-01-10T14:16:52.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/author",
+      "localeId": null
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Search Results",
+      "slug": "search",
+      "createdOn": "2023-12-04T17:38:41.544Z",
+      "lastUpdated": "2025-03-11T19:25:47.307Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Search Results",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/search",
+      "localeId": null
+    },
+    {
+      "id": "656e0e676da36b82b807684c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "404",
+      "slug": "404",
+      "createdOn": "2023-12-04T17:37:43.241Z",
+      "lastUpdated": "2025-02-20T11:28:28.116Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Oops! This Page is Playing Hide and Seek.",
+        "description": "It might have been moved, renamed, or is just taking a little break."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677169290e1485dc7e925cea_404.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/404",
+      "localeId": null
+    },
+    {
+      "id": "656c6203d1a9be8df4aa89db",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "656c6203d1a9be8df4aa89ca",
+      "title": "Monetize / Memberships Template",
+      "slug": "detail_memberships",
+      "createdOn": "2023-12-03T11:09:55.260Z",
+      "lastUpdated": "2026-02-21T16:05:57.019Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/memberships",
+      "localeId": null
+    },
+    {
+      "id": "6558d2181f4650d9c508f1da",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Memberships",
+      "slug": "memberships",
+      "createdOn": "2023-11-18T15:02:48.084Z",
+      "lastUpdated": "2025-12-29T10:53:22.206Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to Make Money on Subscriptions",
+        "description": "Choose a topic that inspires you and find a platform that suits your content. Use social networks for promotion and build a community. Each platform has its own features, detailed reviews below."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525d046d3ef70c95e8b62a_monetize-memberships.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/monetize/memberships",
+      "localeId": null
+    },
+    {
+      "id": "6558c06bceb72f12e739b99b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558c06bceb72f12e739b981",
+      "title": "Sub Categories Template",
+      "slug": "detail_sub-categories",
+      "createdOn": "2023-11-18T13:47:23.472Z",
+      "lastUpdated": "2025-12-29T12:12:09.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/sub-categories",
+      "localeId": null
+    },
+    {
+      "id": "6558b9534cb61f6f2b37d809",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558b9534cb61f6f2b37d7e0",
+      "title": "Categories Template",
+      "slug": "detail_categories",
+      "createdOn": "2023-11-18T13:17:07.630Z",
+      "lastUpdated": "2025-12-29T12:10:35.278Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/categories",
+      "localeId": null
+    },
+    {
+      "id": "6558ae529e9653f7d61a6924",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Home",
+      "slug": null,
+      "createdOn": "2023-11-18T12:30:10.461Z",
+      "lastUpdated": "2026-06-15T09:36:38.783Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "The Slow Creator: Earn More, Stress Less in the Age of AI",
+        "description": "Guides on ChatGPT, Make.com, Patreon, Gumroad and 30+ tools for creators. Honest reviews, step-by-step tutorials, no guru energy."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6952714b15a932f35e1f82c6_oleksandr-slobodskyi.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/",
+      "localeId": null
+    }
+  ],
+  "uk": [
+    {
+      "id": "694fdac5d77b7f47bbe2ebce",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Tools",
+      "slug": "tools",
+      "createdOn": "2025-12-27T13:10:29.032Z",
+      "lastUpdated": "2026-05-15T10:01:26.171Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курси для кріейторів",
+        "description": "Практичні онлайн-курси для тих, хто прагне створювати нове та монетизувати свої навички онлайн."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/694fdc9ef7c8dbcab588f751_creator-tools-by-slobodskyi.avif",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/tools",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "683429b54772678c268838df",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "AI Images",
+      "slug": "how-to-create-images-with-ai",
+      "createdOn": "2025-05-26T08:43:33.488Z",
+      "lastUpdated": "2026-04-13T15:15:00.676Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "How to make images with AI",
+        "description": "Available in ukrainian."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/68395c88a1a594bbe206c256_6837528b7efd2232c2e1224b_0_2_640_N.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/how-to-create-images-with-ai",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "67e2b22210e4c7724f805ed8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Terms of Service",
+      "slug": "terms-of-service",
+      "createdOn": "2025-03-25T13:39:46.845Z",
+      "lastUpdated": "2025-07-30T20:44:04.346Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Публiчна оферта",
+        "description": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/terms-of-service",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "67dff73bbdea44f6b28d99e7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Alternative",
+      "slug": "payment-alternatives",
+      "createdOn": "2025-03-23T11:57:47.426Z",
+      "lastUpdated": "2025-03-24T13:43:43.787Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Альтернативні способи оплати",
+        "description": "Після оплати, будь ласка, надішліть деталі транзакції та інформацію про продукт через контактну форму."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/payment-alternatives",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "67d573aaad47577d4052d07c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "OnlyFans",
+      "slug": "onlyfans",
+      "createdOn": "2025-03-15T12:33:46.424Z",
+      "lastUpdated": "2026-05-15T15:59:50.922Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курс → Як почати заробляти на OnlyFans?",
+        "description": "Онлайн-курс по Онліфанс з прикладами та покроковими уроками, який допоможе вам оформити профіль, створити контент, знайти підписників та заробити."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/onlyfans",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "678e653c19c0d2631c34641a",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Success",
+      "slug": "payment-success-67dd392a3c9d80c3ee009047",
+      "createdOn": "2025-01-20T15:01:16.299Z",
+      "lastUpdated": "2025-03-25T18:02:10.428Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "payment-success",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "678e211a0e6252963a631d73",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Problem",
+      "slug": "payment-problem",
+      "createdOn": "2025-01-20T10:10:34.221Z",
+      "lastUpdated": "2025-03-24T13:20:56.741Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Проблема з оплатою",
+        "description": "Сталася помилка під час обробки вашої оплати. Будь ласка, перевірте платіжні дані або спробуйте інший спосіб оплати.Якщо проблема не зникає, напишіть мені."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/payment-problem",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6788e3688f44faff8a7d4cde",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "createdOn": "2025-01-16T10:46:00.231Z",
+      "lastUpdated": "2025-03-24T13:21:34.402Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Політика конфіденційності",
+        "description": "Ця Полiтика конфiденцiйностi описує, як ФОП Слободський Олександр Миколайович обробляє персональні дані користувачів при використанні послуг Виконавця."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/privacy-policy",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6788df03c50b6bb70a2ee19b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Public Offer",
+      "slug": "public-offer",
+      "createdOn": "2025-01-16T10:27:15.991Z",
+      "lastUpdated": "2025-03-24T13:21:27.229Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Публiчна оферта",
+        "description": "Цей документ є офіційною пропозицією фізичної особи-підприємця Слободського Олександра Миколайовича укласти договір на надання послуг із доступу до онлайн-курсів, консультацій та додаткових матеріалів."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/public-offer",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "676ac7c0875b23e6f5b26d8b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": null,
+      "title": "Analytics",
+      "slug": "analytics",
+      "createdOn": "2024-12-24T14:40:00.467Z",
+      "lastUpdated": "2025-12-29T10:53:41.011Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Розумій, оптимізуй, зростай",
+        "description": "Відкрийте інструменти та стратегії для покращення аналітики, отримання інсайтів і прийняття розумних рішень для зростання."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/ae04083f-0807-47aa-9447-fb47fa76d7ee",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/grow/analytics",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "676ac6b1b4c345c7e99d2f54",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Grow",
+      "slug": "grow",
+      "createdOn": "2024-12-24T14:35:29.361Z",
+      "lastUpdated": "2025-12-29T10:55:25.561Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Зростай з розумом, а не через силу",
+        "description": "Покращення аналітики, збільшення продажів, створення систем, розвиток мислення та опанування стратегій навчання."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cddc44baa02580455c2e_4-grow.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/grow",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "676ac58008c66c81c2b46481",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": "676ac58008c66c81c2b46451",
+      "title": "Grow / Analytics Template",
+      "slug": "detail_analytics",
+      "createdOn": "2024-12-24T14:30:24.988Z",
+      "lastUpdated": "2026-02-21T16:06:17.168Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/grow/analytics",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66dc2c73a0bd34b541332d75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66dc2c72a0bd34b541332d41",
+      "title": "Monetize / Courses Template",
+      "slug": "detail_d-courses",
+      "createdOn": "2024-09-07T10:35:31.245Z",
+      "lastUpdated": "2025-01-07T13:03:59.641Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/d-courses",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6ed25f848870d6be68e2e",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed25f848870d6be68e11",
+      "title": "Connect / Paid Template",
+      "slug": "detail_paid",
+      "createdOn": "2024-09-03T11:04:05.655Z",
+      "lastUpdated": "2025-01-14T10:47:09.169Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/connect/paid",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6ed06ebb01c3bc8ca5476",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed06ebb01c3bc8ca545a",
+      "title": "Connect / Organic Template",
+      "slug": "detail_organic",
+      "createdOn": "2024-09-03T11:03:34.644Z",
+      "lastUpdated": "2025-12-27T11:08:38.158Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/connect/organic",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6eae98c8f748c91384f31",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6eae98c8f748c91384f08",
+      "title": "Create / No-code Template",
+      "slug": "detail_no-code",
+      "createdOn": "2024-09-03T10:54:33.470Z",
+      "lastUpdated": "2026-09-16T10:52:19.489Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/create/no-code",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e844eab0da3364b725f3",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6e844eab0da3364b72469",
+      "title": "Create / AI Template",
+      "slug": "detail_ai",
+      "createdOn": "2024-09-03T10:43:16.872Z",
+      "lastUpdated": "2026-02-21T16:03:40.569Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/create/ai",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e6edff74a4ec9932e8d8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": null,
+      "title": "Organic",
+      "slug": "organic",
+      "createdOn": "2024-09-03T10:37:33.944Z",
+      "lastUpdated": "2026-05-15T15:22:50.051Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як знайти аудиторію через пошукову оптимізацію?",
+        "description": "Огляд стратегій і тактик для залучення аудиторії з пошукових систем, соціальних мереж і маркетплейсів."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cbbbb4f1de23b35de4d_connect-organic.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/connect/organic",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e6405e4aaf11d4bfcc75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Connect",
+      "slug": "connect",
+      "createdOn": "2024-09-03T10:34:40.198Z",
+      "lastUpdated": "2025-12-29T10:54:56.802Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як знайти свою аудиторію через безкоштовні та платні канали?",
+        "description": "Огляд інструментів і послуг, які допоможуть знайти аудиторію та встановити з нею зв’язок. Використовуйте SEO, соціальні мережі та платну рекламу, щоб охопити більше людей і зацікавити їх."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdc786e3f8d9707850c0_2-connect.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/connect",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e223999739fdb60cb489",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "No-code",
+      "slug": "no-code",
+      "createdOn": "2024-09-03T10:17:07.527Z",
+      "lastUpdated": "2026-05-15T15:22:50.076Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як використовувати No-code інструменти?",
+        "description": "Огляди No-code інструментів допоможуть вам обрати платформу для створення додатків, автоматизацій і вебсайтів без програмування. Тут ви знайдете порівняння сервісів, їхні функції, плюси та мінуси."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525ccf2a37f4a86fa37e7b_create-no-code.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/create/no-code",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e1ae00f616bc88d06b7b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "AI",
+      "slug": "ai",
+      "createdOn": "2024-09-03T10:15:10.094Z",
+      "lastUpdated": "2025-12-29T10:52:06.706Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Штучний інтелект: що це таке і як він допомагає креаторам?",
+        "description": "Прості приклади, які допоможуть зрозуміти, як використовувати штучний інтелект для створення текстів, зображень, відео та інших креативних завдань."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/be321d17-5c27-4358-8439-8d1dd13c1d8e",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/create/ai",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6e11b9d5c09c36c85ff11",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Create",
+      "slug": "create",
+      "createdOn": "2024-09-03T10:12:43.860Z",
+      "lastUpdated": "2026-05-15T15:21:49.870Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як застосувати ШІ та No-code для створення й перевірки ідей",
+        "description": "Дізнайтеся, як створювати контент, застосунки та дизайни за допомогою ШІ та No-code. Розробляйте швидше й втілюйте ідеї з покроковими гайдами."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdae6a0db0940f655bef_1-create.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/create",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6db6afd5d951ee93d80b7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Advertisement",
+      "slug": "advertisement",
+      "createdOn": "2024-09-03T09:48:26.420Z",
+      "lastUpdated": "2025-12-29T10:53:07.013Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як заробити на рекламі?",
+        "description": "Реклама може бути потужним інструментом для творців контенту, які хочуть монетизувати свої платформи, пропонуючи спосіб перетворити залучення аудиторії на стабільний дохід. Завдяки банерній рекламі, спонсорованому контенту чи партнерському маркетингу, використання реклами дозволяє творцям заробляти, зберігаючи творчу свободу."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cee1761dda77ec66d4c_monetize-advertisement.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/advertisement",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "66d6d016379847199aa30974",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66d6d016379847199aa30900",
+      "title": "Monetize / Advertisements Template",
+      "slug": "detail_advertisement",
+      "createdOn": "2024-09-03T09:00:06.624Z",
+      "lastUpdated": "2026-02-21T16:05:14.762Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/advertisement",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "668c785ea2921c4be5115ef1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Consultation",
+      "slug": "consultation",
+      "createdOn": "2024-07-08T23:38:06.114Z",
+      "lastUpdated": "2025-03-24T13:24:34.604Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Індивідуальна консультація",
+        "description": "Від розробки стратегії монетизації до технічної реалізації."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses/consultation",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "65a417707a94950c7e2907e5",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Партнерська інформація",
+      "slug": "affiliate-disclosure",
+      "createdOn": "2024-01-14T17:18:40.621Z",
+      "lastUpdated": "2025-03-24T13:18:47.023Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Партнерська інформація",
+        "description": "Як це працює?"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/affiliate-disclosure",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "658e8b79704b92eb80ae2227",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Courses",
+      "slug": "courses",
+      "createdOn": "2023-12-29T09:03:53.184Z",
+      "lastUpdated": "2025-07-30T08:36:56.887Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курси для кріейторів",
+        "description": "Практичні онлайн-курси для тих, хто прагне створювати нове та монетизувати свої навички онлайн."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/courses",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "657982387afa43671e48a03f",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Payments",
+      "slug": "payments",
+      "createdOn": "2023-12-13T10:06:48.431Z",
+      "lastUpdated": "2025-12-29T10:53:31.210Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як вивести гроші?",
+        "description": "Огляди платіжних систем для отримання та виведення грошей: Payoneer, PayPal, Skrill, Wise, Payeer, Stripe тощо."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cf88d50edaae2e7a882_monetize-payments.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/payments",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6579816a4b597e2544612caf",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Marketplaces",
+      "slug": "marketplaces",
+      "createdOn": "2023-12-13T10:03:22.817Z",
+      "lastUpdated": "2025-12-29T10:54:10.321Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як продавати на маркетплейсах?",
+        "description": "Почніть з вибору відповідного сайту, зареєструйтеся як продавець, оформіть ваші товари та залучіть покупців. Детальні інструкції, як це зробити, шукайте в оглядах нижче."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/10da98a0-ab3f-4667-b377-b008e7938eef",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/marketplaces",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "65796e443c20ad34c3c0d9d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Monetize",
+      "slug": "monetize",
+      "createdOn": "2023-12-13T08:41:40.273Z",
+      "lastUpdated": "2025-12-29T10:55:07.992Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Які існують способи монетизації?",
+        "description": "Продаж цифрових та фізичних товарів, створення ексклюзивного контенту та освітніх продуктів, партнерський маркетинг та реклама. Нижче огляди маркетплейсів, сервісів для збору підписок та донатів, а також платіжних систем для виведення грошей."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdd3e6e5e80d3546f6d0_3-monetize.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "65796a349b64f717c9a9cc66",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "65796a349b64f717c9a9cc49",
+      "title": "Monetize / Payments Template",
+      "slug": "detail_payments",
+      "createdOn": "2023-12-13T08:24:20.725Z",
+      "lastUpdated": "2026-02-21T16:06:07.353Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/payments",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6578c1c4f474ec967b269d2b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "6578c1c4f474ec967b269d0f",
+      "title": "Monetize / Marketplaces Template",
+      "slug": "detail_marketplaces",
+      "createdOn": "2023-12-12T20:25:40.336Z",
+      "lastUpdated": "2026-02-21T16:05:26.345Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/marketplaces",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "65784e15e630bd49130de5cd",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Password",
+      "slug": "401",
+      "createdOn": "2023-12-12T12:12:05.211Z",
+      "lastUpdated": "2023-12-12T12:12:21.735Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Protected page",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/401",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6578487faf1d447a19b528ea",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Contacts",
+      "slug": "contacts",
+      "createdOn": "2023-12-12T11:48:15.126Z",
+      "lastUpdated": "2025-09-11T09:09:10.803Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Контакти",
+        "description": "Ви можете задати питання через цю форму."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929221b882c4a181ecb_contacts.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/contacts",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "65783e15af1d447a19ae7c2d",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "About",
+      "slug": "about",
+      "createdOn": "2023-12-12T11:03:49.468Z",
+      "lastUpdated": "2025-12-28T10:27:14.590Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Олександр Слободський",
+        "description": "Я досліджую, як люди в креативній економіці – експерти, блогери, розробники та письменники - можуть монетизувати свої проєкти."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771692972a7a2bc0c049404_about.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/about",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6574517f4a09da77e885bf1c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6574517f4a09da77e885bf10",
+      "title": "Authors Template",
+      "slug": "detail_author",
+      "createdOn": "2023-12-09T11:37:35.783Z",
+      "lastUpdated": "2025-01-10T14:16:52.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/author",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Search Results",
+      "slug": "search",
+      "createdOn": "2023-12-04T17:38:41.544Z",
+      "lastUpdated": "2025-03-11T19:25:47.307Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Search Results",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/search",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "656e0e676da36b82b807684c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "404",
+      "slug": "404",
+      "createdOn": "2023-12-04T17:37:43.241Z",
+      "lastUpdated": "2025-02-20T11:28:28.116Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Oops! This Page is Playing Hide and Seek.",
+        "description": "It might have been moved, renamed, or is just taking a little break."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677169290e1485dc7e925cea_404.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/404",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "656c6203d1a9be8df4aa89db",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "656c6203d1a9be8df4aa89ca",
+      "title": "Monetize / Memberships Template",
+      "slug": "detail_memberships",
+      "createdOn": "2023-12-03T11:09:55.260Z",
+      "lastUpdated": "2026-02-21T16:05:57.019Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/memberships",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6558d2181f4650d9c508f1da",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Memberships",
+      "slug": "memberships",
+      "createdOn": "2023-11-18T15:02:48.084Z",
+      "lastUpdated": "2025-12-29T10:53:22.206Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Як заробити на підписках?",
+        "description": "Оберіть тему, яка вас надихає, та знайдіть відповідну платформу для вашого контенту. Використовуйте соціальні мережі для просування та будуйте спільноту. У кожної платформи свої особливості, нижче детальні огляди."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525d046d3ef70c95e8b62a_monetize-memberships.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/monetize/memberships",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6558c06bceb72f12e739b99b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558c06bceb72f12e739b981",
+      "title": "Sub Categories Template",
+      "slug": "detail_sub-categories",
+      "createdOn": "2023-11-18T13:47:23.472Z",
+      "lastUpdated": "2025-12-29T12:12:09.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/sub-categories",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6558b9534cb61f6f2b37d809",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558b9534cb61f6f2b37d7e0",
+      "title": "Categories Template",
+      "slug": "detail_categories",
+      "createdOn": "2023-11-18T13:17:07.630Z",
+      "lastUpdated": "2025-12-29T12:10:35.278Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/categories",
+      "localeId": "657db52262d48bffd4c84945"
+    },
+    {
+      "id": "6558ae529e9653f7d61a6924",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Home",
+      "slug": null,
+      "createdOn": "2023-11-18T12:30:10.461Z",
+      "lastUpdated": "2026-06-15T09:36:38.783Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "The Slow Creator: заробляй більше, стресуй менше в епоху ШІ",
+        "description": "Гайди по ChatGPT, Make.com, Patreon, Gumroad та 30+ інструментах для креаторів. Чесні огляди, покрокові інструкції, без гуру-пафосу."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6952714b15a932f35e1f82c6_oleksandr-slobodskyi.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ua/",
+      "localeId": "657db52262d48bffd4c84945"
+    }
+  ],
+  "ru": [
+    {
+      "id": "694fdac5d77b7f47bbe2ebce",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Tools",
+      "slug": "tools",
+      "createdOn": "2025-12-27T13:10:29.032Z",
+      "lastUpdated": "2026-05-15T10:01:26.171Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курсы для криейторов",
+        "description": "Практичные онлайн-курсы для тех, кто хочет создавать новое и монетизировать свои навыки онлайн. Пока доступны на украинском языке."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/694fdc9ef7c8dbcab588f751_creator-tools-by-slobodskyi.avif",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/tools",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "683429b54772678c268838df",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "AI Images",
+      "slug": "how-to-create-images-with-ai",
+      "createdOn": "2025-05-26T08:43:33.488Z",
+      "lastUpdated": "2026-04-13T15:15:00.676Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курс: как создавать изображения с помощью ИИ?",
+        "description": "Курс по созданию изображений доступен на украинском."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/68395c88a1a594bbe206c256_6837528b7efd2232c2e1224b_0_2_640_N.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/how-to-create-images-with-ai",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "67e2b22210e4c7724f805ed8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Terms of Service",
+      "slug": "terms-of-service",
+      "createdOn": "2025-03-25T13:39:46.845Z",
+      "lastUpdated": "2025-07-30T20:44:04.346Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Terms of Service",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/terms-of-service",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "67dff73bbdea44f6b28d99e7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Alternative",
+      "slug": "payment-alternatives",
+      "createdOn": "2025-03-23T11:57:47.426Z",
+      "lastUpdated": "2025-03-24T13:43:43.787Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Альтернативные способы оплаты",
+        "description": "После оплаты, пожалуйста, отправьте детали транзакции и информацию о продукте через контактную форму."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/payment-alternatives",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "67d573aaad47577d4052d07c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "OnlyFans",
+      "slug": "onlyfans",
+      "createdOn": "2025-03-15T12:33:46.424Z",
+      "lastUpdated": "2026-05-15T15:59:50.922Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курс по OnlyFans",
+        "description": "Курс доступен на украинском языке, а затем на английском языке."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/onlyfans",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "678e653c19c0d2631c34641a",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Success",
+      "slug": "payment-success-67dd392a3c9d80c3ee009047",
+      "createdOn": "2025-01-20T15:01:16.299Z",
+      "lastUpdated": "2025-03-25T18:02:10.428Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "payment-success",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/payment-success-67dd392a3c9d80c3ee009047",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "678e211a0e6252963a631d73",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Payment Problem",
+      "slug": "payment-problem",
+      "createdOn": "2025-01-20T10:10:34.221Z",
+      "lastUpdated": "2025-03-24T13:20:56.741Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "/payment-problem",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/payment-problem",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6788e3688f44faff8a7d4cde",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "createdOn": "2025-01-16T10:46:00.231Z",
+      "lastUpdated": "2025-03-24T13:21:34.402Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "privacy-policy",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/privacy-policy",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6788df03c50b6bb70a2ee19b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Public Offer",
+      "slug": "public-offer",
+      "createdOn": "2025-01-16T10:27:15.991Z",
+      "lastUpdated": "2025-03-24T13:21:27.229Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Public offer",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/public-offer",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "676ac7c0875b23e6f5b26d8b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": null,
+      "title": "Analytics",
+      "slug": "analytics",
+      "createdOn": "2024-12-24T14:40:00.467Z",
+      "lastUpdated": "2025-12-29T10:53:41.011Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Пойми, оптимизируй, расти",
+        "description": "Откройте инструменты и стратегии для улучшения аналитики, получения инсайтов и принятия умных решений для роста."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/ae04083f-0807-47aa-9447-fb47fa76d7ee",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/grow/analytics",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "676ac6b1b4c345c7e99d2f54",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Grow",
+      "slug": "grow",
+      "createdOn": "2024-12-24T14:35:29.361Z",
+      "lastUpdated": "2025-12-29T10:55:25.561Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Расти с умом, а не через силу",
+        "description": "Улучшение аналитики, увеличение продаж, построение систем, развитие мышления и освоение стратегий обучения."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cddc44baa02580455c2e_4-grow.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/grow",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "676ac58008c66c81c2b46481",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "676ac7ee8135468a447676e2",
+      "collectionId": "676ac58008c66c81c2b46451",
+      "title": "Grow / Analytics Template",
+      "slug": "detail_analytics",
+      "createdOn": "2024-12-24T14:30:24.988Z",
+      "lastUpdated": "2026-02-21T16:06:17.168Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/grow/analytics",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66dc2c73a0bd34b541332d75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66dc2c72a0bd34b541332d41",
+      "title": "Monetize / Courses Template",
+      "slug": "detail_d-courses",
+      "createdOn": "2024-09-07T10:35:31.245Z",
+      "lastUpdated": "2025-01-07T13:03:59.641Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/d-courses",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6ed25f848870d6be68e2e",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed25f848870d6be68e11",
+      "title": "Connect / Paid Template",
+      "slug": "detail_paid",
+      "createdOn": "2024-09-03T11:04:05.655Z",
+      "lastUpdated": "2025-01-14T10:47:09.169Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/connect/paid",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6ed06ebb01c3bc8ca5476",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": "66d6ed06ebb01c3bc8ca545a",
+      "title": "Connect / Organic Template",
+      "slug": "detail_organic",
+      "createdOn": "2024-09-03T11:03:34.644Z",
+      "lastUpdated": "2025-12-27T11:08:38.158Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/connect/organic",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6eae98c8f748c91384f31",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6eae98c8f748c91384f08",
+      "title": "Create / No-code Template",
+      "slug": "detail_no-code",
+      "createdOn": "2024-09-03T10:54:33.470Z",
+      "lastUpdated": "2026-09-16T10:52:19.489Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/create/no-code",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e844eab0da3364b725f3",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": "66d6e844eab0da3364b72469",
+      "title": "Create / AI Template",
+      "slug": "detail_ai",
+      "createdOn": "2024-09-03T10:43:16.872Z",
+      "lastUpdated": "2026-02-21T16:03:40.569Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/create/ai",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e6edff74a4ec9932e8d8",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e67eb12aa0edb22f3dfa",
+      "collectionId": null,
+      "title": "Organic",
+      "slug": "organic",
+      "createdOn": "2024-09-03T10:37:33.944Z",
+      "lastUpdated": "2026-05-15T15:22:50.051Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как найти аудиторию через поисковую оптимизацию?",
+        "description": "Обзор стратегий и тактик для привлечения аудитории из поисковых систем, социальных сетей и маркетплейсов."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cbbbb4f1de23b35de4d_connect-organic.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/connect/organic",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e6405e4aaf11d4bfcc75",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Connect",
+      "slug": "connect",
+      "createdOn": "2024-09-03T10:34:40.198Z",
+      "lastUpdated": "2025-12-29T10:54:56.802Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как найти свою аудиторию через бесплатные и платные каналы?",
+        "description": "Обзор инструментов и сервисов, которые помогут найти аудиторию и установить с ней связь. Используйте SEO, социальные сети и платную рекламу, чтобы охватить больше людей и заинтересовать их."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdc786e3f8d9707850c0_2-connect.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/connect",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e223999739fdb60cb489",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "No-code",
+      "slug": "no-code",
+      "createdOn": "2024-09-03T10:17:07.527Z",
+      "lastUpdated": "2026-05-15T15:22:50.076Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как использовать No-code инструменты?",
+        "description": "Обзоры No-code инструментов помогут вам выбрать платформу для создания приложений, автоматизаций и вебсайтов без программирования."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525ccf2a37f4a86fa37e7b_create-no-code.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/create/no-code",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e1ae00f616bc88d06b7b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "66d6e19900f616bc88d05756",
+      "collectionId": null,
+      "title": "AI",
+      "slug": "ai",
+      "createdOn": "2024-09-03T10:15:10.094Z",
+      "lastUpdated": "2025-12-29T10:52:06.706Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Искусственный интеллект: что это и как он помогает криейторам?",
+        "description": "Простые примеры, которые помогут понять, как использовать искусственный интеллект для создания текстов, изображений, видео и других креативных задач."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/be321d17-5c27-4358-8439-8d1dd13c1d8e",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/create/ai",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6e11b9d5c09c36c85ff11",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Create",
+      "slug": "create",
+      "createdOn": "2024-09-03T10:12:43.860Z",
+      "lastUpdated": "2026-05-15T15:21:49.870Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как использовать ИИ и No-code для создания и проверки идей",
+        "description": "Научитесь создавать контент, приложения и дизайн с помощью ИИ и No-code. Воплощайте идеи быстрее и тестируйте их с пошаговыми инструкциями."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdae6a0db0940f655bef_1-create.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/create",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6db6afd5d951ee93d80b7",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Advertisement",
+      "slug": "advertisement",
+      "createdOn": "2024-09-03T09:48:26.420Z",
+      "lastUpdated": "2025-12-29T10:53:07.013Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как заработать на рекламе?",
+        "description": "Реклама может стать мощным инструментом для создателей контента, стремящихся монетизировать свои платформы, предлагая способ превратить вовлечение аудитории в стабильный доход. Будь то баннерная реклама, спонсорский контент или партнерский маркетинг, использование рекламы позволяет авторам зарабатывать, сохраняя при этом свободу творчества."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cee1761dda77ec66d4c_monetize-advertisement.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/advertisement",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "66d6d016379847199aa30974",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "66d6d016379847199aa30900",
+      "title": "Monetize / Advertisements Template",
+      "slug": "detail_advertisement",
+      "createdOn": "2024-09-03T09:00:06.624Z",
+      "lastUpdated": "2026-02-21T16:05:14.762Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/advertisement",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "668c785ea2921c4be5115ef1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "658e8b53d9b501bba5a69953",
+      "collectionId": null,
+      "title": "Consultation",
+      "slug": "consultation",
+      "createdOn": "2024-07-08T23:38:06.114Z",
+      "lastUpdated": "2025-03-24T13:24:34.604Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Индивидуальная консультация",
+        "description": "От разработки стратегии монетизации до технической реализации."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771bde9b6fe8eb4d09164f8_consultation.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses/consultation",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "65a417707a94950c7e2907e5",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Партнёрская информация",
+      "slug": "affiliate-disclosure",
+      "createdOn": "2024-01-14T17:18:40.621Z",
+      "lastUpdated": "2025-03-24T13:18:47.023Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Партнёрская информация",
+        "description": "Как это работает?"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929f2a207f8b5752fee_affiliate-disclosure.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/affiliate-disclosure",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "658e8b79704b92eb80ae2227",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Courses",
+      "slug": "courses",
+      "createdOn": "2023-12-29T09:03:53.184Z",
+      "lastUpdated": "2025-07-30T08:36:56.887Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Курсы для криейторов",
+        "description": "Практичные онлайн-курсы для тех, кто хочет создавать новое и монетизировать свои навыки онлайн. Пока доступны на украинском языке."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/courses",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "657982387afa43671e48a03f",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Payments",
+      "slug": "payments",
+      "createdOn": "2023-12-13T10:06:48.431Z",
+      "lastUpdated": "2025-12-29T10:53:31.210Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как вывести деньги?",
+        "description": "Обзоры платёжных систем для получения и вывода денег: Payoneer, PayPal, Skrill, Wise, Payeer, Stripe и другие.\n"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525cf88d50edaae2e7a882_monetize-payments.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/payments",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6579816a4b597e2544612caf",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Marketplaces",
+      "slug": "marketplaces",
+      "createdOn": "2023-12-13T10:03:22.817Z",
+      "lastUpdated": "2025-12-29T10:54:10.321Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как продавать на маркетплейсах?",
+        "description": "Начните с выбора подходящего сайта, зарегистрируйтесь как продавец, оформите ваши товары и привлеките покупателей. Подробные инструкции, как это сделать, ищите в обзорах ниже."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "blob:https://s-001.design.webflow.com/10da98a0-ab3f-4667-b377-b008e7938eef",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/marketplaces",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "65796e443c20ad34c3c0d9d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Monetize",
+      "slug": "monetize",
+      "createdOn": "2023-12-13T08:41:40.273Z",
+      "lastUpdated": "2025-12-29T10:55:07.992Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Какие способы монетизации бывают?",
+        "description": "Продажа цифровых и физических товаров, создание эксклюзивного контента и образовательных продуктов, партнёрский маркетинг и реклама. Ниже обзоры маркетплейсов, сервисов для сбора подписок и донатов, а так же платёжных систем для вывода денег."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/6947cdd3e6e5e80d3546f6d0_3-monetize.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "65796a349b64f717c9a9cc66",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "65796a349b64f717c9a9cc49",
+      "title": "Monetize / Payments Template",
+      "slug": "detail_payments",
+      "createdOn": "2023-12-13T08:24:20.725Z",
+      "lastUpdated": "2026-02-21T16:06:07.353Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;post-summary&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/payments",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6578c1c4f474ec967b269d2b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "6578c1c4f474ec967b269d0f",
+      "title": "Monetize / Marketplaces Template",
+      "slug": "detail_marketplaces",
+      "createdOn": "2023-12-12T20:25:40.336Z",
+      "lastUpdated": "2026-02-21T16:05:26.345Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/marketplaces",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "65784e15e630bd49130de5cd",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Password",
+      "slug": "401",
+      "createdOn": "2023-12-12T12:12:05.211Z",
+      "lastUpdated": "2023-12-12T12:12:21.735Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Protected page",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/401",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6578487faf1d447a19b528ea",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Контакты",
+      "slug": "contacts",
+      "createdOn": "2023-12-12T11:48:15.126Z",
+      "lastUpdated": "2025-09-11T09:09:10.803Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Контакты",
+        "description": "Вы можете задать вопрос через эту форму."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67716929221b882c4a181ecb_contacts.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/contacts",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "65783e15af1d447a19ae7c2d",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "About",
+      "slug": "about",
+      "createdOn": "2023-12-12T11:03:49.468Z",
+      "lastUpdated": "2025-12-28T10:27:14.590Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Александр Слободской",
+        "description": "Я изучаю как представители креативной экономики — эксперты, блогеры, разработчики и писатели — могут монетизировать свои проекты."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6771692972a7a2bc0c049404_about.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/about",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6574517f4a09da77e885bf1c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6574517f4a09da77e885bf10",
+      "title": "Authors Template",
+      "slug": "detail_author",
+      "createdOn": "2023-12-09T11:37:35.783Z",
+      "lastUpdated": "2025-01-10T14:16:52.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/author",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "656e0ea1c5b7f3087f21a1d1",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Search Results",
+      "slug": "search",
+      "createdOn": "2023-12-04T17:38:41.544Z",
+      "lastUpdated": "2025-03-11T19:25:47.307Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Search Results",
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/search",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "656e0e676da36b82b807684c",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "404",
+      "slug": "404",
+      "createdOn": "2023-12-04T17:37:43.241Z",
+      "lastUpdated": "2025-02-20T11:28:28.116Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Oops! This Page is Playing Hide and Seek.",
+        "description": "It might have been moved, renamed, or is just taking a little break."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677169290e1485dc7e925cea_404.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/404",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "656c6203d1a9be8df4aa89db",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": "656c6203d1a9be8df4aa89ca",
+      "title": "Monetize / Memberships Template",
+      "slug": "detail_memberships",
+      "createdOn": "2023-12-03T11:09:55.260Z",
+      "lastUpdated": "2026-02-21T16:05:57.019Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "{{wf {&quot;path&quot;:&quot;meta-title&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}",
+        "description": "{{wf {&quot;path&quot;:&quot;meta-description&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}"
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/memberships",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6558d2181f4650d9c508f1da",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": "6558d2fbba4706dfb385072c",
+      "collectionId": null,
+      "title": "Memberships",
+      "slug": "memberships",
+      "createdOn": "2023-11-18T15:02:48.084Z",
+      "lastUpdated": "2025-12-29T10:53:22.206Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "Как заработать на подписках?",
+        "description": "Выберите тему, которая вас вдохновляет, и найдите соответствующую вашему контенту платформу. Используйте социальные сети для продвижения и стройте сообщество. У каждой платформы свои особенности, ниже детальные обзоры."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/69525d046d3ef70c95e8b62a_monetize-memberships.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/monetize/memberships",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6558c06bceb72f12e739b99b",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558c06bceb72f12e739b981",
+      "title": "Sub Categories Template",
+      "slug": "detail_sub-categories",
+      "createdOn": "2023-11-18T13:47:23.472Z",
+      "lastUpdated": "2025-12-29T12:12:09.996Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/sub-categories",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6558b9534cb61f6f2b37d809",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": "6558b9534cb61f6f2b37d7e0",
+      "title": "Categories Template",
+      "slug": "detail_categories",
+      "createdOn": "2023-11-18T13:17:07.630Z",
+      "lastUpdated": "2025-12-29T12:10:35.278Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": false,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": null,
+        "description": null
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": false,
+        "description": null,
+        "descriptionCopied": false,
+        "imageUrl": null,
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/categories",
+      "localeId": "657db52262d48bffd4c84946"
+    },
+    {
+      "id": "6558ae529e9653f7d61a6924",
+      "siteId": "6558ae529e9653f7d61a6917",
+      "parentId": null,
+      "collectionId": null,
+      "title": "Home",
+      "slug": null,
+      "createdOn": "2023-11-18T12:30:10.461Z",
+      "lastUpdated": "2026-06-15T09:36:38.783Z",
+      "archived": false,
+      "draft": false,
+      "shouldPublish": true,
+      "canBranch": true,
+      "isBranch": false,
+      "branchId": null,
+      "seo": {
+        "title": "The Slow Creator: зарабатывай больше, стрессуй меньше в эпоху ИИ",
+        "description": "Практические гайды по ИИ-инструментам, платформам монетизации и системам для креаторов и малого бизнеса. Без хайпа, только то, что работает."
+      },
+      "openGraph": {
+        "title": null,
+        "titleCopied": true,
+        "description": null,
+        "descriptionCopied": true,
+        "imageUrl": "https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6952714b15a932f35e1f82c6_oleksandr-slobodskyi.webp",
+        "imageAssetId": null
+      },
+      "publishedPath": "/ru/",
+      "localeId": "657db52262d48bffd4c84946"
+    }
+  ]
+}

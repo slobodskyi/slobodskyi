@@ -1,0 +1,59 @@
+{
+  "pageId": "6558ae529e9653f7d61a6924",
+  "slug": null,
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курси"
+          }
+        }
+      ]
+    },
+    {
+      "id": "03bd75d5-bcf1-3393-10ec-a6d0b693f90c",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"article-title custom\"><strong class=\"bold-text-3\" data-w-id=\"dc2f4f4a-2dbb-5a66-b855-0bf8d2c6d710\">Як заробляти більше, стресувати менше і створювати в епоху ШІ</strong></h2>",
+        "text": "Як заробляти більше, стресувати менше і створювати в епоху ШІ"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "909431ed-dc8e-360a-0af1-20c74577952e",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"270f1fcd-2d1a-9434-0fe6-f33a89ac2964\">10+ років допомагаю креаторам і малому бізнесу заробляти більше, впроваджуючи нові інструменти та будуючи нудні системи, які реально працюють.</p><p data-w-id=\"270f1fcd-2d1a-9434-0fe6-f33a89ac2966\">В блозі пишу практичні гайди та чесні огляди.</p><p data-w-id=\"270f1fcd-2d1a-9434-0fe6-f33a89ac2968\">Надсилаю листи, коли є чим поділитися. Без розкладу та спаму.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "48dfc166-6d86-f55b-7f69-6b82461098e2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"46a60d0a-d8b3-c666-20ea-ee923c7c8fcc\">Почніть з безкоштовних гайдів нижче. Вони проведуть від ідеї до доходу, крок за кроком.</p><p data-w-id=\"46a60d0a-d8b3-c666-20ea-ee923c7c8fce\">Потрібен швидший результат? <a href=\"https://slobodskyi.com/ua/courses/consultation\" data-w-id=\"724f34fb-028b-1ef7-4329-775e01eef7bc\">Приходьте на консультацію</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "08d0ef88-2f82-7049-b207-b81bb94082ca",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"7c84c328-b780-d270-7de4-154f19c91e74\">Ви дійшли до кінця!</h2><p data-w-id=\"1f97f2eb-a5cf-4de1-4428-446c9351f0cb\">Як нагороду за вашу цікавість — фото мого пса, Джинні.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" style=\"max-width:250px\" data-rt-type=\"image\" data-rt-align=\"center\" data-rt-max-width=\"250px\" data-w-id=\"d8cd8736-3497-0863-a93f-89601818b2f3\"><div data-w-id=\"1df34ff9-c78f-2344-2a1d-ec18e13addfc\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677a993445dccfa1e48841eb_jinni-the-dogo.webp\" loading=\"lazy\" alt=\"Фото псіни – Джинні\" width=\"auto\" height=\"auto\" data-w-id=\"fed712b4-1c2c-9a63-93c8-03160acd36eb\"></div></figure><h3 data-w-id=\"7200e486-aec6-3f94-0727-bf40ece031cf\">Хочете більше пса?</h3><blockquote data-w-id=\"9db73f44-c6a2-0a1d-ff5c-a080fff3a81e\">Вона час від часу з’являється у статтях — <a href=\"#articles\" data-w-id=\"87d140ae-c17a-eb4b-61ec-eb71700446fc\">запрошую</a>!</blockquote><p data-w-id=\"49de4f18-a835-3e1a-6876-6c9ebc054f90\">‍</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    }
+  ]
+}

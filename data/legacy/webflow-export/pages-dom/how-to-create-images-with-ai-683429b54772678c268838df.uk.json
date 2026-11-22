@@ -1,0 +1,124 @@
+{
+  "pageId": "683429b54772678c268838df",
+  "slug": "how-to-create-images-with-ai",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "b27ad654-120d-7be4-15fe-bbac9ce33ab7",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"h2-heading\">Як створювати зображення за допомогою ШІ?</h1>",
+        "text": "Як створювати зображення за допомогою ШІ?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5991b8f0-f06e-d78f-497c-dbb9faa2420a",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-uheader\">Практичний онлайн-курс, який навчить вас генерувати якісні візуали для бізнесу, навчання чи творчості — швидко, просто і без досвіду в дизайні.</div>",
+        "text": "Практичний онлайн-курс, який навчить вас генерувати якісні візуали для бізнесу, навчання чи творчості — швидко, просто і без досвіду в дизайні."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c000",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683768e111604d54edbc9e4a"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c020",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683768f2e9221e9f69b8e8e6"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c023",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6837691982c1c5ecbb7dfbe6"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "79fef6b3-274e-79ed-a822-323ddd67c043",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "68395c88a1a594bbe206c256"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "523ca1bd-78e3-3a2c-30dd-eced0712652c",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Створюватимемо ефективні промпти — простою мовою, за допомогою шаблонів, голосом, а також на основі інших зображень чи скетчів</p>",
+        "text": "Створюватимемо ефективні промпти — простою мовою, за допомогою шаблонів, голосом, а також на основі інших зображень чи скетчів"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "bee8a08b-0c50-007a-f09a-891dfdc956c3",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Детально розберемо способи стилізації, використання референсів, персоналізацію та ретекстурування готових ілюстрацій</p>",
+        "text": "Детально розберемо способи стилізації, використання референсів, персоналізацію та ретекстурування готових ілюстрацій"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "09832c4e-c182-529e-1784-5f1f75fd7038",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"paragraph-small-2\">Зосередимось на ітераціях і редагуванні згенерованих зображень: розберемо версії моделей, естетичні налаштування, послідовні персонажі та точкові зміни</p>",
+        "text": "Зосередимось на ітераціях і редагуванні згенерованих зображень: розберемо версії моделей, естетичні налаштування, послідовні персонажі та точкові зміни"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91d8",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"text-block-uheader\">Доступні два формати: самостійне проходження або з індивідуальним супроводом.</p>",
+        "text": "Доступні два формати: самостійне проходження або з індивідуальним супроводом."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91df",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "683706cd1811bd93742dd1c3"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91e9",
+      "type": "text",
+      "text": {
+        "html": "<a href=\"https://www.youtube.com/playlist?list=PL5hTRmGvPv7iERSGzUevzLy3cAtWpcZJ2\" class=\"button-primary\">Безкоштовно на YouTube</a>",
+        "text": "Безкоштовно на YouTube"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6dd66ac7-b693-aa5c-7180-3812b8aa91ec",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "6837026e293581224cdc9105"
+      },
+      "attributes": {}
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "pageId": "66d6e11b9d5c09c36c85ff11",
+  "slug": "create",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Втілюйте ідеї в життя та тестуйте їх швидше"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c9777a08-a0a1-5101-2056-08a66432c025\">Перетворюйте свої задуми на реальність за допомогою ШІ та No-code інструментів — швидко та без зайвого клопоту.</p><p data-w-id=\"ebc807dc-bf12-b234-1f51-ab341833e79d\">Створюєте контент, займаєтесь дизайном чи розробкою? </p><p data-w-id=\"7a0e9a90-0d6f-aa78-d220-a4f5c2474679\">Ці інструменти допоможуть новачкам почати, а професіоналам — працювати ефективніше.</p><p data-w-id=\"561ef7bb-fec7-3b84-f9db-43da59c14dfe\"><strong data-w-id=\"1566c5ac-d88e-2f1c-d4c0-3542f4944362\">Не відкладайте: ваші ідеї варті втілення.</strong></p><p data-w-id=\"cb6fd066-7817-5bb6-73c5-e2318f168a89\">Реалізуйте проєкти за дні, а не місяці, і діліться ними зі світом.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "230011a8-d0ee-15a2-7550-ae50c0155af6",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><blockquote data-w-id=\"87054ec4-3dfb-1fcc-a6c8-b0249af3cb64\">Щось створити — це перший крок. А другий? Дізнайтесь, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"f4c8aa8f-6ae3-c198-a595-7ff3df32e8aa\">як знайти свою аудиторію</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Створення\",\n          \"item\": \"https://slobodskyi.com/ua/create\"\n        }\n      ]\n    }\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"ItemList\",\n  \"name\": \"Як застосувати ШІ та No-code для створення й перевірки ідей\",\n  \"description\": \"Дізнайтеся, як створювати контент, застосунки та дизайни за допомогою ШІ та No-code. Розробляйте швидше й втілюйте ідеї з покроковими гайдами.\",\n  \"numberOfItems\": 2,\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Штучний інтелект\",\n      \"url\": \"https://slobodskyi.com/ua/create/ai\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163da29f082f1f50ad9f2_create-ai.webp\",\n      \"description\": \"Штучний інтелект: що це таке і як він допомагає креаторам? Прості приклади, які допоможуть зрозуміти, як використовувати штучний інтелект для створення текстів, зображень, відео та інших креативних завдань.\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"No-code інструменти\",\n      \"url\": \"https://slobodskyi.com/ua/create/no-code\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163d140f530adcbd00454_create-no-code.webp\",\n      \"description\": \"Як використовувати No-code інструменти? Огляди No-code інструментів допоможуть вам обрати платформу для створення додатків, автоматизацій і вебсайтів без програмування. Тут ви знайдете порівняння сервісів, їхні функції, плюси та мінуси.\"\n    }\n  ]\n}\n</script>",
+      "attributes": {}
+    }
+  ]
+}

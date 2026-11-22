@@ -1,0 +1,47 @@
+{
+  "pageId": "66d6e6405e4aaf11d4bfcc75",
+  "slug": "connect",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Як знайти свою аудиторію?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c221f091-2411-f794-5990-a287f4c22112\">Огляд інструментів і послуг, які допоможуть знайти аудиторію та встановити з нею зв’язок. </p><p data-w-id=\"96ce2c0d-3712-cf54-8436-c0583e69e006\">Використовуйте SEO, соціальні мережі та платну рекламу, щоб охопити більше людей і зацікавити їх.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "f7355df7-03f8-c7e7-1721-c120944a6ae4",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><blockquote data-w-id=\"e1d7a44f-1e7b-9de4-035c-8f1cdeddb048\">Коли ви <a data-wf-link-page-id=\"66d6e11b9d5c09c36c85ff11\" data-w-id=\"94c41a80-7266-63fc-5b89-812d8063a115\">створили щось нове</a> й знайшли свою аудиторію, настав час <a data-wf-link-page-id=\"65796e443c20ad34c3c0d9d1\" data-w-id=\"61118a12-ade8-f7b2-92b3-99b248d5fcba\">знайти спосіб це монетизувати</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Контакт\",\n          \"item\": \"https://slobodskyi.com/ua/connect\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

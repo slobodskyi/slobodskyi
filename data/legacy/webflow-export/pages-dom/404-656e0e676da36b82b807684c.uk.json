@@ -1,0 +1,22 @@
+{
+  "pageId": "656e0e676da36b82b807684c",
+  "slug": "404",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "43b7e6e0-73c0-9b25-31eb-d926cb5ca959",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"search\">Пошук</label>",
+        "text": "Пошук"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "43b7e6e0-73c0-9b25-31eb-d926cb5ca95c",
+      "type": "search-button",
+      "value": "ШУКАТИ",
+      "attributes": {}
+    }
+  ]
+}

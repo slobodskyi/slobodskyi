@@ -1,0 +1,69 @@
+{
+  "pageId": "66d6db6afd5d951ee93d80b7",
+  "slug": "advertisement",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "e1f264d3-653a-8e68-0a01-3c4338377251",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Як заробити на рекламі?"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"3f942274-89bf-7d9d-be03-9fb41f4c8f97\">Монетизація через рекламу відкриває широкі перспективи для блогерів, творців контенту та власників сайтів. </p><p data-w-id=\"044f771b-37c1-bad1-069f-49fb1d725dfd\">Від партнерського маркетингу до вибору оптимального рекламного продукту — кожен етап потребує чіткого плану і розуміння своєї аудиторії.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1918e44-c759-bd6f-a263-a8b8b958d2f7",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Монетизація"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4bf296aa-811d-82da-03c8-4152b6970251",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"c50b6a33-1736-0b1e-1867-a4961a4c466b\">Партнерський маркетинг</h2><p data-w-id=\"c06f6db6-8866-667d-88ca-2054af45ba12\">Все, що потрібно для початку.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d18d8a68-211c-eca0-1dd5-b4f7ca610e55",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/ua/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "57037ba6-87f1-07a3-ea20-080f060124d7",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Монетизація\",\n          \"item\": \"https://slobodskyi.com/ua/monetize\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Реклама\",\n          \"item\": \"https://slobodskyi.com/ua/monetize/advertisement\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

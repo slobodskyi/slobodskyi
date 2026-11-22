@@ -1,0 +1,631 @@
+{
+  "pageId": "67d573aaad47577d4052d07c",
+  "slug": "onlyfans",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e191",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"course-title\">Як заробляти, продаючи контент на OnlyFans?</h1>",
+        "text": "Як заробляти, продаючи контент на OnlyFans?"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e193",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><p data-w-id=\"a0cbd570-fcae-003a-2ee5-c7ef51cdc9ce\">Практичний онлайн-курс з прикладами та покроковими уроками, який допоможе вам перейти від ідеї до перших зароблених грошей.</p><p data-w-id=\"90e9d197-ea70-8ac0-0923-95e1621d476b\">Ви дізнаєтеся, кому підійде такий формат роботи, на чому конкретно заробляються гроші та як знайти платоспроможних підписників.</p><p data-w-id=\"5607c8a1-5fc3-73b2-2e16-cfb5b489edd7\">Нижче наведено <a href=\"#lessons\" data-w-id=\"098b7822-40fd-85ba-509c-84f0ada2da07\">детальний список уроків</a>.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\" data-w-id=\"dbf2dc5f-129b-4bfe-a7c8-12032afe23b2\"><div data-w-id=\"dbf2dc5f-129b-4bfe-a7c8-12032afe23b3\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/6818c0ff2aec7fc250558198_onlyfans1.webp\" loading=\"lazy\" alt=\"Курс по заробітку на OnlyFans\" width=\"auto\" height=\"auto\" data-w-id=\"dbf2dc5f-129b-4bfe-a7c8-12032afe23b4\"></div></figure><p data-w-id=\"0ac7816d-0a3d-e4f2-c1cb-80215e548c1e\">Свіжа статистика однієї з моделей, яка одразу після проходження курсу змогла вийти на понад 100 доларів на день, витрачаючи лише кілька годин щодня.</p><p data-w-id=\"d3b1fcdf-58b3-7eb0-2710-c169b4105d08\">Хороший старт, і зростання триває.</p><blockquote data-w-id=\"3d7c153c-f5c9-b685-ca55-41797156356b\">Курс підходить для будь-якої платформи продажу adult-контенту (<a href=\"https://slobodskyi.com/ua/monetize/memberships/onlyfans\" target=\"_blank\" data-w-id=\"a3a4f38d-05bd-7a09-9de3-04d74e4fdd3c\">OnlyFans</a>, <a href=\"https://slobodskyi.com/ua/monetize/memberships/fansly\" target=\"_blank\" data-w-id=\"049bb386-afd3-443d-fcb1-26b37e519611\">Fansly</a>, <a href=\"https://slobodskyi.com/ua/monetize/memberships/fanvue\" target=\"_blank\" data-w-id=\"295f97ed-c091-3d43-9793-5328a8da8fd2\">Fanvue</a>, <a href=\"https://slobodskyi.com/ua/monetize/memberships/patreon\" target=\"_blank\" data-w-id=\"a7230d6c-ade6-4fd3-7cf4-d342858db7f6\">Patreon</a> тощо) і допоможе підібрати оптимальну саме для вас.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e19c",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e19d\">Для кого цей курс?</h2><p data-w-id=\"f5bad126-8d05-48bc-09d2-241f2c3fa439\">Буде корисно, якщо:</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "58ff7a6b-efb4-901b-d7f1-93b0e28b80d6",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Чули, що на OnlyFans багато грошей, але не зовсім розумієте, за що їх платять і з чого почати роботу.</p>",
+        "text": "Чули, що на OnlyFans багато грошей, але не зовсім розумієте, за що їх платять і з чого почати роботу."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baec",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Спробували, але не вийшло</h3>",
+        "text": "Спробували, але не вийшло"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baee",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Створили акаунт, але не знайшли підписників або не зрозуміли, як їх ефективно монетизувати.</p>",
+        "text": "Створили акаунт, але не знайшли підписників або не зрозуміли, як їх ефективно монетизувати."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1ee37f46-b09c-5a69-fb39-8e6d2d96baf6",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de84959813cb129fe53259"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a95",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Хвилюєтесь за безпеку</h3>",
+        "text": "Хвилюєтесь за безпеку"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a97",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Не хочете, щоб знайомі побачили ваш профіль, або не знаєте, який контент можна створювати, а який ні.</p>",
+        "text": "Не хочете, щоб знайомі побачили ваш профіль, або не знаєте, який контент можна створювати, а який ні."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5d412bda-6e37-8b02-2c56-d4ed9ce95a9f",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de843fe3ee9546a40d742f"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "35de29de-b025-d920-be81-a59fbd247b4c",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"8394aa4b-57b1-2d29-58b2-b351545f4855\">Після курси ви зрозумієте:</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c77",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Чи підійде вам такий формат</h3>",
+        "text": "Чи підійде вам такий формат"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c79",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Розберемося, що популярне, і як створювати контент, за який не соромно.</p>",
+        "text": "Розберемося, що популярне, і як створювати контент, за який не соромно."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c81",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de86912eff45c1fa667348"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c84",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Який контент треба робити</h3>",
+        "text": "Який контент треба робити"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c86",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Навчимося виділятися, розкриваючи свою особистість, а не просто публікуючи гарні фото.</p>",
+        "text": "Навчимося виділятися, розкриваючи свою особистість, а не просто публікуючи гарні фото."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c8e",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de87135b1d1dd83181528c"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c91",
+      "type": "text",
+      "text": {
+        "html": "<h3 class=\"course-heading lesson\">Як знайти підписників</h3>",
+        "text": "Як знайти підписників"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c93",
+      "type": "text",
+      "text": {
+        "html": "<p class=\"article-description\">Просто створити профіль недостатньо – його не знайдуть. Навчимося залучати підписників, готових платити саме вам.</p>",
+        "text": "Просто створити профіль недостатньо – його не знайдуть. Навчимося залучати підписників, готових платити саме вам."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "717e598b-cdb8-8d61-39cd-08cc92565c9c",
+      "type": "image",
+      "image": {
+        "alt": "__wf_reserved_inherit",
+        "assetId": "67de882b360768e358826080"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "5262656c-0ab8-3cc4-ab14-ab7a96c1a8bf",
+      "type": "text",
+      "text": {
+        "html": "<div id=\"lessons\"><h2 id=\"lessons\" data-w-id=\"cdc405aa-b516-abe8-adde-000d83fc5c99\">Про що будемо говорити?</h2><p data-w-id=\"517e3d0f-81b0-f203-ceb6-7dae110c122d\">Список уроків:</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1eb",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Формат роботи та очікування"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Познайомимось з курсом, його метою — навчитися заробляти на платформах монетизації контенту, і визначимо, кому підходить такий формат роботи."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "21 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1f0",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Легальність та безпека"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Розглянемо легальність роботи на платформах типу OnlyFans в Україні, аспекти розповсюдження контенту та оподаткування доходів."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "19 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1f5",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Вибір ніші та аналіз конкурентів"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Оберемо нішу та створимо унікальну історію для вашого профілю, проводячи дослідження та аналіз прикладів контенту."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "32 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1fb",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Оформленяя профілю"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Розберемось з оформленням профілю: аватарка, обкладинка, ім'я та опис, що привернуть увагу саме вашої аудиторії."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "15 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1ff",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Як визначити ціни"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Визначемо стратегії ціноутворення на підписку та контент, проаналізуємо переваги безкоштовних і платних акаунтів для максимізації заробітків."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "16 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cc312c48-d973-4d7f-5a23-cd2546089ce4",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Як створювати контент"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Поговоримо про створення якісного контенту, визначимо оптимальну частоту публікацій, знайдемо нові ідеї та надихнемось успішними прикладами."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "37 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "61b292da-2209-7b3b-e2b6-fcafa7ba56bf",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Як розкрутити аккаунт"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Розберемо стратегії просування через соцмережі та спеціалізовані сайти для залучення трафіку та платоспроможних підписників."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "42 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0db9c4fc-6f5c-48b3-bf31-f09e8243a1d8",
+      "type": "component-instance",
+      "componentId": "1488b27c-28d0-f507-9af9-47318752f9a5",
+      "propertyOverrides": [
+        {
+          "propertyId": "462d62dc-dbcc-134f-0f4b-57940b8b0215",
+          "type": "Plain Text",
+          "label": "lesson-heading",
+          "text": {
+            "html": null,
+            "text": "Як спілкуватись з підписниками"
+          }
+        },
+        {
+          "propertyId": "b08fe32e-b54f-4562-f6ab-fd3bef3bf902",
+          "type": "Plain Text",
+          "label": "lesson-description",
+          "text": {
+            "html": null,
+            "text": "Опануємо ефективну комунікацію через масові розсилки та індивідуальні повідомлення, встановимо особисті кордони для комфортної роботи."
+          }
+        },
+        {
+          "propertyId": "9b059b14-ae05-1084-afce-0a9fbe0f0290",
+          "type": "Alt Text",
+          "label": "lesson-cover-image-alt",
+          "text": {
+            "html": null,
+            "text": "__wf_reserved_inherit"
+          }
+        },
+        {
+          "propertyId": "3adc3279-9b4a-bd57-7a9d-2b6e749d4a50",
+          "type": "Plain Text",
+          "label": "metadata-updated-date-text",
+          "text": {
+            "html": null,
+            "text": "15 хв"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e1b8",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><h2 data-w-id=\"74a1ce13-af54-5b6b-5ccb-a8e194a9da34\">Хто веде курс?</h2><p data-w-id=\"0f2f03b1-5485-daaf-0bd9-e4df215b6335\">Привіт, я <a href=\"https://slobodskyi.com/ua\" target=\"_blank\" data-w-id=\"b938887c-ba41-44f6-e7a0-aa30fb78816a\">Олександр Слободський</a>.</p><p data-w-id=\"65d887ce-1eb1-d838-2496-f618f070e9d1\">Допомагаю кріейторам заробляти вже понад 10 років, а з OnlyFans працюю останні 4 роки.</p><p data-w-id=\"4add15f1-db1d-dbe6-3758-5f88c3fecf7f\">Завдяки моїй <a href=\"https://slobodskyi.com/ua/monetize/memberships/onlyfans\" target=\"_blank\" data-w-id=\"52843d73-3b01-7ca5-ba64-4b0814c9f0bf\">безкоштовній статті про OnlyFans</a> тисячі авторів зареєструвалися на платформі та заробили понад $1M (<em data-w-id=\"0f18a042-4678-0a78-5dce-49ab2264ca28\">точну суму знаю, бо отримую відсоток через партнерську програму</em>).</p><p data-w-id=\"b1421749-a1a9-dd28-9ef1-62e0f033f37d\">Трошки робочих моментів можна <a href=\"https://www.instagram.com/slobodskyi/\" target=\"_blank\" data-w-id=\"1e354f8a-4a71-fb23-7a1e-e1ed5e6ffaf5\">підгледіти в Instagram</a>.</p><p data-w-id=\"fa250f68-14c3-63db-a4ee-9357580e209c\">Декілька прикладів:</p><h3 data-w-id=\"3c37fd51-dc9f-28f5-74a6-bac11f356056\">Приклади з життя</h3><p data-w-id=\"e6c8ab69-502c-d480-71e0-7e273ec4de19\">Крім статті, до мене часто <a href=\"https://slobodskyi.com/ua/courses/consultation\" data-w-id=\"6ca19cd1-6bc0-bafc-388e-80144611bc92\">звертаються за консультаціями</a>, а з деякими авторами ми співпрацюємо на довгостроковій основі.</p><p data-w-id=\"0d32963c-5dcf-e042-58c5-b12f0cd8af2f\">Один з найуспішніших кейсів — пара, яка вже на третій місяць досягла $10K+, активно публікуючи доволі відвертий контент і розкручуючи соціальні мережі.</p><p data-w-id=\"4ad1e1da-828e-ae40-199c-c0f0616ce77b\">Це чудовий результат, хоча зазвичай до таких цифр потрібно більше часу.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" data-rt-type=\"image\" data-rt-align=\"center\" data-w-id=\"3a9bd94a-a1d0-6a85-d2e4-7d25483a5fc5\"><div data-w-id=\"3a9bd94a-a1d0-6a85-d2e4-7d25483a5fc6\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67de819a107d9f4286bc3bf9_66aa4e7967b11b7892bff6e6_662e376a46685eb43ee9ac96_onlyfans-statistic.webp\" loading=\"lazy\" alt=\"__wf_reserved_inherit\" width=\"auto\" height=\"auto\" data-w-id=\"3a9bd94a-a1d0-6a85-d2e4-7d25483a5fc7\"></div></figure><p data-w-id=\"c52ae8b7-11dc-ef5d-86e5-f61680b94e56\">У кожної платформи свої особливості, але принципи оформлення профілю, створення контенту та спілкування з аудиторією – однакові.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1080px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1080px\" data-w-id=\"33569fb1-4589-43b5-a370-8ed1ea22e033\"><div data-w-id=\"33569fb1-4589-43b5-a370-8ed1ea22e034\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/67de81a8e7a053c01e405d6c_66bf703bab705902be36f376_6683e2599c031a494f3bb408_how-much-you-can-earn-fansly.webp\" loading=\"lazy\" alt=\"__wf_reserved_inherit\" width=\"auto\" height=\"auto\" data-w-id=\"33569fb1-4589-43b5-a370-8ed1ea22e035\"></div></figure><p data-w-id=\"9d95b6cf-e545-bc07-6218-e3edf7fe4e03\"><strong data-w-id=\"8fc3ad39-f41e-0e93-df6a-bceb8b576e8e\">В курсі зібрано мій практичний досвід за останні 4 роки – все, що дійсно працює і приносить результати тут і зараз.</strong>‍</p><p data-w-id=\"d9f472b2-fb3e-9816-7038-9cd69a39edb9\">У ніші adult-контенту дійсно багато грошей, але ваш дохід залежить від якості контенту, способу розкрутки та комунікації з аудиторією.</p><p data-w-id=\"1e072e9c-3573-54ea-6f79-41e63f44d081\">Курс дасть розуміння всіх процесів, відповість на головні питання та допоможе визначити, що зробити сьогодні, щоб вже завтра заробити перші гроші.</p><p data-w-id=\"2b59f8be-5b39-1a71-fe8d-2428ffa22aad\">Але скільки їх буде – залежить від вас.</p><blockquote data-w-id=\"08c445d8-74e2-b04e-69b7-80505ea07d65\">Я поділюсь покроковим планом для моделей, які бажають працювати самостійно, етично та безпечно.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e203",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><h2 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e204\">Як проходить навчання?</h2><p data-w-id=\"cfbb98ff-eb6f-3d81-2dc3-bbf97f907c04\">Корисно,&nbsp;ефективно,&nbsp;швидко.</p><p data-w-id=\"482ea85a-3250-11d3-8fcf-28e3bfd117e2\">Обіцяю прості кроки, практичні приклади та дружню атмосферу.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "80a87e3d-cc97-dfc2-292d-582db0278a17",
+      "type": "component-instance",
+      "componentId": "b29c2c28-55b0-bc18-2f35-0bdf726d8f0e",
+      "propertyOverrides": [
+        {
+          "propertyId": "4e302c11-7455-564d-b436-75b745ef8f75",
+          "type": "Plain Text",
+          "label": "Text Block 4 - Text",
+          "text": {
+            "html": null,
+            "text": "Можливість задати питання по матеріалам курсу."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bea34e5d-fde3-1870-9fc1-b23f5d0b739b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><h2 data-w-id=\"1f4095e6-78d3-8cf5-2c3f-0275fc70aa07\">Як почати?</h2></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "60d675c5-f056-2f49-34af-bdbd932c7229",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-5\">Після оплати ви отримаєте доступ до закритого Telegram-бота з уроками й <span data-w-id=\"50eba4cf-0d0d-e131-fde3-5801d1db024f\"><strong data-w-id=\"50eba4cf-0d0d-e131-fde3-5801d1db0250\">зможете почати навчання відразу</strong></span>. <br data-w-id=\"d38712f0-ba04-4874-cdba-47b2747242c3\"><br data-w-id=\"abbfff89-0307-734e-4779-1ee9dc7fe7de\">Можна обрати курс із персональним супроводом — два дзвінки та підтримка в Telegram, щоб <strong data-w-id=\"c03a4702-8670-c33f-6e84-e1ee3f2886d8\">довести вас до результату</strong>.</div>",
+        "text": "Після оплати ви отримаєте доступ до закритого Telegram-бота з уроками й зможете почати навчання відразу. \n\nМожна обрати курс із персональним супроводом — два дзвінки та підтримка в Telegram, щоб довести вас до результату."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f36b6a24-3e6b-bc7b-4e19-633866ae3c82",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-puchase-button-text\">Курс за 780 грн</div>",
+        "text": "Курс за 780 грн"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d98345e2-5271-33dd-5f68-7226adb3f1d2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-puchase-button-text\">Супровід за 5000 грн</div>",
+        "text": "Супровід за 5000 грн"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d8bd20ec-9fa4-cead-d067-56b7ea83f9d2",
+      "type": "html-embed",
+      "html": "<iframe src=\"https://www.videoask.com/fyojrsapl\" allow=\"camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;\" width=\"100%\" height=\"480px\" style=\"border: none; border-radius: 24px\"></iframe>",
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e21b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"faq-container-course\"><h3 data-w-id=\"fdfef0fc-de05-f389-9bb7-64cdb55da39b\">Чи можна розбити оплату на декілька платежів?</h3><p data-w-id=\"a48ef749-15d0-4aad-a7f8-d18d6cd66339\">Так, ви можете використати оплату частинами від <a href=\"https://slobo.click/monobank\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"d055722e-4906-71f9-81ff-296c4cdeeb0a\">monobank</a>, або ПриватБанк. Для цього на сторінці оплати оберіть «<em data-w-id=\"19c01902-14a0-77e3-9196-68d1a8d86c5f\">У розстрочку</em>». Також ви можете оплатити готівкою через термінали ПриватБанку.</p><h3 data-w-id=\"77873943-77d9-90fa-30b7-3f28cba571e1\">Чи можна оплатити іншим способом?</h3><p data-w-id=\"f13e1271-4518-35ae-72cd-2f5ec9348e01\">Так, можна оплатити через PayPal, Payoneer, Wise, Payeer та криптовалюти.&nbsp;Реквізити можете <a href=\"https://slobodskyi.com/ua/courses/payment-alternatives\" data-w-id=\"7fc4bc3a-250e-afe6-ad41-41e1ab6e19d1\">знайти тут</a>.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e21c\">Чи потрібен досвід роботи для участі в курсі?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e21e\">Ні, курс розроблений для новачків. Ми почнемо з основ, тож вам не потрібні жодні спеціальні знання.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e220\">Які конкретні навички я отримаю після проходження курсу?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e222\">Ви дізнаєтеся, як почати працювати на платформах для продажу контенту, а також які кроки потрібно зробити, щоб перетворити ідею на перші зароблені гроші. Вище наведено <a href=\"#lessons\" data-w-id=\"77218462-b198-03ae-874a-cdff7466144d\">детальний опис уроків</a>.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e224\">Чим цей курс відрізняється від безкоштовних матеріалів у мережі?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e226\">У цьому курсі ви знайдете структуровані уроки з практичними чек-листами та реальними прикладами. Матеріали створено на основі мого чотирирічного досвіду роботи. Я ділився лише тим, що дійсно працює, щоб ви не витрачали зайвий час.</p><h3 data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e22c\">Чи є гарантії результату після курсу?</h3><p data-w-id=\"9e7a115b-527a-fa04-1f13-e2e17da4e22e\">Пройшовши всі уроки та виконавши завдання, ви здобудете практичні навички і дізнаєтеся, як заробляти на продажу контенту. Якщо курс не виправдає очікувань, ви зможете повернути кошти.</p><h3 data-w-id=\"806e23fc-b443-78d9-c75a-59c3655b22c0\">Чи можна буде повернути гроші?</h3><p data-w-id=\"9eb51096-4ebf-dc36-e874-d76e42005b1a\">Звісно, ви можете повернути кошти протягом 14 днів без зайвих запитань. Для цього <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"dd5b2852-d298-e17e-79c8-b88b0e060efa\">напишить мені</a>, вказавши номер телефону, який ви використовували при оплаті, та приблизну дату транзакції.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "087804be-d28f-95f3-2fd3-f31547510908",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Курси\",\n          \"item\": \"https://slobodskyi.com/ua/courses\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"OnlyFans\",\n          \"item\": \"https://slobodskyi.com/ua/courses/onlyfans\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

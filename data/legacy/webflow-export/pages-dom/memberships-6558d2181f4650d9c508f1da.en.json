@@ -1,0 +1,147 @@
+{
+  "pageId": "6558d2181f4650d9c508f1da",
+  "slug": "memberships",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "3e37a70b-e8fe-61c6-4991-b72faf436bf8",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "93970a92-ae1b-fdf6-f0f8-4e299169b565",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "e1f264d3-653a-8e68-0a01-3c4338377251",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "How to Make Money on Subscriptions"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"6e3e9fc9-b686-3d93-3b84-bb421138fe87\">Choose a topic that inspires you and find a platform that suits your content. Use social networks for promotion and build a community.</p><p data-w-id=\"784d397f-b660-d834-c3ba-25e53c3bab2e\">Each platform has its own features, detailed reviews below.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "587c7bc5-6f9f-d387-5328-a5ec306b74c1",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Monetize"
+          }
+        }
+      ]
+    },
+    {
+      "id": "87a26039-103f-39ee-f4c7-7a37b221dca9",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4cf32d75-cd3e-7155-9d4e-0d343827baaf",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "923b2d9d-5e1f-4e3d-269b-75678aad5f02",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"1d9f452a-c140-435e-022a-7795a41ec9a1\">Building a sustainable income as a creator starts with finding the right platform for your content and audience. </p><p data-w-id=\"223a52eb-8f1d-1c2b-7f88-d16870ba3835\">Whether you're offering digital products, exclusive content, or personalized experiences, subscription platforms provide a way to turn your creativity into steady earnings.</p><h2 data-w-id=\"37807673-e50d-4eb6-275f-5d47a4db62cf\">Top Creator Membership Platforms</h2><p data-w-id=\"923b2d9d-5e1f-4e3d-269b-75678aad5f05\">Discover platforms like Buy Me a Coffee and Patreon that empower creators to monetize their work. </p><p data-w-id=\"5830d49f-66b4-65cb-dc10-b7235eb5360a\">Learn how to collect donations, sell digital products, and build recurring income streams with ease.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6e29592a-97fb-8057-0d03-3dfc675140e9",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "d9cd3c00-d9bf-4704-292d-45e340d368ed",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "acbdce69-9e4a-a000-d24a-89d73a61ac6b",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"6def9e88-a93d-235c-4f6f-eeaf864d8a63\">Top Adult Subscription Platforms</h2><p data-w-id=\"acbdce69-9e4a-a000-d24a-89d73a61ac78\">Dive into platforms like OnlyFans, Fansly, and Ton.place designed for adult content creators. </p><p data-w-id=\"1d8e26bc-51c1-f713-35c0-d0511851c0c5\">Find out how to grow your audience, maximize earnings, and navigate the unique opportunities of these platforms.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "0e1fa5b9-ee73-ebde-85ab-7ccca26a393a",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "0e1fa5b9-ee73-ebde-85ab-7ccca26a393c",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f116fdf2-57e2-3521-90cb-0b7352ae7fa3",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "090cff51-af63-77b4-60cb-2b89745796cf",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "a98f302b-23e8-95af-fed5-6677d5b94f34",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "57037ba6-87f1-07a3-ea20-080f060124d7",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Monetize\",\n          \"item\": \"https://slobodskyi.com/monetize\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Memberships\",\n          \"item\": \"https://slobodskyi.com/monetize/memberships\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

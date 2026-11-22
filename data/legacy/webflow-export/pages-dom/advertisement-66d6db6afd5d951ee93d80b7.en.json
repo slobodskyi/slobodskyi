@@ -1,0 +1,123 @@
+{
+  "pageId": "66d6db6afd5d951ee93d80b7",
+  "slug": "advertisement",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "99667f2d-2291-b87d-dc2e-b2a08c7f701a",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "93970a92-ae1b-fdf6-f0f8-4e299169b565",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "e1f264d3-653a-8e68-0a01-3c4338377251",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "How to Make Money with Advertising"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"6e3e9fc9-b686-3d93-3b84-bb421138fe87\">Advertising can be a powerful tool for content creators looking to monetize their platforms, offering a way to turn audience engagement into steady income. </p><p data-w-id=\"3495d0c9-edd9-f13c-f413-99e20340f28d\">Whether through banner ads, sponsored content, or affiliate marketing, leveraging ads allows creators to earn while maintaining creative freedom.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1918e44-c759-bd6f-a263-a8b8b958d2f7",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Monetize"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1b5697f3-d0c2-0263-7886-28760e3f3e36",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "48da3eb1-8cd5-89f6-b0d5-3f6b38bb242a",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4bf296aa-811d-82da-03c8-4152b6970251",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"c50b6a33-1736-0b1e-1867-a4961a4c466b\">Affiliate Marketing</h2><p data-w-id=\"c06f6db6-8866-667d-88ca-2054af45ba12\">All you need to start.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "aa9f72a7-cde5-3737-02f4-bdbb8804a6be",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "53f27785-a179-d393-3f1b-6b870c5051aa",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "f116fdf2-57e2-3521-90cb-0b7352ae7fa3",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "d18d8a68-211c-eca0-1dd5-b4f7ca610e55",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "ba946c45-8342-4646-5925-14cfb9c96b1c",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "57037ba6-87f1-07a3-ea20-080f060124d7",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Monetize\",\n          \"item\": \"https://slobodskyi.com/monetize\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Advertisement\",\n          \"item\": \"https://slobodskyi.com/monetize/advertisement\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

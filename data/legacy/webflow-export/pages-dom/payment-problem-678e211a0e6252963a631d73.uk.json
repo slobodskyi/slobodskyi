@@ -1,0 +1,16 @@
+{
+  "pageId": "678e211a0e6252963a631d73",
+  "slug": "payment-problem",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "09b86fb0-92dd-2596-c04d-b3cfe5740555",
+      "type": "text",
+      "text": {
+        "html": "<div><h1 data-w-id=\"5a8d5be0-42bb-e37e-280c-bd931d70de65\">Проблема з оплатою</h1><p data-w-id=\"09b86fb0-92dd-2596-c04d-b3cfe5740556\">Сталася помилка під час обробки вашої оплати. </p><p data-w-id=\"ffb7b0fb-e558-cf40-0310-049bbbb7e7d6\">Будь ласка, перевірте платіжні дані або <a data-wf-link-page-id=\"67dff73bbdea44f6b28d99e7\" data-w-id=\"7255342b-c69c-371b-a001-17a87900d960\">спробуйте інший спосіб оплати</a>.</p><p data-w-id=\"57e2b113-0609-cd97-b5e3-f5f9591128cc\">Якщо проблема не зникає, <a data-wf-link-page-id=\"6578487faf1d447a19b528ea\" data-w-id=\"200defcf-67b2-b0b3-38f3-73b6a7f6cb9a\">напишіть мені</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    }
+  ]
+}

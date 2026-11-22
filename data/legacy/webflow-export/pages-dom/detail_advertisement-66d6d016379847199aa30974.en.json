@@ -1,0 +1,100 @@
+{
+  "pageId": "66d6d016379847199aa30974",
+  "slug": "detail_advertisement",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "8c6f87ca-5dca-c469-4998-bbbca4d023fe",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4a5045a7-71bf-2add-2b74-57f26a798d3b",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "590f1774-f5df-8579-002f-e151af227aa5",
+      "type": "component-instance",
+      "componentId": "c1636f75-a796-f881-9d01-3bae9a20cc4f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "8d67aa15-d8f2-7cad-4c2e-4a7b59d60e94",
+      "type": "component-instance",
+      "componentId": "ac5b0084-c0f2-487e-99ba-41f104bd3018",
+      "propertyOverrides": []
+    },
+    {
+      "id": "ee016b73-5c80-bdd3-ecc5-ac93ff4f2164",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "51467386-c38d-9a64-28e5-929e98156347",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4d8a1390-afed-932d-838d-6932d36e2ffb",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1236a6d4-6fa7-6340-4cf8-23e933452dc6",
+      "type": "component-instance",
+      "componentId": "3b6b3c67-fb35-4e01-0543-6c287790c6fa",
+      "propertyOverrides": []
+    },
+    {
+      "id": "2aadf0ce-699f-b6d7-5ef3-cde50b7f0a98",
+      "type": "component-instance",
+      "componentId": "26c2fb69-8c67-d539-a324-c44c50edd692",
+      "propertyOverrides": []
+    },
+    {
+      "id": "05f636c0-7bc7-3aeb-512c-0930c8cb1572",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "5dcbb66e-f146-ffc3-ad27-944214c91191",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "0ed08aa1-725a-3282-bf0e-aaa781543113",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "b2bbede9-16e6-48d6-2a95-5dee1bfc1832",
+      "type": "component-instance",
+      "componentId": "ac308377-5c83-6d9a-03c7-09672d177aae",
+      "propertyOverrides": []
+    },
+    {
+      "id": "2e1b07e8-a8d3-a2e5-36dc-ef01f96f36fe",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "002f7475-b512-d84b-cdae-b1b9a6f38f46",
+      "type": "component-instance",
+      "componentId": "d3dec0c6-867b-577e-6ed4-680e35821042",
+      "propertyOverrides": []
+    }
+  ]
+}

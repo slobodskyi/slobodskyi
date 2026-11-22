@@ -1,0 +1,71 @@
+{
+  "pageId": "676ac6b1b4c345c7e99d2f54",
+  "slug": "grow",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Grow Smarter, Not Harder"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c9b969a7-f201-4e84-21ae-58846a84c70c\">Improving analytics, boosting sales, building systems, nurturing your mindset, and mastering learning strategies.</p><p data-w-id=\"20c2d370-29bd-3813-2f43-1a0d06cf8de8\">Below are insights, tools, and resources to help creators grow their projects effectively by understanding data, optimizing processes, and developing both personal and professional skills.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "dbea773c-5799-1935-9b4a-f1295ac85f79",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "4cb17228-4816-1a74-c418-ce321b27511c",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "dcc8f0f6-3deb-ba4f-cdbb-88016aaba93a",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Home\",\n          \"item\": \"https://slobodskyi.com/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Grow\",\n          \"item\": \"https://slobodskyi.com/grow\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

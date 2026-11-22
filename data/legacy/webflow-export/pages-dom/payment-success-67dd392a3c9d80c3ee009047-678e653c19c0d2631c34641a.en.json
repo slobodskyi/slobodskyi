@@ -1,0 +1,13 @@
+{
+  "pageId": "678e653c19c0d2631c34641a",
+  "slug": "payment-success-67dd392a3c9d80c3ee009047",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "479d40f4-cdc9-97da-37ef-ff02849b2e49",
+      "type": "html-embed",
+      "html": "<script>\n// Function to get cookies by name\nfunction getCookie(name) {\n    const value = `; ${document.cookie}`;\n    const parts = value.split(`; ${name}=`);\n    if (parts.length === 2) return parts.pop().split(';').shift();\n    return ''; // Return empty string if cookie not found\n}\n\n// Parse query parameters\nconst urlParams = new URLSearchParams(window.location.search);\nconst orderReference = urlParams.get('orderReference') || 'unknown';\nconst email = urlParams.get('email') || 'not-provided';\nconst phone = urlParams.get('phone') || 'not-provided';\nconst amount = parseFloat(urlParams.get('amount')) || 0; // Default to 0 if not provided\nconst currency = urlParams.get('currency') || 'unknown';\nconst issuerBankCountry = urlParams.get('issuerBankCountry') || 'unknown';\nconst fbc = urlParams.get('_fbc') || getCookie('_fbc'); // Try to get from query, fallback to cookie\nconst fbp = urlParams.get('_fbp') || getCookie('_fbp'); // Try to get from query, fallback to cookie\n\n// Log the extracted data for debugging\nconsole.log('Data extracted: ', {\n    orderReference,\n    email,\n    phone,\n    amount,\n    currency,\n    issuerBankCountry,\n    fbc,\n    fbp\n});\n\n// Check if all required parameters are present\nif (orderReference !== 'unknown' && amount > 0 && currency !== 'unknown') {\n    // Trigger Facebook Pixel Purchase Event\n    fbq('track', 'Purchase', {\n        content_ids: orderReference,\n        currency: currency,\n        value: amount,\n        email: email,\n        phone: phone,\n        country: issuerBankCountry, // Map issuerBankCountry to country\n        fbc: fbc, // Facebook Click ID\n        fbp: fbp, // Facebook Browser ID\n        event_id: orderReference // Use the same event_id for deduplication with CAPI\n    });\n    console.log('Facebook Pixel Purchase event sent');\n\n    // Trigger GA4 Purchase Event with only the required fields\n    gtag('event', 'purchase', {\n        currency: currency,\n        value: amount,\n        transaction_id: orderReference\n    });\n    console.log('GA4 Purchase event sent');\n} else {\n    console.warn('Missing required parameters. Skipping event tracking.');\n}\n\n// Redirect to Telegram after a short delay\nsetTimeout(() => {\n    window.location.href = 'https://t.me/onlyFans_course_bot?start=67dd392a3c9d80c3ee009047';\n}, 500);\n</script>",
+      "attributes": {}
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "pageId": "65a417707a94950c7e2907e5",
+  "slug": "affiliate-disclosure",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "308ca713-a571-5594-7829-b1e2482e0785",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Affiliate Disclosure"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"2047c171-34b5-b278-b52b-cb51eb2ec2b2\">One way this blog generates income is through <a href=\"https://slobodskyi.com/monetize/advertisement/affiliate-marketing\" data-w-id=\"96cb33f4-5207-4e60-d4f1-8eabc1e390f1\">affiliate marketing</a>. </p><h2 data-w-id=\"80578150-6f33-07f4-9020-079fa0c30938\">How does this work?</h2><p data-w-id=\"adefe467-5c39-294c-6722-20b6c2d28a18\">Consider the example of the OnlyFans referral program. </p><p data-w-id=\"ce474daf-a5e9-a2ac-29af-596b1d8021bc\">OnlyFans offers a referral scheme where you can earn 5% from the earnings of creators you refer. Once your account is verified, you receive a unique referral link to share with friends interested in starting an OnlyFans account. </p><p data-w-id=\"74992835-f690-fbd6-39aa-4dc1d082e8df\">Importantly, this 5% comes from OnlyFans' share, meaning the creator still earns their usual 80%, whether they sign up through your link or not. </p><p data-w-id=\"37ed391b-f811-e8d1-5da0-7488f09828fd\">More details about the OnlyFans referral program can be found <a href=\"https://onlyfans.com/help/3/22/90\" target=\"_blank\" rel=\"nofollow\" data-w-id=\"43971e8d-897c-b9f9-8299-32abb1980922\">here</a>.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"e324c56a-e198-5fdf-53e2-1ec0f78e0041\"><div data-w-id=\"faa2f4a8-a68c-446d-0e88-e6d1752ab043\"><img width=\"auto\" height=\"auto\" alt=\"OnlyFans Referral Program\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb652b56be172913d4cf_onlyfans-referral-program.webp\" loading=\"lazy\" data-w-id=\"abf1cd8f-1fd0-abd8-124b-2d4e03bdbd58\"></div></figure><p data-w-id=\"a9ef401d-ad7b-8efd-4f5b-bf34e0c8b4c3\">I have a free, comprehensive guide on <a href=\"https://slobodskyi.com/monetize/memberships/onlyfans\" data-w-id=\"8b50d052-3e46-dd3e-3eff-e3d91454a670\">how OnlyFans works</a>, guiding readers through every step from account creation to promotion and monetization. </p><p data-w-id=\"ce1c6b89-c3cd-d985-ec5b-ada2b6f1b6bc\">This article includes my referral links.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"3b5f1a91-bd14-203e-2d6a-8c12a71b8f7d\"><div data-w-id=\"2f2cca11-80fe-454f-6d09-82f261879a18\"><img width=\"auto\" height=\"auto\" alt=\"Example of Referral Link \" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cca2252ed4b0d8f59352_article-onlyfans-affiliate-link.webp\" loading=\"lazy\" data-w-id=\"6b12d693-4be9-5198-237c-33a70f3fa6c2\"></div></figure><p data-w-id=\"e4b48b4c-83fe-d740-650d-fd72a9a54b2f\">Some readers who open accounts through these links start earning, and I receive a commission. My earnings come from OnlyFans' share, so the creator's income remains unaffected. </p><p data-w-id=\"a88b8788-b7b8-981d-3d0c-c2e7096053d6\">This creates a win-win situation. I'm motivated to create useful content with effective money-making advice because I only earn a commission if my readers succeed.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-fullwidth\" style=\"max-width:1520px\" data-rt-type=\"image\" data-rt-align=\"fullwidth\" data-rt-max-width=\"1520px\" data-w-id=\"b2bb5a57-8948-b75d-ff3e-2fa267a0baad\"><div data-w-id=\"496db1a1-0b99-b3e9-ae4e-ca98a7186d71\"><img width=\"auto\" height=\"auto\" alt=\"Referral Earnings Statistic\" src=\"https://uploads-ssl.webflow.com/6558ae529e9653f7d61a6917/65a6cb7baff324fd003255e1_affiliate-onlyfans.webp\" loading=\"lazy\" data-w-id=\"2f832b18-a05b-2241-c027-d611ba974238\"></div></figure><p data-w-id=\"d63351e2-761d-813b-dce3-515bff1fcafc\">This is an example of how I use affiliate marketing to monetize this blog. </p><h2 data-w-id=\"a40a00e7-64d2-1c86-ed00-d6b798a86989\">My principles </h2><ol start=\"1\" data-w-id=\"f1c05762-28fc-1fe8-3aae-a783bbb8aeda\"><li data-w-id=\"4d3ced12-cbff-a4ee-3eb5-100929cc9e1b\">I only write about topics where I have practical experience.</li><li data-w-id=\"b089185d-df3f-7c67-6f60-329a59078970\">For every service or product I discuss, I offer alternative solutions or recommendations, even if there are no affiliate programs.</li><li data-w-id=\"156de1f1-6448-1464-c467-416f8aa486ed\">I avoid affiliate programs where commissions are deducted from my referrals' earnings.</li></ol></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

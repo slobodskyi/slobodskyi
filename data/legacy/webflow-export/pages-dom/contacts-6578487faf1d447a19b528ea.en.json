@@ -1,0 +1,120 @@
+{
+  "pageId": "6578487faf1d447a19b528ea",
+  "slug": "contacts",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4d4e6f46-b61b-72ba-7ac3-22955eee466e",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "f37b640c-4e31-8e61-40b6-60ba5c075ce4",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Contacts"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"c797d4f9-fcbf-a67c-05ff-56e139618470\">Feel free to contact me with any questions.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fdd",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"name\">Name</label>",
+        "text": "Name"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fdf",
+      "type": "text-input",
+      "placeholder": "",
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe0",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"email\">Email Address</label>",
+        "text": "Email Address"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe2",
+      "type": "text-input",
+      "placeholder": "ivan@ivanenko.com",
+      "attributes": {}
+    },
+    {
+      "id": "4ca04911-43c3-e79b-0e20-42e60cd7249d",
+      "type": "text",
+      "text": {
+        "html": "<label for=\"field\">Message</label>",
+        "text": "Message"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a410a95-53a0-a304-ffce-5cb0f78778b6",
+      "type": "text-input",
+      "placeholder": "Example Text",
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe3",
+      "type": "submit-button",
+      "waitingText": "Please wait...",
+      "value": "Submit",
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe5",
+      "type": "text",
+      "text": {
+        "html": "<div>Thank you! Your submission has been received!</div>",
+        "text": "Thank you! Your submission has been received!"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "855ebce1-16ca-6157-b944-e2af57712fe8",
+      "type": "text",
+      "text": {
+        "html": "<div>Oops! Something went wrong while submitting the form.</div>",
+        "text": "Oops! Something went wrong while submitting the form."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "e25df0eb-baa9-cb31-ec1b-380a0d323834",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "539b1ef5-2339-60e5-c1fa-ae9459b094e0",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"Sole Proprietor Slobodskyi Oleksandr Mykolayovych\",\n  \"url\": \"https://slobodskyi.com/\",\n  \"logo\": \"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/656df2cea3403274f902b6f7_slobodskyi-oleksandr-logo.svg\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"7 Heorhiiivskyi Lane, Office 205\",\n    \"addressLocality\": \"Kyiv\",\n    \"postalCode\": \"01054\",\n    \"addressCountry\": \"UA\"\n  },\n  \"contactPoint\": {\n    \"@type\": \"ContactPoint\",\n    \"telephone\": \"+380 073 545 1872\",\n    \"contactType\": \"customer service\",\n    \"availableLanguage\": [\"en\", \"Ukrainian\", \"Russian\"]\n  },\n  \"sameAs\": [\n    \"https://www.tiktok.com/@slobodskyi.com\",\n    \"https://www.patreon.com/slobodskyi\",\n    \"https://x.com/slobodskyi\",\n    \"https://www.instagram.com/slobodskyi\",\n    \"https://www.youtube.com/@slobodskyi\",\n    \"https://www.linkedin.com/in/oslobodskyi\",\n    \"https://www.pinterest.com/slobodskyi\"\n  ]\n}\n</script>",
+      "attributes": {}
+    }
+  ]
+}

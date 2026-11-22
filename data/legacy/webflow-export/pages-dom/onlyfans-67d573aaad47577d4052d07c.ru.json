@@ -1,0 +1,31 @@
+{
+  "pageId": "67d573aaad47577d4052d07c",
+  "slug": "onlyfans",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e191",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"course-title\">Курс по заработку на OnlyFans</h1>",
+        "text": "Курс по заработку на OnlyFans"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "9e7a115b-527a-fa04-1f13-e2e17da4e193",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"course-rich-text\"><p data-w-id=\"f4233f02-82ce-0a41-d4c5-355d34fe23b3\">Курс <a href=\"https://slobodskyi.com/ua/courses/onlyfans\" data-w-id=\"dd4ee9e0-03f1-5b80-ff0c-a8e37170de1d\">доступен на украинском</a>, и скоро появится на английском.</p><p data-w-id=\"1f37b89a-8fc3-4437-9792-8513b182b46c\">Если хотите узнать, когда он выйдет, <a href=\"https://www.instagram.com/slobodskyi\" target=\"_blank\" data-w-id=\"d17529d6-6395-44a0-4780-20b4940b3143\">можете подписаться в Instagram</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "087804be-d28f-95f3-2fd3-f31547510908",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Главная\",\n          \"item\": \"https://slobodskyi.com/ru\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Курсы\",\n          \"item\": \"https://slobodskyi.com/ru/courses\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"OnlyFans\",\n          \"item\": \"https://slobodskyi.com/ru/courses/onlyfans\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}

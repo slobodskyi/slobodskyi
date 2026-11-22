@@ -1,0 +1,128 @@
+{
+  "pageId": "656c6203d1a9be8df4aa89db",
+  "slug": "detail_memberships",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "8c28f279-32d0-c631-1ac5-110e0b3cfb1b",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "eaf60b1c-aa94-6c13-600f-7fce06169618",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "68303e6b-f6e7-86be-bb93-86b64ad2dc21",
+      "type": "component-instance",
+      "componentId": "c1636f75-a796-f881-9d01-3bae9a20cc4f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "f07c667e-0b5f-ac6d-b862-b7bcb9ab642b",
+      "type": "component-instance",
+      "componentId": "ac5b0084-c0f2-487e-99ba-41f104bd3018",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1d2c5012-293a-d328-29f5-787fbca4ad95",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "a45d5b3c-bab7-7a88-688c-39f748353042",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"text-block-6\">Web Story</div>",
+        "text": "Web Story"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "a45d5b3c-bab7-7a88-688c-39f748353044",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"web-story-text\">Click the card to view the interactive Web Story, or read the full article below.</div>",
+        "text": "Click the card to view the interactive Web Story, or read the full article below."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "cb1f77bf-991f-e2ac-aa79-b52bc8995719",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "2541ee18-9195-7390-59d4-33ad68b7af23",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "3e35fa33-0323-bce1-bf04-188a994f69f5",
+      "type": "component-instance",
+      "componentId": "3b6b3c67-fb35-4e01-0543-6c287790c6fa",
+      "propertyOverrides": [
+        {
+          "propertyId": "ad081539-700b-7664-e580-e52501b7d8bd",
+          "type": "Rich Text",
+          "label": "Mailchimp",
+          "text": {
+            "html": "<div><h1 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a044\">Heading 1</h1><h2 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a046\">Heading 2</h2><h3 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a048\">Heading 3</h3><h4 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a04a\">Heading 4</h4><h5 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a04c\">Heading 5</h5><h6 data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a04e\">Heading 6</h6><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a050\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><blockquote data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a052\">Block quote</blockquote><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a054\">Ordered list</p><ol data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a056\"><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a057\">Item 1</li><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a059\">Item 2</li><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a05b\">Item 3</li></ol><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a05d\">Unordered list</p><ul data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a05f\"><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a060\">Item A</li><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a062\">Item B</li><li data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a064\">Item C</li></ul><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a066\"><a href=\"https://university.webflow.com/lesson/add-and-nest-text-links-in-webflow\" data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a067\">Text link</a></p><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a069\"><strong data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a06a\">Bold text</strong></p><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a06c\"><em data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a06d\">Emphasis</em></p><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a06f\"><sup data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a070\">Superscript</sup></p><p data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a072\"><sub data-w-id=\"d1cb21f3-3f0d-f23a-79f8-f208d5d5a073\">Subscript</sub></p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "71013dc4-8670-58bc-8eb4-152085c608fe",
+      "type": "component-instance",
+      "componentId": "26c2fb69-8c67-d539-a324-c44c50edd692",
+      "propertyOverrides": []
+    },
+    {
+      "id": "05ed89ae-7420-8fac-3e67-87255b09ab0b",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "cb64c92a-6f62-99e5-1df1-3baa6223cb62",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "c7dee816-f858-a03b-89c3-4cb93b3db79b",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "7d8b57c4-a39b-22ef-0cde-4b932b788593",
+      "type": "component-instance",
+      "componentId": "ac308377-5c83-6d9a-03c7-09672d177aae",
+      "propertyOverrides": []
+    },
+    {
+      "id": "fa6bba1a-e465-ff1e-6782-cbbe1342c138",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "924e67a5-2830-1f89-2979-1a0f4e0c1c92",
+      "type": "component-instance",
+      "componentId": "d3dec0c6-867b-577e-6ed4-680e35821042",
+      "propertyOverrides": []
+    }
+  ]
+}

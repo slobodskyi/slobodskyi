@@ -1,0 +1,129 @@
+{
+  "pageId": "6558ae529e9653f7d61a6924",
+  "slug": null,
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "909431ed-dc8e-360a-0af1-20c74577952c",
+      "type": "text",
+      "text": {
+        "html": "<h1 class=\"article-title custom _1\">The Slow Creator</h1>",
+        "text": "The Slow Creator"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "03bd75d5-bcf1-3393-10ec-a6d0b693f90c",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"article-title custom\"><strong class=\"bold-text-3\" data-w-id=\"dc2f4f4a-2dbb-5a66-b855-0bf8d2c6d710\">Notes on How to Earn More, Stress Less &amp; Keep Creating in the Age of AI</strong></h2>",
+        "text": "Notes on How to Earn More, Stress Less & Keep Creating in the Age of AI"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "909431ed-dc8e-360a-0af1-20c74577952e",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"647391d6-abd8-073e-b66b-5073404af474\">Hey, I’m <a data-wf-link-page-id=\"65783e15af1d447a19ae7c2d\" data-w-id=\"647391d6-abd8-073e-b66b-5073404af476\">Oleksandr Slobodskyi</a>. </p><p data-w-id=\"647391d6-abd8-073e-b66b-5073404af47b\">For more than 10 years I've been testing how creators actually earn: platforms, payments, tools, systems. </p><p data-w-id=\"ee4acbf2-1379-b7b9-12b3-5ba81931d3b5\">The wins become guides. The failures save you money.</p><p data-w-id=\"5e46edd0-eb1f-bdb8-7e93-f460cf23dd5b\">No guru energy. No hype. Just what works, documented.</p><p data-w-id=\"732411fa-a3c1-dd1e-218a-1c672d916b1f\">Occasional emails when I find something worth sharing. No schedule, no spam.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d49dbbe7-1334-0774-cc95-c86d2d99e4af",
+      "type": "text-input",
+      "placeholder": "Enter your email address",
+      "attributes": {}
+    },
+    {
+      "id": "d49dbbe7-1334-0774-cc95-c86d2d99e4b0",
+      "type": "submit-button",
+      "waitingText": "ON IT...",
+      "value": "GO",
+      "attributes": {}
+    },
+    {
+      "id": "d49dbbe7-1334-0774-cc95-c86d2d99e4b2",
+      "type": "text",
+      "text": {
+        "html": "<div>You're in. Next email comes when I find something worth sharing.</div>",
+        "text": "You're in. Next email comes when I find something worth sharing."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d49dbbe7-1334-0774-cc95-c86d2d99e4b5",
+      "type": "text",
+      "text": {
+        "html": "<div>Didn't go through. Try again — or just email me directly.</div>",
+        "text": "Didn't go through. Try again — or just email me directly."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "06a9653a-2037-2d62-234d-8952aa6947db",
+      "type": "text",
+      "text": {
+        "html": "<div id=\"start\" class=\"article-rich-text\"><h2 data-w-id=\"06a9653a-2037-2d62-234d-8952aa6947dc\">Where to Start?</h2><p data-w-id=\"06a9653a-2037-2d62-234d-8952aa6947de\">Start with the free guides below. They'll take you from idea to income, step by step.</p><p data-w-id=\"06a9653a-2037-2d62-234d-8952aa6947e0\">Need faster results? <a href=\"https://slobodskyi.com/courses/consultation\" data-w-id=\"06a9653a-2037-2d62-234d-8952aa6947e2\">Book a consultation</a> for a personalized roadmap.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "4d93902b-3a56-7b0f-d9ac-8cd9da3e527c",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": [
+        {
+          "propertyId": "f9174d00-8a24-f82f-bc17-575baaa8bba4",
+          "type": "Plain Text",
+          "label": "Article Counter",
+          "text": {
+            "html": null,
+            "text": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4d93902b-3a56-7b0f-d9ac-8cd9da3e527e",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "48dfc166-6d86-f55b-7f69-6b82461098e2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"eba4baa2-3268-0583-c0eb-2cc7822a44ec\">What I'm Building</h2><p data-w-id=\"8376f767-ddc5-a2c6-e5b8-f512f88e15b6\">Everything I write here gets tested on real projects first.</p><ol data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eadf\"><li data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eae0\"><a href=\"https://united24media.com/\" target=\"_blank\" data-w-id=\"3633f0c1-d5fe-8395-db25-35cdd12e85f7\">UNITED24 Media</a> — Ukraine's media outlet for international audiences. I build <strong data-w-id=\"2f97a05e-ccd9-9bba-56eb-190af3e2ef56\">internal AI tools for the team</strong>, monitoring systems for the newsroom, and keep the site visible in both Google and AI search.</li><li data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eae4\"><a href=\"https://zori.bio/\" target=\"_blank\" data-w-id=\"21c3a6b3-b98f-2a5d-2ee2-f82f17e6b82c\">Zori.bio</a> — my <strong data-w-id=\"3ee4a21d-d0fb-98f5-cf48-dc30a38ffcb4\">link-in-bio tool for content creators</strong>. I've reviewed enough of these platforms to know what they get wrong, so I built my own.</li><li data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eae8\"><a href=\"https://wabi.school/en\" target=\"_blank\" data-w-id=\"2ba43cab-078a-019f-3e0e-231b852b46db\">Wabi.school</a> — an <strong data-w-id=\"d8438fe8-0321-5a96-5b2e-bdaa89b91044\">LMS for creators</strong> who want to research, create, and sell online courses. Human first, AI second. In closed beta.</li><li data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eaec\"><strong data-w-id=\"b6ac77e0-19fd-335d-9fa7-26c1ad552f20\">Course launches with creators</strong> — I partner with experts to turn what they know into online courses: illustrator <a href=\"https://www.instagram.com/lomakina.space\" target=\"_blank\" data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eaf0\">Anna Lomakina</a>, yoga teacher <a href=\"https://www.instagram.com/scorpioprincesse/\" target=\"_blank\" data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eaf3\">Yana Borodina</a>, barber <a href=\"https://www.instagram.com/maguza/\" target=\"_blank\" data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eaf6\">Gena Maguza</a>. They bring the craft. I bring the systems.</li><li data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eaf9\"><strong data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eafa\">Custom systems for small businesses</strong> — a PMS + CRM for <a href=\"https://sea-sky.od.ua/\" target=\"_blank\" data-w-id=\"3bd01633-83c3-e33c-c199-da2357c0c6fd\">SeaSky apart-hotel in Odesa</a>, and an internal management system for «<a href=\"https://www.htotse.com/\" target=\"_blank\" data-w-id=\"e30c9ac3-eca4-cbf9-91c0-c6de67da36ba\">Хто це?</a>», a Ukrainian book publisher. Boring software that saves real hours.</li></ol><p data-w-id=\"53c2a353-f68e-6a9f-53ff-079a2905eafd\">If I recommend a tool on this site, chances are I've already run it in production.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "08d0ef88-2f82-7049-b207-b81bb94082ca",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"ed4d6022-cbc0-ad54-47fe-286b60da20f9\">You’ve made it to the bottom!</h2><p data-w-id=\"41002b5f-f9b2-970f-f793-50265c0dc333\">Curiosity pays off — here’s your reward: a photo of my doggo, Jinni.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" style=\"max-width:250px\" data-rt-type=\"image\" data-rt-align=\"center\" data-rt-max-width=\"250px\" data-w-id=\"0daa696e-c91c-5c2a-2e9f-ecbe31fe4c89\"><div data-w-id=\"0daa696e-c91c-5c2a-2e9f-ecbe31fe4c8a\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677a993445dccfa1e48841eb_jinni-the-dogo.webp\" loading=\"lazy\" alt=\"Photo of my doggo Jinni\" width=\"auto\" height=\"auto\" data-w-id=\"0daa696e-c91c-5c2a-2e9f-ecbe31fe4c8b\"></div></figure><h3 data-w-id=\"88a97d27-91d0-41dd-3d90-810adad6ddd9\">Want more of Jinni? </h3><blockquote data-w-id=\"f32e9dc2-2099-9293-ad98-440b19c77af4\">She occasionally pops up in the articles — <a href=\"#start\" data-w-id=\"52048d9a-d7db-1d9d-501d-5736c6ebb56d\">check them out</a>!</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "fb4950c2-85bf-9976-5aa8-fa8eff9f1a5e",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    }
+  ]
+}

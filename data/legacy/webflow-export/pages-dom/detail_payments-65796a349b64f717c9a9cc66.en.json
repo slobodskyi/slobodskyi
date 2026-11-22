@@ -1,0 +1,110 @@
+{
+  "pageId": "65796a349b64f717c9a9cc66",
+  "slug": "detail_payments",
+  "locale": "en",
+  "nodes": [
+    {
+      "id": "67314dcb-725b-6a12-3e28-92855a5d9192",
+      "type": "component-instance",
+      "componentId": "2b52bb87-ab5c-40c4-c165-515b2649e6d6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "360e7606-9ead-e9f0-5b98-109645e1630b",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "a124719a-d593-14fb-0761-9498d12561a5",
+      "type": "component-instance",
+      "componentId": "c1636f75-a796-f881-9d01-3bae9a20cc4f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "1249d629-1a6d-ae85-790c-22af3ed7c7a5",
+      "type": "component-instance",
+      "componentId": "ac5b0084-c0f2-487e-99ba-41f104bd3018",
+      "propertyOverrides": []
+    },
+    {
+      "id": "cf8746ea-1575-f8b8-ae58-dd92e37097fc",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "fcc5d62d-9d0e-71a4-9552-0b0ac14b173a",
+      "type": "component-instance",
+      "componentId": "bdb00c17-5b3b-d980-2e44-992ecef59a4e",
+      "propertyOverrides": []
+    },
+    {
+      "id": "537b095d-d438-ea7c-08c4-3d05bea6de07",
+      "type": "component-instance",
+      "componentId": "8637428e-6ee7-9042-675e-ccf9d3d46da9",
+      "propertyOverrides": []
+    },
+    {
+      "id": "8e41ace1-b0ee-15a2-ceb7-51a0175ee768",
+      "type": "component-instance",
+      "componentId": "3b6b3c67-fb35-4e01-0543-6c287790c6fa",
+      "propertyOverrides": [
+        {
+          "propertyId": "ad081539-700b-7664-e580-e52501b7d8bd",
+          "type": "Rich Text",
+          "label": "Mailchimp",
+          "text": {
+            "html": "<div><h1 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce44\">Heading 1</h1><h2 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce46\">Heading 2</h2><h3 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce48\">Heading 3</h3><h4 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce4a\">Heading 4</h4><h5 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce4c\">Heading 5</h5><h6 data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce4e\">Heading 6</h6><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce50\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><blockquote data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce52\">Block quote</blockquote><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce54\">Ordered list</p><ol data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce56\"><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce57\">Item 1</li><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce59\">Item 2</li><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce5b\">Item 3</li></ol><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce5d\">Unordered list</p><ul data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce5f\"><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce60\">Item A</li><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce62\">Item B</li><li data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce64\">Item C</li></ul><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce66\"><a href=\"https://university.webflow.com/lesson/add-and-nest-text-links-in-webflow\" data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce67\">Text link</a></p><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce69\"><strong data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce6a\">Bold text</strong></p><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce6c\"><em data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce6d\">Emphasis</em></p><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce6f\"><sup data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce70\">Superscript</sup></p><p data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce72\"><sub data-w-id=\"6068e531-7f73-e31b-c3ae-78998292ce73\">Subscript</sub></p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "c91698f6-49a6-df19-7da4-d1d6e561321c",
+      "type": "component-instance",
+      "componentId": "26c2fb69-8c67-d539-a324-c44c50edd692",
+      "propertyOverrides": []
+    },
+    {
+      "id": "caafe934-baae-b09b-b2dc-27c39b952a1f",
+      "type": "component-instance",
+      "componentId": "74ef2d8f-9d9e-3bd1-3a00-7cba03dbc16f",
+      "propertyOverrides": []
+    },
+    {
+      "id": "a1e59968-57b0-2b35-91f9-f5ac4fcb6b59",
+      "type": "text",
+      "text": {
+        "html": "<div>No items found.</div>",
+        "text": "No items found."
+      },
+      "attributes": {}
+    },
+    {
+      "id": "d19bfb75-781c-59fc-2804-d5172943926f",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": []
+    },
+    {
+      "id": "e387cde8-9f48-4b57-6abd-ca5d5dd5c667",
+      "type": "component-instance",
+      "componentId": "ac308377-5c83-6d9a-03c7-09672d177aae",
+      "propertyOverrides": []
+    },
+    {
+      "id": "117d1f0f-eeec-f098-ef46-e1eb7e875661",
+      "type": "component-instance",
+      "componentId": "ae8f15af-d55e-a43f-e35a-54dd2ca7fce7",
+      "propertyOverrides": []
+    },
+    {
+      "id": "cb7bde87-5717-9127-043a-c919abf13e24",
+      "type": "component-instance",
+      "componentId": "d3dec0c6-867b-577e-6ed4-680e35821042",
+      "propertyOverrides": []
+    }
+  ]
+}

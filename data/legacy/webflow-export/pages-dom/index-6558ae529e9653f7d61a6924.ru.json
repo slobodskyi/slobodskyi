@@ -1,0 +1,59 @@
+{
+  "pageId": "6558ae529e9653f7d61a6924",
+  "slug": null,
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курсы"
+          }
+        }
+      ]
+    },
+    {
+      "id": "03bd75d5-bcf1-3393-10ec-a6d0b693f90c",
+      "type": "text",
+      "text": {
+        "html": "<h2 class=\"article-title custom\"><strong class=\"bold-text-3\" data-w-id=\"dc2f4f4a-2dbb-5a66-b855-0bf8d2c6d710\">Как зарабатывать больше и стрессовать меньше в эпоху ИИ</strong></h2>",
+        "text": "Как зарабатывать больше и стрессовать меньше в эпоху ИИ"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "909431ed-dc8e-360a-0af1-20c74577952e",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><p data-w-id=\"8f7fc50f-db01-1a02-4cd9-e3a622b3f008\">10+ лет помогаю креаторам и малому бизнесу зарабатывать больше, внедряя новые инструменты и выстраивая скучные системы, которые реально работают.</p><p data-w-id=\"8f7fc50f-db01-1a02-4cd9-e3a622b3f00a\">В блоге пишу практические гайды и честные обзоры.</p><p data-w-id=\"8f7fc50f-db01-1a02-4cd9-e3a622b3f00c\">Отправляю письма, когда есть чем поделиться. Без расписания и спама.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "48dfc166-6d86-f55b-7f69-6b82461098e2",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"0e763226-eb5a-45a2-1145-61de81806e16\">С чего начать?</h2><p data-w-id=\"51b7abd8-6816-450d-46e3-8dcbca438f48\">Начните с бесплатных гайдов ниже. Они проведут от идеи до дохода, шаг за шагом.</p><p data-w-id=\"51b7abd8-6816-450d-46e3-8dcbca438f4a\">Нужен результат быстрее? <a href=\"https://slobodskyi.com/ru/courses/consultation\" data-w-id=\"1143662d-a1d1-6e41-559b-d6a472afc976\">Приходите на консультацию</a>.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "08d0ef88-2f82-7049-b207-b81bb94082ca",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"c0455a53-6cc0-4d1f-dc91-f3c80b1ae998\">Вы доскролили до конца!</h2><p data-w-id=\"dec05e7e-4724-11b2-e9f7-5941c1ccccc7\">В качестве награды — фото моего пса, Джинни.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\" style=\"max-width:250px\" data-rt-type=\"image\" data-rt-align=\"center\" data-rt-max-width=\"250px\" data-w-id=\"f9a4ae11-c641-3825-aa50-6ac99fdf5064\"><div data-w-id=\"efd410f9-5e2a-3591-80c6-94279e2b3223\"><img src=\"https://cdn.prod.website-files.com/6558ae529e9653f7d61a6917/677a993445dccfa1e48841eb_jinni-the-dogo.webp\" loading=\"lazy\" alt=\"Фото псіни – Джинні\" width=\"auto\" height=\"auto\" data-w-id=\"27c35945-2802-5530-8b79-cfdacb1bf177\"></div></figure><h3 data-w-id=\"3030011a-6eca-af6c-3dc6-d7aadb79a57f\">Больше пса?</h3><blockquote data-w-id=\"f2176ed9-edf5-b956-9cd2-b2e708f64e9f\">Она время от времени появляется в статьях — <a href=\"#articles\" data-w-id=\"4f6aed03-4e91-47cd-2821-73faa1a57111\">приглашаю</a>!</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    }
+  ]
+}

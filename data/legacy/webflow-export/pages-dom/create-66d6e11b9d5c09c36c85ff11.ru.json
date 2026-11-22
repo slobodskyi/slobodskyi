@@ -1,0 +1,47 @@
+{
+  "pageId": "66d6e11b9d5c09c36c85ff11",
+  "slug": "create",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "eb9fc7c9-de74-7f91-814e-7cd21b82f25b",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Воплощайте идеи в жизнь и тестируйте их быстрее"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"6ef163a5-1f4b-0f49-6c54-c174306c6a26\">Преобразуйте ваши задумки в реальность с помощью ИИ и No-code инструментов — быстро и без лишних хлопот.</p><p data-w-id=\"e89432f7-4936-2f5b-c0bc-5684b26d95d6\">Занимаетесь контентом, дизайном или разработкой?</p><p data-w-id=\"d1cdb3b9-b320-9ba8-9f2e-ff9bfe6165c7\">Эти инструменты помогут новичкам начать, а профессионалам — работать эффективнее.</p><p data-w-id=\"062044db-5f16-be8b-36cc-7a1b59750a1c\"><strong data-w-id=\"fa849cb4-bf6b-b1f1-0fb1-7aa805016a32\">Не откладывайте: ваши идеи достойны воплощения.</strong></p><p data-w-id=\"f93e9575-c1fe-766d-bdea-148be4dcea24\">Реализуйте проекты за дни, а не месяцы, и делитесь ими с миром.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "230011a8-d0ee-15a2-7550-ae50c0155af6",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><blockquote data-w-id=\"2acf37a1-7c98-04e5-1874-5aac7760b98b\">Создать что-то — это первый шаг. А следующий? Узнайте, <a data-wf-link-page-id=\"66d6e6405e4aaf11d4bfcc75\" data-w-id=\"544afa1c-a6c2-bba8-1539-aa8953a29e5c\">как найти свою аудиторию</a>.</blockquote></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "3a837971-5e51-089d-6458-40f3110b5170",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Главная\",\n          \"item\": \"https://slobodskyi.com/ru/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Создание\",\n          \"item\": \"https://slobodskyi.com/ru/create\"\n        }\n      ]\n    }\n</script>\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"ItemList\",\n  \"name\": \"Как использовать ИИ и No-code для создания и проверки идей\",\n  \"description\": \"Научитесь создавать контент, приложения и дизайн с помощью ИИ и No-code. Воплощайте идеи быстрее и тестируйте их с пошаговыми инструкциями.\",\n  \"numberOfItems\": 2,\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Искусственный интеллект\",\n      \"url\": \"https://slobodskyi.com/ru/create/ai\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163da29f082f1f50ad9f2_create-ai.webp\",\n      \"description\": \"Искусственный интеллект: что это и как он помогает криейторам? Простые примеры, которые помогут понять, как использовать искусственный интеллект для создания текстов, изображений, видео и других креативных задач.\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"No-code инструменты\",\n      \"url\": \"https://slobodskyi.com/ru/create/no-code\",\n      \"image\": \"https://cdn.prod.website-files.com/6558b275de12de54c5a146d2/677163d140f530adcbd00454_create-no-code.webp\",\n      \"description\": \"Как использовать No-code инструменты? Обзоры No-code инструментов помогут вам выбрать платформу для создания приложений, автоматизаций и вебсайтов без программирования.\"\n    }\n  ]\n}\n</script>",
+      "attributes": {}
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "pageId": "676ac7c0875b23e6f5b26d8b",
+  "slug": "analytics",
+  "locale": "ru",
+  "nodes": [
+    {
+      "id": "93970a92-ae1b-fdf6-f0f8-4e299169b565",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курсы"
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1f264d3-653a-8e68-0a01-3c4338377251",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Пойми, оптимизируй, расти"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><p data-w-id=\"6e3e9fc9-b686-3d93-3b84-bb421138fe87\">Откройте инструменты и стратегии для улучшения аналитики, получения инсайтов и принятия умных решений для роста.</p></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "03613fea-4d99-7dcc-0d81-8242abc494f9",
+      "type": "component-instance",
+      "componentId": "8a4614b4-3a0a-daad-b783-f46cfa9c6ba6",
+      "propertyOverrides": [
+        {
+          "propertyId": "b92fbd77-5607-d515-5af4-fb8fa05f3984",
+          "type": "Plain Text",
+          "label": "Category Name",
+          "text": {
+            "html": null,
+            "text": "Развитие"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a4c24513-2bd1-f905-60f2-40b01e614f2d",
+      "type": "text",
+      "text": {
+        "html": "<div class=\"article-rich-text\"><h2 data-w-id=\"178e870b-db13-0d05-223c-b49e888a9817\">Инструменты для аналитики</h2><p data-w-id=\"0a2324af-3c1c-caba-fd90-22f2c9782045\">Чтобы лучше понять свой проект и определить возможности роста.</p></div>",
+        "text": null
+      },
+      "attributes": {}
+    },
+    {
+      "id": "6b6616e8-28d6-7947-2875-84606b5af29d",
+      "type": "html-embed",
+      "html": "<div id=\"cms-items\" style=\"display:none;\">\n  <!-- This block will repeat for each CMS item -->\n  <div class=\"cms-item\"\n       data-headline=\"{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-url=\"https://slobodskyi.com/ru/{{wf {&quot;path&quot;:&quot;category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;sub-category:slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}/{{wf {&quot;path&quot;:&quot;slug&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-image=\"{{wf {&quot;path&quot;:&quot;main-image&quot;,&quot;type&quot;:&quot;ImageRef&quot;\\} }}\"\n       data-author=\"{{wf {&quot;path&quot;:&quot;author:name&quot;,&quot;type&quot;:&quot;PlainText&quot;\\} }}\"\n       data-author-url=\"{{wf {&quot;path&quot;:&quot;author:about-link&quot;,&quot;type&quot;:&quot;Link&quot;\\} }}\">\n  </div>\n</div>",
+      "attributes": {}
+    },
+    {
+      "id": "57037ba6-87f1-07a3-ea20-080f060124d7",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Главная\",\n          \"item\": \"https://slobodskyi.com/ru/\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Развитие\",\n          \"item\": \"https://slobodskyi.com/ru/grow\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Аналитика\",\n          \"item\": \"https://slobodskyi.com/ru/grow/analytics\"\n        }\n      ]\n    }\n</script>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  var items = document.querySelectorAll('#cms-items .cms-item');\n  var listItems = [];\n  items.forEach(function(el, index) {\n    listItems.push({\n      \"@type\": \"ListItem\",\n      \"position\": index + 1,\n      \"item\": {\n        \"@type\": \"Article\",\n        \"headline\": el.getAttribute('data-headline'),\n        \"url\": el.getAttribute('data-url'),\n        \"image\": el.getAttribute('data-image'),\n        \"author\": {\n          \"@type\": \"Person\",\n          \"name\": el.getAttribute('data-author'),\n          \"url\": el.getAttribute('data-author-url')\n        }\n      }\n    });\n  });\n  var jsonLD = {\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"ItemList\",\n    \"itemListElement\": listItems\n  };\n  var script = document.createElement('script');\n  script.type = 'application/ld+json';\n  script.text = JSON.stringify(jsonLD, null, 2);\n  document.head.appendChild(script);\n});\n</script>",
+      "attributes": {}
+    }
+  ]
+}

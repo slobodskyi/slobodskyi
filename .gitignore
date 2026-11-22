@@ -9,3 +9,6 @@ dist/
 .DS_Store
 *.log
 .claude/settings.local.json
+
+# Unused Webflow assets: raw backup, kept locally until uploaded to R2.
+data/legacy/media-archive/

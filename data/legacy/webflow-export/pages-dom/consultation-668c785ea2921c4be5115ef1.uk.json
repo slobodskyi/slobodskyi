@@ -1,0 +1,63 @@
+{
+  "pageId": "668c785ea2921c4be5115ef1",
+  "slug": "consultation",
+  "locale": "uk",
+  "nodes": [
+    {
+      "id": "4e2ef690-d6b2-0386-da58-fabeae21c163",
+      "type": "component-instance",
+      "componentId": "b36c050f-8387-016d-df1f-28647f0c95f6",
+      "propertyOverrides": [
+        {
+          "propertyId": "90b277ca-ae21-a9dc-e39c-2cbc5da45f6f",
+          "type": "Plain Text",
+          "label": "Courses",
+          "text": {
+            "html": null,
+            "text": "Курси"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c7bab4e5-225b-9bbd-f9e8-4750dacbd23d",
+      "type": "component-instance",
+      "componentId": "c797d4f9-fcbf-a67c-05ff-56e13961846c",
+      "propertyOverrides": [
+        {
+          "propertyId": "7449a6d4-6510-b6d5-62f1-6278ac3c63fe",
+          "type": "Plain Text",
+          "label": "Heading",
+          "text": {
+            "html": null,
+            "text": "Індивідуальна консультація"
+          }
+        },
+        {
+          "propertyId": "c9e0b349-92b3-54a0-a564-18eeb4468d71",
+          "type": "Rich Text",
+          "label": "Rich Text",
+          "text": {
+            "html": "<div><h3 data-w-id=\"c797d4f9-fcbf-a67c-05ff-56e139618470\">З якими питаннями я можу допомогти?</h3><p data-w-id=\"3af3b1e5-42cb-4312-40da-392b0d8a7574\">Від розробки стратегії монетизації до технічної реалізації.</p><ol data-w-id=\"4b408f27-9da8-2e4a-35cb-59f860253ff1\"><li data-w-id=\"c6ecb91c-c50c-1da6-f00d-a7d80514be1d\"><strong data-w-id=\"c2d2896a-9350-9cc4-c2a7-a7468e54e6e8\">Створення освітніх продуктів</strong><strong data-w-id=\"ae400135-5d66-3de3-6feb-4e54a8ab393b\">:</strong> допоможу розробити та структуризувати курси, гайди та інші освітні матеріали, щоб вони були максимально ефективними та цікавими для вашої аудиторії.</li><li data-w-id=\"cdbc26b8-5d79-de3e-1e22-224f52f06d0a\"><strong data-w-id=\"85881748-e1ff-8996-9140-866812e383cd\">Просування на адалт платформах</strong><strong data-w-id=\"6c9e4f25-0f6f-3306-607c-ea32a84bae5a\">:</strong> підкажу, як ефективно просувати ваш контент на спеціалізованих платформах (Patreon, OnlyFans, Fansly), щоб досягти максимального охоплення та залучити більше підписників.</li><li data-w-id=\"6cf1c318-fb02-2f06-ed9e-13edc3b0005e\"><strong data-w-id=\"7fa14cc6-03d0-d050-c67b-988de369ddd1\">Технічні питання</strong><strong data-w-id=\"ead460cd-dce3-5de0-2a1b-71d30844e46e\">:</strong> надам підтримку у вирішенні технічних завдань, пов'язаних з налаштуванням платформ, інтеграцією сервісів та оптимізацією роботи.</li></ol><h3 data-w-id=\"7a28758a-b41a-eaa5-294c-55c078931979\">Як проходить зустріч?</h3><p data-w-id=\"8c4509a8-84cc-a764-73d7-e671a58172d2\">Чотири простих кроки:</p><ol data-w-id=\"50cc4486-d8c1-1916-0e90-768aa99deb54\"><li data-w-id=\"167ab9c5-3306-d06a-b8eb-fb7490433b5f\"><strong data-w-id=\"3e7e7e08-77b5-4dc6-c9f4-0b8f15806d98\">Підготовка</strong><strong data-w-id=\"7c92d665-88ed-2b21-77b1-039fe2ecc694\">:</strong> напишіть у Telegram і розкажіть про свій проект. Я надаю консультації тільки в тих випадках, коли впевнений, що можу бути корисним.</li><li data-w-id=\"a2a7edfc-9f35-0176-ef63-b35a25d3f9c6\"><strong data-w-id=\"ed4b15da-fe6f-9ca3-6b3a-8e4d5caae10a\">Оплата</strong><strong data-w-id=\"e91596f6-00ce-4ee7-760f-65dfbdbb0f69\">:</strong> після обговорення деталей ви зможете оплатити консультацію зручним для вас способом: за реквізитами, через платіжні системи або криптовалюту. Після оплати ми призначимо зручний час зустрічі.</li><li data-w-id=\"85370edb-dc86-fb1f-3eb1-3995fe22e76d\"><strong data-w-id=\"dda3b8da-dda9-5f19-70ee-45c5d0fe850a\">Дзвінок</strong><strong data-w-id=\"463a95f4-e0b7-dc80-5f74-d144ad45b3aa\">:</strong> під час консультації ми розберемо всі ваші питання і сформуємо план подальших дій. Зустріч записується, і ви отримаєте доступ до запису назавжди.</li><li data-w-id=\"53a1267e-e5d8-f385-5f02-9a114fab1514\"><strong data-w-id=\"844481be-ce10-0cf9-25c2-418263fbcd85\">Зворотній зв'язок</strong><strong data-w-id=\"84b915f1-2939-b545-c870-67133d0ffad4\">:</strong> після зустрічі ви зможете задати додаткові питання з обговорених тем у Telegram. Це допоможе вам уточнити деталі та продовжити роботу над проектом з упевненістю.</li></ol><blockquote data-w-id=\"b5362b28-54dd-77f5-fd6b-66435ddac06b\">У всіх своїх проектах я будую максимально прозорі відносини з клієнтами. Після першої консультації ви можете повернути гроші без зайвих питань.</blockquote><ul data-w-id=\"2c9be8e4-862f-1755-0a7b-6e8dbffd3fd2\"><li data-w-id=\"7f257440-0c7c-f43e-cd2e-abd7cb0ea20b\"><strong data-w-id=\"d112f125-d2f1-1a18-4415-8f5a03597b7d\">Вартість</strong>: 100 USD / 92 EUR / 4200 UAH.</li></ul></div>",
+            "text": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "e3e386d7-a1b7-79c5-16b1-b57659d79ea3",
+      "type": "text",
+      "text": {
+        "html": "<a class=\"submit-button-tg\" href=\"https://t.me/slobodskyi1\">Написати в Telegram →</a>",
+        "text": "Написати в Telegram →"
+      },
+      "attributes": {}
+    },
+    {
+      "id": "1feb7712-a795-5661-1b52-2c5696d60387",
+      "type": "html-embed",
+      "html": "<script type=\"application/ld+json\">\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 1,\n          \"name\": \"Головна\",\n          \"item\": \"https://slobodskyi.com/ua\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 2,\n          \"name\": \"Курси\",\n          \"item\": \"https://slobodskyi.com/ua/courses\"\n        },\n        {\n          \"@type\": \"ListItem\",\n          \"position\": 3,\n          \"name\": \"Індивідуальна консультація\",\n          \"item\": \"https://slobodskyi.com/ua/courses/consultation\"\n        }\n      ]\n    }\n</script>",
+      "attributes": {}
+    }
+  ]
+}
