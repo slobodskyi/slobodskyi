@@ -1,0 +1,370 @@
+---
+type: guide
+title: How to Use ElevenLabs to Create Realistic AI Voices for Your Projects
+seoTitle: "ElevenLabs: Creating Realistic AI Voices for Your Projects"
+description: Discover how ElevenLabs enables realistic AI voice creation. Learn about text-to-speech, voice cloning, and emotional adjustments to enhance your podcasts, videos, and more.
+lead: Learn how to use ElevenLabs for realistic AI voice creation. Explore features like text-to-speech, voice cloning, and emotional adjustments for podcasts, videos, and more.
+cover: ./678799f231a0a62c5f68809a_elevenlabs-text-to-speech.webp
+hub: create
+category: ai
+slug: elevenlabs
+stage: evergreen
+visibility: public
+status: published
+created: 2025-01-02
+updated: 2025-12-04
+faq:
+  - q: What is ElevenLabs, and what makes it stand out?
+    a: "[ElevenLabs](https://slobo.click/elevenlabs) is a cutting-edge AI tool for voice generation, offering features like text-to-speech, voice cloning, and tone customization. Its standout capability is producing emotionally realistic voices that suit various projects like videos, audiobooks, and podcasts."
+  - q: How can I use ElevenLabs for free?
+    a: ElevenLabs offers a free plan with 10,000 credits, which allows for approximately 10 minutes of audio. You can test text-to-speech features and explore voice creation before deciding on a paid plan.
+  - q: What are the pricing options for ElevenLabs?
+    a: Pricing starts with the free plan and scales up based on usage. Plans include Starter ($4.17/month), Creator ($18.33/month), and Pro ($82.50/month), each offering varying credits, voice cloning options, and advanced features. Details are available in the [pricing section of the article.](/create/ai/elevenlabs#how-to-get-started-with-elevenlabs)
+  - q: How does ElevenLabs handle voice cloning?
+    a: "ElevenLabs supports two types of voice cloning: instant cloning with short samples and professional cloning with at least 30 minutes of recorded audio. The latter provides more accurate and realistic results, ideal for commercial use. Learn more in the [voice cloning guide](/create/ai/elevenlabs#how-to-add-a-voice-in-elevenlabs)."
+  - q: Can ElevenLabs create voices in different languages?
+    a: Yes, ElevenLabs supports 32 languages, including English, Spanish, French, and Mandarin. You can input text in your preferred language, and the system automatically generates the audio without requiring language settings adjustments.
+  - q: Does ElevenLabs have an API for developers?
+    a: ElevenLabs offers an API that allows developers to integrate its features into their applications or websites. The API supports text-to-speech, custom voice uploads, and parameter adjustments for voice tuning.
+  - q: What alternatives are there to ElevenLabs?
+    a: Alternatives like Speechify and Play.ht provide text-to-speech services, but ElevenLabs stands out for its emotional flexibility, voice cloning accuracy, and advanced customization.
+  - q: How can I add emotions and pauses to my audio in ElevenLabs?
+    a: You can enhance expressiveness by adjusting parameters like stability and style exaggeration. For pauses, use tags like `<break time="1s" />` or punctuation in your text input to create natural speech flow.
+  - q: What are the best uses for ElevenLabs in content creation?
+    a: ElevenLabs is ideal for creating voiceovers for videos, podcasts, and audiobooks. It’s also widely used for multilingual voice dubbing, automated content production, and interactive experiences like games or virtual assistants.
+  - q: Is ElevenLabs safe to use, and how can I ensure ethical usage?
+    a: ElevenLabs requires you to verify ownership of any voice used for cloning, ensuring ethical usage. Avoid using cloned voices without consent to maintain compliance with ethical and legal standards.
+ai:
+  assisted: false
+---
+
+## What is ElevenLabs?
+
+[ElevenLabs](https://slobo.click/elevenlabs) is an [AI-powered tool](/create/ai) that helps create voices almost indistinguishable from real ones.
+
+Its standout feature is the natural and emotional sound it produces, along with customizable tone, style, and language options.
+
+### What can you do with ElevenLabs?
+
+1. **Text to Speech:** Convert text into speech for podcasts or videos. You can choose a standard voice or create a clone of your own. Voice generation supports 32 languages.
+2. **Voice Changer:** Adjust the tone of pre-recorded audio. You can make the voice softer or add more emotion.
+3. **Text to Sound Effects:** Turn text into sound effects, like the noise of wind or water.
+4. **Voice Cloning:** Create highly accurate replicas of real voices. Record a sample of your voice, and then use it to generate speech in any language.
+5. **Voice Isolator:** Remove background noise, leaving a clean, distortion-free voice.
+6. **Voice Design:** Use a text prompt to design a unique voice for your needs, such as "_an adult male with a slight rasp, perfect for audiobooks_."
+
+<Callout>
+  I use ElevenLabs to create videos in English. After recording 30 minutes of audio in Ukrainian, I can generate text-to-speech in any language using my voice without an accent.
+</Callout>
+
+### Which languages does ElevenLabs support?
+
+ElevenLabs supports voice generation in 32 languages, including English, Spanish, Mandarin Chinese, French, and Arabic.
+
+<Shot src="./6776ff4ae8709c1cd5d85cac_6776fdb3bad907e4be37bb67_1-elevenlabs-supported-languages.webp" alt="List of Supported Languages in ElevenLabs for Texts and Voiceovers" wide />
+
+You don’t need to manually select the language in ElevenLabs settings—just input the text in the desired language, and click “_Generate Speech_.”
+
+<Shot src="./6776ff4ae8709c1cd5d85caf_6776fdc3ad35a971927810e3_2-elevenlabs-text-to-speech-interface.webp" alt="The Text-to-Speech Generation Interface in ElevenLabs" />
+
+## How to get started with ElevenLabs?
+
+To get started, [create an account](https://slobo.click/elevenlabs).
+
+You can choose the free plan and later upgrade for additional features.
+
+### How much does ElevenLabs cost?
+
+1. **Free Plan:** 10,000 credits (_\~10 minutes of audio per month_). Ideal for testing.
+2. **Starter ($4.17/month):** 30,000 credits (_\~30 minutes_). Includes voice cloning and commercial licensing.
+3. **Creator ($18.33/month):** 100,000 credits (_\~100 minutes_). Offers enhanced audio quality and professional cloning.
+4. **Pro ($82.50/month):** 500,000 credits (_\~500 minutes_). Provides maximum quality (_44.1 kHz PCM_) and advanced features.
+
+More expensive plans are available for users needing large-scale audio generation.
+
+<Shot src="./6776ff4ae8709c1cd5d85cc4_6776fdda7a958ee6b7ac1369_3-elevenlabs-pricing-plans.webp" alt="ElevenLabs Pricing Plans: Free, Starter, Creator, Pro, and Their Features" wide />
+
+### What are credits and how are they used?
+
+Credits are the internal unit used in ElevenLabs to calculate the cost of speech generation.
+
+Credit usage depends on the chosen tool and model.
+
+<Shot src="./6776ff4ae8709c1cd5d85ca9_6776fdeadf4bf5e78baa5756_4-elevenlabs-credits-usage.webp" alt="The Credit Calculation System and Available Characters for Speech Generation in ElevenLabs" wide />
+
+Typically, 1 credit equals 1 character of text.
+
+Examples:
+
+1. Short text (_300 characters_): \~2 minutes of audio, cost—300 credits.
+2. Long text (_10,000 characters_): \~10 minutes of audio, cost—10,000 credits.
+
+### How to cancel your ElevenLabs subscription?
+
+You can easily upgrade, downgrade, or cancel your subscription through your account settings.
+
+<Callout>
+  Start with the free plan to see if the service meets your needs.
+</Callout>
+
+Once your account is set up, you can select the tool, configure the voice, and generate speech.
+
+## How to add a voice in ElevenLabs?
+
+Go to “_Voices → Add New Voice_” and select the appropriate option:
+
+1. **Voice Design:** Create a unique voice by describing it with a text prompt. Suitable for characters or brands.
+2. **Instant Voice Clone:** Quickly clone your voice with a few minutes of audio. Great for personal projects and simple tasks.
+3. **Professional Voice Clone:** High-accuracy cloning requires at least 30 minutes of your voice recording. Ideal for commercial and professional projects where realism and stability are essential.
+4. **Voice Library:** Choose a pre-designed voice from the library. Options include various accents, ages, and styles for diverse use cases.
+
+<Shot src="./6776ff4ae8709c1cd5d85cb2_6776ff2f27400adf04400fa4_elevenlabs-add-new-voice-options.webp" alt="Options for Adding a New Voice in ElevenLabs: Voice Design, Instant Voice Clone, Professional Voice Clone, Voice Library" />
+
+With Voice Design and Voice Library, the process is straightforward and intuitive.
+
+Let’s dive deeper into voice cloning.
+
+<Callout>
+  I use the Professional Voice Clone because it delivers the best quality.
+</Callout>
+
+### How to create a Professional Voice Clone?
+
+To create a professional clone of your voice, you’ll need to upload audio of at least 30 minutes.
+
+**You can speak in any language you’re comfortable with.**
+
+During my recording, I used text generated by ChatGPT. I explained the task, and it created a script that helped convey different emotions.
+
+I have a separate article on [how to get started with ChatGPT](/create/ai/chatgpt).
+
+<Callout>
+  Before using a cloned voice, you must confirm it’s yours. ElevenLabs will prompt you to read a text in your browser for verification.
+</Callout>
+
+Currently, professional cloning is only available for your own voice.
+
+Recommendations:
+
+1. **Quality Equipment:** Use a good microphone and record in a quiet place. The cleaner the recording, the better the result. I used the Zoom H5.
+2. **Continuous Recording:** Aim for long recordings with minimal pauses to maintain naturalness.
+3. **Varied Phrases:** Include casual, emotional, and informational phrases to make the cloned voice versatile and lifelike.
+4. **Speech Pace:** Speak smoothly, avoiding overly fast or slow tempos. This improves cloning quality.
+5. **Quality Check:** Ensure the recording has no noise, echo, or interference that might affect accuracy.
+6. **Retry if Needed:** If the result isn’t satisfactory, try recording again. Multiple takes can help achieve better quality. You can delete and recreate clones as needed.
+
+You can upload multiple separate recordings to create a professional clone.
+
+Processing will take several hours before the voice is ready for use.
+
+Now, let’s take a look at the voice settings.
+
+## How to configure a voice in ElevenLabs?
+
+Don’t be afraid to experiment.
+
+Write a short text of a few sentences and test different settings to find the perfect sound.
+
+<Shot src="./6776ff4ae8709c1cd5d85ca6_6776fe43867846b7ad3b1b09_6-elevenlabs-voice-model-options.webp" alt="ElevenLabs Voice Settings: Model Selection, Stability, and Style Parameters" />
+
+### How to Choose a Model in ElevenLabs?
+
+ElevenLabs offers various models for different tasks.
+
+I usually choose the newest one to get the best quality.
+
+Sometimes, the system might recommend a cheaper model depending on the selected voice.
+
+### What is Stability?
+
+This parameter controls the stability and emotional range of the voice.
+
+#### How Does It Work?
+
+1. **Low Stability values:** add variability and expressiveness, making the speech more lively and dynamic.
+2. **High Stability values:** create a steady, monotone voice suitable for formal content.
+
+#### How to Use?
+
+- For emotional stories or character dialogues, select low Stability values to convey vivid emotions.
+- For instructions or official materials, increase Stability to make the voice sound clear and consistent.
+- Avoid extremely low Stability values to prevent unnatural sound.
+
+### What is Similarity?
+
+The Similarity parameter determines how closely the AI-generated voice matches the original sample.
+
+#### How Does It Work?
+
+1. **High Similarity values:** make AI replicate the original voice accurately, including nuances and potential recording artifacts.
+2. **Low Similarity values:** reduce similarity to the original, minimizing artifacts but decreasing fidelity to the original voice.
+
+#### How to Use?
+
+- If you have a high-quality sample, select high Similarity values for maximum accuracy.
+- For samples with background noise or other defects, lower Similarity to avoid reproducing them.
+- Use Similarity in combination with Stability to achieve the optimal balance between authenticity and clarity.
+
+### What is Style Exaggeration?
+
+This parameter enhances the distinctive style of the original voice, making it more expressive.
+
+#### How Does It Work?
+
+1. **High values:** emphasize unique intonations and features of the original voice, creating a vibrant and emotional result.
+2. **Zero value:** keeps a neutral style, closely reflecting the original without added emphasis.
+
+#### How to Use?
+
+- Use high values for creative projects that require expressive and emotional delivery.
+- For professional or narrative tasks, leave the parameter at zero for stability and naturalness.
+- Increasing Style Exaggeration may require more resources and reduce speech stability.
+
+<Callout>
+  I usually set Stability to 30% and leave other parameters at zero.
+</Callout>
+
+## How to Add Pauses and Emotions in ElevenLabs?
+
+The emotional tone depends on the selected voice.
+
+**If you use a copy of your own voice, it’s important that the test recording includes a variety of emotions, intonations, and pauses.**
+
+For examples, I use my own voice clone.
+
+### How to Add Pauses?
+
+Pauses can be inserted using the _\<break time="1s" />_ tag, line breaks, or punctuation marks.
+
+Example:
+
+`"What’s this?" he wondered, tail flicking with excitement. <break time="1s" /> He ran to Bella, the wise owl – "Bella! I found this key!"`
+
+In this example, _\<break time="1s" />_ adds a one-second pause, making the speech sound more natural.
+
+Tips:
+
+- For short pauses, use a line break or ellipsis.
+- Adjust the length of pauses depending on the context—this is especially important for emotional or complex texts.
+- If it’s hard to configure pauses in a long text, break it into smaller parts and voice them separately.
+
+### How to Add Emotions?
+
+While ElevenLabs doesn’t support direct emotion commands, you can simulate them through context, punctuation, and word choice.
+
+#### Describing Emotions in Text
+
+Example:
+
+`"What’s this?" he wondered, tail flicking with excitement.`
+
+Use descriptions of actions and emotions, such as "_he wondered, tail flicking with excitement,_" to suggest the desired emotional tone to the system.
+
+More examples of prompts for different emotions:
+
+`"Come closer," she whispered, her voice laced with temptation.`
+
+`"Why did this happen?" he muttered, his voice thick with sorrow.`
+
+`"I can’t take this anymore!" she yelled, her face contorted with anger.`
+
+`"It’s too late now," he whispered, regret hanging in every word.`
+
+`"I knew this would happen!" she shouted, her voice filled with frustration.`
+
+`"I’m not sure I can do this," he sighed, uncertainty in his tone.`
+
+`"You have no idea how much I wanted this," she murmured, a soft yearning in her voice.`
+
+`"Don’t you dare!" he growled, his voice low and threatening.`
+
+`"I’m so sorry," she said, almost a whisper, her voice trembling with guilt.`
+
+`"This is exactly what I needed," he said, a satisfied grin on his face.`
+
+Note that emotion descriptions, like "_he whispered_," will also be voiced.
+
+This isn’t very convenient, but such fragments can be edited out later.
+
+<Callout>
+  It would be great if text could be tagged with emotions, similar to how italics or bold are applied. Maybe this feature will appear in the future.
+</Callout>
+
+#### Punctuation for Intonation
+
+1. **Periods ".":** add restraint and finality.
+2. **Ellipses "...":** convey thoughtfulness or hesitation.
+3. **Exclamation marks "!":** add energy or excitement.
+
+#### Practical Tips
+
+1. **Short phrases for emphasis:** "_I'm in! - he shouted_."
+2. **Alternating long and short sentences:** creates rhythm and adds dynamism.
+3. **Using caps for emphasis:** "_I FOUND THE KEY! - he exclaimed_." This helps convey emotions like surprise or excitement.
+
+The structure of the text, proper word choice, and settings in ElevenLabs help make speech expressive and emotional.
+
+## How to Automate Work with ElevenLabs?
+
+[ElevenLabs](https://slobo.click/elevenlabs) easily integrates with various services, enabling process automation and expanded functionality.
+
+### ChatGPT
+
+[ChatGPT](/create/ai/chatgpt) is perfect for generating scripts that can be voiced through ElevenLabs.
+
+For example, I use ElevenLabs to create voiceovers for short YouTube videos for creators.
+
+With a custom ChatGPT setup, I generate content ideas, write scripts for voiceovers, and create prompts for MidJourney—all in one click.
+
+I provided examples in the article about [what artificial intelligence is](/create/ai).
+
+### Make
+
+[Make.com](https://slobo.click/make) allows you to set up automations that simplify content creation and management.
+
+Examples:
+
+1. **Creating audio from text in one click:** You write text in Google Docs or upload a file. Make sends it to ElevenLabs, where the text is converted to audio, and the finished file is saved in Google Drive or sent via email.
+2. **Generating content for social media:** Make takes data from a spreadsheet, such as titles and descriptions, and generates audio files through ElevenLabs. Then, the audio is automatically combined with video and published on YouTube, TikTok, or Instagram using Canva or other tools.
+3. **Translation and voiceover in multiple languages:** Make sends the text to a translator, such as Google Translate or ChatGPT, translates it into the desired language, and forwards it to ElevenLabs to create audio. The finished files are uploaded to the cloud or sent to clients.
+
+More details on [how to create automations in Make](/create/no-code/make).
+
+### API
+
+The ElevenLabs API allows you to integrate speech generation into your application or website.
+
+API Capabilities:
+
+1. Text-to-speech conversion.
+2. Voice, style, and parameter customization.
+3. Uploading custom voices.
+
+## What Are the Alternatives to ElevenLabs?
+
+Among the popular voice generators are Speechify and Play.ht.
+
+1. **Speechify:** handles natural text-to-speech conversion quite well.
+2. **Play.ht:** stands out for its ease of use and flexible pricing plans.
+
+### Why Is ElevenLabs Better?
+
+1. **Emotional flexibility:** allows you to adjust the voice to fit the desired mood.
+2. **Voice cloning:** helps create unique and realistic sound.
+3. **Fine style tuning:** provides the ability to achieve personalized, high-quality output.
+
+Thanks to its features, ElevenLabs is perfect for a wide range of tasks — from creating podcasts and videos to professional audio content.
+
+I am actively exploring the capabilities of ElevenLabs for working on podcasts and [developing my Patreon](/monetize/memberships/patreon).
+
+Once I figure out all the details, I’ll be sure to update the article with new insights.
+
+### Conclusion
+
+ElevenLabs makes voiceover creation simple and engaging.
+
+<Callout>
+  Try it out: adjust the voice, add emotions, and explore its capabilities. This will help you decide if [ElevenLabs](https://slobo.click/elevenlabs) fits your needs.
+</Callout>
+
+## Frequently Asked Questions
