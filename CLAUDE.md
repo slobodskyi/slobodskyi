@@ -158,7 +158,10 @@ Owner decisions on the migration (2026-11-22):
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
   now: no form markup and no Beehiiv attribution script on the new site, the surrounding text stays.
   Not a DNS-switch blocker; the parity check documents it as an intended difference.
-- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`) are reported by the parity check as documented differences, never
+- Analytics = Cloudflare Web Analytics only (cookie-free, no consent banner). GTM/GA4, Meta Pixel and
+  Ahrefs Analytics are dropped on purpose (owner decision 2026-11-22). Google Search Console stays.
+- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools`) are
+  reported by the parity check as documented differences, never
   silently.
 - `noindex` is migrated 1:1 (affiliate-disclosure, search, terms-of-service). Those pages carry
   `noindex: true` and stay out of the sitemap; this is intended, not a defect. Webflow emitted two
