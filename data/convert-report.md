@@ -30,6 +30,15 @@ All match (apart from the documented fixes below).
 - `/ru/tools` (pages/tools:ru)
   - title: "Инструменты для криейторов" ≠ live "Курсы для криейторов"
   - why: <title> was copied from /ru/courses ("Курсы для криейторов")
+- `/courses` (pages/courses:en)
+
+  - why: ChatGPT 101 card linked to the 404 /ua/courses/chatgpt; now the ChatGPT guide (owner decision)
+- `/ua/courses` (pages/courses:uk)
+
+  - why: ChatGPT 101 card linked to the 404 /ua/courses/chatgpt; now the ChatGPT guide (owner decision)
+- `/ru/courses` (pages/courses:ru)
+
+  - why: ChatGPT 101 card linked to the 404 /ua/courses/chatgpt; now the ChatGPT guide (owner decision)
 - `/courses/public-offer` (pages/public-offer:en)
   - H1: "Public offer" ≠ live "public-offer-agreement"
   - description: "Public offer agreement for courses and consultations by Oleksandr Slobodskyi. The full text is available in Ukrainian." ≠ live ""
@@ -94,7 +103,6 @@ None: every anchor of the live site exists in the records.
 ## Internal links to unknown pages
 
 - `/ru/monetize/memberships/how-to-make-money-on-fansly` — guides/fansly-2:ru
-- `/ua/courses/chatgpt` (known legacy 404, kept) — pages/courses:en, pages/courses:uk, pages/courses:ru
 
 ## Internal links not found on the live page
 

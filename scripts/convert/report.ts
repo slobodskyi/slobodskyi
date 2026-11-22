@@ -24,8 +24,8 @@ interface Input {
 }
 
 const PAGE_TYPES = new Set(['article', 'hub', 'category', 'page', 'home']);
-/** Documented legacy defects (CLAUDE.md, owner decisions 2026-11-22). */
-const KNOWN_BROKEN_LINKS = new Set(['/ua/courses/chatgpt']);
+/** Broken internal links accepted on purpose (none: the owner allows no exceptions). */
+const KNOWN_BROKEN_LINKS = new Set<string>();
 
 const fileOf = (root: string, address: string) => {
   const [path = '', lang = ''] = address.split(':');

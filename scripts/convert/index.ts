@@ -148,6 +148,8 @@ function makeContext(address: string, dir: string, lang: Lang): ConvertContext {
         path = articleRoutes.get(path) ?? path;
         if (lang !== 'en' && !/^\/(ua|ru)(\/|$)/.test(path)) path = withLangPrefix(lang, path);
       }
+      // Owner decision: the ChatGPT 101 course never existed (404); its card points to the guide.
+      if (path === '/ua/courses/chatgpt') path = withLangPrefix(lang, '/create/ai/chatgpt');
       return (path || '/') + hash;
     },
   };
@@ -618,6 +620,14 @@ export const FIXES: Record<string, Fix> = {
     description: 'Во время обработки оплаты произошла ошибка. Напишите мне, и я помогу.',
     why: '<title> "/payment-problem", no description',
   },
+  ...Object.fromEntries(
+    (['en', 'uk', 'ru'] as const).map((lang) => [
+      withLangPrefix(lang, '/courses'),
+      {
+        why: 'ChatGPT 101 card linked to the 404 /ua/courses/chatgpt; now the ChatGPT guide (owner decision)',
+      },
+    ]),
+  ),
   '/ru/tools': {
     seoTitle: 'Инструменты для криейторов',
     why: '<title> was copied from /ru/courses ("Курсы для криейторов")',
