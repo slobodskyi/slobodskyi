@@ -67,8 +67,9 @@ const { Content } = await render(rec.entry);
       </p>
     </header>
     <div class="article-body">
+      <Toc headings={headings} title={s.toc} />
       <div class="toc-rail">
-        <Toc headings={headings} title={s.toc} />
+        <Toc headings={headings} title={s.toc} rail />
       </div>
       <div class="prose">
         <Content components={mdxComponents} />
@@ -121,13 +122,14 @@ const { Content } = await render(rec.entry);
     font-size: var(--text-lg);
     margin-top: var(--space-7);
   }
-  /* Wide screens: the table of contents hangs in the left margin and follows the reader. */
+  /* Wide screens: a second copy of the table of contents hangs in the right margin and follows
+     the reader once the one in the text has scrolled away. */
   @media (min-width: 86rem) {
     .toc-rail {
       position: absolute;
       top: 0;
       bottom: 0;
-      right: calc(100% + var(--space-7));
+      left: calc(100% + var(--space-7));
       width: 260px;
     }
     .toc-rail :global(.toc) {
