@@ -84,7 +84,9 @@ export function writeReport({ root, issues, written, snapshot, fixes }: Input): 
     else if (diff.length) seo.push(entry);
     const liveLinks = new Set(page.internalLinks);
     const notLive = extractInternalLinks(body).filter((l) => !liveLinks.has(l) && !KNOWN_BROKEN_LINKS.has(l));
-    if (notLive.length) linkDiffs.push(`- \`${w.url}\`: ${notLive.map((l) => `\`${l}\``).join(', ')}`);
+    // Fixed pages may get new text (see the documented fixes); their links are not on the live page.
+    if (notLive.length && !fixes[w.url])
+      linkDiffs.push(`- \`${w.url}\`: ${notLive.map((l) => `\`${l}\``).join(', ')}`);
     const have = new Set(heads.map((h) => h.anchor));
     const lost = page.anchors.filter((a) => !have.has(a.legacy)).map((a) => `#${a.legacy}`);
     if (lost.length) anchors.push(`- \`${w.url}\`: ${lost.join(', ')}`);

@@ -461,10 +461,9 @@ function convertFromSnapshot(
     }
     if (!seo.description) {
       seo.description = firstSentences(body);
-      ctx.issue(
-        'description',
-        `live page has no meta description; taken from the body: "${seo.description}"`,
-      );
+      if (seo.description) {
+        FIXES[url] ??= { why: 'live page has no meta description; taken from the first paragraph' };
+      } else ctx.issue('description', 'live page has no meta description and no text to take one from');
     }
     write(
       collection,
@@ -546,6 +545,23 @@ const UA_ONLY = (label: string, path: string, lang: 'en' | 'ru') =>
   lang === 'en'
     ? `The full text is available in Ukrainian: [${label}](${path}).\n`
     : `Полный текст доступен на украинском языке: [${label}](${path}).\n`;
+const PAYMENT_SUCCESS: Record<Lang, Required<Pick<Fix, 'title' | 'description' | 'body'>>> = {
+  en: {
+    title: 'Payment successful',
+    description: 'Thank you for your payment. Access details are on their way to your email.',
+    body: 'Thank you for your payment! Access details are on their way to your email. If anything is missing, [contact me](/contacts).\n',
+  },
+  uk: {
+    title: 'Оплата успішна',
+    description: 'Дякую за оплату. Деталі доступу вже надіслано на вашу пошту.',
+    body: 'Дякую за оплату! Деталі доступу вже надіслано на вашу пошту. Якщо щось не так, [напишіть мені](/ua/contacts).\n',
+  },
+  ru: {
+    title: 'Оплата прошла успешно',
+    description: 'Спасибо за оплату. Детали доступа уже отправлены на вашу почту.',
+    body: 'Спасибо за оплату! Детали доступа уже отправлены на вашу почту. Если что-то не так, [напишите мне](/ru/contacts).\n',
+  },
+};
 export const FIXES: Record<string, Fix> = {
   '/courses/privacy-policy': {
     title: 'Privacy Policy',
@@ -582,6 +598,26 @@ export const FIXES: Record<string, Fix> = {
     seoTitle: 'Інструменти для кріейторів',
     why: '<title> was copied from /ua/courses ("Курси для кріейторів")',
   },
+  ...Object.fromEntries(
+    (['en', 'uk', 'ru'] as const).map((lang) => [
+      withLangPrefix(lang, '/courses/payment-success-67dd392a3c9d80c3ee009047'),
+      {
+        ...PAYMENT_SUCCESS[lang],
+        seoTitle: null,
+        why: 'blank page on the live site: <title> "payment-success", no H1, no description, no text',
+      },
+    ]),
+  ),
+  '/courses/payment-problem': {
+    seoTitle: null,
+    description: 'Something went wrong while processing your payment. Contact me and I will help.',
+    why: '<title> "/payment-problem", no description',
+  },
+  '/ru/courses/payment-problem': {
+    seoTitle: null,
+    description: 'Во время обработки оплаты произошла ошибка. Напишите мне, и я помогу.',
+    why: '<title> "/payment-problem", no description',
+  },
   '/ru/tools': {
     seoTitle: 'Инструменты для криейторов',
     why: '<title> was copied from /ru/courses ("Курсы для криейторов")',
@@ -602,6 +638,11 @@ const PAGES: [id: string, path: string][] = [
   ['privacy-policy', '/courses/privacy-policy'],
   ['how-to-create-images-with-ai', '/courses/how-to-create-images-with-ai'],
   ['payment-alternatives', '/courses/payment-alternatives'],
+  // Unlinked Webflow pages, found after the first snapshot (no sitemap entry, noindex on the live site).
+  ['payment-success', '/courses/payment-success-67dd392a3c9d80c3ee009047'],
+  ['payment-problem', '/courses/payment-problem'],
+  ['search', '/search'],
+  ['terms-of-service', '/terms-of-service'],
 ];
 
 function convertPages() {
