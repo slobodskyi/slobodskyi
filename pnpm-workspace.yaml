@@ -1,6 +1,7 @@
 packages:
   - apps/*
   - packages/*
+  - scripts
 
 # Packages allowed to run install scripts (native binaries for the build and local Workers runtime).
 allowBuilds:
