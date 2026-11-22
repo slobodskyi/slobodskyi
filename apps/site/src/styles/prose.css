@@ -24,10 +24,9 @@
     color: var(--color-muted);
   }
 
-  /* Scrolls sideways on narrow screens; edge shadows show there is more (pure CSS). */
-  .prose table {
-    display: block;
-    width: 100%;
+  /* Wide tables scroll sideways inside the wrapper (components/mdx/Table.astro); edge shadows
+     show there is more (pure CSS). The table itself always fills the text width. */
+  .prose .table-scroll {
     overflow-x: auto;
     background:
       linear-gradient(to right, var(--color-surface) 30%, transparent) left / 40px 100% no-repeat local,
@@ -37,10 +36,14 @@
         scroll,
       var(--color-surface);
     border-radius: var(--radius-sm);
+    margin: var(--space-5) 0;
+  }
+
+  .prose table {
+    width: 100%;
     border-collapse: collapse;
     font-size: var(--text-md);
     line-height: 1.45;
-    margin: var(--space-5) 0;
   }
 
   .prose :is(th, td) {
