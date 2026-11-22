@@ -83,6 +83,11 @@ interface WebflowPage {
 const readJson = <T>(path: string): T => JSON.parse(readFileSync(path, 'utf8')) as T;
 const collection = (slug: string) => readJson<CmsCollection>(join(EXPORT, 'collections', `${slug}.json`));
 
+/** Owner text edits of generated records (data/content-edits.json): exact find → replace. */
+const CONTENT_EDITS = readJson<{ edits: { address: string; find: string; replace: string }[] }>(
+  join(ROOT, 'data', 'content-edits.json'),
+).edits;
+
 /** Static redirects (data/redirects/*.csv), chains followed: from → final target. */
 const staticRedirects = new Map<string, string>();
 for (const name of readdirSync(join(ROOT, 'data', 'redirects'))
@@ -198,6 +203,10 @@ function write(collection: Collection, id: string, lang: Lang, data: Record<stri
   // A link rewritten to the record's own URL (e.g. a removed course → this guide) becomes plain text.
   const self = urlFor(lang, collection, parsed.data).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   body = body.replace(new RegExp(`\\[([^\\]]*)\\]\\(${self}\\)`, 'g'), '$1');
+  for (const edit of CONTENT_EDITS.filter((e) => e.address === address)) {
+    if (body.includes(edit.find)) body = body.replace(edit.find, edit.replace);
+    else issues.push({ address, kind: 'edit', detail: `text not found: ${edit.find.slice(0, 80)}` });
+  }
   writeFileSync(file, serializeDocument(data, body));
   written.push({
     address,

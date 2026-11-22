@@ -153,6 +153,9 @@ Owner decisions on the migration (2026-11-22):
   `data/redirects/*.csv` and rewrites links to it to the final target (a link that would point to the
   record itself becomes text). `/ua/courses/chatgpt` stays a 404. No broken internal links, with no
   exceptions: `pnpm check:build` fails on every one.
+- Owner text edits of converted records live in `data/content-edits.json` (exact find → replace per
+  record address) and are applied by `pnpm convert`; an edit whose text is not found is reported.
+  Used to drop the course and consultation promos from guides, home and about.
 - No contact form (owner decision 2026-11-22): `/contacts` shows the email address
   oleksandr@slobodskyi.com instead of the Webflow form; the Worker has no `/api/contact`.
 - The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
