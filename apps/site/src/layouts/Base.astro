@@ -1,0 +1,22 @@
+---
+// Minimal base layout for the scaffold. Real templates and the SEO layer arrive in Steps 5–6.
+interface Props {
+  title: string;
+  description: string;
+  lang: 'en' | 'uk' | 'ru';
+}
+const { title, description, lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
