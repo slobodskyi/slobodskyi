@@ -102,24 +102,14 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
 </script>
 
 <style>
+  /* No bar. Below 88rem the header is simply the top of the page and scrolls away with it.
+     From 88rem the page margin is wide enough for navigation: the logo and the menu stand in a
+     column at the window's left edge, beside the sheet (the TOC rail has the right one), and
+     stay there while the sheet scrolls. The header box itself lets clicks through. */
   .site-header {
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 40;
     padding: var(--space-2) var(--gutter);
-    background: color-mix(in srgb, var(--color-bg) 85%, transparent);
-    backdrop-filter: saturate(1.4) blur(12px);
-    -webkit-backdrop-filter: saturate(1.4) blur(12px);
-    border-bottom: 1px solid transparent;
-    animation: header-edge linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 80px;
-  }
-  /* The bottom edge appears once the page is scrolled (scroll-driven, no JS). */
-  @keyframes header-edge {
-    to {
-      border-bottom-color: var(--color-border-soft);
-    }
   }
   .header-inner {
     display: flex;
@@ -283,6 +273,39 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
     .mobile-langs {
       display: flex;
       gap: var(--space-1);
+    }
+  }
+
+  @media (min-width: 88rem) {
+    .site-header {
+      position: fixed;
+      inset: 0 auto auto 0;
+      padding: var(--space-4) var(--space-5);
+      pointer-events: none;
+    }
+    .header-inner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-4);
+      max-width: none;
+      margin: 0;
+    }
+    .header-inner > :global(*) {
+      pointer-events: auto;
+    }
+    .nav-desktop {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      /* Link text lines up with the logo's left edge. */
+      margin-left: calc(-1 * var(--space-3));
+    }
+    /* Menus open beside the column, over the page margin and the sheet. */
+    .dropdown-list,
+    .dropdown-right {
+      top: 0;
+      left: calc(100% + var(--space-2));
+      right: auto;
     }
   }
 </style>
