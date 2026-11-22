@@ -6,7 +6,7 @@ import { extractHeadings, extractInternalLinks, parseDocument } from '@slobodsky
 interface Input {
   root: string;
   issues: { address: string; kind: string; detail: string }[];
-  written: { address: string; url: string; status: string }[];
+  written: { address: string; url: string; status: string; legacyUrls: string[] }[];
   fixes: Record<string, { why: string }>;
   snapshot: Map<
     string,
@@ -45,7 +45,11 @@ export function writeReport({ root, issues, written, snapshot, fixes }: Input): 
 
   // 1. URL coverage.
   const live = [...snapshot.values()].filter((p) => p.status === 200 && PAGE_TYPES.has(p.pageType));
-  const missing = live.filter((p) => (byUrl.get(p.url)?.length ?? 0) === 0).map((p) => p.url);
+  // Live URLs listed in legacyUrls of a published record are redirected on purpose.
+  const redirected = new Set(published.flatMap((w) => w.legacyUrls));
+  const missing = live
+    .filter((p) => (byUrl.get(p.url)?.length ?? 0) === 0 && !redirected.has(p.url))
+    .map((p) => p.url);
   const dupes = [...byUrl].filter(([, a]) => a.length > 1).map(([u, a]) => `${u}: ${a.join(', ')}`);
   const extra = published.filter((w) => !snapshot.has(w.url)).map((w) => `${w.url} (${w.address})`);
 
@@ -106,7 +110,7 @@ export function writeReport({ root, issues, written, snapshot, fixes }: Input): 
 
   out.push('## URL coverage', '');
   out.push(
-    `Live 200 pages (article/hub/category/page/home): ${live.length}; mapped to exactly one published record: ${live.length - missing.length - dupes.length}.`,
+    `Live 200 pages (article/hub/category/page/home): ${live.length}; mapped to exactly one published record: ${live.length - missing.length - dupes.length - redirected.size}; redirected via legacyUrls: ${redirected.size}.`,
     '',
   );
   out.push(

@@ -1,7 +1,7 @@
 // Card data for lists of hubs, categories and guides.
 import type { CardItem } from '../components/Cards.astro';
-import { categoriesOf, guidesOf, readingTime, type Rec } from './content';
-import { categoryLabel, formatDate, HUB_LABEL, t } from './i18n';
+import { categoriesOf, guidesOf, labelOf, readingTime, type Rec } from './content';
+import { formatDate, t } from './i18n';
 
 const cover = (rec: Rec) =>
   rec.data.cover
@@ -24,7 +24,7 @@ export async function hubCard(rec: Rec): Promise<CardItem> {
   const count = (await guidesOf(rec.lang, rec.data.hub)).length;
   return {
     url: rec.url,
-    title: HUB_LABEL[rec.data.hub][rec.lang],
+    title: labelOf(rec),
     text: rec.data.description,
     cover: cover(rec),
     chips: [t(rec.lang).articles(count)],
@@ -36,7 +36,7 @@ export async function categoryCard(rec: Rec): Promise<CardItem> {
   const count = (await guidesOf(rec.lang, rec.data.hub, rec.data.category)).length;
   return {
     url: rec.url,
-    title: categoryLabel(rec.data.category, rec.lang, rec.data.title),
+    title: labelOf(rec),
     text: rec.data.description,
     cover: cover(rec),
     chips: [t(rec.lang).articles(count)],

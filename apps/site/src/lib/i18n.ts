@@ -1,6 +1,6 @@
-// UI strings and short navigation labels. Content lives in content/; this file holds only the
-// site chrome (menus, buttons, headings of generated blocks), taken from the legacy templates.
-import type { Hub, Lang } from '@slobodskyi/core';
+// UI strings of the site chrome (menus, buttons, headings of generated blocks), taken from the
+// legacy templates. Names of hubs and categories come from frontmatter `label`.
+import type { Lang } from '@slobodskyi/core';
 
 export const HTML_LANG: Record<Lang, string> = { en: 'en', uk: 'uk', ru: 'ru' };
 export const OG_LOCALE: Record<Lang, string> = { en: 'en_US', uk: 'uk_UA', ru: 'ru_RU' };
@@ -141,34 +141,6 @@ const ui = {
 
 export type Ui = (typeof ui)['en'];
 export const t = (lang: Lang): Ui => ui[lang];
-
-/** Short hub names (menu, cards, breadcrumbs), as in the legacy Webflow "name" field. */
-export const HUB_LABEL: Record<Hub, Record<Lang, string>> = {
-  create: { en: 'Create', uk: 'Створення', ru: 'Создание' },
-  connect: { en: 'Connect', uk: 'Контакт', ru: 'Контакт' },
-  monetize: { en: 'Monetize', uk: 'Монетизація', ru: 'Монетизация' },
-  grow: { en: 'Grow', uk: 'Розвиток', ru: 'Развитие' },
-};
-
-/**
- * Short category names (cards, breadcrumbs). Falls back to the record title for categories not
- * listed here. TODO: move into frontmatter (a `label` field) when the schema gets one.
- */
-const CATEGORY_LABEL: Record<string, Record<Lang, string>> = {
-  ai: { en: 'AI', uk: 'ШІ', ru: 'ИИ' },
-  'no-code': { en: 'No-code', uk: 'No-code', ru: 'No-code' },
-  content: { en: 'Content', uk: 'Контент', ru: 'Контент' },
-  organic: { en: 'Organic', uk: 'Органіка', ru: 'Органика' },
-  paid: { en: 'Paid', uk: 'Платне', ru: 'Платное' },
-  analytics: { en: 'Analytics', uk: 'Аналітика', ru: 'Аналитика' },
-  advertisement: { en: 'Advertisement', uk: 'Реклама', ru: 'Реклама' },
-  marketplaces: { en: 'Marketplaces', uk: 'Маркетплейси', ru: 'Маркетплейсы' },
-  memberships: { en: 'Memberships', uk: 'Підписки', ru: 'Подписки' },
-  payments: { en: 'Payments', uk: 'Платежі', ru: 'Платежи' },
-};
-
-export const categoryLabel = (category: string, lang: Lang, fallback: string): string =>
-  CATEGORY_LABEL[category]?.[lang] ?? fallback;
 
 const DATE_LOCALE: Record<Lang, string> = { en: 'en-US', uk: 'uk-UA', ru: 'ru-RU' };
 

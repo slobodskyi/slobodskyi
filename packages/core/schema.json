@@ -20,6 +20,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -113,6 +117,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -219,6 +227,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -314,6 +326,10 @@
           "default": false,
           "type": "boolean"
         },
+        "sitemap": {
+          "default": true,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -383,6 +399,10 @@
           "minLength": 1
         },
         "seoTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
           "type": "string",
           "minLength": 1
         },
@@ -479,6 +499,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -558,6 +582,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -651,6 +679,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -742,6 +774,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -835,6 +871,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -904,6 +944,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -997,6 +1041,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -1066,6 +1114,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -1159,6 +1211,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -1228,6 +1284,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -1321,6 +1381,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -1390,6 +1454,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -1483,6 +1551,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {
@@ -1552,6 +1624,10 @@
           "type": "string",
           "minLength": 1
         },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
         "lead": {
           "type": "string",
           "minLength": 1
@@ -1647,6 +1723,10 @@
           "default": false,
           "type": "boolean"
         },
+        "sitemap": {
+          "default": true,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -1711,6 +1791,10 @@
           "minLength": 1
         },
         "seoTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
           "type": "string",
           "minLength": 1
         },
@@ -1807,6 +1891,10 @@
         },
         "noindex": {
           "default": false,
+          "type": "boolean"
+        },
+        "sitemap": {
+          "default": true,
           "type": "boolean"
         },
         "legacyUrls": {

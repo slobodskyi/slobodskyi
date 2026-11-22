@@ -149,6 +149,23 @@
       "url": "/ua/search",
       "field": "description",
       "reason": "Documented conversion fix on a noindex page (data/convert-report.md, scripts/convert FIXES): legacy page had no meta description: description taken from the first paragraph in Step 4."
+    },
+    {
+      "url": "/ua/create/no-code/prd-for-vibe-coding",
+      "field": "status",
+      "expected": "301 → /create/no-code/prd-for-vibe-coding",
+      "reason": "Untranslated copy (English body) removed and redirected to the English guide (owner decision 2026-11-22)."
+    },
+    {
+      "url": "/ru/create/no-code/prd-for-vibe-coding",
+      "field": "status",
+      "expected": "301 → /create/no-code/prd-for-vibe-coding",
+      "reason": "Untranslated copy (English body) removed and redirected to the English guide (owner decision 2026-11-22)."
+    },
+    {
+      "url": "/create/no-code/prd-for-vibe-coding",
+      "field": "hreflang",
+      "reason": "The ua/ru untranslated copies now 301 to the English guide, so it has no uk/ru alternates (owner decision 2026-11-22)."
     }
   ]
 }

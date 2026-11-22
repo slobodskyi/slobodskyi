@@ -1,6 +1,7 @@
 ---
-import { HUBS, LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
-import { HUB_LABEL, LANG_NAME, LANG_SHORT, t } from '../lib/i18n';
+import { LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
+import { LANG_NAME, LANG_SHORT, t } from '../lib/i18n';
+import { hubsOf, labelOf } from '../lib/content';
 
 interface Props {
   lang: Lang;
@@ -10,7 +11,7 @@ interface Props {
 const { lang, alternates } = Astro.props;
 const s = t(lang);
 const p = (route: string) => withLangPrefix(lang, route);
-const hubs = HUBS.map((h) => ({ label: HUB_LABEL[h][lang], url: p(`/${h}`) }));
+const hubs = (await hubsOf(lang)).map((h) => ({ label: labelOf(h), url: h.url }));
 const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(l, '/') }));
 // Zero-JS menus: <details> dropdowns; the mobile menu is a separate <details>.
 ---

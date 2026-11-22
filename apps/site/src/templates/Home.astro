@@ -2,7 +2,6 @@
 // Home page: H1, subtitle, hero image (LCP), body with the hub card list after "Where to Start".
 import { render } from 'astro:content';
 import { getImage } from 'astro:assets';
-import { HUBS } from '@slobodskyi/core';
 import Base from '../layouts/Base.astro';
 import HomeH2 from '../components/HomeH2.astro';
 import Cards from '../components/Cards.astro';
@@ -19,9 +18,7 @@ interface Props {
 }
 const { rec } = Astro.props;
 const head = await headFor(rec);
-const hubOrder = (r: Rec) => (r.data.type === 'hub' ? HUBS.indexOf(r.data.hub) : 99);
-const hubs = (await hubsOf(rec.lang)).sort((a, b) => hubOrder(a) - hubOrder(b));
-const cards = await Promise.all(hubs.map(hubCard));
+const cards = await Promise.all((await hubsOf(rec.lang)).map(hubCard));
 const h2 = headingsOf(rec).filter((h) => h.depth === 2);
 Astro.locals.home = {
   heroAfter: h2[0]?.anchor,

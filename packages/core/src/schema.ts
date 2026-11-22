@@ -36,6 +36,8 @@ const common = {
   description: z.string().trim().min(1).optional(),
   /** <title> when it differs from the H1. */
   seoTitle: z.string().trim().min(1).optional(),
+  /** Short name for menus, cards and breadcrumbs (e.g. "AI" for a category); defaults to title. */
+  label: z.string().trim().min(1).optional(),
   /** Intro paragraph under the H1. */
   lead: z.string().trim().min(1).optional(),
   /** Cover image, path relative to the record folder. */
@@ -55,6 +57,8 @@ const common = {
    * sitemap. Used for legacy pages that were noindex on Webflow (e.g. course sales pages).
    */
   noindex: z.boolean().default(false),
+  /** false keeps an indexable page out of sitemap.xml (noindex pages are always left out). */
+  sitemap: z.boolean().default(true),
   /** Previous paths of this record (with language prefix). Each becomes a 301 to the current URL. */
   legacyUrls: z.array(legacyPathSchema).default([]),
   related: z.array(recordRefSchema).default([]),

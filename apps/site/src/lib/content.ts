@@ -3,6 +3,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import {
   extractHeadings,
+  HUBS,
   isCollection,
   isLang,
   isPublished,
@@ -79,9 +80,14 @@ export async function findPage(lang: Lang, path: string): Promise<Rec | undefine
   return all.find((r) => r.lang === lang && r.data.type === 'page' && r.data.path === path);
 }
 
+/** Short name for menus, cards and breadcrumbs: frontmatter `label`, else the title. */
+export const labelOf = (rec: Rec): string => rec.data.label ?? rec.data.title;
+
+/** Published hubs of a language in HUBS order. */
 export async function hubsOf(lang: Lang): Promise<Rec[]> {
   const all = await publishedRecords();
-  return all.filter((r) => r.lang === lang && r.data.type === 'hub');
+  const order = (r: Rec) => (r.data.type === 'hub' ? HUBS.indexOf(r.data.hub) : HUBS.length);
+  return all.filter((r) => r.lang === lang && r.data.type === 'hub').sort((a, b) => order(a) - order(b));
 }
 
 export async function hubRecord(lang: Lang, hub: string): Promise<Rec | undefined> {

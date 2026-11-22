@@ -116,12 +116,12 @@ uniqueness only; always run `validate` after it.
 Site templates (Step 5–6): one catch-all route `apps/site/src/pages/[...path].astro` renders every
 published record at `urlFor()` and picks a template from `src/templates/` (Home, Article, Hub, Category,
 Page). Records, translations, related guides: `src/lib/content.ts`; head/SEO: `src/lib/seo.ts`; JSON-LD
-(one Person/Organization `@id`): `src/lib/schema-org.ts`; UI strings and short hub/category labels:
-`src/lib/i18n.ts`. MDX images (`<Shot src="./x">`, `cover`) resolve against the record folder via
+(one Person/Organization `@id`): `src/lib/schema-org.ts`; UI strings of the chrome: `src/lib/i18n.ts`. MDX images (`<Shot src="./x">`, `cover`) resolve against the record folder via
 `src/lib/images.ts` (`Astro.locals.recordDir`). Endpoints: `sitemap.xml`, `robots.txt`, RSS
 (`<prefix>/rss.xml`, `<prefix>/rss/<collection>.xml`), `<url>.md` copies. `pnpm build` also writes
 `dist/_redirects` via `pnpm content redirects`. Cold build ≈6 min (image encoding, cached in
-`node_modules/.astro`), warm ≈10 s.
+`node_modules/.astro`), warm ≈10 s. Astro's content cache does not notice changes to the core schema:
+after changing `schema.ts`, delete `apps/site/node_modules/.astro/data-store.json` (keep `assets/`).
 
 The site reads content through one Astro collection (`apps/site/src/content.config.ts`) whose schema
 is the core schema and whose entry ids are record addresses. Pages must filter with `isPublished()`.
@@ -130,7 +130,13 @@ is the core schema and whose entry ids are record addresses. Pages must filter w
 
 Owner decisions on the migration (2026-11-22):
 
-- `/ru/` and the untranslated `/ua|/ru/create/no-code/prd-for-vibe-coding` are migrated 1:1.
+- `/ru/` is migrated 1:1. Localized guide copies whose body is the English one verbatim are not
+  translations: `pnpm convert` skips them and puts their live URLs into `legacyUrls` of the English
+  guide, so they 301 there (owner decision 2026-11-22, supersedes "migrated 1:1"; today only
+  `/ua|/ru/create/no-code/prd-for-vibe-coding`).
+- Prefer data over code: short names of hubs/categories are frontmatter `label` (Webflow CMS
+  `name`), sitemap exclusions are `sitemap: false` (from the legacy sitemap), reading time is
+  computed. Do not add per-record tables or special cases to the site code.
 - Hidden course pages (`/courses/how-to-create-images-with-ai`, `/courses/payment-alternatives` in all
   three languages, not in the sitemap) are migrated 1:1 with their current robots: `noindex: true`
   everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
