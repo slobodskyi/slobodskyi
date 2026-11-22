@@ -53,8 +53,8 @@ Types: `guides essays log til links notes projects pages hubs categories`.
 - Languages: `en` (root), `uk` (URL prefix `/ua`, hreflang `uk`), `ru` (`/ru`). Do not rename `/ua`.
 - Changing a published URL requires adding the old path to `legacyUrls` in frontmatter; `_redirects` is
   generated from it. No redirect chains.
-- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`). No
-  arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
+- MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`, and the
+  click-to-load embeds `BuyMeACoffee`, `VideoAsk`). No arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
 - Heading anchors: Markdown headings get the github-slugger id Astro injects. A legacy Webflow H2 anchor
   that differs from it is preserved with a JSX heading on its own line: `<h2 id="fees-amp-rates">Fees
 &amp; rates</h2>` (`legacyAnchor()` reproduces the Webflow script exactly). Never use `{#id}`: in MDX
@@ -97,6 +97,8 @@ pnpm content schema --out packages/core/schema.json
 pnpm legacy:crawl                     # re-snapshot the live Webflow site into data/legacy/
 pnpm webflow:export                   # Webflow Data API → data/legacy/webflow-export/ (needs .env)
 pnpm webflow:media                    # download Webflow CDN files → data/legacy/media/ + media-map.json
+pnpm convert                          # Webflow export + snapshot → content/{guides,hubs,categories,pages}
+                                      # (wipes and regenerates them) + data/convert-report.md
 ```
 
 Webflow API notes: the primary locale (en) must be requested without `localeId`; 301 redirects are
@@ -138,6 +140,10 @@ Owner decisions on the migration (2026-11-22):
   conversion script, not as remark/rehype build plugins.
 - Core runs under Node's built-in TypeScript stripping (no build step): relative imports use `.ts`
   extensions and only erasable syntax is allowed (no enums, namespaces, parameter properties).
+- `pnpm convert` owns `content/{guides,hubs,categories,pages}` until the migration is signed off: fix
+  conversion problems in `scripts/convert/`, not in the generated records. Webflow resolved relative
+  links at publish time (`/<collection>/<item>` → template path, uk/ru pages get the locale prefix);
+  the converter reproduces that, so links in records equal the live ones.
 - URLs for essays, log, til, links, notes and projects (`/<collection>/<slug>`) are provisional until
   the first record of that type is published.
 
