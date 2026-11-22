@@ -147,7 +147,12 @@ function extract(path: string, html: string, status: number, inSitemap: boolean)
     title: title ? textOf(title) : null,
     description: meta(head, 'name', 'description') ?? null,
     canonical: canonicalHref ? (attr(canonicalHref, 'href') ?? null) : null,
-    robots: meta(head, 'name', 'robots') ?? null,
+    // Webflow can emit several robots tags (page setting + site-wide custom code); keep them all.
+    robots:
+      findAll(head, (n) => n.tagName === 'meta' && attr(n, 'name')?.toLowerCase() === 'robots')
+        .map((n) => attr(n, 'content') ?? '')
+        .filter(Boolean)
+        .join(', ') || null,
     ogTitle: meta(head, 'property', 'og:title') ?? null,
     ogDescription: meta(head, 'property', 'og:description') ?? null,
     ogImage: meta(head, 'property', 'og:image') ?? null,
