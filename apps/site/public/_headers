@@ -1,0 +1,7 @@
+# Link headers (RFC 8288) on the home pages point agents to machine-readable entry points.
+/
+  Link: </llms.txt>; rel="describedby"; type="text/markdown", </sitemap.xml>; rel="sitemap"; type="application/xml", </rss.xml>; rel="alternate"; type="application/rss+xml"
+/ua
+  Link: </llms.txt>; rel="describedby"; type="text/markdown", </sitemap.xml>; rel="sitemap"; type="application/xml", </ua/rss.xml>; rel="alternate"; type="application/rss+xml"
+/ru
+  Link: </llms.txt>; rel="describedby"; type="text/markdown", </sitemap.xml>; rel="sitemap"; type="application/xml", </ru/rss.xml>; rel="alternate"; type="application/rss+xml"
