@@ -66,7 +66,9 @@ Types: `guides essays log til links notes projects pages hubs categories`.
 ## Safety rules for machines
 
 - Bots, agents and the admin **only propose**: new files in `content/inbox/` or a `draft/<slug>` branch →
-  PR. Publishing = merge into `main`, and **only the owner merges**.
+  PR. Publishing = merge into `main`. Bots and automated agents never merge. Claude Code sessions
+  working for the owner may merge a PR themselves once **all** checks are green (owner decision
+  2026-11-22), using merge commits; anything red or unchecked waits for the owner.
 - Mark machine-made content in frontmatter (`ai: { assisted: true }`).
 - Never commit secrets. Tokens live in `.env` / `.dev.vars` (git-ignored) or Cloudflare secrets.
 - Never switch DNS, cancel anything in Webflow, or touch `slobo.click` (separate service).
