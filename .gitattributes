@@ -1,0 +1,2 @@
+# Snapshot of the legacy site: data, not code. Keep it out of diffs and language stats.
+data/legacy/** -diff linguist-generated=true

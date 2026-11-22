@@ -147,6 +147,11 @@ describe('frontmatter', () => {
     expect(parsed.created).toBe('2024-03-01');
   });
 
+  it('defaults noindex to false and accepts true', () => {
+    expect(fm({ type: 'hub', hub: 'grow' }).noindex).toBe(false);
+    expect(fm({ type: 'page', path: '/courses/payment-alternatives', noindex: true }).noindex).toBe(true);
+  });
+
   it('rejects unknown fields (typos)', () => {
     expect(() => fm({ type: 'hub', hub: 'grow', tittle: 'x' })).toThrow();
   });

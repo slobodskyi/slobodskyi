@@ -1,0 +1,17 @@
+{
+  "name": "@slobodskyi/scripts",
+  "private": true,
+  "type": "module",
+  "description": "One-off and maintenance scripts: legacy crawler, Webflow import, conversion, checks.",
+  "scripts": {
+    "check": "tsc -p ."
+  },
+  "dependencies": {
+    "@slobodskyi/core": "workspace:*",
+    "parse5": "8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "6.0.3"
+  }
+}
