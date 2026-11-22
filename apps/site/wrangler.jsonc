@@ -16,6 +16,9 @@
   "env": {
     "preview": {
       "name": "slobodskyi-site-preview",
+      // Also served on v2.slobodskyi.com (Cloudflare creates the DNS record). Still noindex there.
+      "routes": [{ "pattern": "v2.slobodskyi.com", "custom_domain": true }],
+      "workers_dev": true,
       // The preview must never be indexed: the Worker runs first on every request
       // and adds X-Robots-Tag: noindex.
       "assets": {
