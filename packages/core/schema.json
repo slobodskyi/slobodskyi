@@ -111,6 +111,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -306,6 +310,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -468,6 +476,10 @@
               "format": "date"
             }
           ]
+        },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
         },
         "legacyUrls": {
           "default": [],
@@ -636,6 +648,10 @@
               "format": "date"
             }
           ]
+        },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
         },
         "legacyUrls": {
           "default": [],
@@ -817,6 +833,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -974,6 +994,10 @@
               "format": "date"
             }
           ]
+        },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
         },
         "legacyUrls": {
           "default": [],
@@ -1133,6 +1157,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -1290,6 +1318,10 @@
               "format": "date"
             }
           ]
+        },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
         },
         "legacyUrls": {
           "default": [],
@@ -1449,6 +1481,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -1607,6 +1643,10 @@
             }
           ]
         },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
+        },
         "legacyUrls": {
           "default": [],
           "type": "array",
@@ -1764,6 +1804,10 @@
               "format": "date"
             }
           ]
+        },
+        "noindex": {
+          "default": false,
+          "type": "boolean"
         },
         "legacyUrls": {
           "default": [],

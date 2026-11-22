@@ -50,6 +50,11 @@ const common = {
   reviewed: isoDateSchema.optional(),
   /** Required when status is "scheduled". */
   publishAt: isoDateSchema.optional(),
+  /**
+   * Published but hidden from search: `<meta name="robots" content="noindex">` and left out of the
+   * sitemap. Used for legacy pages that were noindex on Webflow (e.g. course sales pages).
+   */
+  noindex: z.boolean().default(false),
   /** Previous paths of this record (with language prefix). Each becomes a 301 to the current URL. */
   legacyUrls: z.array(legacyPathSchema).default([]),
   related: z.array(recordRefSchema).default([]),

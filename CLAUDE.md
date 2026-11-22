@@ -109,6 +109,19 @@ is the core schema and whose entry ids are record addresses. Pages must filter w
 
 ## Decisions and known quirks
 
+Owner decisions on the migration (2026-11-22):
+
+- `/ru/` and the untranslated `/ua|/ru/create/no-code/prd-for-vibe-coding` are migrated 1:1.
+- Hidden course pages (`/courses/how-to-create-images-with-ai`, `/courses/payment-alternatives` in all
+  three languages, not in the sitemap) are migrated 1:1 with their current robots: `noindex: true`
+  everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
+  of the sitemap.
+- The legacy link to `/ua/courses/chatgpt` (404 on the old site, linked from all `/courses` pages) is
+  kept as is; the broken-link check lists it as a known legacy issue instead of failing.
+- Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
+  `/courses/privacy-policy`, legal pages missing from the sitemap) are reported by the parity check as
+  documented differences, never silently.
+
 - TypeScript pinned to 6.0.x: typescript-eslint and @astrojs/check do not support TS 7 yet.
 - Workers `html_handling` redirects `/path/` → `/path` with **307**; the legacy site used 301. Fixed in
   Step 7 (redirect rules).
