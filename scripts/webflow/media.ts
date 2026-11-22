@@ -23,7 +23,6 @@ import { findCdnUrls, normalizeCdnUrl } from '../lib/cdn.ts';
 const ROOT = join(import.meta.dirname, '..', '..');
 const LEGACY = join(ROOT, 'data', 'legacy');
 const EXPORT = join(LEGACY, 'webflow-export');
-const MEDIA_DIR = join(LEGACY, 'media');
 const CONCURRENCY = 6;
 
 const VARIANT = /-p-\d+(\.\w+)$/;
