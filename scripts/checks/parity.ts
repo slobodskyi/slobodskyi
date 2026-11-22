@@ -29,20 +29,8 @@ export interface AllowedDifference {
   expected?: unknown;
 }
 
-export interface BrokenLinkException {
-  target: string;
-  /** Pages allowed to keep this link (exact URLs). */
-  from: string[];
-  reason: string;
-}
-
 export interface Allowlist {
   differences: AllowedDifference[];
-  /**
-   * Known broken internal links, accepted only on the listed legacy pages (used by the build check).
-   * Any other page linking to a missing URL fails, so new content cannot ship broken links.
-   */
-  brokenLinks?: BrokenLinkException[];
 }
 
 export type Field = 'status' | 'title' | 'description' | 'canonical' | 'robots' | 'h1' | 'hreflang';

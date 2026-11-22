@@ -19,7 +19,6 @@ import {
   urlForFile,
   walkFiles,
 } from './lib.ts';
-import { loadAllowlist, type BrokenLinkException } from './parity.ts';
 
 export interface ContentExpectations {
   /** URLs whose frontmatter says `noindex: true`: the only pages allowed to carry noindex. */
@@ -45,16 +44,9 @@ const TEXT_EXT = new Set(['.html', '.css', '.js', '.mjs', '.json', '.xml', '.md'
 const isInternal = (href: string): boolean =>
   (href.startsWith('/') && !href.startsWith('//')) || href.startsWith(ORIGIN);
 
-export function runBuildChecks(opts: {
-  dist: string;
-  expectations: ContentExpectations;
-  /** Known broken links, accepted only on the pages listed in `from`. */
-  brokenLinks?: Pick<BrokenLinkException, 'target' | 'from'>[] | undefined;
-}): BuildCheckResult {
+export function runBuildChecks(opts: { dist: string; expectations: ContentExpectations }): BuildCheckResult {
+  // No exceptions for broken links (owner decision 2026-11-22): every one fails the check.
   const { dist, expectations } = opts;
-  const allowedBroken = new Set(
-    (opts.brokenLinks ?? []).flatMap((b) => b.from.map((from) => `${toPath(from)} -> ${toPath(b.target)}`)),
-  );
   const redirects = readRedirects(dist);
   const problems: BuildProblem[] = [];
   const files = walkFiles(dist);
@@ -92,8 +84,7 @@ export function runBuildChecks(opts: {
       ...byTag(doc, 'img').map((n) => attr(n, 'src')),
     ];
     for (const href of new Set(refs)) {
-      if (!href || !isInternal(href) || linkExists(href) || allowedBroken.has(`${url} -> ${toPath(href)}`))
-        continue;
+      if (!href || !isInternal(href) || linkExists(href)) continue;
       problems.push({ check: 'links', url, message: `broken internal link: ${href}` });
     }
 
@@ -171,7 +162,6 @@ async function main(): Promise<number> {
   const { values } = parseArgs({
     options: {
       dist: { type: 'string', default: 'apps/site/dist' },
-      allowlist: { type: 'string', default: 'data/parity-allowlist.json' },
     },
   });
   const dist = resolve(root, values.dist);
@@ -179,12 +169,7 @@ async function main(): Promise<number> {
     console.error(`✗ ${values.dist} does not exist: run \`pnpm build\` first`);
     return 2;
   }
-  const allowlist = loadAllowlist(resolve(root, values.allowlist));
-  const result = runBuildChecks({
-    dist,
-    expectations: await loadExpectations(join(root, 'content')),
-    brokenLinks: allowlist.brokenLinks,
-  });
+  const result = runBuildChecks({ dist, expectations: await loadExpectations(join(root, 'content')) });
   for (const p of result.problems) console.log(`✗ [${p.check}] ${p.url}: ${p.message}`);
   console.log(
     `${result.problems.length ? '✗' : '✓'} ${result.pages} pages, ${result.problems.length} problems`,

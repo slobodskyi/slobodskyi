@@ -151,8 +151,8 @@ describe('build checks', () => {
     hiddenUrls: new Set(),
     hiddenAddresses: new Set(),
   };
-  const checks = (dist: string, exp = none, allow: { target: string; from: string[] }[] = []) =>
-    runBuildChecks({ dist, expectations: exp, brokenLinks: allow }).problems.map((p) => p.check);
+  const checks = (dist: string, exp = none) =>
+    runBuildChecks({ dist, expectations: exp }).problems.map((p) => p.check);
 
   it('passes on a clean dist', () => {
     const dist = makeDist({
@@ -180,27 +180,22 @@ describe('build checks', () => {
     expect(found).toEqual(new Set(['h1', 'links', 'alt', 'cdn', 'jsonld']));
   });
 
-  it('allows known broken links and redirected targets', () => {
+  it('accepts redirected targets and trailing slashes', () => {
     const dist = makeDist({
       _redirects: '/old /new 301\n',
       'new.html': page(),
-      'index.html': page({
-        body: '<a href="/ua/courses/chatgpt">k</a><a href="/old">o</a><a href="/new/">n</a>',
-      }),
+      'index.html': page({ body: '<a href="/old">o</a><a href="/new/">n</a>' }),
     });
-    const known = [{ target: '/ua/courses/chatgpt', from: ['/'] }];
-    expect(checks(dist, none, known)).toEqual([]);
-    expect(checks(dist)).toEqual(['links']);
+    expect(checks(dist)).toEqual([]);
   });
 
-  it('rejects a known broken link on a page that is not grandfathered', () => {
+  it('has no exceptions: a link to a legacy 404 fails on every page', () => {
     const dist = makeDist({
-      'index.html': page({ body: '<a href="/ua/courses/chatgpt">k</a>' }),
-      'new-guide.html': page({ body: '<a href="/ua/courses/chatgpt">k</a>' }),
+      'courses.html': page({ body: '<a href="/ua/courses/chatgpt">k</a>' }),
+      'new-guide.html': page({ body: '<a href="https://slobodskyi.com/ua/courses/chatgpt">k</a>' }),
     });
-    const known = [{ target: '/ua/courses/chatgpt', from: ['/'] }];
-    const problems = runBuildChecks({ dist, expectations: none, brokenLinks: known }).problems;
-    expect(problems.map((p) => p.url)).toEqual(['/new-guide']);
+    const problems = runBuildChecks({ dist, expectations: none }).problems;
+    expect(problems.map((p) => `${p.check} ${p.url}`)).toEqual(['links /courses', 'links /new-guide']);
   });
 
   it('noindex only where frontmatter says so (both directions)', () => {

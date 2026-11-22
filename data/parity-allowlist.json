@@ -15,12 +15,5 @@
       "field": "title",
       "reason": "Legacy defect fixed on purpose (owner decision 2026-11-22): the old <title> was the slug \"privacy-policy\"."
     }
-  ],
-  "brokenLinks": [
-    {
-      "target": "/ua/courses/chatgpt",
-      "from": ["/courses", "/ua/courses", "/ru/courses"],
-      "reason": "Known legacy issue (owner decision 2026-11-22): 404 on the old site, linked from the three /courses pages, kept as is there. Any new link to it fails the build check."
-    }
   ]
 }

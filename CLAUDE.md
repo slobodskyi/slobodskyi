@@ -123,8 +123,9 @@ Owner decisions on the migration (2026-11-22):
   three languages, not in the sitemap) are migrated 1:1 with their current robots: `noindex: true`
   everywhere except `/ua/courses/how-to-create-images-with-ai`, which stays indexable. They stay out
   of the sitemap.
-- The legacy link to `/ua/courses/chatgpt` (404 on the old site, linked from all `/courses` pages) is
-  kept as is; the broken-link check lists it as a known legacy issue instead of failing.
+- No broken internal links, with no exceptions: `pnpm check:build` fails on every one. The legacy
+  link to the 404 `/ua/courses/chatgpt` (on the three `/courses` pages) must be fixed or removed in
+  content; the URL itself stays a 404 (owner decision 2026-11-22, replaces "kept as is").
 - Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
   `/courses/privacy-policy`, legal pages missing from the sitemap) are reported by the parity check as
   documented differences, never silently.
