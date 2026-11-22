@@ -1,7 +1,7 @@
 ---
 import { LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
 import { LANG_NAME, t } from '../lib/i18n';
-import { hubsOf, labelOf } from '../lib/content';
+import { categoriesOf, hubsOf, labelOf } from '../lib/content';
 import Icon, { type IconName } from './Icon.astro';
 
 interface Props {
@@ -14,7 +14,17 @@ interface Props {
 const { lang, alternates, disclaimer = false } = Astro.props;
 const s = t(lang);
 const p = (route: string) => withLangPrefix(lang, route);
-const hubs = (await hubsOf(lang)).map((h) => ({ label: labelOf(h), url: h.url }));
+// The guide sections are the footer's main content: a numbered index of hubs with their categories.
+const hubs = await Promise.all(
+  (await hubsOf(lang)).map(async (h) => ({
+    label: labelOf(h),
+    url: h.url,
+    categories:
+      h.data.type === 'hub'
+        ? (await categoriesOf(lang, h.data.hub)).map((c) => ({ label: labelOf(c), url: c.url }))
+        : [],
+  })),
+);
 const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(l, '/') }));
 const socials: { name: string; icon: IconName; href: string }[] = [
   { name: 'Instagram', icon: 'instagram', href: 'https://www.instagram.com/slobodskyi' },
@@ -33,10 +43,37 @@ const year = new Date().getFullYear();
 )}
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-brand">
-      <a href={p('/')} class="footer-logo" aria-label={s.home}>
-        <img src="/logo.svg" width="40" height="40" alt="" loading="lazy" />
-      </a>
+    <nav aria-label={s.guides}>
+      <p class="footer-title">{s.guides}</p>
+      <ol class="footer-index">
+        {hubs.map((h) => (
+          <li>
+            <a href={h.url} class="footer-hub">
+              {h.label}
+            </a>
+            {h.categories.length > 0 && (
+              <ul class="footer-cats">
+                {h.categories.map((c) => (
+                  <li>
+                    <a href={c.url}>{c.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+    <div class="footer-row">
+      <nav class="footer-links" aria-label="Footer">
+        <a href={p('/tools')}>{s.tools}</a>
+        <a href={p('/about')}>{s.about}</a>
+        <a href={p('/contacts')}>{s.contacts}</a>
+        <a href={p('/affiliate-disclosure')}>{s.affiliate}</a>
+        <a href={p('/rss.xml')}>
+          RSS <Icon name="rss" size={14} />
+        </a>
+      </nav>
       <div class="socials">
         {socials.map((x) => (
           <a href={x.href} target="_blank" rel="noopener" aria-label={x.name}>
@@ -45,99 +82,129 @@ const year = new Date().getFullYear();
         ))}
       </div>
     </div>
-    <nav class="footer-col" aria-label={s.guides}>
-      <p class="footer-title">{s.guides}</p>
-      {hubs.map((h) => (
-        <a href={h.url}>{h.label}</a>
-      ))}
-    </nav>
-    <nav class="footer-col" aria-label="Footer">
-      <p class="footer-title">slobodskyi.com</p>
-      <a href={p('/tools')}>{s.tools}</a>
-      <a href={p('/about')}>{s.about}</a>
-      <a href={p('/contacts')}>{s.contacts}</a>
-      <a href={p('/affiliate-disclosure')}>{s.affiliate}</a>
-      <a href={p('/rss.xml')}>
-        RSS <Icon name="rss" size={14} />
+    <div class="footer-row footer-bottom">
+      <a href={p('/')} class="footer-logo" aria-label={s.home}>
+        <img src="/logo.svg" width="28" height="28" alt="" loading="lazy" />
       </a>
-    </nav>
-    <nav class="footer-col" aria-label={s.language}>
-      <p class="footer-title">{s.language}</p>
-      {langs.map((l) => (
-        <a href={l.url} hreflang={l.lang} lang={l.lang} aria-current={l.lang === lang ? 'true' : undefined}>
-          {LANG_NAME[l.lang]}
-        </a>
-      ))}
-    </nav>
+      <p class="footer-copy">
+        © {year} {s.authorName}
+      </p>
+      <nav class="footer-langs" aria-label={s.language}>
+        {langs.map((l) => (
+          <a href={l.url} hreflang={l.lang} lang={l.lang} aria-current={l.lang === lang ? 'true' : undefined}>
+            {LANG_NAME[l.lang]}
+          </a>
+        ))}
+      </nav>
+    </div>
   </div>
-  <p class="footer-bottom">
-    © {year} {s.authorName}
-  </p>
 </footer>
 
 <style>
+  /* Below the sheet, on the page ground: a quiet note, no box. */
   .disclaimer {
-    background: var(--color-surface-alt);
-    border-radius: var(--radius-md);
-    padding: var(--space-4) var(--space-5);
     font-size: var(--text-sm);
     line-height: 1.5;
     color: var(--color-muted);
-    margin: var(--space-7) 0 0;
+    margin: var(--space-5) 0 0;
   }
   .site-footer {
-    margin-top: var(--space-8);
-    padding: var(--space-7) var(--gutter) var(--space-6);
-    border-top: 1px solid var(--color-border-soft);
-    background: var(--color-surface);
+    margin-top: var(--space-7);
+    padding: 0 var(--gutter) var(--space-6);
     font-size: var(--text-md);
   }
   .footer-inner {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--space-6);
     max-width: var(--w-page);
     margin: 0 auto;
   }
-  .footer-brand {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
+  .site-footer a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease);
   }
-  .footer-logo {
-    line-height: 0;
-    width: max-content;
-  }
-  .footer-col {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
+  .site-footer a:hover {
+    color: var(--color-accent);
   }
   .footer-title {
-    margin: 0 0 var(--space-1);
-    font-size: var(--text-xs);
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-sm);
     color: var(--color-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
   }
-  .footer-col a {
+
+  /* Numbered index of hubs: same language as the table of contents (mono numbers, hairlines). */
+  .footer-index {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0 var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: hub;
+  }
+  .footer-index > li {
+    counter-increment: hub;
+    border-top: 1px solid var(--color-text);
+    padding: var(--space-3) 0 var(--space-5);
+  }
+  .footer-index > li::before {
+    content: counter(hub, decimal-leading-zero);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    color: var(--color-accent);
+    font-variant-numeric: tabular-nums;
+  }
+  .footer-hub {
+    display: inline-block;
+    padding: var(--space-1) 0;
+    font-family: var(--font-head);
+    font-size: var(--text-lg);
+    line-height: var(--leading-snug);
+  }
+  .footer-cats {
+    list-style: none;
+    margin: var(--space-1) 0 0;
+    padding: 0;
+    font-size: var(--text-sm);
+  }
+  .footer-cats a {
+    display: inline-block;
+    padding: 3px 0;
+    color: var(--color-muted);
+  }
+  /* One column on phones: categories run in a line to keep the index short. */
+  @media (max-width: 30rem) {
+    .footer-cats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 var(--space-4);
+    }
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border-soft);
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-5);
+  }
+  .footer-links a {
     display: inline-flex;
     align-items: center;
     gap: var(--space-1);
-    width: max-content;
-    color: var(--color-text);
-    text-decoration: none;
-  }
-  .footer-col a:hover {
-    color: var(--color-accent);
-    text-decoration: underline;
-  }
-  .footer-col a[aria-current] {
-    font-weight: 700;
+    padding: var(--space-1) 0;
   }
   .socials {
     display: flex;
-    gap: var(--space-2);
+    gap: var(--space-1);
+    margin-right: calc(-1 * var(--space-2));
   }
   .socials a {
     display: grid;
@@ -145,20 +212,34 @@ const year = new Date().getFullYear();
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: var(--color-text);
-    background: var(--color-bg);
-    transition:
-      background-color var(--duration-fast) var(--ease),
-      color var(--duration-fast) var(--ease);
-  }
-  .socials a:hover {
-    background: var(--color-text);
-    color: var(--color-surface);
+    color: var(--color-muted);
   }
   .footer-bottom {
-    max-width: var(--w-page);
-    margin: var(--space-7) auto 0;
+    margin-top: var(--space-4);
     font-size: var(--text-sm);
     color: var(--color-muted);
+  }
+  .footer-logo {
+    line-height: 0;
+  }
+  .footer-copy {
+    flex: 1;
+    margin: 0;
+  }
+  /* Language switch: one pill, the current language filled. */
+  .footer-langs {
+    display: flex;
+    padding: 2px;
+    border: 1px solid var(--color-border-soft);
+    border-radius: var(--radius-pill);
+  }
+  .footer-langs a {
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-pill);
+    color: var(--color-muted);
+  }
+  .footer-langs a[aria-current] {
+    background: var(--color-surface);
+    color: var(--color-text);
   }
 </style>

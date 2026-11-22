@@ -126,7 +126,7 @@ const { rail = false } = Astro.props;
   .toc-rail-nav {
     display: none;
   }
-  @media (min-width: 86rem) {
+  @media (min-width: 88rem) {
     .toc-rail-nav {
       display: block;
       font-size: var(--text-sm);
@@ -163,7 +163,7 @@ const { rail = false } = Astro.props;
     }
   }
   /* With scripting the rail waits until the index has scrolled away (no flash on load). */
-  @media (min-width: 86rem) and (scripting: enabled) {
+  @media (min-width: 88rem) and (scripting: enabled) {
     .toc-rail-nav:not([data-visible]) {
       opacity: 0;
       visibility: hidden;

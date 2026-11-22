@@ -82,6 +82,8 @@
     --w-wide: 1080px;
     --w-page: 1200px;
     --gutter: 20px;
+    /* Side padding of the sheet around the text column (wide screens). */
+    --sheet-pad: 72px;
 
     color-scheme: light;
   }

@@ -122,15 +122,15 @@ const { Content } = await render(rec.entry);
     font-size: var(--text-lg);
     margin-top: var(--space-7);
   }
-  /* Wide screens: a second copy of the table of contents hangs in the right margin and follows
+  /* Wide screens: a second copy of the table of contents hangs beside the sheet, on the page ground, and follows
      the reader once the one in the text has scrolled away. */
-  @media (min-width: 86rem) {
+  @media (min-width: 88rem) {
     .toc-rail {
       position: absolute;
       top: 0;
       bottom: 0;
-      left: calc(100% + var(--space-7));
-      width: 260px;
+      left: calc(100% + var(--sheet-pad) + var(--space-4));
+      width: 220px;
     }
     .toc-rail :global(.toc) {
       position: sticky;
