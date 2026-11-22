@@ -18,15 +18,16 @@ import author from '../../assets/author.webp';
 </blockquote>
 
 <style>
+  /* Text face, not the wide display face: these quotes run to several lines. */
   .callout {
     background: var(--color-surface);
-    border-radius: 40px 40px 40px 0;
-    margin: 50px 0;
-    padding: 50px 50px 36px;
-    font-family: var(--font-head);
+    border-radius: var(--radius-bubble);
+    margin: var(--space-7) 0;
+    padding: var(--space-6) var(--space-6) var(--space-5);
+    font-size: 1.12em;
     font-weight: 600;
-    font-size: 19px;
-    line-height: 1.55;
+    line-height: 1.5;
+    box-shadow: var(--shadow-sm);
   }
   .callout :global(p) {
     margin: 0 0 0.8em;
@@ -39,10 +40,10 @@ import author from '../../assets/author.webp';
     border-radius: 50%;
     margin-top: 12px;
   }
-  @media (max-width: 479px) {
+  @media (width < 30rem) {
     .callout {
-      padding: 28px 24px 24px;
-      font-size: 17px;
+      padding: var(--space-5);
+      font-size: 1.05em;
     }
   }
 </style>

@@ -53,81 +53,94 @@
     transform: scale(0.98);
   }
 
-  /* Chip: small label. Default is light; .chip-dark sits on images. */
-  .chip {
-    display: inline-block;
-    width: max-content;
-    background: var(--color-surface);
-    color: var(--color-text);
-    font-size: var(--text-xs);
-    line-height: 1;
-    padding: 6px 8px;
-    border-radius: 6px;
-  }
-
-  .chip-dark {
-    background: var(--color-overlay);
-    color: var(--white);
-  }
-
-  /* Card list (hubs, categories, guides, MDX <Cards>) */
+  /* Card list (hubs, categories, guides, MDX <Cards>). Layout follows the list's own width
+     (container query), so the same card works in the body, in listings and in "related". */
   .cards {
+    container: cards / inline-size;
     list-style: none;
-    margin: var(--space-5) 0;
+    display: grid;
+    gap: var(--space-4);
+    margin: var(--space-6) 0;
     padding: 0;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    background: var(--color-surface);
-    box-shadow: var(--shadow-md);
+  }
+
+  .prose .cards {
+    padding: 0;
   }
 
   .cards > li {
     margin: 0;
   }
 
-  .cards > li + li {
-    border-top: 2px solid var(--color-border);
-  }
-
   .card {
     display: grid;
-    grid-template-columns: 1fr 34%;
-    align-items: stretch;
+    height: 100%;
+    background: var(--color-surface);
     color: var(--color-text);
     text-decoration: none;
-    min-height: 140px;
+    border: 1px solid var(--color-border-soft);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition:
+      transform var(--duration) var(--ease),
+      box-shadow var(--duration) var(--ease),
+      border-color var(--duration) var(--ease);
   }
 
-  .card:hover,
+  .card:hover {
+    color: var(--color-text);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-border);
+  }
+
   .card:focus-visible {
-    background: var(--color-text);
-    color: var(--color-surface);
+    border-radius: var(--radius-md);
   }
 
   .card-body {
-    padding: var(--space-5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-5);
   }
 
   .card-title {
     font-family: var(--font-head);
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: var(--leading-snug);
-    margin: 0 0 6px;
+    margin: 0;
+    text-wrap: balance;
   }
 
   .card-text {
-    font-size: var(--text-sm);
-    line-height: 1.45;
+    color: var(--color-muted);
+    font-size: var(--text-md);
+    line-height: 1.5;
     margin: 0;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: auto 0 0;
+    padding-top: var(--space-1);
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+
+  .card-meta > span + span::before {
+    content: '·';
+    margin-right: var(--space-3);
   }
 
   .card-cover {
     position: relative;
+    order: -1;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     background: var(--color-surface-alt);
   }
@@ -138,53 +151,40 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 400ms var(--ease);
   }
 
-  .card-meta {
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
-    z-index: 1;
+  .card:hover .card-cover img {
+    transform: scale(1.04);
   }
 
-  /* Phones: the cover fills the card and the text sits on a dark overlay (legacy layout). */
-  @media (width < 48rem) {
-    .card {
-      display: block;
-      position: relative;
-      color: var(--white);
-      min-height: 200px;
+  /* Wide list: text left, cover right. */
+  @container cards (width >= 34rem) {
+    .card:has(.card-cover) {
+      grid-template-columns: 1fr 36%;
     }
+
     .card-cover {
-      position: absolute;
-      inset: 0;
+      order: 0;
+      aspect-ratio: auto;
+      min-height: 170px;
     }
-    .card-body {
-      position: relative;
-      z-index: 1;
-      min-height: 200px;
-      justify-content: flex-start;
-      padding: var(--space-5) var(--space-5) 56px;
-      background: rgb(0 0 0 / 38%);
-    }
-    .card:hover,
-    .card:focus-visible {
-      color: var(--white);
-    }
-    .card:hover .card-body {
-      background: var(--color-overlay);
-    }
+
     .card-title {
-      font-size: 19px;
+      font-size: 20px;
     }
-    .card-meta {
-      z-index: 2;
-      left: var(--space-5);
-      bottom: var(--space-4);
-      flex-direction: row;
-    }
+  }
+
+  /* Expandable blocks (TOC, FAQ, menus): smooth open where supported, instant elsewhere. */
+  details::details-content {
+    block-size: 0;
+    overflow: clip;
+    transition:
+      block-size var(--duration) var(--ease),
+      content-visibility var(--duration) allow-discrete;
+  }
+
+  details[open]::details-content {
+    block-size: auto;
   }
 }

@@ -24,10 +24,19 @@
     color: var(--color-muted);
   }
 
+  /* Scrolls sideways on narrow screens; edge shadows show there is more (pure CSS). */
   .prose table {
     display: block;
     width: 100%;
     overflow-x: auto;
+    background:
+      linear-gradient(to right, var(--color-surface) 30%, transparent) left / 40px 100% no-repeat local,
+      linear-gradient(to left, var(--color-surface) 30%, transparent) right / 40px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 14%), transparent) left / 12px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 14%), transparent) right / 12px 100% no-repeat
+        scroll,
+      var(--color-surface);
+    border-radius: var(--radius-sm);
     border-collapse: collapse;
     font-size: var(--text-md);
     line-height: 1.45;
@@ -39,7 +48,6 @@
     padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: top;
-    background: var(--color-surface);
   }
 
   .prose th {

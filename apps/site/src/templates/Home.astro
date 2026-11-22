@@ -62,10 +62,10 @@ const avif = await getImage({ src: hero, widths: HERO_WIDTHS, format: 'avif', qu
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 40px;
-    margin: 24px 0;
+    border-radius: var(--radius-lg);
+    margin: var(--space-5) 0;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 48rem) {
     .home :global(.hero) {
       aspect-ratio: 4 / 3;
     }
