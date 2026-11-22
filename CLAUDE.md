@@ -61,7 +61,11 @@ Types: `guides essays log til links notes projects pages hubs categories`.
   braces are JS expressions and break the build.
 - `extractHeadings()` from core is the single source of anchors for the TOC, `content.json` and section
   addresses. Do not use Astro's `headings` (it skips JSX headings).
-- `visibility: private` content never reaches the build and may live only in `content/notes/`.
+- `visibility: private` content never reaches the build. The repository is public (owner decision
+  2026-11-22), so private notes are never committed here at all: the pre-commit hook blocks them in
+  every folder. They live outside this repo (a private store comes with the control panel); the schema
+  still allows them only in `content/notes/`. Drafts (`status: draft`) are committed and publicly
+  visible on GitHub.
 
 ## Safety rules for machines
 

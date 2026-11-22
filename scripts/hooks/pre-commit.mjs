@@ -1,5 +1,5 @@
 // Pre-commit guard. Blocks:
-//  1. content files with `visibility: private` outside content/notes/
+//  1. content files with `visibility: private` anywhere (the repository is public)
 //  2. secret files (.env, .dev.vars, …)
 // Reads the *staged* version of each file, not the working tree.
 import { execFileSync } from 'node:child_process';
@@ -19,12 +19,12 @@ for (const file of staged) {
     problems.push(`${file}: secret file must not be committed`);
     continue;
   }
-  if (!CONTENT.test(file) || file.startsWith('content/notes/')) continue;
+  if (!CONTENT.test(file)) continue;
 
   const text = git('show', `:${file}`);
   const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(text)?.[1];
   if (frontmatter && PRIVATE.test(frontmatter)) {
-    problems.push(`${file}: visibility: private is allowed only in content/notes/`);
+    problems.push(`${file}: visibility: private must not be committed (the repository is public)`);
   }
 }
 
