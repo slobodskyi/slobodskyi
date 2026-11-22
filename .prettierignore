@@ -6,3 +6,4 @@ pnpm-lock.yaml
 data/
 content/
 packages/core/schema.json
+.claude/worktrees/

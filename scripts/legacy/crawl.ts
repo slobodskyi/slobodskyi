@@ -10,7 +10,7 @@
 //   data/legacy/pages.json         full extracted data incl. JSON-LD, links, media, H2 anchors
 //   data/legacy/site/              robots.txt, sitemap.xml, llms.txt
 //   data/legacy/snapshot.json      when and what was crawled
-import { mkdir, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { findCdnUrls } from '../lib/cdn.ts';
 import { HUBS, LANG_PREFIX, createAnchorer, internalPath, legacyAnchor } from '@slobodskyi/core';
@@ -228,6 +228,37 @@ function toCsv(pages: PageRecord[]): string {
   return [header, ...rows].map((r) => r.map(csvCell).join(',')).join('\n') + '\n';
 }
 
+/** Webflow system pages that are not part of the site. */
+const SYSTEM_PAGES = new Set(['/401', '/404']);
+
+async function extraSeeds(): Promise<string[]> {
+  const seeds = new Set<string>();
+  try {
+    const pages = JSON.parse(await readFile(join(OUT, 'webflow-export', 'pages.json'), 'utf8')) as Record<
+      string,
+      { publishedPath?: string; collectionId?: string | null; draft?: boolean }[]
+    >;
+    for (const page of pages.en ?? []) {
+      const path = page.publishedPath;
+      if (!path || page.collectionId || page.draft || SYSTEM_PAGES.has(path)) continue;
+      for (const prefix of ['', ...PREFIXES])
+        seeds.add(prefix ? (path === '/' ? prefix : prefix + path) : path);
+    }
+  } catch {
+    // No Webflow export yet: sitemap and links only.
+  }
+  const redirectsDir = join(ROOT, 'data', 'redirects');
+  for (const name of await readdir(redirectsDir).catch(() => [] as string[])) {
+    if (!name.endsWith('.csv')) continue;
+    const rows = (await readFile(join(redirectsDir, name), 'utf8')).split(/\r?\n/).slice(1);
+    for (const row of rows) {
+      const target = internalPath(row.split(',')[1]?.trim() ?? '');
+      if (target) seeds.add(target);
+    }
+  }
+  return [...seeds];
+}
+
 async function save(rel: string, data: string): Promise<void> {
   const file = join(OUT, rel);
   await mkdir(dirname(file), { recursive: true });
@@ -249,7 +280,9 @@ async function main(): Promise<void> {
   }
 
   const pages = new Map<string, PageRecord>();
-  const queue: string[] = ['/', ...sitemap];
+  // Pages nothing links to (payment pages, search, terms) are found only through extra seeds:
+  // every static page from the Webflow export in all languages, and every redirect target.
+  const queue: string[] = ['/', ...sitemap, ...(await extraSeeds())];
   const seen = new Set(queue);
   const enqueue = (path: string | null) => {
     if (!path || seen.has(path) || ASSET.test(path)) return;
