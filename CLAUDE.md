@@ -125,6 +125,9 @@ Owner decisions on the migration (2026-11-22):
   of the sitemap.
 - The legacy link to `/ua/courses/chatgpt` (404 on the old site, linked from all `/courses` pages) is
   kept as is; the broken-link check lists it as a known legacy issue instead of failing.
+- The newsletter form on the home pages (Webflow "Newsletter Form", field `email`) is hidden for
+  now: no form markup and no Beehiiv attribution script on the new site, the surrounding text stays.
+  Not a DNS-switch blocker; the parity check documents it as an intended difference.
 - Legacy defects that are fixed on purpose (invalid JSON-LD, wrong titles on `/ua|/ru/tools` and
   `/courses/privacy-policy`, legal pages missing from the sitemap) are reported by the parity check as
   documented differences, never silently.
