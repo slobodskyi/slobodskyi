@@ -42,8 +42,12 @@ Types: `guides essays log til links notes projects pages hubs categories`.
 
 ## Content model and addressing
 
-- `id` is the folder name and **never changes**, even if slug or URL change. URL is computed from
+- File = `content/<collection>/<id>/<lang>.mdx`. `id` (the folder) and `lang` (the file name) are not
+  repeated in frontmatter. `id` **never changes**, even if slug or URL change. URL is computed from
   frontmatter by `urlFor()`, not from the file path.
+- Frontmatter contract: Zod schemas in `packages/core/src/schema.ts`; JSON Schema for tools in
+  `packages/core/schema.json` (regenerate with `pnpm content schema --out packages/core/schema.json`).
+  `title` = H1, `seoTitle` = `<title>` when different, `description` = meta description.
 - Record address: `<type>/<id>:<lang>`; section (chunk) address: `<type>/<id>:<lang>#<anchor>`. The same
   address is the key in vectors, D1, agent links and `.md` copies.
 - Languages: `en` (root), `uk` (URL prefix `/ua`, hreflang `uk`), `ru` (`/ru`). Do not rename `/ua`.
@@ -51,8 +55,12 @@ Types: `guides essays log til links notes projects pages hubs categories`.
   generated from it. No redirect chains.
 - MDX uses only the fixed component set (`Shot`, `Callout`, `Answer`, `FAQ`, `Quiz`, `YouTube`). No
   arbitrary imports or JSX logic. Structured data (`faq`, `related`) lives in frontmatter.
-- Headings get explicit, stable ids. Legacy H2 anchors are kept exactly (Webflow slug format: lowercase,
-  punctuation removed, spaces → hyphens, Cyrillic preserved).
+- Heading anchors: Markdown headings get the github-slugger id Astro injects. A legacy Webflow H2 anchor
+  that differs from it is preserved with a JSX heading on its own line: `<h2 id="fees-amp-rates">Fees
+&amp; rates</h2>` (`legacyAnchor()` reproduces the Webflow script exactly). Never use `{#id}`: in MDX
+  braces are JS expressions and break the build.
+- `extractHeadings()` from core is the single source of anchors for the TOC, `content.json` and section
+  addresses. Do not use Astro's `headings` (it skips JSX headings).
 - `visibility: private` content never reaches the build and may live only in `content/notes/`.
 
 ## Safety rules for machines
@@ -78,7 +86,20 @@ pnpm check            # astro check + Worker type check
 pnpm lint             # ESLint
 pnpm format           # Prettier
 pnpm deploy:preview   # build + deploy to the noindex preview Worker
+pnpm test             # unit tests (packages/core)
+
+pnpm content validate                 # all content checks; add --json for agents
+pnpm content create guides/<id>:<lang> --title "…" --description "…" --field hub=… --field category=… --field slug=…
+pnpm content index --out <file>       # content.json (published public records)
+pnpm content redirects --out <file>   # _redirects from legacyUrls + data/redirects/*.csv
+pnpm content schema --out packages/core/schema.json
 ```
+
+Exit codes of `pnpm content`: 0 ok, 1 content problems, 2 usage error. `create` checks schema and URL
+uniqueness only; always run `validate` after it.
+
+The site reads content through one Astro collection (`apps/site/src/content.config.ts`) whose schema
+is the core schema and whose entry ids are record addresses. Pages must filter with `isPublished()`.
 
 ## Decisions and known quirks
 
@@ -89,6 +110,10 @@ pnpm deploy:preview   # build + deploy to the noindex preview Worker
   raw files of later stages.
 - Astro 7 Markdown runs on the Rust pipeline (Sätteri): do HTML→MDX transformations in the one-off
   conversion script, not as remark/rehype build plugins.
+- Core runs under Node's built-in TypeScript stripping (no build step): relative imports use `.ts`
+  extensions and only erasable syntax is allowed (no enums, namespaces, parameter properties).
+- URLs for essays, log, til, links, notes and projects (`/<collection>/<slug>`) are provisional until
+  the first record of that type is published.
 
 ## Plan
 
