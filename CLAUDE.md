@@ -95,7 +95,14 @@ pnpm content redirects --out <file>   # _redirects from legacyUrls + data/redire
 pnpm content schema --out packages/core/schema.json
 
 pnpm legacy:crawl                     # re-snapshot the live Webflow site into data/legacy/
+pnpm webflow:export                   # Webflow Data API → data/legacy/webflow-export/ (needs .env)
+pnpm webflow:media                    # download Webflow CDN files → data/legacy/media/ + media-map.json
 ```
+
+Webflow API notes: the primary locale (en) must be requested without `localeId`; 301 redirects are
+not available via the API on this plan (Enterprise only). Live meta description = CMS `meta-description`,
+falling back to `post-summary` when empty. `data/legacy/media-archive/` (asset-manager files nothing
+references) is git-ignored and goes to R2 later.
 
 `data/legacy/` is the frozen snapshot of the old site (urls.csv, pages.json with SEO fields, JSON-LD,
 links, media and legacy H2 anchors; raw HTML in html/). It is the reference for parity checks; do not

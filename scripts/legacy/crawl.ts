@@ -12,6 +12,7 @@
 //   data/legacy/snapshot.json      when and what was crawled
 import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+import { findCdnUrls } from '../lib/cdn.ts';
 import { HUBS, LANG_PREFIX, createAnchorer, internalPath, legacyAnchor } from '@slobodskyi/core';
 import { attr, byId, byTag, findAll, innerHtml, meta, parseHtml, rawText, textOf } from '../lib/html.ts';
 
@@ -134,9 +135,7 @@ function extract(path: string, html: string, status: number, inSitemap: boolean)
     },
   );
 
-  const media = [...new Set(html.match(/https:\/\/(?:cdn\.prod\.)?website-files\.com\/[^"'\s)<>,]+/g) ?? [])]
-    .map((u) => u.replace(/&amp;/g, '&'))
-    .sort();
+  const media = findCdnUrls(html).sort();
 
   return {
     url: path,
