@@ -56,8 +56,16 @@
 }
 
 @layer base {
+  /* Cross-document view transitions (a soft cross-fade between pages) where supported. */
+  @view-transition {
+    navigation: auto;
+  }
+
   html {
-    scroll-padding-top: var(--space-5);
+    /* Room for the sticky header when jumping to an anchor. */
+    scroll-padding-top: 80px;
+    /* Lets height animate to `auto` (details open/close). */
+    interpolate-size: allow-keywords;
   }
 
   body {

@@ -34,8 +34,8 @@ const { Content } = await render(rec.entry);
 
 <Base head={head} alternates={await alternatesFor(rec)} schema={schema} disclaimer={!hasDisclaimer} progress>
   <div class="container listing">
-    <h1>{rec.data.title}</h1>
     <Breadcrumbs crumbs={crumbs} homeLabel={s.home} />
+    <h1>{rec.data.title}</h1>
     {cards.length > 0 && <Cards items={cards} />}
     <Toc headings={headingsOf(rec)} title={s.toc} />
     <div class="prose">

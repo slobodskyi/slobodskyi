@@ -1,33 +1,27 @@
 ---
-import { withLangPrefix, type Lang } from '@slobodskyi/core';
-import { t } from '../lib/i18n';
+import { LANGS, withLangPrefix, type Lang } from '@slobodskyi/core';
+import { LANG_NAME, t } from '../lib/i18n';
+import { hubsOf, labelOf } from '../lib/content';
 import Icon, { type IconName } from './Icon.astro';
 
 interface Props {
   lang: Lang;
+  /** URL of the current page in each language it exists in; other languages link to their home. */
+  alternates: Partial<Record<Lang, string>>;
   /** Affiliate note above the footer (articles, hubs, categories). */
   disclaimer?: boolean;
 }
-const { lang, disclaimer = false } = Astro.props;
+const { lang, alternates, disclaimer = false } = Astro.props;
 const s = t(lang);
 const p = (route: string) => withLangPrefix(lang, route);
+const hubs = (await hubsOf(lang)).map((h) => ({ label: labelOf(h), url: h.url }));
+const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(l, '/') }));
 const socials: { name: string; icon: IconName; href: string }[] = [
-  {
-    name: 'Instagram',
-    icon: 'instagram',
-    href: 'https://www.instagram.com/slobodskyi',
-  },
-  {
-    name: 'Threads',
-    icon: 'threads',
-    href: 'https://www.threads.com/@slobodskyi',
-  },
-  {
-    name: 'YouTube',
-    icon: 'youtube',
-    href: 'https://www.youtube.com/@slobodskyi',
-  },
+  { name: 'Instagram', icon: 'instagram', href: 'https://www.instagram.com/slobodskyi' },
+  { name: 'Threads', icon: 'threads', href: 'https://www.threads.com/@slobodskyi' },
+  { name: 'YouTube', icon: 'youtube', href: 'https://www.youtube.com/@slobodskyi' },
 ];
+const year = new Date().getFullYear();
 ---
 
 {disclaimer && (
@@ -38,53 +32,133 @@ const socials: { name: string; icon: IconName; href: string }[] = [
   </div>
 )}
 <footer class="site-footer">
-  <nav aria-label="Footer">
-    <a href={p('/about')}>{s.about}</a>
-    <a href={p('/contacts')}>{s.contacts}</a>
-    <a href={p('/affiliate-disclosure')}>{s.affiliate}</a>
-  </nav>
-  <div class="socials">
-    {socials.map((x) => (
-      <a href={x.href} target="_blank" rel="noopener" aria-label={x.name}>
-        <Icon name={x.icon} />
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href={p('/')} class="footer-logo" aria-label={s.home}>
+        <img src="/logo.svg" width="40" height="40" alt="" loading="lazy" />
       </a>
-    ))}
+      <div class="socials">
+        {socials.map((x) => (
+          <a href={x.href} target="_blank" rel="noopener" aria-label={x.name}>
+            <Icon name={x.icon} size={20} />
+          </a>
+        ))}
+      </div>
+    </div>
+    <nav class="footer-col" aria-label={s.guides}>
+      <p class="footer-title">{s.guides}</p>
+      {hubs.map((h) => (
+        <a href={h.url}>{h.label}</a>
+      ))}
+    </nav>
+    <nav class="footer-col" aria-label="Footer">
+      <p class="footer-title">slobodskyi.com</p>
+      <a href={p('/tools')}>{s.tools}</a>
+      <a href={p('/about')}>{s.about}</a>
+      <a href={p('/contacts')}>{s.contacts}</a>
+      <a href={p('/affiliate-disclosure')}>{s.affiliate}</a>
+      <a href={p('/rss.xml')}>
+        RSS <Icon name="rss" size={14} />
+      </a>
+    </nav>
+    <nav class="footer-col" aria-label={s.language}>
+      <p class="footer-title">{s.language}</p>
+      {langs.map((l) => (
+        <a href={l.url} hreflang={l.lang} lang={l.lang} aria-current={l.lang === lang ? 'true' : undefined}>
+          {LANG_NAME[l.lang]}
+        </a>
+      ))}
+    </nav>
   </div>
+  <p class="footer-bottom">
+    © {year} {s.authorName}
+  </p>
 </footer>
 
 <style>
   .disclaimer {
     background: var(--color-surface-alt);
-    padding: 16px 20px;
-    font-size: 15px;
-    line-height: 1.45;
-    margin: 40px 0 0;
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    color: var(--color-muted);
+    margin: var(--space-7) 0 0;
   }
   .site-footer {
+    margin-top: var(--space-8);
+    padding: var(--space-7) var(--gutter) var(--space-6);
+    border-top: 1px solid var(--color-border-soft);
+    background: var(--color-surface);
+    font-size: var(--text-md);
+  }
+  .footer-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--space-6);
+    max-width: var(--w-page);
+    margin: 0 auto;
+  }
+  .footer-brand {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .footer-logo {
+    line-height: 0;
+    width: max-content;
+  }
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .footer-title {
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .footer-col a {
+    display: inline-flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    max-width: 1200px;
-    margin: 40px auto 0;
-    padding: 24px var(--gutter) 40px;
-  }
-  .site-footer nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 20px;
-  }
-  .site-footer a {
+    gap: var(--space-1);
+    width: max-content;
     color: var(--color-text);
     text-decoration: none;
-    font-size: 17px;
   }
-  .site-footer a:hover {
+  .footer-col a:hover {
+    color: var(--color-accent);
     text-decoration: underline;
+  }
+  .footer-col a[aria-current] {
+    font-weight: 700;
   }
   .socials {
     display: flex;
-    gap: 16px;
+    gap: var(--space-2);
+  }
+  .socials a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--color-text);
+    background: var(--color-bg);
+    transition:
+      background-color var(--duration-fast) var(--ease),
+      color var(--duration-fast) var(--ease);
+  }
+  .socials a:hover {
+    background: var(--color-text);
+    color: var(--color-surface);
+  }
+  .footer-bottom {
+    max-width: var(--w-page);
+    margin: var(--space-7) auto 0;
+    font-size: var(--text-sm);
+    color: var(--color-muted);
   }
 </style>

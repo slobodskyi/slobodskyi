@@ -14,19 +14,20 @@ const s = t(lang);
 const p = (route: string) => withLangPrefix(lang, route);
 const hubs = (await hubsOf(lang)).map((h) => ({ label: labelOf(h), url: h.url }));
 const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(l, '/') }));
-// Zero-JS menus: <details> dropdowns; the mobile menu is a separate <details>.
+// Menus are <details> (they work without JS). `name="menu"` makes them exclusive; the small
+// script only closes an open menu on an outside click or Escape.
 ---
 
 <header class="site-header">
   <div class="header-inner">
     <a href={p('/')} class="logo" aria-label={s.home}>
-      <img src="/logo.svg" width="50" height="50" alt="Logo: Oleksandr Slobodskyi" />
+      <img src="/logo.svg" width="40" height="40" alt="Logo: Oleksandr Slobodskyi" />
     </a>
     <nav class="nav-desktop" aria-label="Main">
       <a href={p('/tools')} class="nav-link">
         {s.tools}
       </a>
-      <details class="dropdown">
+      <details class="dropdown" name="menu" data-menu>
         <summary class="nav-link">
           {s.guides}
           <Icon name="chevron-down" size={16} />
@@ -37,7 +38,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
           ))}
         </div>
       </details>
-      <details class="dropdown">
+      <details class="dropdown" name="menu" data-menu>
         <summary class="nav-link" aria-label={s.language}>
           {LANG_SHORT[lang]}
           <Icon name="chevron-down" size={16} />
@@ -56,7 +57,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
         </div>
       </details>
     </nav>
-    <details class="nav-mobile">
+    <details class="nav-mobile" data-menu>
       <summary aria-label={s.menu}>
         <span></span>
         <span></span>
@@ -71,54 +72,97 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
           </a>
         ))}
         <p class="mobile-group">{s.language}</p>
-        {langs.map((l) => (
-          <a href={l.url} hreflang={l.lang} lang={l.lang} class="mobile-sub">
-            {LANG_NAME[l.lang]}
-          </a>
-        ))}
+        <div class="mobile-langs">
+          {langs.map((l) => (
+            <a
+              href={l.url}
+              hreflang={l.lang}
+              lang={l.lang}
+              aria-current={l.lang === lang ? 'true' : undefined}
+            >
+              {LANG_NAME[l.lang]}
+            </a>
+          ))}
+        </div>
       </nav>
     </details>
   </div>
 </header>
 
+<script>
+  const menus = document.querySelectorAll<HTMLDetailsElement>('details[data-menu]');
+  const closeAll = (except?: Node) =>
+    menus.forEach((m) => {
+      if (m.open && !(except && m.contains(except))) m.open = false;
+    });
+  document.addEventListener('click', (e) => closeAll(e.target as Node));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeAll();
+  });
+</script>
+
 <style>
   .site-header {
-    padding: 10px var(--gutter);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    padding: var(--space-2) var(--gutter);
+    background: color-mix(in srgb, var(--color-bg) 85%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid transparent;
+    animation: header-edge linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 80px;
+  }
+  /* The bottom edge appears once the page is scrolled (scroll-driven, no JS). */
+  @keyframes header-edge {
+    to {
+      border-bottom-color: var(--color-border-soft);
+    }
   }
   .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: var(--w-page);
     margin: 0 auto;
   }
   .logo {
     display: block;
     line-height: 0;
+    border-radius: 50%;
+    transition: transform var(--duration) var(--ease);
+  }
+  .logo:hover {
+    transform: rotate(-12deg);
   }
   .nav-desktop {
     display: flex;
     align-items: center;
+    gap: var(--space-1);
   }
   .nav-link {
-    display: block;
-    padding: 12px;
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    list-style: none;
-  }
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  summary.nav-link::-webkit-details-marker {
-    display: none;
-  }
-  summary.nav-link {
     display: flex;
     align-items: center;
     gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-pill);
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: var(--text-md);
+    cursor: pointer;
+    list-style: none;
+    transition: background-color var(--duration-fast) var(--ease);
+  }
+  .nav-link:hover,
+  .dropdown[open] > .nav-link {
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  summary.nav-link::-webkit-details-marker {
+    display: none;
   }
   summary.nav-link :global(.icon) {
     transition: transform var(--duration-fast) var(--ease);
@@ -131,14 +175,22 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
   }
   .dropdown-list {
     position: absolute;
-    top: 100%;
+    top: calc(100% + var(--space-2));
     left: 0;
     z-index: 20;
-    min-width: 180px;
-    background: var(--color-surface-alt);
-    border-radius: 10px;
-    overflow: hidden;
+    min-width: 200px;
+    padding: var(--space-2);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-soft);
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
+    animation: menu-in var(--duration) var(--ease);
+  }
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
   }
   .dropdown-right {
     left: auto;
@@ -147,19 +199,25 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
   .dropdown-list a,
   .mobile-panel a {
     display: block;
-    padding: 12px 20px;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
     color: var(--color-text);
     text-decoration: none;
-    font-size: 16px;
+    font-size: var(--text-md);
+    transition: background-color var(--duration-fast) var(--ease);
   }
   .dropdown-list a:hover,
   .mobile-panel a:hover {
     background: var(--color-tint);
   }
+  .dropdown-list a[aria-current],
+  .mobile-panel a[aria-current] {
+    font-weight: 700;
+  }
   .nav-mobile {
     display: none;
   }
-  @media (max-width: 767px) {
+  @media (width < 48rem) {
     .nav-desktop {
       display: none;
     }
@@ -176,6 +234,7 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
       justify-content: center;
       gap: 6px;
       padding: 10px;
+      border-radius: var(--radius-sm);
     }
     .nav-mobile summary::-webkit-details-marker {
       display: none;
@@ -183,29 +242,47 @@ const langs = LANGS.map((l) => ({ lang: l, url: alternates[l] ?? withLangPrefix(
     .nav-mobile summary span {
       display: block;
       height: 2px;
+      border-radius: 1px;
       background: var(--color-text);
+      transition:
+        transform var(--duration) var(--ease),
+        opacity var(--duration-fast) var(--ease);
+    }
+    /* Burger → cross */
+    .nav-mobile[open] summary span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-mobile[open] summary span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-mobile[open] summary span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
     }
     .mobile-panel {
       position: absolute;
       left: var(--gutter);
       right: var(--gutter);
-      top: 70px;
+      top: calc(100% + var(--space-2));
       z-index: 30;
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: 10px;
-      overflow: hidden;
+      max-height: calc(100dvh - 80px);
+      overflow-y: auto;
+      padding: var(--space-2);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-soft);
+      border-radius: var(--radius-md);
       box-shadow: var(--shadow-md);
-      padding: 6px 0;
+      animation: menu-in var(--duration) var(--ease);
     }
     .mobile-group {
-      margin: 8px 20px 0;
-      font-size: 13px;
+      margin: var(--space-3) var(--space-3) var(--space-1);
+      font-size: var(--text-xs);
       color: var(--color-muted);
       text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
-    .mobile-panel .mobile-sub {
-      padding-left: 32px;
+    .mobile-langs {
+      display: flex;
+      gap: var(--space-1);
     }
   }
 </style>
