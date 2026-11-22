@@ -24,9 +24,19 @@ const full =
     ? (await getImage({ src: image, width: max, format: 'webp', quality: 72 })).src
     : undefined;
 const Wrap = full ? 'a' : 'div';
+// Size follows the shape (computed, no per-record flags): landscape images take the text width;
+// square-ish and portrait ones would be taller than the screen there, so they are shown smaller,
+// centered on a tinted stage. `wide` only makes sense for landscape.
+const ratio = image.width / image.height;
+const shape = ratio < 0.8 ? 'portrait' : ratio < 1.3 ? 'square' : 'landscape';
+const staged = shape !== 'landscape';
+const stageWidth = { square: 480, portrait: 360, landscape: 760 };
 ---
 
-<figure class:list={['shot', { wide }]}>
+<figure
+  class:list={['shot', `shot-${shape}`, { wide: wide && !staged, staged }]}
+  style={staged ? `--shot-max:${stageWidth[shape]}px;--shot-ratio:${ratio.toFixed(4)}` : undefined}
+>
   {optimizable ? (
     <Wrap href={full} class="shot-link" target={full ? '_blank' : undefined}>
       <Picture
@@ -36,19 +46,21 @@ const Wrap = full ? 'a' : 'div';
         fallbackFormat="webp"
         quality={72}
         widths={widths}
-        sizes={`(max-width: 800px) 100vw, ${Math.min(max, wide ? 1080 : 760)}px`}
+        sizes={`(max-width: 800px) 100vw, ${Math.min(max, staged ? stageWidth[shape] : wide ? 1080 : 760)}px`}
         loading="lazy"
       />
     </Wrap>
   ) : (
-    <img
-      src={image.src}
-      width={image.width}
-      height={image.height}
-      alt={alt}
-      loading="lazy"
-      decoding="async"
-    />
+    <div class="shot-link">
+      <img
+        src={image.src}
+        width={image.width}
+        height={image.height}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
   )}
   {caption && <figcaption>{caption}</figcaption>}
 </figure>
@@ -72,6 +84,23 @@ const Wrap = full ? 'a' : 'div';
   }
   .shot-link[href] {
     cursor: zoom-in;
+  }
+  /* Stage for square-ish and portrait images. The width is derived from the height cap and the
+     image's own ratio, so one image fits one screen and space is reserved before it loads. */
+  .shot.staged .shot-link {
+    padding: var(--space-4);
+    background: var(--color-surface-alt);
+  }
+  .shot.staged .shot-link > :global(*) {
+    display: block;
+    margin-inline: auto;
+    width: min(100%, var(--shot-max), min(70vh, 640px) * var(--shot-ratio));
+  }
+  .shot.staged :global(img) {
+    border-radius: var(--radius-sm);
+  }
+  .shot.staged :global(picture img) {
+    width: 100%;
   }
   .shot figcaption {
     font-size: var(--text-sm);
