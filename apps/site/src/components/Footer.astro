@@ -101,20 +101,16 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
+  /* Below the sheet, on the page ground: a quiet note, no box. */
   .disclaimer {
-    background: var(--color-surface-alt);
-    border-radius: var(--radius-md);
-    padding: var(--space-4) var(--space-5);
     font-size: var(--text-sm);
     line-height: 1.5;
     color: var(--color-muted);
-    margin: var(--space-7) 0 0;
+    margin: var(--space-5) 0 0;
   }
   .site-footer {
-    margin-top: var(--space-8);
-    padding: var(--space-7) var(--gutter) var(--space-6);
-    border-top: 1px solid var(--color-border-soft);
-    background: var(--color-surface);
+    margin-top: var(--space-7);
+    padding: 0 var(--gutter) var(--space-6);
     font-size: var(--text-md);
   }
   .footer-inner {
@@ -243,7 +239,7 @@ const year = new Date().getFullYear();
     color: var(--color-muted);
   }
   .footer-langs a[aria-current] {
-    background: var(--color-surface-alt);
+    background: var(--color-surface);
     color: var(--color-text);
   }
 </style>

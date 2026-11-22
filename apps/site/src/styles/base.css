@@ -169,6 +169,25 @@
     padding-inline: var(--gutter);
   }
 
+  /* The sheet: all page content lies on one white surface. Rule for everything inside it:
+     no boxes, separation by hairlines and space; nested blocks (image stage, table head,
+     callouts) use --color-surface-alt. Header, TOC rail and footer stay on the page ground.
+     On narrow screens the sheet is the whole page. */
+  main {
+    background: var(--color-surface);
+    padding-block: var(--space-5) var(--space-7);
+  }
+
+  @media (min-width: 60rem) {
+    main {
+      max-width: calc(var(--w-text) + 2 * var(--sheet-pad));
+      margin: var(--space-2) auto 0;
+      padding-block: var(--space-6) var(--space-8);
+      border: 1px solid var(--color-border-soft);
+      border-radius: var(--radius-lg);
+    }
+  }
+
   .visually-hidden {
     position: absolute;
     width: 1px;

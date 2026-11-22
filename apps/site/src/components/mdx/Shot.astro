@@ -46,7 +46,7 @@ const stageWidth = { square: 480, portrait: 360, landscape: 760 };
         fallbackFormat="webp"
         quality={72}
         widths={widths}
-        sizes={`(max-width: 800px) 100vw, ${Math.min(max, staged ? stageWidth[shape] : wide ? 1080 : 760)}px`}
+        sizes={`(max-width: 800px) 100vw, ${Math.min(max, staged ? stageWidth[shape] : wide ? 856 : 760)}px`}
         loading="lazy"
       />
     </Wrap>
@@ -108,22 +108,13 @@ const stageWidth = { square: 480, portrait: 360, landscape: 760 };
     margin-top: var(--space-2);
     text-align: center;
   }
-  @media (min-width: 75rem) {
+  /* Wide figures reach out towards the sheet's edges (the sheet exists from 60rem). */
+  @media (min-width: 60rem) {
     .shot.wide {
-      margin-left: calc((760px - 1080px) / 2);
-      margin-right: calc((760px - 1080px) / 2);
+      margin-inline: calc(var(--space-5) - var(--sheet-pad));
     }
     .shot.wide :global(img) {
       width: 100%;
-    }
-  }
-  /* From 86rem the right margin belongs to the table-of-contents rail (Article template), so a
-     wide figure keeps its right edge on the text column and grows to the left only, as far as
-     the page margin allows. */
-  @media (min-width: 86rem) {
-    .shot.wide {
-      margin-left: max(760px - 1080px, (760px - 100vw) / 2 + var(--space-5));
-      margin-right: 0;
     }
   }
 </style>
